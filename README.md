@@ -10,10 +10,10 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Threat Modeling</h2>
 
-<h3><a>"Threat Modeling, Designing for Security" by Adam Shostack</a>
- - IEEE Citation: 
- - Description:
- - What I've learned, notes and finds. 
+<h3><a>"Threat Modeling, Designing for Security" by Adam Shostack</a></h3>
+  - IEEE Citation: 
+  - Description:
+  - What I've learned, notes and finds.
  
 
 
