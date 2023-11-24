@@ -9,33 +9,25 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 So, let's learn together and stay ahead of the cybersecurity game. Dive into these reads, and let's make the digital world a safer place, one page at a time!</p>
 
 <ul>
-    <li>Cybersecurity</li>
-    <li>Artificial Intelligence</li>
-    <li>Data Science</li>
-    <li>Machine Learning</li>
-    <li>Computer Networks</li>
-    <li>Web Development</li>
-    <li>Database Management</li>
-    <li>Computer Graphics</li>
-    <li>Software Engineering</li>
-    <li>Information Systems</li>
-    <li>Operating Systems</li>
-    <li>Network Security</li>
-    <li>Cloud Computing</li>
-    <li>Internet of Things (IoT)</li>
-    <li>Mobile App Development</li>
-    <li>Human-Computer Interaction</li>
-    <li>Computer Vision</li>
-    <li>Natural Language Processing</li>
-    <li>Cryptocurrency</li>
-    <li>Big Data Analytics</li>
-    <li>Blockchain Technology</li>
-    <li>Digital Forensics</li>
-    <li>Quantum Computing</li>
-    <li>Robotics</li>
+    <li>Adversarial Tradecraft</li>
+    <li>Blue, Red and Purple Teaming</li>
+    <li>Career and Interviews</li>
+    <li>Cyber Resilience</li>
+    <li>Defensive Security</li>
     <li>Ethical Hacking</li>
-    <li>Virtual Reality</li>
-    <li>Augmented Reality</li>
+    <li>Hardening</li>
+    <li>Identity and Access Management</li>
+    <li>Malware Analysis</li>
+    <li>Networking</li>
+    <li>Penetration Testing</li>
+    <li>Privacy</li>
+    <li>Privilege Escalation</li>
+    <li>Programmation</li>
+    <li>Risk Management</li>
+    <li>Strategy</li>
+    <li>Threat Intelligence</li>
+    <li>Threat Modeling</li>
+    <li>Vulnerability Research</li>
 </ul>
 
 <h2>Blue, Red and Purple Teaming</h2>
