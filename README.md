@@ -16,6 +16,8 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Blue, Red and Purple Teaming</h2>
 
+<h2>Career and Interviews</h2>
+
 <h2>Risk Management</h2>
 
 <h2>Threat Modeling</h2>
@@ -23,6 +25,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h3><a>"Threat Modeling, Designing for Security" by Adam Shostack</a></h3>
   - IEEE Citation: 
   - Description:
+  - Amazon:
   - What I've learned, notes and finds.
  
 
