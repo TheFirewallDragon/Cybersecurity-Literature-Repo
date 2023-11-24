@@ -2,7 +2,7 @@
 
 <p>Hey there, fellow cybersecurity enthusiast! Welcome to my personal collection of cybersecurity literature. I'm a cybersecurity student and I've been diving into some reads that I think you'll find interesting and helpful.
 
-In this collection, you'll find books that cover a range of topics from penetration testing to vulnerability research. These are the gems that have been keeping me up at night (in a good way!), and I wanted to share and compile them in a compehensive list.
+In this collection, you'll find books that cover a range of topics from purple teaming to threat modeling. These are the gems that have been keeping me up at night (in a good way!), and I wanted to share and compile them in a compehensive list.
 
 I'll be updating this list as I come across new and exciting stuff. Whether you're a cybersecurity pro or just getting started, there's something here for everyone.
 
