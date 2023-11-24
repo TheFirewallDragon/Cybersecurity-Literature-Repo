@@ -10,6 +10,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <ul>
     <li>Blue, Red and Purple Teaming</li>
+    <li>Career and Interviews</li>
     <li>Risk Management</li>
     <li>Threat Modeling</li>
 </ul>
