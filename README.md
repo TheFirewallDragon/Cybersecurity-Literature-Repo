@@ -30,11 +30,39 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li>Vulnerability Research</li>
 </ul>
 
+<h2>Adversarial Tradecraft</h2>
+
 <h2>Blue, Red and Purple Teaming</h2>
 
 <h2>Career and Interviews</h2>
 
+<h2>Cyber Resilience</h2>
+
+<h2>Defensive Security</h2>
+
+<h2>Ethical Hacking</h2>
+
+<h2>Hardening</h2>
+
+<h2>Identity and Access Management</h2>
+
+<h2>Malware Analysis</h2>
+
+<h2>Networking</h2>
+
+<h2>Penetration Testing</h2>
+
+<h2>Privacy</h2>
+
+<h2>Privilege Escalation</h2>
+
+<h2>Programming</h2>
+
 <h2>Risk Management</h2>
+
+<h2>Strategy</h2>
+
+<h2>Threat Intelligence</h2>
 
 <h2>Threat Modeling</h2>
 
@@ -43,6 +71,8 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - Description:
   - Amazon:
   - What I've learned, notes and finds.
+
+<h2>Vulnerability Research</h2>
  
 
 
