@@ -22,7 +22,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li>Penetration Testing</li>
     <li>Privacy</li>
     <li>Privilege Escalation</li>
-    <li>Programmation</li>
+    <li>Programming</li>
     <li>Risk Management</li>
     <li>Strategy</li>
     <li>Threat Intelligence</li>
