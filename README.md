@@ -9,25 +9,25 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 So, let's learn together and stay ahead of the cybersecurity game. Dive into these reads, and let's make the digital world a safer place, one page at a time!</p>
 
 <ul>
-    <li>Adversarial Tradecraft</li>
-    <li>Blue, Red and Purple Teaming</li>
-    <li>Career and Interviews</li>
-    <li>Cyber Resilience</li>
-    <li>Defensive Security</li>
-    <li>Ethical Hacking</li>
-    <li>Hardening</li>
-    <li>Identity and Access Management</li>
-    <li>Malware Analysis</li>
-    <li>Networking</li>
-    <li>Penetration Testing</li>
-    <li>Privacy</li>
-    <li>Privilege Escalation</li>
-    <li>Programming</li>
-    <li>Risk Management</li>
-    <li>Strategy</li>
-    <li>Threat Intelligence</li>
-    <li>Threat Modeling</li>
-    <li>Vulnerability Research</li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Adversarial%20Tradecraft">Adversarial Tradecraft</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Blue%2C%20Red%20and%20Purple%20Teaming">Blue, Red and Purple Teaming</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Career%20and%20Interviews">Career and Interviews</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Cyber%20Resilience">Cyber Resilience</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Defensive%20Security">Defensive Security</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Ethical%20Hacking">Ethical Hacking</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Hardening">Hardening</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Identity%20and%20Access%20Management">Identity and Access Management</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Malware%20Analysis">Malware Analysis</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Networking">Networking</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privilege%20Escalation">Privilege Escalation</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Programmation">Programming</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Risk%20Management">Risk Management</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Strategy">Strategy</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Intelligence">Threat Intelligence</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Modeling">Threat Modeling</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Vulnerability%20Research">Vulnerability Research</a></li>
 </ul>
 
 <h2>Adversarial Tradecraft</h2>
