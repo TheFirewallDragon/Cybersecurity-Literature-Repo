@@ -1,0 +1,42 @@
+Get to grips with network-based attacks and learn to defend your organization's network and network devices
+
+Key Features
+Exploit vulnerabilities and use custom modules and scripts to crack authentication protocols
+Safeguard against web, mail, database, DNS, voice, video, and collaboration server attacks
+Monitor and protect against brute-force attacks by implementing defense mechanisms
+Book Description
+With the increased demand for computer systems and the ever-evolving internet, network security now plays an even bigger role in securing IT infrastructures against attacks. Equipped with the knowledge of how to find vulnerabilities and infiltrate organizations through their networks, you'll be able to think like a hacker and safeguard your organization's network and networking devices. Network Protocols for Security Professionals will show you how.
+
+This comprehensive guide gradually increases in complexity, taking you from the basics to advanced concepts. Starting with the structure of data network protocols, devices, and breaches, you'll become familiar with attacking tools and scripts that take advantage of these breaches. Once you've covered the basics, you'll learn about attacks that target networks and network devices. Your learning journey will get more exciting as you perform eavesdropping, learn data analysis, and use behavior analysis for network forensics. As you progress, you'll develop a thorough understanding of network protocols and how to use methods and tools you learned in the previous parts to attack and protect these protocols.
+
+By the end of this network security book, you'll be well versed in network protocol security and security countermeasures to protect network protocols.
+
+What you will learn
+Understand security breaches, weaknesses, and protection techniques
+Attack and defend wired as well as wireless networks
+Discover how to attack and defend LAN-, IP-, and TCP/UDP-based vulnerabilities
+Focus on encryption, authorization, and authentication principles
+Gain insights into implementing security protocols the right way
+Use tools and scripts to perform attacks on network devices
+Wield Python, PyShark, and other scripting tools for packet analysis
+Identify attacks on web servers to secure web and email services
+Who this book is for
+This book is for red team and blue team pentesters, security professionals, or bug hunters. Anyone involved in network protocol management and security will also benefit from this book. Basic experience in network security will be an added advantage.
+
+Table of Contents
+Data Centers and the Enterprise Network Architecture and its Components
+Network Protocol Structures and Operations
+Security Protocols and Their Implementation
+Using Network Security Tools, Scripts, and Code
+Finding Protocol Vulnerabilities
+Finding Network-Based Attacks
+Detecting Device-Based Attacks
+Network Traffic Analysis and Eavesdropping
+Using Behavior Analysis and Anomaly Detection
+Discovering LAN, IP, and TCP/UDP-Based Attacks
+Implementing Wireless Network Security
+Attacking Routing Protocols
+DNS Security
+Securing Web and Email Services
+Enterprise Applications Security – Databases and Filesystems
+IP Telephony and Collaboration Services Security
