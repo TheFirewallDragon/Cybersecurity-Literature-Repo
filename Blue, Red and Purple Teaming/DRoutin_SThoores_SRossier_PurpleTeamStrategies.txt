@@ -1,0 +1,40 @@
+Leverage cyber threat intelligence and the MITRE framework to enhance your prevention mechanisms, detection capabilities, and learn top adversarial simulation and emulation techniques
+
+Key Features
+Apply real-world strategies to strengthen the capabilities of your organization's security system
+Learn to not only defend your system but also think from an attacker's perspective
+Ensure the ultimate effectiveness of an organization's red and blue teams with practical tips
+Book Description
+With small to large companies focusing on hardening their security systems, the term "purple team" has gained a lot of traction over the last couple of years. Purple teams represent a group of individuals responsible for securing an organization's environment using both red team and blue team testing and integration – if you're ready to join or advance their ranks, then this book is for you.
+
+Purple Team Strategies will get you up and running with the exact strategies and techniques used by purple teamers to implement and then maintain a robust environment. You'll start with planning and prioritizing adversary emulation, and explore concepts around building a purple team infrastructure as well as simulating and defending against the most trendy ATT&CK tactics. You'll also dive into performing assessments and continuous testing with breach and attack simulations.
+
+Once you've covered the fundamentals, you'll also learn tips and tricks to improve the overall maturity of your purple teaming capabilities along with measuring success with KPIs and reporting.
+
+With the help of real-world use cases and examples, by the end of this book, you'll be able to integrate the best of both sides: red team tactics and blue team security measures.
+
+What you will learn
+Learn and implement the generic purple teaming process
+Use cloud environments for assessment and automation
+Integrate cyber threat intelligence as a process
+Configure traps inside the network to detect attackers
+Improve red and blue team collaboration with existing and new tools
+Perform assessments of your existing security controls
+Who this book is for
+If you're a cybersecurity analyst, SOC engineer, security leader or strategist, or simply interested in learning about cyber attack and defense strategies, then this book is for you. Purple team members and chief information security officers (CISOs) looking at securing their organizations from adversaries will also benefit from this book. You'll need some basic knowledge of Windows and Linux operating systems along with a fair understanding of networking concepts before you can jump in, while ethical hacking and penetration testing know-how will help you get the most out of this book.
+
+Table of Contents
+Contextualizing Threats and Today's Challenges
+Purple Teaming – a Generic Approach and a New Model
+Carrying Out Adversary Emulation with CTI
+Threat Management – Detecting, Hunting, and Preventing
+Red Team Infrastructure
+Blue Team – Collect
+Blue Team – Detect
+Blue Team – Correlate
+Purple Team Infrastructure
+Purple Teaming the ATT&CK Tactics
+Purple Teaming with BAS and Adversary Emulation
+PTX – Purple Teaming eXtended
+PTX – Automation and DevOps Approach
+Exercise Wrap-Up and KPIs
