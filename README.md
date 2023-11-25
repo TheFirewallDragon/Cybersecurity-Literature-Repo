@@ -70,18 +70,45 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Defensive Security</h2>
 
-<h3>"Mastering Defensive Security: Effective techniques to secure your Windows, Linux, IoT, and cloud infrastructure" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
-  - IEEE Citation: <br> [x] D. M. L. Chelly, S. Tan, and H. Tran, Building a Cyber Resilient Business: A cyber handbook for executives and boards, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4
+<h3>"Mastering Defensive Security: Effective techniques to secure your Windows, Linux, IoT, and cloud infrastructure" by Cesar Bravo and Darren Kitchen</h3>
+  - IEEE Citation: <br> [x] C. Bravo and D. Kitchen, Mastering Defensive Security: Effective techniques to secure your Windows, Linux, IoT, and cloud infrastructure. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Mastering-Defensive-Security-techniques-infrastructure/dp/1800208162
+‌
 ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Defensive%20Security/CBravo_MasteringDefensiveSecurity.txt"> What I've learned, notes and finds.</a>
 
 <h2>Ethical Hacking</h2>
 
+<h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
+  - IEEE Citation: <br> [x] D. Meredith and C. Rees, Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities. Birmingham: Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094
+‌
+‌
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Ethical%20Hacking/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide.txt"> What I've learned, notes and finds.</a>
+
 <h2>Hardening</h2>
+
+<h3>"Mastering Windows Security and Hardening: Secure and protect your Windows environment from cyber threats using zero-trust security principles, 2nd Edition" by Mark Dunkerley and Matt Tumbarello</h3>
+  - IEEE Citation: <br> [x] M. Dunkerley and M. Tumbarello, Mastering Windows Security and Hardening: Secure and protect your Windows environment from cyber threats using zero-trust security principles, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Windows-Security-Hardening-environment/dp/180323654X
+‌
+‌
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Hardening/MDunkerley_MTumbarello_MasteringWindowsSecurityandHardening.txt"> What I've learned, notes and finds.</a>
 
 <h2>Identity and Access Management</h2>
 
+<h3>"Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications" by Stian Thorgersen and Pedro Igor Silva</h3>
+  - IEEE Citation: <br> [x] S. Thorgersen and P. I. Silva, Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497
+‌
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications.txt"> What I've learned, notes and finds.</a>
+
 <h2>Malware Analysis</h2>
+
+<h3>"Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications" by Stian Thorgersen and Pedro Igor Silva</h3>
+  - IEEE Citation: <br> [x] S. Thorgersen and P. I. Silva, Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497
+‌
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications.txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
 
