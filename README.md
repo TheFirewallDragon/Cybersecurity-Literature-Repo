@@ -179,23 +179,40 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h3>"Security Risk Management: Building an Information Security Risk Management Program from the Ground Up" by Evan Wheeler</h3>
     - IEEE Citation: <br> [x] [Security Risk Management: Building an Information Security Risk Management Program from the Ground Up]. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Security-Risk-Management-Building-Information/dp/B00SLVUO2O
-‌
-‌<br>
+‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/EWheeler_SecurityRiskManagement.txt"> What I've learned, notes and finds.</a>
 
 <h2>Strategy</h2>
 
+<h3>"Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare" by Dr. Chase Cunningham</h3>
+    - IEEE Citation: <br> [x] D. C. Cunningham, Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cyber-Warfare-Strategies-organization-battleground/dp/1839216999
+‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition" by Yuri Diogenes and Dr. Erdal Ozkaya</h3>
+    - IEEE Citation: <br> [x] Y. Diogenes and D. E. Ozkaya, Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition, 3rd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Cybersecurity-Strategies-security-attackers-infiltrating/dp/1803248777
+‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/YDiogenes_EOzkaya_Cybersecurity-AttackandDefenseStrategies.txt"> What I've learned, notes and finds.</a>
+
 <h2>Threat Intelligence</h2>
+
+<h3>"Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CK™ Framework and open source tools" by Valentina Costa-Gazcon</h3>
+    - IEEE Citation: <br> [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CKTM Framework and open source tools. Birmingham Mumbai: Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370
+‌
+‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting.txt"> What I've learned, notes and finds.</a>
 
 <h2>Threat Modeling</h2>
 
-<h3><a>"Threat Modeling, Designing for Security" by Adam Shostack</a></h3>
-  - IEEE Citation: 
-  - Description:
-  - Amazon:
-  - What I've learned, notes and finds.
-
+<h3>"Threat Modeling: Designing for Security" by Adam Shostack</h3>
+    - IEEE Citation: <br> [x] A. Shostack, Threat Modeling: Designing for Security, 1st edition. Indianapolis, Ind: Wiley, 2014. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Modeling/AShostack_ThreatModelingDesigningforSecurity.txt"> What I've learned, notes and finds.</a>
+  
 <h2>Vulnerability Research</h2>
  
-
+<h3>"The Vulnerability Researcher's Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities" by Benjamin Strout</h3>
+    - IEEE Citation: <br> [x] B. Strout, The Vulnerability Researcher’s Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Vulnerability-Researchers-Handbook-comprehensive-vulnerabilities/dp/1803238879
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Vulnerability%20Research/BStrout_TheVulnerabilityResearcher'sHandbook.txt"> What I've learned, notes and finds.</a>
 
