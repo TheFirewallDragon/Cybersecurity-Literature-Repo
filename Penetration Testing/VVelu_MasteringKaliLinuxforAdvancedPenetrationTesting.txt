@@ -1,0 +1,39 @@
+Master key approaches used by real attackers to perform advanced pentesting in tightly secured infrastructure, cloud and virtualized environments, and devices, and learn the latest phishing and hacking techniques
+
+Key Features
+Explore red teaming and play the hackers game to proactively defend your infrastructure
+Use OSINT, Google dorks, Nmap, recon-nag, and other tools for passive and active reconnaissance
+Learn about the latest email, Wi-Fi, and mobile-based phishing techniques
+Book Description
+Remote working has given hackers plenty of opportunities as more confidential information is shared over the internet than ever before. In this new edition of Mastering Kali Linux for Advanced Penetration Testing, you'll learn an offensive approach to enhance your penetration testing skills by testing the sophisticated tactics employed by real hackers. You'll go through laboratory integration to cloud services so that you learn another dimension of exploitation that is typically forgotten during a penetration test. You'll explore different ways of installing and running Kali Linux in a VM and containerized environment and deploying vulnerable cloud services on AWS using containers, exploiting misconfigured S3 buckets to gain access to EC2 instances.
+
+This book delves into passive and active reconnaissance, from obtaining user information to large-scale port scanning. Building on this, different vulnerability assessments are explored, including threat modeling. See how hackers use lateral movement, privilege escalation, and command and control (C2) on compromised systems.
+
+By the end of this book, you'll have explored many advanced pentesting approaches and hacking techniques employed on networks, IoT, embedded peripheral devices, and radio frequencies.
+
+What you will learn
+Exploit networks using wired/wireless networks, cloud infrastructure, and web services
+Learn embedded peripheral device, Bluetooth, RFID, and IoT hacking techniques
+Master the art of bypassing traditional antivirus and endpoint detection and response (EDR) tools
+Test for data system exploits using Metasploit, PowerShell Empire, and CrackMapExec
+Perform cloud security vulnerability assessment and exploitation of security misconfigurations
+Use bettercap and Wireshark for network sniffing
+Implement complex attacks with Metasploit, Burp Suite, and OWASP ZAP
+Who this book is for
+This fourth edition is for security analysts, pentesters, ethical hackers, red team operators, and security consultants wanting to learn and optimize infrastructure/application/cloud security using advanced Kali Linux features. Prior penetration testing experience and basic knowledge of ethical hacking will help you make the most of this book.
+
+Table of Contents
+Goal-Based Penetration Testing
+Open-Source Intelligence and Passive Reconnaissance
+Active Reconnaissance of External and Internal Networks
+Vulnerability Assessment
+Advanced Social Engineering and Physical Security
+Wireless and Bluetooth Attacks
+Exploiting Web-Based Applications
+Cloud Security Exploitation
+Bypassing Security Controls
+Exploitation
+Action on the Objective and Lateral Movement
+Privilege Escalations
+Command and Control
+Embedded Devices and RFID Hacking
