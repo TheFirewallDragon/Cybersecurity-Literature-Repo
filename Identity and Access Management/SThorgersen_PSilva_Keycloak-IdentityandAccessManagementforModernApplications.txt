@@ -1,0 +1,38 @@
+Learn to leverage the advanced capabilities of Keycloak, an open-source identity and access management solution, to enable authentication and authorization in applications
+
+Key Features
+Get up to speed with Keycloak, OAuth 2.0, and OpenID Connect using practical examples
+Configure, manage, and extend Keycloak for optimized security
+Leverage Keycloak features to secure different application types
+Book Description
+Implementing authentication and authorization for applications can be a daunting experience, often leaving them exposed to security vulnerabilities. Keycloak is an open-source solution for identity management and access management for modern applications, which can make a world of difference if you learn how to use it.
+
+Keycloak, helping you get started with using it and securing your applications. Complete with hands-on tutorials, best practices, and self-assessment questions, this easy-to-follow guide will show you how to secure a sample application and then move on to securing different application types. As you progress, you will understand how to configure and manage Keycloak as well as how to leverage some of its more advanced capabilities. Finally, you'll gain insights into securely using Keycloak in production.
+
+By the end of this book, you will have learned how to install and manage Keycloak as well as how to secure new and existing applications.
+
+What you will learn
+Understand how to install, configure, and manage Keycloak
+Secure your new and existing applications with Keycloak
+Gain a basic understanding of OAuth 2.0 and OpenID Connect
+Understand how to configure Keycloak to make it ready for production use
+Discover how to leverage additional features and how to customize Keycloak to fit your needs
+Get to grips with securing Keycloak servers and protecting applications
+Who this book is for
+Developers, sysadmins, security engineers, or anyone who wants to leverage Keycloak and its capabilities for application security will find this book useful. Beginner-level knowledge of app development and authentication and authorization is expected.
+
+Table of Contents
+Getting Started with Keycloak
+Securing Your First Application
+Brief Introduction to Standards
+Authenticating Users with OpenID Connect
+Authorizing Access with OAuth 2.0
+Securing Different Application Types
+Integrating Applications with Keycloak
+Authorization Strategies
+Configuring Keycloak for Production
+Managing Users
+Authenticating Users
+Managing Tokens and Sessions
+Extending Keycloak
+Securing Keycloak and Applications
