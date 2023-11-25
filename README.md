@@ -104,13 +104,33 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Malware Analysis</h2>
 
-<h3>"Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications" by Stian Thorgersen and Pedro Igor Silva</h3>
-  - IEEE Citation: <br> [x] S. Thorgersen and P. I. Silva, Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497
-‌
+<h3>"Mastering Malware Analysis: A malware analyst's practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition" by Alexey Kleymenov and Amr Thabet</h3>
+  - IEEE Citation: <br> [x] A. Kleymenov and A. Thabet, Mastering Malware Analysis: A malware analyst’s practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Malware-Analysis-practical-cybercrime/dp/1803240245
 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/AKleymenov_AThabet_MasteringMalwareAnalysis.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Malware Analysis Techniques: Tricks for the triage of adversarial software" by Dylan Barker</h3>
+  - IEEE Citation: <br> [x] D. Barker, Malware Analysis Techniques: Tricks for the triage of adversarial software. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Malware-Analysis-Techniques-adversarial-software/dp/1839212276
+‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/DBarker_MalwareAnalysisTechniques.txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
+
+<h3>"Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition" by Lisa Block</h3>
+  - IEEE Citation: <br> [x] L. Bock, Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X
+‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure" by Tom Piens</h3>
+  - IEEE Citation: <br> [x] T. Piens, Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure, 1st edition. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Palo-Alto-Networks-industry-leading-ebook/dp/B08C5N2QVY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
+‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/TPiens_MasteringPaloAltoNetworks.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Yoram Orzach and Deepanshu Khanna</h3>
+  - IEEE Citation: <br> [x] Y. Orzach and D. Khanna, Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Network-Protocols-Security-Professionals-vulnerabilities-ebook/dp/B09FKK2JPW/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
+‌
+‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals.txt"> What I've learned, notes and finds.</a>
 
 <h2>Penetration Testing</h2>
 
