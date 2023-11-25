@@ -1,0 +1,47 @@
+Expertly analyze common protocols such as TCP, IP, and ICMP, along with learning how to use display and capture filters, save and export captures, create IO and stream graphs, and troubleshoot latency issues
+
+Key Features
+Gain a deeper understanding of common protocols so you can easily troubleshoot network issues
+Explore ways to examine captures to recognize unusual traffic and possible network attacks
+Learn advanced techniques, create display and capture filters, and generate IO and stream graphs
+Book Description
+Wireshark is a popular and powerful packet analysis tool that helps network administrators investigate latency issues and potential attacks. Over the years, there have been many enhancements to Wireshark's functionality. This book will guide you through essential features so you can capture, display, and filter data with ease. In addition to this, you'll gain valuable tips on lesser-known configuration options, which will allow you to complete your analysis in an environment customized to suit your needs.
+
+This updated second edition of Learn Wireshark starts by outlining the benefits of traffic analysis. You'll discover the process of installing Wireshark and become more familiar with the interface. Next, you'll focus on the Internet Suite and then explore deep packet analysis of common protocols such as DNS, DHCP, HTTP, and ARP. The book also guides you through working with the expert system to detect network latency issues, create I/O and stream graphs, subset traffic, and save and export captures. Finally, you'll understand how to share captures using CloudShark, a browser-based solution for analyzing packet captures.
+
+By the end of this Wireshark book, you'll have the skills and hands-on experience you need to conduct deep packet analysis of common protocols and network troubleshooting as well as identify security issues.
+
+What you will learn
+Master network analysis and troubleshoot anomalies with Wireshark
+Discover the importance of baselining network traffic
+Correlate the OSI model with frame formation in Wireshark
+Narrow in on specific traffic by using display and capture filters
+Conduct deep packet analysis of common protocols: IP, TCP, and ARP
+Understand the role and purpose of
+ICMP, DNS, HTTP, and DHCP
+Create a custom configuration profile and personalize the interface
+Create I/O and stream graphs to better visualize traffic
+Who this book is for
+If you are a network administrator, security analyst, student, or teacher and want to learn about effective packet analysis using Wireshark, then this book is for you. In order to get the most from this book, you should have basic knowledge of network fundamentals, devices, and protocols along with an understanding of different topologies.
+
+Table of Contents
+Appreciating Traffic Analysis
+Using Wireshark
+Installing Wireshark
+Exploring the Wireshark Interface
+Tapping into the Data Stream
+Personalizing the Interface
+Using Display and Capture Filters
+Outlining the OSI Model
+Decoding TCP and UDP
+Managing TCP Connections
+Analyzing IPv4 and IPv6
+Discovering ICMP
+Diving into DNS
+Examining DHCP
+Decoding HTTP
+Understanding ARP
+Determining Network Latency Issues
+Subsetting, Saving, and Exporting Captures
+Discovering I/O and Stream Graphs
+Using CloudShark for Packet Analysis
