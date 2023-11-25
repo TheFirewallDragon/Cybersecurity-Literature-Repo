@@ -134,13 +134,54 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Penetration Testing</h2>
 
+<h3>"The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition" by Glen D. Singh</h3>
+  - IEEE Citation: <br> [x] G. D. Singh, The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Ultimate-Kali-Linux-Book-penetration/dp/1801818932
+‌‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/GSingh_TheUltimateKaliLinuxBook.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks Paperback" by Jean-Georges Valle</h3>
+  - IEEE Citation: <br> [x] J.-G. Valle, Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Hardware-Pentesting-attacking-protecting/dp/1789619130
+‌‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/JValle_PracticalHardwarePentesting.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Vijay Kumar Velu</h3>
+  - IEEE Citation: <br> [x] V. K. Velu, Mastering Kali Linux for Advanced Penetration Testing: Become a cybersecurity ethical hacking expert using Metasploit, Nmap, Wireshark, and Burp Suite, 4th Edition, 4th ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Linux-Advanced-Penetration-Testing/dp/1801819777
+‌‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals.txt"> What I've learned, notes and finds.</a>
+
 <h2>Privacy</h2>
+
+<h3>"Cybersecurity and Privacy Law Handbook: A beginner's guide to dealing with privacy and security while keeping hackers at bay" by Walter Rocchi</h3>
+    - IEEE Citation: <br> [x] W. Rocchi, Cybersecurity and Privacy Law Handbook: A beginner’s guide to dealing with privacy and security while keeping hackers at bay, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Privacy-Law-Handbook-beginners-ebook/dp/B0BGSGZ59F
+<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privacy/WRocchi_CybersecurityandPrivacyLawHandbook.txt"> What I've learned, notes and finds.</a>
 
 <h2>Privilege Escalation</h2>
 
+<h3>"Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems" by Alexis Ahmed</h3>
+    - IEEE Citation: <br> [x] A. Ahmed, Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques.txt"> What I've learned, notes and finds.</a>
+
 <h2>Programming</h2>
 
+<h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 13E ÉD." by Anne Tasso</h3>
+    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 13E ÉD. Paris: EYROLLES, 2019. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-13E/dp/2212678401/ref=sr_1_2?crid=49P46C0OLO21&keywords=le+livre+de+java&qid=1700893049&s=books&sprefix=le+livre+de+java%2Cstripbooks%2C67&sr=1-2
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/ATasso_LeLivreDeJavaPremierLanguage(fr).txt"> What I've learned, notes and finds.</a>
+
+<h3>"APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD." by Vincent Le Goff</h3>
+    - IEEE Citation: <br> [x] V. L. GOFF, APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD. Paris: EYROLLES, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/VGoff_Apprenez%C3%A0ProgrammerenPython(fr).txt"> What I've learned, notes and finds.</a>
+
 <h2>Risk Management</h2>
+
+<h3>"Security Risk Management: Building an Information Security Risk Management Program from the Ground Up" by Evan Wheeler</h3>
+    - IEEE Citation: <br> [x] [Security Risk Management: Building an Information Security Risk Management Program from the Ground Up]. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Security-Risk-Management-Building-Information/dp/B00SLVUO2O
+‌
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/EWheeler_SecurityRiskManagement.txt"> What I've learned, notes and finds.</a>
 
 <h2>Strategy</h2>
 
