@@ -1,0 +1,45 @@
+Explore the latest ethical hacking tools and techniques to perform penetration testing from scratch
+
+Purchase of the print or Kindle book includes a free eBook in the PDF format
+
+Key Features
+Learn to compromise enterprise networks with Kali Linux
+Gain comprehensive insights into security concepts using advanced real-life hacker techniques
+Use Kali Linux in the same way ethical hackers and penetration testers do to gain control of your environment
+Book Description
+Kali Linux is the most popular and advanced penetration testing Linux distribution within the cybersecurity industry. Using Kali Linux, a cybersecurity professional will be able to discover and exploit various vulnerabilities and perform advanced penetration testing on both enterprise wired and wireless networks.
+
+This book is a comprehensive guide for those who are new to Kali Linux and penetration testing that will have you up to speed in no time. Using real-world scenarios, you'll understand how to set up a lab and explore core penetration testing concepts. Throughout this book, you'll focus on information gathering and even discover different vulnerability assessment tools bundled in Kali Linux. You'll learn to discover target systems on a network, identify security flaws on devices, exploit security weaknesses and gain access to networks, set up Command and Control (C2) operations, and perform web application penetration testing. In this updated second edition, you'll be able to compromise Active Directory and exploit enterprise networks. Finally, this book covers best practices for performing complex web penetration testing techniques in a highly secured environment.
+
+By the end of this Kali Linux book, you'll have gained the skills to perform advanced penetration testing on enterprise networks using Kali Linux.
+
+What you will learn
+Explore the fundamentals of ethical hacking
+Understand how to install and configure Kali Linux
+Perform asset and network discovery techniques
+Focus on how to perform vulnerability assessments
+Exploit the trust in Active Directory domain services
+Perform advanced exploitation with Command and Control (C2) techniques
+Implement advanced wireless hacking techniques
+Become well-versed with exploiting vulnerable web applications
+Who this book is for
+This pentesting book is for students, trainers, cybersecurity professionals, cyber enthusiasts, network security professionals, ethical hackers, penetration testers, and security engineers. If you do not have any prior knowledge and are looking to become an expert in penetration testing using the Kali Linux operating system (OS), then this book is for you.
+
+Table of Contents
+Introduction to Ethical Hacking
+Building a Penetration Testing Lab
+Setting Up for Advanced Hacking Techniques
+Reconnaissance and Footprinting
+Exploring Active Information Gathering
+Performing Vulnerability Assessments
+Understanding Network Penetration Testing
+Performing Network Penetration Testing
+Advanced Network Penetration Testing – Post Exploitation
+Working with Active Directory Attacks
+Advanced Active Directory Attacks
+Delving into Command and Control Tactics
+Advanced Wireless Penetration Testing
+Performing Client-Side Attacks - Social Engineering
+Understanding Website Application Security
+Advanced Website Penetration Testing
+Best Practices for the Real World
