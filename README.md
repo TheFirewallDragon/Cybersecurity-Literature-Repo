@@ -63,12 +63,17 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Cyber Resilience</h2>
 
-<h3>"Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
+<h3>"Building a Cyber Resilient Business: A cyber handbook for executives and boards" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
   - IEEE Citation: <br> [x] D. M. L. Chelly, S. Tan, and H. Tran, Building a Cyber Resilient Business: A cyber handbook for executives and boards, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4
 ‌<br>
   - <a href="https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4"> What I've learned, notes and finds.</a>
 
 <h2>Defensive Security</h2>
+
+<h3>"Mastering Defensive Security: Effective techniques to secure your Windows, Linux, IoT, and cloud infrastructure" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
+  - IEEE Citation: <br> [x] D. M. L. Chelly, S. Tan, and H. Tran, Building a Cyber Resilient Business: A cyber handbook for executives and boards, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Defensive%20Security/CBravo_MasteringDefensiveSecurity.txt"> What I've learned, notes and finds.</a>
 
 <h2>Ethical Hacking</h2>
 
