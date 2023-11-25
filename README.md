@@ -51,7 +51,22 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Career and Interviews</h2>
 
+<h3>"Cybersecurity Career Master Plan: Proven techniques and effective tips to help you advance in your cybersecurity career" by Dr. Gerald Auger, Jaclyn “Jax” Scott, Jonathan Helmus, Kim Nguyen and Heath "The Cyber Mentor" Adams</h3>
+  - IEEE Citation: <br> [x] D. G. Auger, J. “Jax” Scott, J. Helmus, K. Nguyen, and H. "The C. M. Adams, Cybersecurity Career Master Plan: Proven techniques and effective tips to help you advance in your cybersecurity career, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Career-Master-Plan-cybersecurity-ebook/dp/B097HSV755
+ <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/GAuger_JScott_JHelmus_KNguyen_CybersecurityCareerMasterPlan.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career" by Ken Underhill, Christophe Foulon, Tia Hopkins and  Mari Galloway</h3>
+  - IEEE Citation: <br> [x] K. Underhill, C. Foulon, T. Hopkins, and M. Galloway, Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Hack-Cybersecurity-Interview-jumpstarting-cybersecurity-ebook/dp/B09V2S1T35
+ <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/KUnderhill_CFoulon_THopkins_HackTheCybersecurityInterview.txt"> What I've learned, notes and finds.</a>
+
 <h2>Cyber Resilience</h2>
+
+<h3>"Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
+  - IEEE Citation: <br> [x] D. M. L. Chelly, S. Tan, and H. Tran, Building a Cyber Resilient Business: A cyber handbook for executives and boards, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4
+‌<br>
+  - <a href="https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4"> What I've learned, notes and finds.</a>
 
 <h2>Defensive Security</h2>
 
