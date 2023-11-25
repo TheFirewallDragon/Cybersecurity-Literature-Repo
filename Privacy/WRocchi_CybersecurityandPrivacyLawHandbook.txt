@@ -1,0 +1,38 @@
+Get to grips with cybersecurity and privacy laws to protect your company's data and comply with international privacy standards
+
+Key Features
+Comply with cybersecurity standards and protect your data from hackers
+Find the gaps in your company's security posture with gap analysis and business impact analysis
+Understand what you need to do with security and privacy without needing to pay consultants
+Book Description
+Cybercriminals are incessantly coming up with new ways to compromise online systems and wreak havoc, creating an ever-growing need for cybersecurity practitioners in every organization across the globe who understand international security standards, such as the ISO27k family of standards.
+
+If you're looking to ensure that your company's data conforms to these standards, Cybersecurity and Privacy Law Handbook has got you covered. It'll not only equip you with the rudiments of cybersecurity but also guide you through privacy laws and explain how you can ensure compliance to protect yourself from cybercrime and avoid the hefty fines imposed for non-compliance with standards.
+
+Assuming that you're new to the field, this book starts by introducing cybersecurity frameworks and concepts used throughout the chapters. You'll understand why privacy is paramount and how to find the security gaps in your company's systems. There's a practical element to the book as well—you'll prepare policies and procedures to prevent your company from being breached. You'll complete your learning journey by exploring cloud security and the complex nature of privacy laws in the US.
+
+By the end of this cybersecurity book, you'll be well-placed to protect your company's data and comply with the relevant standards.
+
+What you will learn
+Strengthen the cybersecurity posture throughout your organization
+Use both ISO27001 and NIST to make a better security framework
+Understand privacy laws such as GDPR, PCI CSS, HIPAA, and FTC
+Discover how to implement training to raise cybersecurity awareness
+Find out how to comply with cloud privacy regulations
+Examine the complex privacy laws in the US
+Who this book is for
+If you're a seasoned pro with IT security and / or cybersecurity, this book isn't for you. This book is aimed at novices, freshers, students, experts in other fields, and managers, that, are willing to learn, understand, and manage how a security function is working, especially if you need to be. Although the reader will be able, by reading this book, to build and manage a security function on their own, it is highly recommended to supervise a team devoted to implementing cybersecurity and privacy practices in an organization.
+
+Table of Contents
+ISO27001 – Definitions and Security Concepts
+Mandatory Requirements
+Data Protection
+Data Processing
+Security Planning and Risk Management
+Define ISO 27001 Mandatory Requirements
+Risk Management, Controls, and Policies
+Preparing Policies and Procedures to Avoid Internal Risk
+Social Engineering, Password Guidance, and Policy
+The Cloud
+What about the US?
+Appendix
