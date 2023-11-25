@@ -1,0 +1,42 @@
+A comprehensive guide to administering and protecting the latest Windows 11 and Windows server operating system from ongoing cyber threats using zero-trust security principles
+
+Key Features
+Learn to protect your Windows environment using zero-trust and a multi-layered security approach
+Implement security controls using Intune, Configuration Manager, Defender for Endpoint, and more
+Understand how to onboard modern cyber-threat defense solutions for Windows clients
+Book Description
+Are you looking for the most current and effective ways to protect Windows-based systems from being compromised by intruders? This updated second edition is a detailed guide that helps you gain the expertise to implement efficient security measures and create robust defense solutions using modern technologies.
+
+The first part of the book covers security fundamentals with details around building and implementing baseline controls. As you advance, you'll learn how to effectively secure and harden your Windows-based systems through hardware, virtualization, networking, and identity and access management (IAM). The second section will cover administering security controls for Windows clients and servers with remote policy management using Intune, Configuration Manager, Group Policy, Defender for Endpoint, and other Microsoft 365 and Azure cloud security technologies. In the last section, you'll discover how to protect, detect, and respond with security monitoring, reporting, operations, testing, and auditing.
+
+By the end of this book, you'll have developed an understanding of the processes and tools involved in enforcing security controls and implementing zero-trust security principles to protect Windows systems.
+
+What you will learn
+Build a multi-layered security approach using zero-trust concepts
+Explore best practices to implement security baselines successfully
+Get to grips with virtualization and networking to harden your devices
+Discover the importance of identity and access management
+Explore Windows device administration and remote management
+Become an expert in hardening your Windows infrastructure
+Audit, assess, and test to ensure controls are successfully applied and enforced
+Monitor and report activities to stay on top of vulnerabilities
+Who this book is for
+If you're a cybersecurity or technology professional, solutions architect, systems engineer, systems administrator, or anyone interested in learning how to secure the latest Windows-based systems, this book is for you. A basic understanding of Windows security concepts, Intune, Configuration Manager, Windows PowerShell, and Microsoft Azure will help you get the best out of this book.
+
+Table of Contents
+Fundamentals of Windows Security
+Building a Baseline
+Hardware and Virtualization
+Networking Fundamentals for Hardening Windows
+Identity and Access Management
+Administration and Policy Management
+Deploying Windows Securely
+Keeping Your Windows Client Secure
+Advanced Hardening for Windows Clients
+Mitigating Common Attack Vectors
+Server Infrastructure Management
+Keeping Your Windows Server Secure
+Security Monitoring and Reporting
+Security Operations
+Testing and Auditing
+Top 10 Recommendations and the Future
