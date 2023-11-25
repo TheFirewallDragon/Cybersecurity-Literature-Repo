@@ -1,0 +1,43 @@
+An immersive learning experience enhanced with technical, hands-on labs to understand the concepts, methods, tools, platforms, and systems required to master the art of cybersecurity
+
+Key Features
+Get hold of the best defensive security strategies and tools
+Develop a defensive security strategy at an enterprise level
+Get hands-on with advanced cybersecurity threat detection, including XSS, SQL injections, brute forcing web applications, and more
+Book Description
+Every organization has its own data and digital assets that need to be protected against an ever-growing threat landscape that compromises the availability, integrity, and confidentiality of crucial data. Therefore, it is important to train professionals in the latest defensive security skills and tools to secure them. Mastering Defensive Security provides you with in-depth knowledge of the latest cybersecurity threats along with the best tools and techniques needed to keep your infrastructure secure.
+
+The book begins by establishing a strong foundation of cybersecurity concepts and advances to explore the latest security technologies such as Wireshark, Damn Vulnerable Web App (DVWA), Burp Suite, OpenVAS, and Nmap, hardware threats such as a weaponized Raspberry Pi, and hardening techniques for Unix, Windows, web applications, and cloud infrastructures. As you make progress through the chapters, you'll get to grips with several advanced techniques such as malware analysis, security automation, computer forensics, and vulnerability assessment, which will help you to leverage pentesting for security.
+
+By the end of this book, you'll have become familiar with creating your own defensive security tools using IoT devices and developed advanced defensive security skills.
+
+What you will learn
+Become well versed with concepts related to defensive security
+Discover strategies and tools to secure the most vulnerable factor – the user
+Get hands-on experience using and configuring the best security tools
+Understand how to apply hardening techniques in Windows and Unix environments
+Leverage malware analysis and forensics to enhance your security strategy
+Secure Internet of Things (IoT) implementations
+Enhance the security of web applications and cloud deployments
+Who this book is for
+This book is for all IT professionals who want to take their first steps into the world of defensive security; from system admins and programmers to data analysts and data scientists with an interest in security. Experienced cybersecurity professionals working on broadening their knowledge and keeping up to date with the latest defensive developments will also find plenty of useful information in this book. You'll need a basic understanding of networking, IT, servers, virtualization, and cloud platforms before you get started with this book.
+
+Table of Contents
+A Refresher to Defensive Security Concepts
+Managing Threats, Vulnerabilities, and Risks
+Comprehending Policies, Procedures, Compliance, and Audits
+Patching Layer 8
+Cybersecurity Technologies and Tools
+Securing Windows Infrastructures
+Hardening a Unix Server
+Enhancing Your Network Defensive Skills
+Deep Diving into Physical Security
+Applying IoT Security
+Secure Development and Deployment on the Cloud
+Mastering Web App Security
+Vulnerability Assessment Tools
+Malware Analysis
+Leveraging Pentesting for Defensive Security
+Practicing Forensics
+Achieving Automation of Security Tools
+The Master's Compilation of Useful Resources
