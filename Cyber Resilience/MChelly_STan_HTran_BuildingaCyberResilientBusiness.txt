@@ -1,0 +1,39 @@
+Learn how to build a proactive cybersecurity culture together with the rest of your C-suite to effectively manage cyber risks
+
+Key Features
+Enable business acceleration by preparing your organization against cyber risks
+Discover tips and tricks to manage cyber risks in your organization and build a cyber resilient business
+Unpack critical questions for the C-suite to ensure the firm is intentionally building cyber resilience
+Book Description
+With cyberattacks on the rise, it has become essential for C-suite executives and board members to step up and collectively recognize cyber risk as a top priority business risk. However, non-cyber executives find it challenging to understand their role in increasing the business's cyber resilience due to its complex nature and the lack of a clear return on investment.
+
+This book demystifies the perception that cybersecurity is a technical problem, drawing parallels between the key responsibilities of the C-suite roles to line up with the mission of the Chief Information Security Officer (CISO).
+
+The book equips you with all you need to know about cyber risks to run the business effectively. Each chapter provides a holistic overview of the dynamic priorities of the C-suite (from the CFO to the CIO, COO, CRO, and so on), and unpacks how cybersecurity must be embedded in every business function. The book also contains self-assessment questions, which are a helpful tool in evaluating any major cybersecurity initiatives and/or investment required.
+
+With this book, you'll have a deeper appreciation of the various ways all executives can contribute to the organization's cyber program, in close collaboration with the CISO and the security team, and achieve a cyber-resilient, profitable, and sustainable business.
+
+What you will learn
+Understand why cybersecurity should matter to the C-suite
+Explore how different roles contribute to an organization's security
+Discover how priorities of roles affect an executive's contribution to security
+Understand financial losses and business impact caused by cyber risks
+Come to grips with the role of the board of directors in cybersecurity programs
+Leverage the recipes to build a strong cybersecurity culture
+Discover tips on cyber risk quantification and cyber insurance
+Define a common language that bridges the gap between business and cybersecurity
+Who this book is for
+This book is for the C-suite and executives who are not necessarily working in cybersecurity. The guidebook will bridge the gaps between the CISO and the rest of the executives, helping CEOs, CFOs, CIOs, COOs, etc., to understand how they can work together with the CISO and their team to achieve organization-wide cyber resilience for business value preservation and growth.
+
+Table of Contents
+The CEO Cyber Manual
+A Modern Cyber-Responsible CFO
+The Role of the CRO in Cyber Resilience
+Your CIO—Your Cyber Enabler
+Working with Your CISO
+The Role of the CHRO in Reducing Cyber Risk
+The COO and Their Critical Role in Cyber Resilience
+The CTO and Security by Design
+The CMO and CPO—Convergence Between Privacy and Security
+The World of the Board
+The Recipe for Building a Strong Security Culture—Bringing It All Together
