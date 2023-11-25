@@ -1,0 +1,37 @@
+Set up next-generation firewalls from Palo Alto Networks and get to grips with configuring and troubleshooting using the PAN-OS platform
+
+Key Features
+Understand how to optimally use PAN-OS features
+Build firewall solutions to safeguard local, cloud, and mobile networks
+Protect your infrastructure and users by implementing robust threat prevention solutions
+Book Description
+To safeguard against security threats, it is crucial to ensure that your organization is effectively secured across networks, mobile devices, and the cloud. Palo Alto Networks' integrated platform makes it easy to manage network and cloud security along with endpoint protection and a wide range of security services. With this book, you'll understand Palo Alto Networks and learn how to implement essential techniques, right from deploying firewalls through to advanced troubleshooting.
+
+The book starts by showing you how to set up and configure the Palo Alto Networks firewall, helping you to understand the technology and appreciate the simple, yet powerful, PAN-OS platform. Once you've explored the web interface and command-line structure, you'll be able to predict expected behavior and troubleshoot anomalies with confidence. You'll learn why and how to create strong security policies and discover how the firewall protects against encrypted threats. In addition to this, you'll get to grips with identifying users and controlling access to your network with user IDs and even prioritize traffic using quality of service (QoS). The book will show you how to enable special modes on the firewall for shared environments and extend security capabilities to smaller locations.
+
+By the end of this network security book, you'll be well-versed with advanced troubleshooting techniques and best practices recommended by an experienced security engineer and Palo Alto Networks expert.
+
+What you will learn
+Perform administrative tasks using the web interface and command-line interface (CLI)
+Explore the core technologies that will help you boost your network security
+Discover best practices and considerations for configuring security policies
+Run and interpret troubleshooting and debugging commands
+Manage firewalls through Panorama to reduce administrative workloads
+Protect your network from malicious traffic via threat prevention
+Who this book is for
+This book is for network engineers, network security analysts, and security professionals who want to understand and deploy Palo Alto Networks in their infrastructure. Anyone looking for in-depth knowledge of Palo Alto Network technologies, including those who currently use Palo Alto Network products, will find this book useful. Intermediate-level network administration knowledge is necessary to get started with this cybersecurity book.
+
+Table of Contents
+Understanding the Core Technologies
+Setting Up a New Device
+Building Strong Policies
+Taking Control of Sessions
+Services and Operational Modes
+Identifying Users and Controlling Access
+Managing Firewalls through Panorama
+Upgrading Firewalls and Panorama
+Logging and Reporting
+VPN and Advanced Protection
+Troubleshooting Common Session Issues
+A Deep Dive into Troubleshooting
+Supporting Tools
