@@ -1,0 +1,40 @@
+Get to grips with cyber threat intelligence and data-driven threat hunting while exploring expert tips and techniques
+
+Key Features
+Set up an environment to centralize all data in an Elasticsearch, Logstash, and Kibana (ELK) server that enables threat hunting
+Carry out atomic hunts to start the threat hunting process and understand the environment
+Perform advanced hunting using MITRE ATT&CK Evals emulations and Mordor datasets
+Book Description
+Threat hunting (TH) provides cybersecurity analysts and enterprises with the opportunity to proactively defend themselves by getting ahead of threats before they can cause major damage to their business.
+
+This book is not only an introduction for those who don't know much about the cyber threat intelligence (CTI) and TH world, but also a guide for those with more advanced knowledge of other cybersecurity fields who are looking to implement a TH program from scratch.
+
+You will start by exploring what threat intelligence is and how it can be used to detect and prevent cyber threats. As you progress, you'll learn how to collect data, along with understanding it by developing data models. The book will also show you how to set up an environment for TH using open source tools. Later, you will focus on how to plan a hunt with practical examples, before going on to explore the MITRE ATT&CK framework.
+
+By the end of this book, you'll have the skills you need to be able to carry out effective hunts in your own environment.
+
+What you will learn
+Understand what CTI is, its key concepts, and how it is useful for preventing threats and protecting your organization
+Explore the different stages of the TH process
+Model the data collected and understand how to document the findings
+Simulate threat actor activity in a lab environment
+Use the information collected to detect breaches and validate the results of your queries
+Use documentation and strategies to communicate processes to senior management and the wider business
+Who this book is for
+If you are looking to start out in the cyber intelligence and threat hunting domains and want to know more about how to implement a threat hunting division with open-source tools, then this cyber threat intelligence book is for you.
+
+Table of Contents
+What is Cyber Threat Intelligence?
+What is Threat Hunting?
+Where Does the Data Come From?
+Mapping the Adversary
+Working with Data
+Emulating the Adversary
+Creating a Research Environment
+How to Query the Data
+Hunting for the Adversary
+Importance of Documenting and Automating the Process
+Assessing Data Quality
+Understanding the Output
+Defining Good Metrics to Track Success
+Engaging the Response Team and Communicating the Result to Executives
