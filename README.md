@@ -32,7 +32,22 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Adversarial Tradecraft</h2>
 
+<h3>"Adversarial Tradecraft in Cybersecurity: Offense versus defense in real-time computer conflict" by Dan Borges</h3>
+  - IEEE Citation: <br> [x] D. Borges, Adversarial Tradecraft in Cybersecurity: Offense versus defense in real-time computer conflict. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Adversarial-Tradecraft-Cybersecurity-real-time-computer/dp/1801076200 <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Adversarial%20Tradecraft/DBorges_AdversarialTradecraftinCybersecurity.txt"> What I've learned, notes and finds.</a>
+
 <h2>Blue, Red and Purple Teaming</h2>
+
+<h3>"Purple Team Strategies: Enhancing global security posture through uniting red and blue teams with adversary emulation" by David Routin, Simon Thoores and Samuel Rossier</h3>
+  - IEEE Citation: <br> [x] D. Routin, S. Thoores, and S. Rossier, Purple Team Strategies: Enhancing global security posture through uniting red and blue teams with adversary emulation. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Purple-Team-Strategies-Enhancing-adversary/dp/1801074291
+ <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue,%20Red%20and%20Purple%20Teaming/DRoutin_SThoores_SRossier_PurpleTeamStrategies.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Cybersecurity Blue Team Strategies: Uncover the secrets of blue teams to combat cyber threats in your organization" by Nual Sehgal and Nikolaos Thymianis</h3>
+  - IEEE Citation: <br> [x] K. Sehgal and N. Thymianis, Cybersecurity Blue Team Strategies: Uncover the secrets of blue teams to combat cyber threats in your organization. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Blue-Team-Strategies-organization/dp/1801072477
+‌
+ <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/KSehgal_NThymianis_CybersecurityBlueTeamStrategies.txt"> What I've learned, notes and finds.</a>
 
 <h2>Career and Interviews</h2>
 
