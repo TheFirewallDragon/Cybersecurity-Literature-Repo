@@ -1,0 +1,41 @@
+Develop foundational skills in ethical hacking and penetration testing while getting ready to pass the certification exam
+
+Key Features
+Learn how to look at technology from the standpoint of an attacker
+Understand the methods that attackers use to infiltrate networks
+Prepare to take and pass the exam in one attempt with the help of hands-on examples and mock tests
+Book Description
+With cyber threats continually evolving, understanding the trends and using the tools deployed by attackers to determine vulnerabilities in your system can help secure your applications, networks, and devices. To outmatch attacks, developing an attacker's mindset is a necessary skill, which you can hone with the help of this cybersecurity book.
+
+This study guide takes a step-by-step approach to helping you cover all the exam objectives using plenty of examples and hands-on activities. You'll start by gaining insights into the different elements of InfoSec and a thorough understanding of ethical hacking terms and concepts. You'll then learn about various vectors, including network-based vectors, software-based vectors, mobile devices, wireless networks, and IoT devices. The book also explores attacks on emerging technologies such as the cloud, IoT, web apps, and servers and examines prominent tools and techniques used by hackers. Finally, you'll be ready to take mock tests, which will help you test your understanding of all the topics covered in the book.
+
+By the end of this book, you'll have obtained the information necessary to take the 312-50 exam and become a CEH v11 certified ethical hacker.
+
+What you will learn
+Get to grips with information security and ethical hacking
+Undertake footprinting and reconnaissance to gain primary information about a potential target
+Perform vulnerability analysis as a means of gaining visibility of known security weaknesses
+Become familiar with the tools and techniques used by an attacker to hack into a target system
+Discover how network sniffing works and ways to keep your information secure
+Explore the social engineering techniques attackers use to compromise systems
+Who this book is for
+This ethical hacking book is for security professionals, site admins, developers, auditors, security officers, analysts, security consultants, and network engineers. Basic networking knowledge (Network+) and at least two years of experience working within the InfoSec domain are expected.
+
+Table of Contents
+Understanding Ethical Hacking
+Introduction to Reconnaissance
+Reconnaissance – A Deeper Dive
+Scanning Networks
+Enumeration
+Vulnerability Analysis
+System Hacking
+Social Engineering
+Malware and Other Digital Attacks
+Sniffing and Evading IDS, Firewalls, and Honeypots
+Hacking Wireless Networks
+Hacking Mobile Platforms
+Hacking Web Servers and Web Apps
+Hacking IoT and OT
+Cloud Computing
+Using Cryptography
+CEH Exam Practice Questions
