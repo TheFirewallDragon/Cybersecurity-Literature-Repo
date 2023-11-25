@@ -1,0 +1,36 @@
+Build a blue team for efficient cyber threat management in your organization
+
+Key Features
+Explore blue team operations and understand how to detect, prevent, and respond to threats
+Dive deep into the intricacies of risk assessment and threat management
+Learn about governance, compliance, regulations, and other best practices for blue team implementation
+Book Description
+We've reached a point where all organizational data is connected through some network. With advancements and connectivity comes ever-evolving cyber threats - compromising sensitive data and access to vulnerable systems. Cybersecurity Blue Team Strategies is a comprehensive guide that will help you extend your cybersecurity knowledge and teach you to implement blue teams in your organization from scratch.
+
+Through the course of this book, you'll learn defensive cybersecurity measures while thinking from an attacker's perspective. With this book, you'll be able to test and assess the effectiveness of your organization's cybersecurity posture. No matter the medium your organization has chosen- cloud, on-premises, or hybrid, this book will provide an in-depth understanding of how cyber attackers can penetrate your systems and gain access to sensitive information. Beginning with a brief overview of the importance of a blue team, you'll learn important techniques and best practices a cybersecurity operator or a blue team practitioner should be aware of. By understanding tools, processes, and operations, you'll be equipped with evolving solutions and strategies to overcome cybersecurity challenges and successfully manage cyber threats to avoid adversaries.
+
+By the end of this book, you'll have enough exposure to blue team operations and be able to successfully set up a blue team in your organization.
+
+What you will learn
+Understand blue team operations and its role in safeguarding businesses
+Explore everyday blue team functions and tools used by them
+Become acquainted with risk assessment and management from a blue team perspective
+Discover the making of effective defense strategies and their operations
+Find out what makes a good governance program
+Become familiar with preventive and detective controls for minimizing risk
+Who this book is for
+This book is for cybersecurity professionals involved in defending an organization's systems and assets against attacks. Penetration testers, cybersecurity analysts, security leaders, security strategists, and blue team members will find this book helpful. Chief Information Security Officers (CISOs) looking at securing their organizations from adversaries will also benefit from this book. To get the most out of this book, basic knowledge of IT security is recommended.
+
+Table of Contents
+Establishing a Defense Program
+Managing a Defense Security Team
+Risk Assessment
+Blue Team Operations
+Threats
+Governance, Compliance, Regulations and Best Practices
+Preventive Controls
+Detective Controls
+Cyber Threat Intelligence
+Incident Response and Recovery
+Prioritizing and Implementing a Blue Team Strategy
+Expert Insights
