@@ -178,9 +178,16 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h2>Risk Management</h2>
 
 <h3>"Security Risk Management: Building an Information Security Risk Management Program from the Ground Up" by Evan Wheeler</h3>
-    - IEEE Citation: <br> [x] [Security Risk Management: Building an Information Security Risk Management Program from the Ground Up]. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Security-Risk-Management-Building-Information/dp/B00SLVUO2O
+    - IEEE Citation: <br> [x] E. Wheeler, Security Risk Management: Building an Information Security Risk Management Program from the Ground Up, 1st edition. Amsterdam Waltham, MA: Syngress, 2011. Accessed: Nov. 29, 2023. [Online]. Available: https://www.amazon.ca/Security-Risk-Management-Building-Information/dp/1597496154
+‌
 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/EWheeler_SecurityRiskManagement.txt"> What I've learned, notes and finds.</a>
+
+<h3>"Measuring and Managing Information Risk: A Fair Approach" by Jack Freund and Jack Jones</h3>
+    - IEEE Citation: <br> [x] J. Freund and J. Jones, Measuring and Managing Information Risk: A Fair Approach, 2nd ed. edition. Butterworth-Heinemann, 2024. Accessed: Nov. 29, 2023. [Online]. Available: https://www.amazon.ca/Measuring-Managing-Information-Risk-Approach-dp-0443134847/dp/0443134847/ref=dp_ob_title_bk
+‌
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/JJones_JFreund_MeasuringandManagingInformationRisk.txt"> What I've learned, notes and finds.</a>
 
 <h2>Strategy</h2>
 
