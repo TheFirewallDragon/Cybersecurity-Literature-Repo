@@ -33,32 +33,43 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h3>"Adversarial Tradecraft in Cybersecurity: Offense versus defense in real-time computer conflict" by Dan Borges</h3>
   - IEEE Citation: <br> [x] D. Borges, Adversarial Tradecraft in Cybersecurity: Offense versus defense in real-time computer conflict. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Adversarial-Tradecraft-Cybersecurity-real-time-computer/dp/1801076200 <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Adversarial%20Tradecraft/DBorges_AdversarialTradecraftinCybersecurity.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Adversarial%20Tradecraft/DBorges_AdversarialTradecraftinCybersecurity (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Blue, Red and Purple Teaming</h2>
 
 <h3>"Purple Team Strategies: Enhancing global security posture through uniting red and blue teams with adversary emulation" by David Routin, Simon Thoores and Samuel Rossier</h3>
   - IEEE Citation: <br> [x] D. Routin, S. Thoores, and S. Rossier, Purple Team Strategies: Enhancing global security posture through uniting red and blue teams with adversary emulation. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Purple-Team-Strategies-Enhancing-adversary/dp/1801074291
  <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue,%20Red%20and%20Purple%20Teaming/DRoutin_SThoores_SRossier_PurpleTeamStrategies.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue,%20Red%20and%20Purple%20Teaming/DRoutin_SThoores_SRossier_PurpleTeamStrategies (2022).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Cybersecurity Blue Team Strategies: Uncover the secrets of blue teams to combat cyber threats in your organization" by Nual Sehgal and Nikolaos Thymianis</h3>
-  - IEEE Citation: <br> [x] K. Sehgal and N. Thymianis, Cybersecurity Blue Team Strategies: Uncover the secrets of blue teams to combat cyber threats in your organization. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Blue-Team-Strategies-organization/dp/1801072477
-‌
+  - IEEE Citation: <br> [x] K. Sehgal and N. Thymianis, Cybersecurity Blue Team Strategies: Uncover the secrets of blue teams to combat cyber threats in your organization. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Blue-Team-Strategies-organization/dp/1801072477‌
  <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/KSehgal_NThymianis_CybersecurityBlueTeamStrategies.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/KSehgal_NThymianis_CybersecurityBlueTeamStrategies (2023).txt"> What I've learned, notes and finds.</a>
 
 <h2>Career and Interviews</h2>
 
 <h3>"Cybersecurity Career Master Plan: Proven techniques and effective tips to help you advance in your cybersecurity career" by Dr. Gerald Auger, Jaclyn “Jax” Scott, Jonathan Helmus, Kim Nguyen and Heath "The Cyber Mentor" Adams</h3>
   - IEEE Citation: <br> [x] D. G. Auger, J. “Jax” Scott, J. Helmus, K. Nguyen, and H. "The C. M. Adams, Cybersecurity Career Master Plan: Proven techniques and effective tips to help you advance in your cybersecurity career, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Career-Master-Plan-cybersecurity-ebook/dp/B097HSV755
  <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/GAuger_JScott_JHelmus_KNguyen_CybersecurityCareerMasterPlan.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/GAuger_JScott_JHelmus_KNguyen_CybersecurityCareerMasterPlan (2021).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career" by Ken Underhill, Christophe Foulon, Tia Hopkins and  Mari Galloway</h3>
   - IEEE Citation: <br> [x] K. Underhill, C. Foulon, T. Hopkins, and M. Galloway, Hack the Cybersecurity Interview: A complete interview preparation guide for jumpstarting your cybersecurity career, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Hack-Cybersecurity-Interview-jumpstarting-cybersecurity-ebook/dp/B09V2S1T35
  <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/KUnderhill_CFoulon_THopkins_HackTheCybersecurityInterview.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/KUnderhill_CFoulon_THopkins_HackTheCybersecurityInterview (2022).txt"> What I've learned, notes and finds.</a>
+
+<h2>Coding</h2>
+
+<h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD." by Anne Tasso</h3>
+    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD. Paris: EYROLLES, 1er juillet 2017. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-12E/dp/2212674864/ref=sr_1_1?crid=1DX229OLFWT6O&dib=eyJ2IjoiMSJ9.MpsFuoHKPKp5w8D-jQqwmw.KdRM93U1MYD5zVzOPnlMKpBFASuKqe2ScTOIiNVXJxw&dib_tag=se&keywords=le+livre+de+java+12e&qid=1708995817&s=books&sprefix=le+livre+de+java+12e%2Cstripbooks%2C66&sr=1-1
+‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/ATasso_LeLivreDeJavaPremierLanguage(fr).txt"> What I've learned, notes and finds.</a>
+
+<h3>"APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD." by Vincent Le Goff</h3>
+    - IEEE Citation: <br> [x] V. L. GOFF, APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD. Paris: EYROLLES, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X
+‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/VGoff_Apprenez%C3%A0ProgrammerenPython(fr).txt"> What I've learned, notes and finds.</a>
 
 <h2>Cyber Resilience</h2>
 
@@ -161,18 +172,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     - IEEE Citation: <br> [x] A. Ahmed, Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX
 ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques.txt"> What I've learned, notes and finds.</a>
-
-<h2>Programming</h2>
-
-<h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD." by Anne Tasso</h3>
-    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD. Paris: EYROLLES, 1er juillet 2017. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-12E/dp/2212674864/ref=sr_1_1?crid=1DX229OLFWT6O&dib=eyJ2IjoiMSJ9.MpsFuoHKPKp5w8D-jQqwmw.KdRM93U1MYD5zVzOPnlMKpBFASuKqe2ScTOIiNVXJxw&dib_tag=se&keywords=le+livre+de+java+12e&qid=1708995817&s=books&sprefix=le+livre+de+java+12e%2Cstripbooks%2C66&sr=1-1
-‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/ATasso_LeLivreDeJavaPremierLanguage(fr).txt"> What I've learned, notes and finds.</a>
-
-<h3>"APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD." by Vincent Le Goff</h3>
-    - IEEE Citation: <br> [x] V. L. GOFF, APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD. Paris: EYROLLES, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X
-‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/VGoff_Apprenez%C3%A0ProgrammerenPython(fr).txt"> What I've learned, notes and finds.</a>
 
 <h2>Risk Management</h2>
 
