@@ -165,8 +165,8 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Programming</h2>
 
-<h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 13E ÉD." by Anne Tasso</h3>
-    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 13E ÉD. Paris: EYROLLES, 2019. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-13E/dp/2212678401/ref=sr_1_2?crid=49P46C0OLO21&keywords=le+livre+de+java&qid=1700893049&s=books&sprefix=le+livre+de+java%2Cstripbooks%2C67&sr=1-2
+<h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD." by Anne Tasso</h3>
+    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD. Paris: EYROLLES, 1er juillet 2017. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-12E/dp/2212674864/ref=sr_1_1?crid=1DX229OLFWT6O&dib=eyJ2IjoiMSJ9.MpsFuoHKPKp5w8D-jQqwmw.KdRM93U1MYD5zVzOPnlMKpBFASuKqe2ScTOIiNVXJxw&dib_tag=se&keywords=le+livre+de+java+12e&qid=1708995817&s=books&sprefix=le+livre+de+java+12e%2Cstripbooks%2C66&sr=1-1
 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/ATasso_LeLivreDeJavaPremierLanguage(fr).txt"> What I've learned, notes and finds.</a>
 
