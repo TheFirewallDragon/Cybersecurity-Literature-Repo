@@ -76,7 +76,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h3>"Building a Cyber Resilient Business: A cyber handbook for executives and boards" by Dr. Magda Lilia Chelly, Shamane Tan and Hai Tran</h3>
   - IEEE Citation: <br> [x] D. M. L. Chelly, S. Tan, and H. Tran, Building a Cyber Resilient Business: A cyber handbook for executives and boards, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Building-Cyber-Resilient-Business-executives-ebook/dp/B09TTBYCD4
 ‌<br>
-  - <a href=""> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Cyber%20Resilience/MChelly_STan_HTran_BuildingaCyberResilientBusiness%20(2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Defensive Security</h2>
 
@@ -84,7 +84,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - IEEE Citation: <br> [x] C. Bravo and D. Kitchen, Mastering Defensive Security: Effective techniques to secure your Windows, Linux, IoT, and cloud infrastructure. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Mastering-Defensive-Security-techniques-infrastructure/dp/1800208162
 ‌
 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Defensive%20Security/CBravo_MasteringDefensiveSecurity.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Defensive%20Security/CBravo_MasteringDefensiveSecurity (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Ethical Hacking</h2>
 
@@ -93,7 +93,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 ‌
 ‌
 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Ethical%20Hacking/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Ethical%20Hacking/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Hardening</h2>
 
@@ -102,7 +102,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 ‌
 ‌
 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Hardening/MDunkerley_MTumbarello_MasteringWindowsSecurityandHardening.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Hardening/MDunkerley_MTumbarello_MasteringWindowsSecurityandHardening (2020).txt"> What I've learned, notes and finds.</a>
 
 <h2>Identity and Access Management</h2>
 
@@ -110,94 +110,80 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - IEEE Citation: <br> [x] S. Thorgersen and P. I. Silva, Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497
 ‌
 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Malware Analysis</h2>
 
 <h3>"Mastering Malware Analysis: A malware analyst's practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition" by Alexey Kleymenov and Amr Thabet</h3>
   - IEEE Citation: <br> [x] A. Kleymenov and A. Thabet, Mastering Malware Analysis: A malware analyst’s practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Malware-Analysis-practical-cybercrime/dp/1803240245
 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/AKleymenov_AThabet_MasteringMalwareAnalysis.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/AKleymenov_AThabet_MasteringMalwareAnalysis (2022).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Malware Analysis Techniques: Tricks for the triage of adversarial software" by Dylan Barker</h3>
   - IEEE Citation: <br> [x] D. Barker, Malware Analysis Techniques: Tricks for the triage of adversarial software. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Malware-Analysis-Techniques-adversarial-software/dp/1839212276
 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/DBarker_MalwareAnalysisTechniques.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/DBarker_MalwareAnalysisTechniques (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
 
 <h3>"Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition" by Lisa Block</h3>
   - IEEE Citation: <br> [x] L. Bock, Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X
 ‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark (2019).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure" by Tom Piens</h3>
   - IEEE Citation: <br> [x] T. Piens, Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure, 1st edition. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Palo-Alto-Networks-industry-leading-ebook/dp/B08C5N2QVY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
 ‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/TPiens_MasteringPaloAltoNetworks.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/TPiens_MasteringPaloAltoNetworks (2020).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Yoram Orzach and Deepanshu Khanna</h3>
   - IEEE Citation: <br> [x] Y. Orzach and D. Khanna, Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Network-Protocols-Security-Professionals-vulnerabilities-ebook/dp/B09FKK2JPW/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
 ‌
 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Penetration Testing</h2>
 
 <h3>"The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition" by Glen D. Singh</h3>
   - IEEE Citation: <br> [x] G. D. Singh, The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Ultimate-Kali-Linux-Book-penetration/dp/1801818932
 ‌‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/GSingh_TheUltimateKaliLinuxBook.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/GSingh_TheUltimateKaliLinuxBook (2022).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks Paperback" by Jean-Georges Valle</h3>
   - IEEE Citation: <br> [x] J.-G. Valle, Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Hardware-Pentesting-attacking-protecting/dp/1789619130
 ‌‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/JValle_PracticalHardwarePentesting.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/JValle_PracticalHardwarePentesting (2021).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Vijay Kumar Velu</h3>
   - IEEE Citation: <br> [x] V. K. Velu, Mastering Kali Linux for Advanced Penetration Testing: Become a cybersecurity ethical hacking expert using Metasploit, Nmap, Wireshark, and Burp Suite, 4th Edition, 4th ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Linux-Advanced-Penetration-Testing/dp/1801819777
 ‌‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Privacy</h2>
 
 <h3>"Cybersecurity and Privacy Law Handbook: A beginner's guide to dealing with privacy and security while keeping hackers at bay" by Walter Rocchi</h3>
     - IEEE Citation: <br> [x] W. Rocchi, Cybersecurity and Privacy Law Handbook: A beginner’s guide to dealing with privacy and security while keeping hackers at bay, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Privacy-Law-Handbook-beginners-ebook/dp/B0BGSGZ59F
 <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privacy/WRocchi_CybersecurityandPrivacyLawHandbook.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privacy/WRocchi_CybersecurityandPrivacyLawHandbook (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Privilege Escalation</h2>
 
 <h3>"Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems" by Alexis Ahmed</h3>
     - IEEE Citation: <br> [x] A. Ahmed, Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX
 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques.txt"> What I've learned, notes and finds.</a>
-
-<h2>Risk Management</h2>
-
-<h3>"Security Risk Management: Building an Information Security Risk Management Program from the Ground Up" by Evan Wheeler</h3>
-    - IEEE Citation: <br> [x] E. Wheeler, Security Risk Management: Building an Information Security Risk Management Program from the Ground Up, 1st edition. Amsterdam Waltham, MA: Syngress, 2011. Accessed: Nov. 29, 2023. [Online]. Available: https://www.amazon.ca/Security-Risk-Management-Building-Information/dp/1597496154
-‌
-‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/EWheeler_SecurityRiskManagement.txt"> What I've learned, notes and finds.</a>
-
-<h3>"Measuring and Managing Information Risk: A Fair Approach" by Jack Freund and Jack Jones</h3>
-    - IEEE Citation: <br> [x] J. Freund and J. Jones, Measuring and Managing Information Risk: A Fair Approach, 2nd ed. edition. Butterworth-Heinemann, 2024. Accessed: Nov. 29, 2023. [Online]. Available: https://www.amazon.ca/Measuring-Managing-Information-Risk-Approach-dp-0443134847/dp/0443134847/ref=dp_ob_title_bk
-‌
-‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Risk%20Management/JJones_JFreund_MeasuringandManagingInformationRisk.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Strategy</h2>
 
 <h3>"Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare" by Dr. Chase Cunningham</h3>
     - IEEE Citation: <br> [x] D. C. Cunningham, Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cyber-Warfare-Strategies-organization-battleground/dp/1839216999
 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies (2020).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition" by Yuri Diogenes and Dr. Erdal Ozkaya</h3>
     - IEEE Citation: <br> [x] Y. Diogenes and D. E. Ozkaya, Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition, 3rd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Cybersecurity-Strategies-security-attackers-infiltrating/dp/1803248777
 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/YDiogenes_EOzkaya_Cybersecurity-AttackandDefenseStrategies.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/YDiogenes_EOzkaya_Cybersecurity-AttackandDefenseStrategies (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Threat Intelligence</h2>
 
@@ -205,19 +191,19 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     - IEEE Citation: <br> [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CKTM Framework and open source tools. Birmingham Mumbai: Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370
 ‌
 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Threat Modeling</h2>
 
 <h3>"Threat Modeling: Designing for Security" by Adam Shostack</h3>
     - IEEE Citation: <br> [x] A. Shostack, Threat Modeling: Designing for Security, 1st edition. Indianapolis, Ind: Wiley, 2014. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998
 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Modeling/AShostack_ThreatModelingDesigningforSecurity.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Modeling/AShostack_ThreatModelingDesigningforSecurity (2014).txt"> What I've learned, notes and finds.</a>
   
 <h2>Vulnerability Research</h2>
  
 <h3>"The Vulnerability Researcher's Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities" by Benjamin Strout</h3>
     - IEEE Citation: <br> [x] B. Strout, The Vulnerability Researcher’s Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Vulnerability-Researchers-Handbook-comprehensive-vulnerabilities/dp/1803238879
 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Vulnerability%20Research/BStrout_TheVulnerabilityResearcher'sHandbook.txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Vulnerability%20Research/BStrout_TheVulnerabilityResearcher'sHandbook (2023).txt"> What I've learned, notes and finds.</a>
 
