@@ -12,6 +12,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Adversarial%20Tradecraft">Adversarial Tradecraft</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Blue%2C%20Red%20and%20Purple%20Teaming">Blue, Red and Purple Teaming</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Career%20and%20Interviews">Career and Interviews</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Programmation">Coding</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Cyber%20Resilience">Cyber Resilience</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Defensive%20Security">Defensive Security</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Ethical%20Hacking">Ethical Hacking</a></li>
@@ -22,7 +23,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privilege%20Escalation">Privilege Escalation</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Programmation">Coding</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Strategy">Strategy</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Intelligence">Threat Intelligence</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Modeling">Threat Modeling</a></li>
