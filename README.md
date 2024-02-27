@@ -22,8 +22,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privilege%20Escalation">Privilege Escalation</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Programmation">Programming</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Risk%20Management">Risk Management</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Programmation">Coding</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Strategy">Strategy</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Intelligence">Threat Intelligence</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Modeling">Threat Modeling</a></li>
