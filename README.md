@@ -63,13 +63,13 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h2>Coding</h2>
 
 <h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD." by Anne Tasso</h3>
-    - IEEE Citation: <br> [x] A. TASSO, LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD. Paris: EYROLLES, 1er juillet 2017. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-12E/dp/2212674864/ref=sr_1_1?crid=1DX229OLFWT6O&dib=eyJ2IjoiMSJ9.MpsFuoHKPKp5w8D-jQqwmw.KdRM93U1MYD5zVzOPnlMKpBFASuKqe2ScTOIiNVXJxw&dib_tag=se&keywords=le+livre+de+java+12e&qid=1708995817&s=books&sprefix=le+livre+de+java+12e%2Cstripbooks%2C66&sr=1-1
-‌‌<br>
+    - IEEE Citation: [x] A. Tasso, Le livre de Java premier langage. Editions Eyrolles, 2022.
+‌‌<br> https://www.amazon.ca/LIVRE-JAVA-PREMIER-LANGAGE-EXERCICES-dp-2416007033/dp/2416007033/ref=dp_ob_title_bk
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/ATasso_LeLivreDeJavaPremierLanguage13eEd (2017).txt"> What I've learned, notes and finds.</a>
 
 <h3>"APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD." by Vincent Le Goff</h3>
-    - IEEE Citation: <br> [x] V. L. GOFF, APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD. Paris: EYROLLES, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X
-‌<br>
+    - IEEE Citation: [x] Vincent Le Goff, Apprenez à programmer en Python. Editions Eyrolles, 2022.
+‌<br> Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/VGoff_Apprenez%C3%A0ProgrammerenPython4eEd (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Cyber Resilience</h2>
