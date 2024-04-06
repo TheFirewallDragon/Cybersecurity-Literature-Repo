@@ -96,86 +96,82 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h2>Hardening</h2>
 
 <h3>"Mastering Windows Security and Hardening: Secure and protect your Windows environment from cyber threats using zero-trust security principles, 2nd Edition" by Mark Dunkerley and Matt Tumbarello</h3>
-  - IEEE Citation: <br> [x] M. Dunkerley and M. Tumbarello, Mastering Windows Security and Hardening: Secure and protect your Windows environment from cyber threats using zero-trust security principles, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Windows-Security-Hardening-environment/dp/180323654X
-‌
-‌
-‌<br>
+  - IEEE Citation: [x] M. Dunkerley and M. Tumbarello, Mastering Windows Security and Hardening. Packt Publishing Ltd, 2020.
+‌<br> Available: https://www.amazon.ca/Mastering-Windows-Security-Hardening-environment-ebook/dp/B0B25FJLR2
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Hardening/MDunkerley_MTumbarello_MasteringWindowsSecurityandHardening (2020).txt"> What I've learned, notes and finds.</a>
 
 <h2>Identity and Access Management</h2>
 
 <h3>"Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications" by Stian Thorgersen and Pedro Igor Silva</h3>
-  - IEEE Citation: <br> [x] S. Thorgersen and P. I. Silva, Keycloak - Identity and Access Management for Modern Applications: Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497
-‌
-‌‌<br>
+  - IEEE Citation: [x] Stian Thorgersen and Pedro Igor Silva, Keycloak - Identity and Access Management for Modern Applications. Packt Publishing Ltd, 2021.
+‌‌<br> Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Malware Analysis</h2>
 
 <h3>"Mastering Malware Analysis: A malware analyst's practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition" by Alexey Kleymenov and Amr Thabet</h3>
-  - IEEE Citation: <br> [x] A. Kleymenov and A. Thabet, Mastering Malware Analysis: A malware analyst’s practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Malware-Analysis-practical-cybercrime/dp/1803240245
-‌‌<br>
+  - IEEE Citation: [x] Alexey Kleymenov and A. Thabet, Mastering Malware Analysis. Packt Publishing Ltd, 2022.
+‌‌<br> Available: https://www.amazon.ca/Mastering-Malware-Analysis-practical-cybercrime/dp/1803240245 <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/AKleymenov_AThabet_MasteringMalwareAnalysis (2022).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Malware Analysis Techniques: Tricks for the triage of adversarial software" by Dylan Barker</h3>
-  - IEEE Citation: <br> [x] D. Barker, Malware Analysis Techniques: Tricks for the triage of adversarial software. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Malware-Analysis-Techniques-adversarial-software/dp/1839212276
-‌‌‌<br>
+  - IEEE Citation: [x] D. Barker, Malware Analysis Techniques. Packt Publishing Ltd, 2021. 
+‌‌‌<br> Available: https://www.amazon.ca/Malware-Analysis-Techniques-adversarial-software/dp/1839212276 <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/DBarker_MalwareAnalysisTechniques (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
 
 <h3>"Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition" by Lisa Block</h3>
-  - IEEE Citation: <br> [x] L. Bock, Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X
-‌‌‌‌<br>
+  - IEEE Citation: [x] L. Bock, Learn Wireshark. Packt Publishing Ltd, 2022.
+‌‌‌‌<br> Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X ‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark (2019).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure" by Tom Piens</h3>
-  - IEEE Citation: <br> [x] T. Piens, Mastering Palo Alto Networks: Deploy and manage industry-leading PAN-OS 10.x solutions to secure your users and infrastructure, 1st edition. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Palo-Alto-Networks-industry-leading-ebook/dp/B08C5N2QVY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
-‌‌‌‌<br>
+  - IEEE Citation: [x] T. Piens, Mastering Palo Alto Networks. Packt Publishing Ltd, 2022.
+‌‌‌‌<br> Available: https://www.amazon.ca/Mastering-Palo-Alto-Networks-industry-leading-ebook/dp/B08C5N2QVY/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr= ‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/TPiens_MasteringPaloAltoNetworks (2020).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Yoram Orzach and Deepanshu Khanna</h3>
-  - IEEE Citation: <br> [x] Y. Orzach and D. Khanna, Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Network-Protocols-Security-Professionals-vulnerabilities-ebook/dp/B09FKK2JPW/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
-‌
-‌‌‌<br>
+  - IEEE Citation: [x] Yoram Orzach and D. Khanna, Network Protocols for Security Professionals. Packt Publishing Ltd, 2022.
+‌‌‌<br> Available: https://www.amazon.com/Network-Protocols-Security-Professionals-vulnerabilities-ebook/dp/B09FKK2JPW/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr= ‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Penetration Testing</h2>
 
 <h3>"The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition" by Glen D. Singh</h3>
-  - IEEE Citation: <br> [x] G. D. Singh, The Ultimate Kali Linux Book: Perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire, 2nd Edition, 2nd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Ultimate-Kali-Linux-Book-penetration/dp/1801818932
-‌‌‌‌‌<br>
+  - IEEE Citation: <br> [1]G. D. Singh, The ultimate Kali Linux book : perform advanced penetration testing using Nmap, Metasploit, Aircrack-ng, and Empire. Birmingham: Packt Publishing, 2022.
+‌‌‌‌‌<br> Available: https://www.amazon.ca/Ultimate-Kali-Linux-Book-penetration/dp/1801818932 ‌‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/GSingh_TheUltimateKaliLinuxBook (2022).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks Paperback" by Jean-Georges Valle</h3>
-  - IEEE Citation: <br> [x] J.-G. Valle, Practical Hardware Pentesting: A guide to attacking embedded systems and protecting them against the most common hardware attacks. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Hardware-Pentesting-attacking-protecting/dp/1789619130
-‌‌‌‌‌<br>
+  - IEEE Citation: [x] J.-G. Valle, Practical Hardware Pentesting. Packt Publishing Ltd, 2021.
+‌‌‌‌‌<br> Available: https://www.amazon.ca/Practical-Hardware-Pentesting-attacking-protecting/dp/1789619130 ‌‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/JValle_PracticalHardwarePentesting (2021).txt"> What I've learned, notes and finds.</a>
 
-<h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Vijay Kumar Velu</h3>
-  - IEEE Citation: <br> [x] V. K. Velu, Mastering Kali Linux for Advanced Penetration Testing: Become a cybersecurity ethical hacking expert using Metasploit, Nmap, Wireshark, and Burp Suite, 4th Edition, 4th ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Mastering-Linux-Advanced-Penetration-Testing/dp/1801819777
-‌‌‌‌‌<br>
+<h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Yoram Orzach and Deepanshu Khanna</h3>
+  - IEEE Citation: [x] Yoram Orzach and D. Khanna, Network Protocols for Security Professionals. Packt Publishing Ltd, 2022.
+‌‌‌‌‌<br> Available: https://www.amazon.ca/Mastering-Linux-Advanced-Penetration-Testing/dp/1801819777 ‌‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Privacy</h2>
 
 <h3>"Cybersecurity and Privacy Law Handbook: A beginner's guide to dealing with privacy and security while keeping hackers at bay" by Walter Rocchi</h3>
-    - IEEE Citation: <br> [x] W. Rocchi, Cybersecurity and Privacy Law Handbook: A beginner’s guide to dealing with privacy and security while keeping hackers at bay, 1st edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cybersecurity-Privacy-Law-Handbook-beginners-ebook/dp/B0BGSGZ59F
-<br>
+    - IEEE Citation: [x] W. Rocchi, Cybersecurity and Privacy Law Handbook. Packt Publishing Ltd, 2022.
+<br> Available: https://www.amazon.ca/Cybersecurity-Privacy-Law-Handbook-beginners-ebook/dp/B0BGSGZ59F <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privacy/WRocchi_CybersecurityandPrivacyLawHandbook (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Privilege Escalation</h2>
 
 <h3>"Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems" by Alexis Ahmed</h3>
-    - IEEE Citation: <br> [x] A. Ahmed, Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems, 1st edition. Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX
-‌<br>
+    - IEEE Citation: [x] A. Ahmed, Privilege Escalation Techniques. Packt Publishing Ltd, 2021.
+‌<br> Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Strategy</h2>
 
 <h3>"Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare" by Dr. Chase Cunningham</h3>
-    - IEEE Citation: <br> [x] D. C. Cunningham, Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare. Packt Publishing, 2020. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Cyber-Warfare-Strategies-organization-battleground/dp/1839216999
-‌‌‌<br>
+    - IEEE Citation: [x] C. Cunningham and G. J. Touhill, Cyber Warfare - Truth, Tactics, and Strategies : Strategic Concepts and Truths to Help You and Your Organization Survive on the Battleground of Cyber Warfare. Birmingham: Packt Publishing, Limited, 2020.
+‌‌‌<br> Available: https://www.amazon.ca/Cyber-Warfare-Strategies-organization-battleground/dp/1839216999 ‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies (2020).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition" by Yuri Diogenes and Dr. Erdal Ozkaya</h3>
