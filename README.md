@@ -175,29 +175,28 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies (2020).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition" by Yuri Diogenes and Dr. Erdal Ozkaya</h3>
-    - IEEE Citation: <br> [x] Y. Diogenes and D. E. Ozkaya, Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition, 3rd ed. edition. Packt Publishing, 2022. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Cybersecurity-Strategies-security-attackers-infiltrating/dp/1803248777
-‌‌‌<br>
+    - IEEE Citation: [x] Y. Diogenes and Dr. Erdal Ozkaya, Cybersecurity – Attack and Defense Strategies. Packt Publishing Ltd, 2022.
+‌‌‌<br> Available: https://www.amazon.com/Cybersecurity-Strategies-security-attackers-infiltrating/dp/1803248777 <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/YDiogenes_EOzkaya_Cybersecurity-AttackandDefenseStrategies (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Threat Intelligence</h2>
 
 <h3>"Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CK™ Framework and open source tools" by Valentina Costa-Gazcon</h3>
-    - IEEE Citation: <br> [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CKTM Framework and open source tools. Birmingham Mumbai: Packt Publishing, 2021. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370
-‌
-‌‌‌<br>
+    - IEEE Citation: [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting. Packt Publishing Ltd, 2021.‌
+‌‌‌<br> Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370 ‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Threat Modeling</h2>
 
 <h3>"Threat Modeling: Designing for Security" by Adam Shostack</h3>
-    - IEEE Citation: <br> [x] A. Shostack, Threat Modeling: Designing for Security, 1st edition. Indianapolis, Ind: Wiley, 2014. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.ca/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998
-‌‌<br>
+    - IEEE Citation: [x] A. Shostack, Threat modeling : designing for security. Wiley, 2014.
+‌‌<br> Available: https://www.amazon.ca/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Modeling/AShostack_ThreatModelingDesigningforSecurity (2014).txt"> What I've learned, notes and finds.</a>
   
 <h2>Vulnerability Research</h2>
  
 <h3>"The Vulnerability Researcher's Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities" by Benjamin Strout</h3>
-    - IEEE Citation: <br> [x] B. Strout, The Vulnerability Researcher’s Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities. Packt Publishing, 2023. Accessed: Nov. 25, 2023. [Online]. Available: https://www.amazon.com/Vulnerability-Researchers-Handbook-comprehensive-vulnerabilities/dp/1803238879
-‌‌<br>
+    - IEEE Citation: [x] B. Strout, The Vulnerability Researcher’s Handbook. Packt Publishing Ltd, 2023.
+‌‌<br> Available: https://www.amazon.com/Vulnerability-Researchers-Handbook-comprehensive-vulnerabilities/dp/1803238879 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Vulnerability%20Research/BStrout_TheVulnerabilityResearcher'sHandbook (2023).txt"> What I've learned, notes and finds.</a>
 
