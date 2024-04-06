@@ -148,10 +148,10 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 ‌‌‌‌‌<br> Available: https://www.amazon.ca/Practical-Hardware-Pentesting-attacking-protecting/dp/1789619130 ‌‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/JValle_PracticalHardwarePentesting (2021).txt"> What I've learned, notes and finds.</a>
 
-<h3>"Network Protocols for Security Professionals: Probe and identify network-based vulnerabilities and safeguard against network protocol breaches" by Yoram Orzach and Deepanshu Khanna</h3>
-  - IEEE Citation: [x] Yoram Orzach and D. Khanna, Network Protocols for Security Professionals. Packt Publishing Ltd, 2022.
+<h3>"Mastering Kali Linux for Advanced Penetraton Testing" by Vijay Kumar Velu</h3>
+  - IEEE Citation: [x] V. K. Velu, Mastering Kali Linux for advanced penetration testing : apply a proactive approach to secure your cyber infrastructure and enchance your pentesting skills. Birmingham: Packt Publishing, 2022.
 ‌‌‌‌‌<br> Available: https://www.amazon.ca/Mastering-Linux-Advanced-Penetration-Testing/dp/1801819777 ‌‌‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/YOrzach_NetworkProtocolsforSecurityProfessionals (2022).txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Penetration%20Testing/VVelu_MasteringKaliLinuxforAdvancedPenetrationTesting%20(2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Privacy</h2>
 
