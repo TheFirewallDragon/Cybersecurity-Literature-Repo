@@ -185,13 +185,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     - IEEE Citation: [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting. Packt Publishing Ltd, 2021.‌
 ‌‌‌<br> Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370 ‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting (2021).txt"> What I've learned, notes and finds.</a>
-
-<h2>Threat Modeling</h2>
-
-<h3>"Threat Modeling: Designing for Security" by Adam Shostack</h3>
-    - IEEE Citation: [x] A. Shostack, Threat modeling : designing for security. Wiley, 2014.
-‌‌<br> Available: https://www.amazon.ca/Threat-Modeling-Designing-Adam-Shostack/dp/1118809998 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Modeling/AShostack_ThreatModelingDesigningforSecurity (2014).txt"> What I've learned, notes and finds.</a>
   
 <h2>Vulnerability Research</h2>
  
