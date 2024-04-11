@@ -70,7 +70,7 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 <h3>"APPRENEZ À PROGRAMMER EN PYTHON 4E ÉD." by Vincent Le Goff</h3>
     - IEEE Citation: [x] Vincent Le Goff, Apprenez à programmer en Python. Editions Eyrolles, 2022.
 ‌<br> Available: https://www.amazon.ca/APPRENEZ-PROGRAMMER-EN-PYTHON-%C3%89D/dp/241600655X ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Programmation/VGoff_Apprenez%C3%A0ProgrammerenPython4eEd (2022).txt"> What I've learned, notes and finds.</a>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Coding/VleGoff_Apprenez%C3%A0ProgrammerenPython4eEd%20(2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Cyber Resilience</h2>
 
