@@ -38,3 +38,1027 @@ Purple Teaming with BAS and Adversary Emulation
 PTX – Purple Teaming eXtended
 PTX – Automation and DevOps Approach
 Exercise Wrap-Up and KPIs
+
+p.14 Whether you are an experienced penetration tester, member of a Security Operations 
+Center (SOC) team, security engineer, security manager, or Chief Information Security 
+Officer (CISO), this book will help you understand the concepts, gain experience through 
+real-life examples, and highlight key takeaways to bring back home.
+
+p.27 This is a hierarchical view of risk components to better understand how threats are 
+situated in the overall risk picture. Risk is always represented with two dimensions – one 
+is its likelihood (or probability) of occurrence, and the other is its impact on an asset. 
+Therefore, we can read the given diagram at the third level of the figure: A risk is the 
+likelihood (probability) of a threat exploiting a vulnerability in an asset. 
+
+As our main focus is on threats, and, more specifically, adversarial threats (as opposed to 
+environmental threats and accidental threats), in the above hierarchy, we redacted other 
+types of threats, as well as the different components of vulnerabilities and assets. 
+In addition, we can divide a threat into three main components, which are its intent, 
+opportunity, and capability. These three components must be met for a threat to exist and 
+therefore, to be relevant to your threat profile. For example, if a child had the opportunity 
+(by accessing their father's computer) and the capability (if they had learned how to hack) 
+of exploiting a vulnerability, he would also need a trigger or a reason to perform that 
+action. Only then can they become a threat relevant to your organization. On the other 
+hand, many (if not all) organizations have people or groups of people with the intent and 
+the opportunities to do harm but who are lacking capabilities.
+Finally, the rise of cybercrime-as-a-service has removed barriers of entry to the 
+cybercrime market, making advanced offensive capabilities available to threat actors who 
+wouldn't be a fully formed threat if they only had the intent and opportunity components. 
+Knowing the composition of a threat – that is, its intent, opportunity, and capability – we 
+will briefly look back at the history of cybersecurity and demonstrate why a new approach 
+is needed to tackle today's threats
+
+p.28 three
+types of controls are in the way of the risk event occurring:
+• Preventive controls, which would prevent a risk event from occurring
+• Detective controls, which would help to detect the occurrence of a risk but not 
+prevent it
+• Reactive controls, which would help to mitigate the impact of a risk event but not 
+prevent it
+
+p.34 Other teams
+For some situations, new team colors are introduced, often called the rainbow team or the 
+infosec wheel. We will not discuss the relevance of those naming conventions, but here 
+are some definitions we can find online. They also include the concept of blue, red, and 
+purple teams:
+• The yellow team, or the Builders, is the team that builds infrastructure and 
+applications.
+• The orange team is the mixing of the red and yellow teams, to ease knowledge 
+transfer from an attack perspective to the builders.
+• The green team is the mixing of the blue and yellow teams to allow the better 
+building of defenses by incorporating the yellow view with the blue needs. 
+Other resources, such as the regulatory framework from the Saudi Arabian Monetary 
+Authority, introduce the concepts of the green team as a test manager provided by the 
+regulator to supervise the intelligence-led red team exercises as opposed to the concept of 
+mixing the blue and yellow teams. It also introduces the white team as a limited number of 
+experts from the tested organization aware of the exercise.
+
+p.35 Considered a form of advanced security testing, breach attack simulation (BAS) is part 
+of the purple teaming arsenal.
+
+p.37 Threat-informed defense, in a few words, is exactly what purple teaming is trying 
+to achieve
+
+p.40 The Bank of England has developed, for the CBEST members, the CBEST Intelligence-Led 
+Testing. This was developed in 2016 to help organizations evaluate their cyber resilience by 
+mimicking the actions of real threat actors. 
+In 2016, the Honk Kong Monetary Authority (HKMA) published its Cybersecurity 
+Fortification Initiative, composed of three pillars. The first one, the Cyber Resilience 
+Assessment Framework (C-RAF), describes several types of cyber assessment with one 
+in particular, which is called Intelligence-led Cyber Attack Simulation Testing (iCAST). 
+The framework extends the scope of traditional penetration testing engagements by 
+including detection and response evaluation from a technological perspective, but also 
+from a human and procedural perspective. 
+...
+p.41 In 2018, the European Central Bank released the TIBER-EU framework, which 
+describes how to implement the European framework for threat intelligence-based 
+ethical red teaming. Similar to the CBEST framework from the Bank of England, it helps 
+organizations to mimic attackers to evaluate the cyber resilience of people, process, and 
+technology security controls.
+The same year, the Global Financial Markets Association (GFMA) published A 
+Framework for the Regulatory use of Penetration Testing in the Financial Services Industry. 
+It highlights the need for a more collaborative approach with regard to penetration testing, 
+and it promotes the integration of threat intelligence within the planning phase of the 
+assessment. This framework is mainly intended for regulators, as they are increasingly 
+requiring financial services to perform mandatory penetration tests. 
+Also in 2018, the Association of Banks in Singapore (ABS) published its guidelines, 
+Red Team: Adversarial Attack Simulation Exercises. The paper helps organizations to 
+develop, plan, and execute adversarial attack simulation exercises (referred to as AASE
+in the paper). This guideline also helps to differentiate cyber range, penetration testing, 
+automated attack simulation, and advanced adversary attack simulation assessments. 
+Last but not least, the Saudi Arabian Monetary Authority (SAMA) developed the FEER
+framework – that is, the Financial Entities Ethical Red-Teaming framework.
+
+p.45 First of all, purple teaming is not a dedicated team. So, be reassured that you don't need 
+to hire additional, hard-to-find security experts to build a new team. In fact, teaming
+is simply the act of working together as a team. As we've seen in the previous chapter, 
+there are issues currently faced by the traditional approach to red (offensive) and blue 
+(defensive) concepts around security. Purple teaming joins both the red and the blue teams 
+toegther to act as a virtual team during an exercise called purple teaming. This will ensure 
+that both teams' goals are aligned and that both teams have incentives to help each other. 
+Purple teaming solves the issue with the success of one means the failure of the other
+mindset and helps an organization to optimize its security efforts in a common direction. 
+It is a collaborative approach that creates a bond between red and blue members to, of 
+course, enhance an overall organization's security posture but also to improve people's 
+skills and communication.
+
+p.46 • Processes: Different processes are involved in the activity to provide a continuous 
+improvement life cycle, including activity logs, reporting, and change management.
+• Automation: Custom development of continuous security controls based on attacks.
+• Breach Attack Simulation (BAS): An operation consisting of replaying one or 
+multiple existing attack techniques manually or relying on an existing tool.
+• Adversary Emulation: Identifying different techniques used by a specific attacker, 
+leveraging CTI, then building a plan to replay them in order to be able to test the 
+organization's defenses
+
+p.48 The Prepare, Execute, Identify, and Remediate 
+approach
+Everyone should be familiar with the Plan-Do-Check-Act (PDCA) process, also called 
+the Deming wheel, which is a generic management tool used to verify and continuously 
+improve processes and products over time. This seems to perfectly fit what purple teaming 
+is trying to achieve, and that is why we have based the purple teaming process on this 
+method, resulting in a more tailored Prepare, Execute, Identify, and Remediate (PEIR) 
+model.
+
+p.52 Even if it is not pure purple teaming, some professionals may also implement a blind 
+approach where the blue team is not initially informed. It can be interesting for the blue 
+team manager to determine whether all the members of its team can investigate and 
+handle alerts and incidents in a consistent manner and not depend on people's interests, 
+skills, and experience.
+The following criteria should be taken into account: 
+• Mean Time to Detect (MTTD), which starts from the beginning of the attack until 
+the first event or alert being handled by the blue team.
+• Mean Time to Respond (MTTR), which starts from the beginning of the attack 
+until the full containment of the attack by the blue team. This one can be tricky, as 
+it might lead the team to select alerts and incidents that they are most comfortable 
+with. Other key points can be monitored, such as the fact that blue team analysts 
+have effectively followed the steps described in Standard Operating Procedures
+(SOP) and/or incident response playbooks
+Then, the purple team manager can use those Key Performance Indicators (KPIs) to 
+create charts in order to identify improvements and benchmark against other purple 
+teaming exercises over time. This approach is fully described in Chapter 14, Exercise 
+Wrap-Up and KPIs.
+
+p.59 Step two – execution
+This step will be the starting point of the attack scenario. Both teams start the exercise.
+The red team plays the TTPs one by one corresponding to the emulation plan defined 
+previously. In the meantime, the blue team checks the expected security controls 
+(prevention, detection, and hunting) in tools such as SIEM, Endpoint Detection and 
+Response (EDR), and eXtended Detection and Response (XDR) to ensure that each 
+technique is properly prevented, detected, or at least logged.
+
+p.75 We will start by dispelling a misconception that developed in the cybersecurity industry 
+due to security vendors and poor marketing campaigns. An IoC is not equal to CTI. 
+Indeed, too many security vendors tried to make organizations think they needed a huge 
+number of IoCs in order to perform CTI. This misconception has become less common as 
+the cybersecurity industry has matured
+
+p.76 CTI must be actionable, accurate, and timely to bring value to our organizations. 
+This means that decision-makers (for example, the chief information security officer
+(CISO), the blue team manager, or the incident responder) must be able to take actions 
+based on the intelligence. This must be delivered accurately and in a timely manner 
+because a piece of intelligence delivered after a threat no longer exists or intelligence 
+generating false positives is not useful. 
+
+The CTI process can be described and explained as follows: 
+1. The first step is to plan all of the steps required in the CTI process by defining the 
+intelligence requirements and identifying the stakeholders (that is, the audience 
+involved). This step is important to fully understand our organization's security 
+context and needs, as it will drive the collection, processing, and analysis steps. 
+Example: We have identified that the CISO needs to understand the threat trends 
+for our organization and also that our security operations center (SOC) manager 
+needs to identify what detection rules must be prioritized within the SOC. 
+2. With regard to the intelligence requirements identified in Step 1, this step will help 
+us define a collection mechanism to ensure that we will collect the right data and 
+information to fulfill these requirements. We will also start the collection process.
+Example: After prioritizing the intelligence requirements defined in Step 1, 
+we noted that collecting information from public resources should be sufficient to 
+fulfill our requirements. We already mentioned public resources in Chapter 1,
+Contextualizing Threats and Today's Challenges, such as Trellix Advanced 
+Threat Research Report threat reports or the Mandiant M-Trends cyber threat 
+intelligence reports, but there are also other public resources that can be utilized 
+such as THE DFIR REPORT, Twitter, and more.
+3. The third step is to organize the collected data – this allows us to filter out what is 
+not relevant to our organization and turn the data into information. 
+Example: We aggregate some of the data collected from blogs and Twitter posts and 
+remove the noise to keep the quantity of data manageable. We do this because there 
+is no point in having terabytes of indigestible data.
+4. The fourth step is to analyze the processed information and produce intelligence 
+products. 
+Example: Extract tactics, techniques, and procedures (TTPs) from blog posts 
+about security incidents and make an inventory of the top threat actors and 
+campaigns from other blog posts or Twitter trends.
+5. The fifth step is the dissemination of this intelligence to the identified audience 
+according to the predefined intelligence requirements.
+Example: We schedule a threat briefing presentation for the CISO and send a report 
+summary of the top TTPs identified to the SOC manager. These are basic examples 
+but are also actionable and immediately applicable within the organization.
+6. Finally, a key step is to gather feedback from the audience to assess our CTI process 
+in order to determine if we successfully fulfilled the initial requirements and 
+determine if any fine-tuning or adjustments are needed (for example, maybe other 
+sources of data collection are necessary).
+Example: We ask the stakeholders to assess the provided intelligence products 
+based on specific criteria such as relevance, accuracy, completeness, how timely 
+their delivery was, and so on
+
+Let's now see some practical examples of how CTI is being used.
+• Vulnerability management: It is typical for a blue team that is dealing with 
+vulnerabilities to struggle to prioritize remediation and patching efforts. An 
+example of how a CTI requirement could be defined to help the blue team is by 
+gathering and analyzing information to produce an intelligence product (for 
+example, a monthly report) that outlines the most exploited vulnerabilities in the 
+wild. This will definitely help the blue team to prioritize defense efforts and to focus 
+on what matters the most.
+• Cybersecurity planning and strategy: Usually, decision-makers have to define 
+a long-term strategy that must fit into a business plan. It can be quite complex 
+to determine the priority of cybersecurity projects and identify solution 
+implementations. A strategic CTI product (such as a report stating the types of 
+threats and campaigns that will likely be targeting the organization) can enable the 
+top management to select and identify the most relevant security topics to address 
+in the coming years.
+• Security operations: MITRE has developed the ATT&CK framework, which has 
+an inventory of techniques often employed by threat actors, to assist blue teams in 
+their defense efforts, especially SOCs. This resource can be of immense value but 
+can be complicated to use. SOC teams could start by defining a CTI requirement 
+that allows them to get updates on the most relevant techniques, which should be 
+covered by detection rules. An operational CTI product (such as a quarterly security 
+report) could be delivered to help detection engineers to prioritize the detection 
+rules to implement first. Again, CTI is there to focus on what is key and thereby 
+maximize the defense efforts of the organization. 
+• Incident response: In this field, there is always a degree of urgency. However, each 
+step of the process, in particular containment, eradication, and recovery, should be 
+performed thoroughly, without missing a piece that could lead again to a complete 
+compromise. For example, incident responders could require a tactical CTI product 
+with regard to a certain malware family. This tactical CTI product should help 
+incident responders to gain time by decreasing their dependency on malware 
+analysis by highlighting any known IoCs relevant to this malware family. They 
+would then be able to quickly assess the infection scope based on these IoCs
+
+p.82 There are two mandatory pieces of terminology when it comes to CTI. The first one is the 
+Traffic Light Protocol (TLP). This uses a simple 4-color scheme to define how and to 
+whom an information can be shared with. It is intended to be easily understandable. It is 
+important to note that the protocol can vary between organizations, but what follows is 
+a generic definition of its color scheme:
+• TLP White: There is no restriction on the audience for the information or the 
+method of sharing the information.
+• TLP Green: The information is restricted to the recipients but it could be shared 
+within the organization, as well as within the community (which should be defined 
+by the owner of the intelligence). It must be shared securely and not via public 
+communication channels.
+• TLP Amber: The information is restricted to the recipients but could also be shared 
+within the organization if deemed necessary. Additional restrictions on the allowed 
+communication channels could be imposed by the source.
+• TLP Red: The information is strictly restricted to the recipients. 
+The second mandatory piece of terminology that is widely adopted is the STIX language, 
+which comes from the CTI Technical Committee of OASIS Open, a non-profit IT 
+standards body. STIX, which stands for Structured Threat Information Expression, is 
+meant to standardize how CTI is exchanged – more specifically, it standardizes the way 
+cybersecurity threats and their relationships to objects, such as indicator, campaign and 
+so on, are defined. You can find details of the data model at https://oasis-open.
+github.io/cti-documentation/stix/intro. Here are some of the definitions 
+you can find there:
+• Campaign: A grouping of adversarial behaviors that describes a set of malicious 
+activities or attacks (sometimes called waves) that occur over a period of time 
+against a specific set of targets.
+• Course of Action: A recommendation from a producer of intelligence to 
+a consumer on the actions that they might take in response to that intelligence.
+• Indicator: This contains a pattern that can be used to detect suspicious or malicious 
+cyber activity.
+64 Carrying out Adversary Emulation with CTI
+• Intrusion Set: A grouped set of adversarial behaviors and resources with common 
+properties that is believed to be orchestrated by a single organization.
+• Threat Actor: Actual individuals, groups, or organizations believed to be operating 
+with malicious intent
+
+p.83 In the meantime, we will have a look at three other models that exist to help capture and 
+present CTI. 
+The first is the well-known Cyber Kill Chain® framework. Originally developed by 
+Lockheed Martin, this framework aims to capture threat actors' modus operandi by 
+describing each step of an attack in detail. In this framework, attacks are described across 
+seven steps:
+1. Reconnaissance
+2. Weaponization
+3. Delivery
+4. Exploitation
+5. Installation
+6. Command and control
+7. Actions on objectives
+
+The second interesting CTI model is the Pyramid of Pain
+
+Finally, the third model is the Diamond Model of Intrusion Analysis, written by Sergio 
+Caltagirone, Andrew Pendergast, and Christopher Betz.
+A summary of the model by Sergio Caltagirone can be found here:
+http://www.activeresponse.org/wp-content/uploads/2013/07/
+diamond_summary.pdf
+The model describes four key components of threat actors:
+• The Adversary itself
+• The deployed Capabilities
+• The Infrastructure leveraged
+• The Victims targeted
+
+p.87 (cti purple teaming)
+The first one is quite obvious – the CTI must identify, select, and collect information about 
+threat actors and campaigns relevant to our organization. Then, TTPs must be extracted 
+to form an emulation plan so that we are in a position to replay them by performing 
+adversary emulation. This is in order to test our security controls against them.
+The second intelligence requirement that we could define would be to create an inventory 
+of the tools leveraged by the relevant threat actors and campaigns. This would help us 
+increase our security maturity level by performing adversary emulation with slight 
+variations of tools usage. Indeed, threat actors could easily make small changes to the way 
+they operate their tools in order to change their TTPs and therefore bypass overly specific 
+security controls. In this scenario, the red team could help by performing research and 
+development to identify new ways of operating tools that could likely be used by threat 
+actors in the future. 
+
+p.91 On the other hand, if you struggle to find the exact procedure of how a specific technique 
+has been performed by a threat actor, we recommend you look at the Atomic Red Team
+GitHub repository, which contains ready-to-use technique-specific scripts and command 
+lines and can be found at https://github.com/redcanaryco/atomic-redteam/tree/master/atomics. This allows us to select and simulate techniques we 
+want to test
+
+p.94 open source solutions that we can quickly 
+implement in order to ease the adoption of CTI or automate its practice within our 
+organization. 
+The first solution is called Malware Information Sharing Platform (MISP), and it is 
+developed by the Computer Incident Response Center Luxembourg (CIRCL). All of its 
+related information can be found at https://www.misp-project.org/.
+
+However, there are many different actions that you can perform thanks to MISP, such as 
+automation, log enrichment, creating events, sharing intelligence, and so on. That's why 
+we strongly advise you to attend MISP workshop or training if this solution has been 
+selected. We also advise you to get in touch with your industry and/or national computer 
+emergency response team (CERT). They might use this solution, and as a result they 
+might offer free training and provide relevant event feeds for your organization. 
+The second solution, OpenCTI, is also open source. It was initially developed by 
+the CERT-FR and is now part of Luatix – a non-profit organization focusing on the 
+development of open source solutions for cybersecurity and crisis management.
+
+p.98 Companies have introduced many types of security devices for the 
+technical part, such as Security Information and Event Management (SIEM), Endpoint 
+Detection and Response (EDR), and eXtended Detection and Response (XDR), for 
+detection across multiple components
+
+p.99 DEFENSE IMPROVEMENT PROCESS
+First, at the end of a purple teaming exercise, the organization will have a better 
+understanding and an inventory of the successful threat techniques, failed controls, and 
+gaps for improvement. 
+Second, we might have already brainstormed and therefore identified security controls 
+to implement. We now need to select and assess the implementation feasibility and 
+applicability of the identified controls. Overall, it depends on each individual sitting 
+around the table and the organization's culture, but ideally, prevention is the type of 
+security control that should first come to mind. The issue with this type of control is that 
+it is usually harder to implement than detective controls. Indeed, it's likely that a SIEM or 
+EDR is already in place and could be used to implement a detective control, whereas very 
+few of us can say that we've successfully completely blocked the execution of Office macro 
+documents without disrupting the business of the organizations. With that in mind, we 
+must also think about responsive controls, because it is one thing to detect, but it's useless 
+without response. Thus, implementing a basic detection rule could be quite easy (if we 
+don't account for false positives and coverage), but we should also determine what the 
+next step will be once the detection control has been triggered. 
+Third, in order to get immediate value out of a purple teaming exercise, we should identify 
+quick-win controls. A quick-win control can be considered as a security control that has 
+a high or medium level of risk reduction and a low level of implementation effort. 
+Finally, the other security controls should be prioritized based on internal capabilities 
+and resources and documented within a roadmap. We will see at the end of the chapter 
+a synthetic workflow that could help select the right type of controls depending on 
+the situation. 
+
+PREVENTION DETECTION AND RESPONSE
+
+p.103 The last model we want to talk about is the D3FEND framework from MITRE (again!). 
+This framework is intended to be the defensive side of the ATT&CK framework. Just like 
+ATT&CK, D3FEND aims to standardize the vocabulary of cybersecurity countermeasures 
+to help blue teams.
+It is organized using the following main tactics that can be seen (more or less) as the 
+preventive, detective, and responsive control types. We have taken the definitions of each 
+tactic from the official website, located at https://d3fend.mitre.org/:
+• Harden
+ The harden tactic is used to increase the opportunity cost of computer network 
+exploitation. Hardening differs from detection in that it is generally conducted 
+before a system is online and operational.
+• Detect
+ The detect tactic is used to identify adversary access to, or unauthorized activity 
+on, computer networks.
+• Isolate
+ The isolate tactic creates logical or physical barriers in a system, which reduces 
+opportunities for adversaries to create further access.
+• Deceive
+ The deceive tactic is used to advertise, entice, and allow potential attackers access 
+to an observed or controlled environment.
+• Evict
+ The eviction tactic is used to remove an adversary from a computer network.
+
+p.104 Prevention is a key part of a security program and is usually integrated into the protect 
+phase of the National Institute of Standards and Technology (NIST) Cybersecurity 
+Framework. NIST also mentions prevention as being part of the preparation phase of 
+the incident response process. 
+
+p.107 There are multiple standards that can be used at different infrastructure layers. 
+Organizations such as SANS, the Center for Internet Security (CIS), NIST, the National 
+Security Agency (NSA), and the Payment Card Industry (PCI) provide hardening 
+guidelines and tools, such as CIS-CAT Lite and Pro (https://www.cisecurity.
+org/cybersecurity-tools/).
+
+p.111 Let's dive into each step of the threat hunting process, which starts with the hypothesis 
+definition step: 
+Start from hypothesis: We start this first step by formulating a hypothesis from one or 
+multiple sources, which could be as follows:
+• Threat reports of actors targeting our sector from which we will build a list of 
+observables (IoC and/or TTP)
+• Vulnerability exploitation technical details and especially traces left by this kind of 
+exploitation (forensic evidence)
+• Internal information/suspicions about potential compromises
+• Confirmed breach; we need to identify patient zero and the initial access evidence
+
+p.116 Targeted Hunting Integrating Threat Intelligence (TaHiTI) was developed as a result of 
+a joint effort between financial institutions in the Netherlands. 
+A complete description of the methodology can be found here:
+https://www.betaalvereniging.nl/wp-content/uploads/DEF-TaHiTIThreat-Hunting-Methodology.pdf
+
+p.125 While Sigma can be seen as the default rule format for event logs and YARA as the default 
+rule format for file content, Snort is the default rule format for network patterns
+
+p.127 As mentioned, there are three main options available for a rule action: log, alert, or pass. 
+If the IDS is in line, there are additional options to drop or reject packets – drop, sdrop 
+and reject.
+
+p.128 The MaGMa Use Case Framework (UCF) is composed of a framework and tool to 
+help organizations enhance their security monitoring strategy. It has the following 
+stages: creation, maintenance, coverage, improvement, and assessment. MaGMa is an 
+acronym for Management, Growth, Metrics, and Assessment. It was developed by the 
+Dutch Payments Association and all the information can be found at https://www.
+betaalvereniging.nl/en/safety/magma/.
+
+----------BUILDING A PURLE INFRASTRUCTURE
+
+p.134 As we learned in the previous chapter, purple teaming involves the capacity to mimic 
+attack techniques in order to test and improve your overall security level. Once we have 
+selected the Tactics, Techniques, and Procedures (TTPs) we want to test, we will need to 
+start preparing them. To do so, we will need to install some servers and configure
+them in order to execute the selected TTPs. However, before jumping into action, 
+we will start by looking at specific distributions that come with preinstalled tools to help 
+us perform the assessment. Initially, this distribution and toolbox can be used as an all-inone infrastructure. Then, to gradually increase the complexity of our assessments and 
+goals, we will discuss the general concepts and technologies related to Command and 
+Control (CnC or C2), starting with some information and ideas for the selection of our 
+domain names. Following this, we will move on to the different types of C2 that we can 
+use to challenge the blue team. To strengthen the detection and response capabilities of 
+our organization, we will also approach the concept of a redirector to protect the red team
+infrastructure from incident responders. Last but not least, we want to offer some hints 
+and solutions to help automate this preparation; this will allow us to capitalize on each 
+iteration of our purple teaming process.
+
+distributions offensives: kali, slingshot, commando vm
+
+p.140 We should also pay attention 
+to the categorization of domain names, as we will be able to bypass some security 
+inspection solutions by using specific categories such as Financial, Banking, and 
+Health.
+
+we must purchase and implement SSL/TLS certificates from any 
+certificate provider out there such as Let's encrypt or RapidSSL, for example. This will 
+allow us to bypass several network traffic inspection tools and blend better into the overall 
+traffic of the organization
+
+p.141 Once our offensive machine is all set and the domains are reserved, let's take a look at 
+one of our core infrastructure components: C2. This type of asset will host C2 solutions 
+and will be responsible for serving and communicating with compromised assets sitting 
+internally within the organization. Essentially, it will host our payload, and once it has 
+been executed on an asset, a communications link will then be established with this 
+server's backend or moved to another type of server.
+We can split C2 assets into the following categories, which are based on their intent and 
+roles:
+• Phishing C2
+• Short-term C2
+• Long-term C2
+
+p.142 Also, it is worth mentioning that spoofing is still a thing today, as Sender Policy 
+Framework (SPF) records are often not used, not properly configured (usually, they are 
+soft fail only), or simply integrate public mail services IPs that are used for marketing or 
+newsletters. These flaws could easily be leveraged to spoof sender mail addresses and still 
+bypass this security control. 
+
+p.147 Here are some header examples that your SMTP relay should remove before sending the 
+emails to the victims: Received, X-Mailer, and X-Originating-IP.
+After removing these headers, we need to avoid being dropped by the internal SMTP server 
+at the target level. To ensure this, we need to make sure our intermediate SMTP relay can 
+validate some email security checks such as SPF, DomainKeys Identified Mail (DKIM), 
+and Domain-based Message Authentication, Reporting, and Conformance (DMARC).
+
+p.149 automation is important: Automation can be as simple as performing an export of a VM or saving code into a 
+private repository, but there will be more and more benefits when we start automating the 
+deployment of more complex infrastructure components. For instance, using solutions 
+such as Ansible allow us to prepare templates for servers but also configurations of 
+specific services that need to run on top of it.
+Many hosting providers, such as AWS or DigitalOcean, can be used by Ansible to interact 
+with and set up an infrastructure (VMs) but also perform DNS configurations. Terraform
+is another technology that could be used for the same purpose. There are a lot of great 
+resources regarding this topic on the internet. These resources can help us to build our 
+own automation playbook, however there is also some projects that give away almost 
+everything ready to download and use
+
+p.153 High-level architecture
+Deploying and setting up an efficient and secure collection infrastructure that will help 
+us detect and investigate potential security issues and cyber security incidents can be very 
+difficult and time-consuming. To ensure we're going in the right direction, we should start 
+by looking at our infrastructure and our current architecture.
+One of the major and most important first steps is to understand and visualize our assets 
+and the links they have with each other. Drawing a good schema is always better than long 
+and inaccurate meetings. Of course, in some cases, a schema is not available, so we will 
+need to gather the right people around the same table during meetings to accurately draw it.
+The following diagram shows a simplified architecture schema that comprises multiple 
+virtual local area networks (VLANs), users, demilitarized zones (DMZs), production
+environments, and servers. All of them are behind firewalls and they can all talk to cloud 
+applications and the internet:
+
+p.155 All our collection points and layers should be deployed and implemented in as maximum 
+many assets as possible since we want to reduce the number of blind spots. The following 
+are the high-level log collection categories we want to generate and gather:
+• Hosts: Systems, processes, authentication, and so on
+• Network: Network flows, network solutions, applications, and full packet captures
+• Business: Applications, services, and so on
+• Security: Anything that generates security information, logs, or alerts (endpoints, 
+networks, email gateways, security solutions, and so on)
+
+p.157 Common Event Format (CEF) is composed of three parts: a header, a CEF prefix, and the 
+CEF extension. The last part of the log is composed of key-value pairs, similar to JSON, 
+but the log is an array without opening and finishing markers. Nevertheless, this format is 
+widely available on many security devices. Unfortunately, some solutions implement this 
+format poorly as they change field orders, depending on the log event, which can be 
+a nightmare to parse as it requires a positive lookahead regex or similar methodology.
+The Syslog log format is probably the most well-known format; it has a historical presence, 
+but it is also defined by the RFC 5424. It's structured in two parts: a header and a body. 
+The header is defined and structured as it is always composed of, for instance, the 
+"timestamp hostname, version, and application name."
+
+p.158 Beats is a suite of software that is actively developed and maintained by Elastic. This suite 
+is composed of multiple agents, allowing it to collect almost everything, from flat files to 
+cloud applications logs, through to Windows logs and system metric data. This suite is 
+composed of the following agents:
+• FileBeat: Flat file log collection
+• Winlogbeat: Windows event logs 
+• Metricbeat: Collects metrics from assets
+• Packetbeat: Monitors and collects network information
+• Auditbeat: Linux audit log collection
+• Heartbeat: Generates and collects system availability logs
+• Functionbeat: Generates and collects cloud-based application
+
+autre agent: Nxlog
+
+p.163 Let's look at Windows Event Collector and Windows Event Forwarder as an example. 
+As their names suggest, both are maintained by Microsoft. Windows Event Forwarder
+(WEF) is implemented in the WinRM service on a remote host, which will read the 
+local Windows Events logs file and then send it to the Windows Event Collector
+(WEC), which will be listening. Since both are official Microsoft solutions, some of the 
+configurations will be done using Group Policy Objects (GPOs) at the domain level, 
+allowing us to quickly deploy and update our configurations.
+
+First, let's talk about WEF. To know what to read and what to send to our WEC server, the 
+WEF service uses XML configuration files, known as subscriptions. Those configuration 
+files will be stored on the WEC and available at a given URL, which will be pushed by 
+GPO to our remote Windows endpoints. Subscriptions contain several parameters to 
+manage the frequency and the number of events to forward, but they also contain the 
+XML query that will be applied to read and filter our logs on the endpoints. 
+
+p.166 Besides WEC, many other agent-free collection techniques and protocols exist. However, we 
+have decided to only explain Syslog here as it is the most well-known protocol and because 
+most security solutions and tools allow us to configure log forwarding using this solution.
+
+p.175 Although it's important to understand and apply the filtering process to reduce the 
+number of events but also the number of alerts, it cannot always be applied at the source. 
+Due to this, we must find a way to reduce the volume of events. To help us with this, 
+we can implement a method that drops events when they're being processed within 
+Logstash. The drop plugin is designed for this purpose. By default, this plugin will 
+drop all the events that are going through it, to avoid dropping all the events we need to 
+implement Boolean logic to route events
+
+p.180 We often see organizations integrating all the logs and data sources of their company; 
+this is, unfortunately, often a recommendation provided by Security Information and 
+Event Management (SIEM) vendors and/or Managed Security Service Providers
+(MSSPs) (especially for volume and licensing costs). In fact, quality should go over 
+quantity. In this chapter, we will present the different data sources that, from our point 
+of view, are mandatory to be implemented for any blue team. We will go one step further 
+by explaining what exactly should be collected and for what reasons, and also discuss the 
+implementation of network detection and deceptive technologies to circumvent attackers' 
+paths and detect them efficiently. In addition, we will present a solution for threat feeds 
+and technical implementations to build a predictive approach.
+To resume, we are going to cover the following topics:
+• Data sources of interest
+• Intrusion detection systems
+• Vulnerability scanners
+• Attack prediction and threat feeds
+• Deceptive technology
+
+p.188 A domain controller receives connections from the whole domain all the time. The 
+following are examples:
+• When someone opens a file on a network share, an authentication occurs 
+• When someone opens an interactive session, such as Remote Desktop 
+Protocol (RDP) 
+• When a computer boots, it will also authenticate on the domain as a computer
+• When GPOs are read by the system or by the user
+
+p.189 Authentications: To track authentications, be able to differentiate between 
+interactive sessions, and RDP. To detect brute force, lateral movements based on 
+statistical anomalies (this use case will be presented in the next part of the book), 
+and Pass The Hash attacks. To track activities based on the domain session ID (this 
+is a must-have for forensic analysis) and to enrich events with the session-related 
+information (for example, when someone adds a user to a group, we may know 
+where the author of the action was connected from, how, and at what time).
+• Privileges usage: To track and monitor privilege escalation.
+• Account management: Modification of sensitive groups, or creation/deletion 
+of users.
+• Kerberos activities: To detect potential authentication abuses.
+• AMSI/Defender logs: To detect suspicious and malicious activities identified by 
+the antivirus. The Antimalware Scan Interface (AMSI) is especially useful for all 
+script-based attacks.
+• Directory services: To detect attacks such as DCSync/DCShadow. 
+• PowerShell: To track and monitor all executions of PowerShell scripts or blocks.
+• Removable storage: To detect the use of a USB key, and files copied on it (data 
+leak detection).
+• Scheduled tasks: To detect the creation of suspicious scheduled tasks (in general, 
+used for persistence).
+• WMI: To monitor and detect usage of Windows Management Instrumentation
+(WMI), which is often used to perform malicious actions (WMI subscription 
+creation).
+• System logs: To detect service creations, which is one of the first things to look 
+for in a forensic investigation. Often allows identifying abuse of legitimate tools such 
+as PSExec.
+• Office alerts: To track all pop-up windows generated by Microsoft Office products. 
+This last one is often forgotten but is very useful to detect warnings shown to users; 
+it is also often possible to find the filenames of opened files.
+
+p.190 System Monitor (Sysmon) is a must-have for any blue team, often implemented as an 
+EDR (even if it doesn't actually offer the R of Response), as it allows advanced detection 
+on endpoint systems. Originally developed by Mark Russinovitch (Sysinternals) in 1996, 
+Sysmon is now part of Microsoft Sysinternals, which is composed of many great tools 
+for advanced system analysis and security. It is a complete suite of tools required by any 
+technical security professional and is regularly updated and improved. Sysmon can be 
+deployed as a Windows service and driver, it offers invaluable detection capabilities and 
+customizable features. Once deployed with a configuration file, it will start logging events 
+related to the configuration provided. This solution is offered for free by Microsoft and 
+should be implemented everywhere in your company. It can be downloaded at https://
+docs.microsoft.com/en-us/sysinternals/downloads/sysmon.
+
+p.194 An Endpoint Detection and Response (EDR) is a solution used to detect threats at the 
+endpoint level. It provides continuous security monitoring, automatic updates for new 
+threats, and remote data collection from the management server for simple artifacts 
+like files, or complex information such as process execution, registry related events, 
+connection by process, and so on, often referred to as telemetry.
+
+A new trend in the market is eXtended Detection and Response (XDR). This approach 
+tends to combine SIEM cross-correlation capabilities with EDR capabilities. The solution 
+will be able to perform correlation across multiple devices (endpoints, firewall, email 
+gateway and so on). These solutions can be efficient for threat detections.
+Antivirus and EDR logs are absolutely mandatory to collect. Many organizations do not 
+handle the collection of these kinds of logs correctly; they should be normalized correctly 
+to be used with other data sources for cross-correlations at the SIEM level.
+Regarding Sigma, there were multiple rules provided to trigger alerts on specific patterns 
+that can be found in AV and EDR logs. By only relying on Sigma pattern-matching on logs, 
+we could miss many interesting alerts. On the other hand, getting all alerts generated by AV 
+or EDR in a large environment might represent a huge daily workload for any blue team.
+
+p.196 Microsoft recently also released the first version of Sysmon for Linux systems, which 
+leverages the Extended Berkeley Packet Filter (eBPF) to run execution in a sandbox 
+environment allowing the operating system to better restrict and monitor a program's 
+behavior. The configuration is similar to the Windows version, which comes with an XML 
+file. The main difference with the Windows version is that Sysmon for Linux has fewer 
+event types at the time of writing but could still represent a good alternative to auditd.
+
+p.200 Tips and Tricks – Proxy and Web Logs
+Obviously, these logs may be the source of a high volume of events, especially 
+for exposed web applications, which are continuously accessed. In such 
+situations, they should be normalized, enriched, and stored out of our SIEM 
+(with exceptions to be sent to the SIEM when a specific condition is matched, 
+such as detection for a Sigma rule).
+Regarding detections, once again, performing aggregation statistics and 
+detecting exceeded counts based on a threshold is an interesting approach. 
+An example of such a detection is exposed in the following as a Splunk search 
+(in a 24-hour time window period with a 15-minute search frequency):
+index=web NOT ( url="*monitoring*" AND src_
+ip="1.2.3.4" ) AND (http_status=401 OR http_
+status=404 OR http_status=403) | stats count by 
+src_ip | where count > 50
+If we have detection with a web application firewall (WAF), we may also adapt 
+this rule to detect multiple distinct attacks based on their description names 
+for one host over 24 hours (with a 15-minute scheduled check). This could also 
+be adapted for proxy logs to detect multiple 407 HTTP status codes or strange 
+behavior in terms of network traffic.
+Regarding proxy logs, another approach covered as a threat hunting for 
+malware beaconing example is covered later, in Chapter 10, Purple Teaming the 
+ATT&CK Tactics.
+User-Agent based detection is well covered in Sigma rules. Another interesting 
+approach we may also adopt is to implement alerting on a specific URL pattern 
+with known attacks on the backend product we are using (a kind of 
+honeypot URL).
+Please note that we can also perform aggregation counts without a SIEM if our 
+logs are correctly normalized. An interesting project for this approach is the 
+Apache drill project to perform a SQL-like query on a JSON file (https://
+drill.apache.org/), or custom Python code using the numpy/
+pandas libraries to perform aggregation counts. If we plan to do this task 
+with an advanced approach, we may have a look at Ravishankar Nair's blog at 
+https://bit.ly/3nwtKqT. It describes an approach using Logstash, 
+PrestoDB, and Kafka
+
+p.201 IDSs, or more specifically, network intrusion detection systems (NIDSs) as opposed to 
+host intrusion detection systems (HIDSs), rely on a network functionality called port 
+mirroring or devices such as network taps to analyze duplicated traffic sent on a dedicated 
+switch port. s. Some solutions, such 
+as Darktrace, offer beautiful user interfaces and are powered by artificial intelligence
+(AI) or machine learning (ML) engines, and need to learn from existing traffic. As 
+usual, open source alternatives exist, such as Suricata, Snort, and Zeek. 
+
++vulnerability scanners: nmap. nessus, etc.
+
+p.212 Honeypots are devices that are created to be deliberately attacked to alert the blue team 
+and to keep evidence of the activity. They must generally look vulnerable but shouldn't 
+provide any real system access to an attacker
+
+p.213 Honey tokens are fake Active Directory objects created in our environment, such as 
+a fake user, a fake group, or a fake computer object. Once created, security audits should 
+be applied to them. If the properties of these objects are queried by an attacker, this will 
+generate a Windows event. An operation was performed on an object (EventID 4662) 
+on our domain controller. If WEC is properly configured, these events should be sent 
+to a SIEM and trigger an alert based on the ObjectGUID (to avoid false positives). 
+Commercial solutions, such as Microsoft Defender for Identity (current name at the time 
+of writing), formerly known as Microsoft Azure Advanced Threat Protection (ATP) and 
+previously as Microsoft Advanced Threat Analytics (ATA), rely partially on honey tokens 
+to detect threats
+
+p.219 Correlation has been a trendy term in the SIEM space for more than a decade now. 
+The idea of mixing events from the same or different data sources to spot anomalies was 
+a selling point. 
+Strictly speaking, correlation is a statistical mechanism that processes two or more 
+events to analyze and compare them with each other. However, for a long time, the 
+information security (InfoSec) community has been referring to correlation mainly with 
+pattern-matching examples that process one single event at a time. Nowadays, several 
+new detection techniques exist. The term correlation is used when the detection logic 
+is processing one or more events. From now on, when we mention correlation, we are 
+referring to any type of detection logic that can be created within a detection rule. 
+
+occurence, pattern matching, grouping, clustering, stacking
+
+p.221 A SIEM solution is a key component of any blue team arsenal. Many companies offer 
+SIEM solutions, including Splunk, Elastic, IBM (QRadar), HP (ArcSight), XPalo Alto 
+Networks (XSIAM), LogRhythm, and Exabeam, to mention a few. 
+
+• Events collection: This is where we collect our raw data sources, such as Windows 
+events, Linux logs, and intrusion detection system (IDS) events.
+• Event normalization: The collected events are normalized usually using a data 
+model such as Splunk Common Information Model (CIM) or Elastic Common 
+Schema (ECS). At this step, a field called username for one data source and a field 
+called login for another one should be normalized as user, for instance.
+• Event enrichment: We enrich our data with additional information, as previously 
+explained in Chapter 6, Blue Team – Collect. For example, we could perform queries 
+to an external database or by joining other information from other data sources. 
+Other examples of enrichment may be GeoIP information for IP addresses, 
+link with a Windows logonID session, network history, and Dynamic Host 
+Configuration Protocol (DHCP) lease information.
+• Event indexation: Events are stored in the SIEM database over time with search 
+capabilities for detection rule creations or forensic investigations.
+• Event correlation: Once indexed, an engine feed with rules will create intelligence 
+based on the normalized field to generate outputs such as alerts, dashboards, 
+and reports.
+
+p.246 purple team graph (infrastructure)
+p.247 Of course, a SIEM system is mandatory and is usually the place where those use cases take 
+form, especially detection rules. However, we are observing organizations leaving their 
+SIEM solution to fully take advantage and solely rely on endpoint detection and response
+(EDR) and extended detection and response (XDR). While this can perfectly work 
+in some cases, we're seeing this more as a marketing move to force organizations into 
+purchasing new, fancy next-generation SIEM systems. 
+
+p.248 Nevertheless, it is worth mentioning other great projects and commercial solutions 
+that tend toward purple teaming, even though some of them are not classified as purely 
+purple by the reviews. Here is a mix of great projects and commercial tools: Red Team 
+Automation (RTA), PurpleSharp, PurpleAD, Splunk Attack Range, PlumHound, C2 
+Matrix, Unfetter, SafeBreach, ATTPwn, Metta, APT Simulator, FlightSim, Scythe, 
+AttackIQ, Cymulate, XM Cyber, and The HELK.
+
+p.254 Caldera is a security project and platform developed by MITRE to help the security 
+community to perform automated and manual security testing such as red teaming 
+operations or purple teaming exercises, but also incident response, as we will see. 
+This toolbox is composed of several plugins and modules and can be easily empowered 
+by additional tools. Unfortunately, we will not be able to cover the entire project and 
+its capabilities, as it is broad and complex. For additional information, the official 
+documentation can be found here: https://bit.ly/3EKKcZQ.
+Caldera supports secure shell (SSH) tunneling for some agent types.
+
+p.259 VECTR is a free solution developed by Security Risk Advisors that intends to help 
+organizations keep track of their purple teaming engagements. Initially developed 
+for documentation purposes, it now benefits from the automation capabilities 
+available via ART. The solution runs on Docker containers, which makes it easy 
+to install and is regularly updated. It can be found at https://github.com/
+SecurityRiskAdvisors/VECTR, and its related documentation is here: https://
+docs.vectr.io/.
+
+p.262 While it would be great if the solution could be integrated with our SIEM or EDR/XDR 
+to automatically report the detection result of a test case, this feature is not (yet) available 
+in VECTR. However, it is possible to link our documented custom detection rules to 
+test cases, which should be relatively easy by using the MITRE ATT&CK framework 
+technique references, but this must be done in VECTR. However, by default, SIGMA 
+detection rules are already linked with all test cases. 
+
+p.269 Picus Security is a breach attack simulation (BAS) and autonomous security testing 
+solution and is composed of multiple components: a database, an engine, and connectors. 
+The solution will be deployed in our environment using one or several vectors. A vector is 
+a link that can be tested and used to test techniques and emulate scenarios; for example, 
+a vector can be a connection from the demilitarized zone (DMZ) to the local area 
+network (LAN), or an agent deployed on an asset and a connection from an agent to 
+a server, as shown in the following figure: 
+
+p.278 As we have just seen in the previous section, Ansible is free and open source software 
+to manage, configure, and automate any kind of operational task. It was created by 
+M. De Hann and was written in Python. It has been developed to work without any agents 
+(push only). It should be noted that anybody can run an Ansible playbook; we just need to 
+download and run the latest version of Ansible from our laptop or test server
+
+p.280 Rundeck is an orchestration tool written in Java and is available for free. This open 
+source project is also available on GitHub, and everybody can participate to improve 
+its development. There is also a commercial version called Rundeck Enterprise, which 
+includes exclusive features such as clustering, advanced workflow, access control list 
+management, advanced dashboards, and visualization, as well as a lot of Rundeck plugins. 
+Rundeck has a longstanding relationship with large players such as AWS, Datadog, 
+ServiceNow, VMware, Sensu, Jira, and many others.
+
+----------Part 3: The Most Common Tactics, Techniques, and Procedures (TTPs) and Defenses
+
+p.286 The MITRE ATT&CK framework has become the de facto standard knowledge base 
+regarding adversary tactics and techniques. This repository is continuously evolving and 
+offers classified tactics and techniques that could be used by both red and blue teams 
+for security assessments. An interesting part of this framework is that these technical 
+references can be used directly in security devices such as Security Information and 
+Event Management (SIEM), Endpoint Detection and Response (EDR), Breach Attack 
+Simulation (BAS), Sigma rules (where most of the detection rules contain MITRE 
+ATT&CK tags), and so on. Security professionals can now build a full coverage mapping 
+of all techniques to get an overall view of the global security resilience of the company and 
+represent them using the nice MITRE ATT&CK Navigator (https://mitre-attack.
+github.io/attack-navigator/). This framework offers a real bridge between 
+technical integrations and operations to the management side so that they can assess their 
+strategy in terms of risks and investments.
+
+• Initial access
+• Execution
+• Persistence
+• Privilege escalation
+• Defense evasion
+• Credential access
+• Discovery
+• Lateral movement
+• Collection
+• Command and Control (C2)
+• Exfiltration
+• Impact
+
+RECONNAISSANCE
+T1595 Active Scanning
+T1596 Search Open Technical Databases
+RESSOURCE DEV
+T1583 Acquire Infrastructure
+T1584 Compromise Infrastructure
+T1587 Develop Capabilities
+T1588 Obtain Capabilities
+INITIAL ACCESS
+T1566 – Phishing
+T1190 – Exploit public-facing application
+EXECUTION
+T1059 – Command and scripting interpreter
+PERSISTENCE
+T1053 – Scheduled task/job
+T1547 – Boot or logon autostart execution
+PRIVILEGE ESCALATION
+T1055 – Process injection
+DEFENSE EVASION
+T1218 – Signed binary proxy execution
+CREDENTIAL ACCESS
+T1003 – OS credential dumping
+DISCOVERY
+T1018 – Remote system discovery
+T1046 – Network service scanning
+LATERAL MOVEMENT
+T1021 – Remote services
+• T1021.001 – Remote desktop protocol
+• T1021.002 – SMB/Windows admin shares
+• T1021.004 – SSH
+COLLECTION
+T1560 – Archive collected data
+COMMAND AND CONTROL (C2)
+T1071 – Application layer protocol
+EXFILTRATION
+T1041 – Exfiltration over C2 channel
+T1567 – Exfiltration over web service
+IMPACT
+T1490 – Inhibit system recovery
+
+-------------------assessing and improving
+
+p.342 However, creating an emulation plan based only on Atomic Red Team or the top 10 TTPs 
+can be a time-consuming task and not relevant to the reality we may face. To increase our 
+maturity, we can look for incident response reports to generate intelligence that can later 
+be translated into an emulation plan that will be played by our offensive team, just as 
+we saw in Chapter 3, Carrying Out Adversary Emulation with CTI. Scythe, a cybersecurity 
+company from the US, published very detailed and quickly actionable emulation plans. 
+The company is developing and maintaining a very promising Breach Attack Simulation
+(BAS) platform, which is regularly updated with new content and emulation plans. They 
+do an amazing job of analyzing incident response and forensic investigation reports to 
+document and map threat actors or groups of common TTPs with the MITRE ATT&CK 
+framework. All this intelligence is then summarized and some of it is published on 
+their Community Threat Library GitHub repository at https://github.com/
+scythe-io/community-threats.
+
+p.345 Manually importing the Scythe
+execution plan in Caldera can be time-consuming. However, the engineering team at 
+Scythe has also created a JavaScript Object Notation (JSON) template emulation plan 
+that describes each step and procedure the threat actor is executing. Thus, a JSON file 
+can be ingested directly into the Scythe BAS, though unfortunately, it cannot be done 
+the same way for Caldera. It requires a bit of coding and scripting to be translated into 
+a Caldera operational configuration file. This standardization issue for BAS and emulation 
+plan descriptions is something that is reducing the adoption of such technologies and 
+processes. Just like Sigma helps define standard detection rules that can be translated into 
+any SIEM technology, we could imagine the same for emulation plans. 
+
+p.346 Here, we can see a very interesting concept that Caldera offers: obfuscators. Obfuscators
+are settings we can apply to our abilities at the operations level. Depending on our 
+selection, the servers will communicate the abilities we want to run to the agent, but it 
+will also apply obfuscation techniques. For instance, if we select plain-text, the agent 
+will receive the same command that was entered while the ability was being created, but 
+if we select base64, the command to run will be obfuscated by the server before it's sent 
+to the agent. This feature is great as it allows us to increase our maturity just by replaying 
+our previously executed operations. Evaluating the performance of our security controls 
+against variations and obfuscations will greatly increase the maturity level of our controls. 
+It can also be a game-changer as we can detect more advanced threats such as Advanced 
+Persistent Threats (APTs), which are known to change and adapt their TTPs.
+
+p.351 Commercial solutions such as Picus Security are innovating to close the gap in terms of 
+identifying potential issues in our security controls and remediating them. In Chapter 9, 
+Purple Team Infrastructure, we saw that Picus can give valuable insights into the security 
+products it goes through and the configuration that needs to be adjusted to increase 
+the overall maturity of the security products we deployed. We think it is still missing 
+integration with the SIEM part and the detections from this modern security component. 
+Sometimes, in real environments and organizations, mitigating specific risks by changing 
+configurations is not an option as it could have an impact on production and business. 
+However, even with the most advanced solutions on the SIEM market, BAS solutions have 
+some difficulties integrating. 
+When the integration is possible, if your configuration slightly deviates from a standard 
+configuration, a tremendous effort will be required to map and fully integrate those two 
+amazing technologies.
+Standardization is a key component to performing efficient integration and tends toward 
+automation. 
+This point not only applies to integration with other security solutions but also to the 
+emulation plan descriptions. At the time of writing, there is no common language or 
+norm to detail an emulation plan. The MITRE ATT&CK framework does a very good 
+job of classifying procedures, techniques, and tactics but each solution uses a specific 
+format or configuration to pack all those objects into an actionable and machine ingestible 
+format. Some projects, such as the CTID, are trying to define and promote such ideas, but 
+there is still a lack of adoption in the security community.
+The BAS technology is still in its early phases and those limitations will be overcome, 
+directly in their core components and logic or by some third parties involved in the 
+process of continuous security improvements.
+This is exactly why automated tools will not replace real people. Especially when it comes 
+to offensive operations, operators will play an important role in finding specific gaps and 
+issues in business logic and applications. Instead, we think BAS and similar tools and 
+solutions should be seen as accelerators for the whole process that help us improve the 
+security level of our environments.
+
+p.378 Rundeck initialization
+It's very important to store our jobs in the right project from the beginning. All Rundeck 
+projects are independent of each other. The main advantage of creating a different 
+Rundeck is access management. For example, our organization manages multiples 
+customers and we need to define an access policy between different teams:
+• Security Analysts: List and run all the jobs for the projects' customer XYZ
+• Security Engineers: Allowed to read, modify, and execute all the projects except for 
+projects classified as internal
+• Security Architects: Allowed to read, write, and run all projects
+
+p.411 Reporting should help both technical staff and managers get a global overview of the 
+past, present, and future. The reporting strategy we will look at will cover the three main 
+security pillars: people, processes, and technologies.
+Reporting must show increases or decreases in the tasks and actions that are generated by 
+these three pillars over time. 
+While building purple teaming dashboards, you may rely on the following data sources:
+• Documentation:
+ Emulation plans
+ Purple teaming reports
+ Collaboration templates (in particular, those that highlight the gap in analysis)
+ Cybersecurity project roadmap and investment plans
+• Technical:
+ Access to the blue team/SOC case management system
+ Alerts from SIEM or analytics solutions (or EDR/XDR)
+ Detection rules catalog
+ MITRE ATT&CK references in CSV format (https://attack.mitre.org/
+docs/subtechniques/subtechniques-csv.zip)
+ If relevant, Ansible logs (for Purple Teaming eXtended (PTX)
+
+p.413 A purple teaming report is an extremely valuable source of information for a company. 
+Being able to correlate this data effectively can offer great visibility into the global security 
+posture of an organization. 
+
+p.428 The hype cycle is a conceptual representation of the maturity life cycle of a piece of 
+technology over time. It starts with an innovation trigger, which is a representation of 
+a product or new concept that creates expectations for the public. This is followed by the 
+peak of inflated expectations, which results in "unrealistic projections" as the technology 
+is pushed to its limits. Following the various failures of the previous phase, the technology 
+ends up in the trough of disillusionment phase, making it less attractive and less publicized. 
+Once these expectations have been readjusted and the technology is truly understood, it 
+enters the slope of enlightenment phase. Finally, once the technology has matured, more 
+and more organizations adopt the technology to reach its plateau of productivity.
+
+p.429 Another key point to mention is the dependency of purple teaming adoption over the 
+maturity of cyber threat intelligence (CTI). As we've mentioned throughout this book, 
+MITRE ATT&CK has helped with this for a few years. However, we must highlight 
+that covering the entire framework is not an end goal by itself as we know that it is not 
+exhaustive and is mostly there to provide a common language between operational teams. 
+Even though we are excited to see its evolution in the future, especially with initiatives 
+such as the Center for Threat-Informed Defense (CTID), the maturity of organizations' 
+CTI functions, as well as community-based feeds and commercial CTI solutions, will 
+greatly help people understand that we must test our defenses against the threat actors 
+we are likely to face. This means we must focus our efforts on what really matters. The 
+more "actionable" the CTI is, the more it will be adopted
+
+p.430 Another interesting topic that purple teaming can help address is the ROI of an 
+overall cybersecurity program. For decades, it has been an unanswered need for Chief 
+Information Security Officers (CISOs) to understand whether their investments 
+were effective and timely. Once again, as purple teaming focuses on the emulation 
+of adversaries that we are likely to face in the close future, getting results, gaps, and 
+recommendations should help CISOs shape their cybersecurity roadmap. It must also 
+provide relevant metrics to management and to the enterprise risk management function 
+to give them a more realistic picture of the security posture of the organization. 
