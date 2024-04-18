@@ -34,3 +34,612 @@ Cyber Threat Intelligence
 Incident Response and Recovery
 Prioritizing and Implementing a Blue Team Strategy
 Expert Insights
+
+--------------------PART 1 ESTABLISHING THE BLUE
+
+p.22 As cyberattacks ramp up across all countries and industries, it is an absolute necessity for every 
+organization to have a defense capability. However, the journey of setting up such expertise and attaining 
+the right level of maturity requires the right combination of technology, processes, and people. This 
+roadmap may appear daunting and overwhelming to many who are just getting started. This book aims 
+to help guide and aid organizations and professionals on that journey. It aims to ensure all aspects of 
+a blue team defense program are understood and that there are no blind spots.
+Cybersecurity professionals who are grouped under the banner of blue team identify various security 
+holes, also known as vulnerabilities, in the organization’s infrastructure and applications. These efforts 
+help in patching and implementing various security procedures and controls. Cyber professionals 
+working as blue teamers usually have a knack for creatively thinking and rapidly responding to various 
+kinds of security events and incidents. They are in charge of protecting business entities against cyber 
+risks and threats.
+
+p.23 All the user activities are recorded, and suspicious activities trigger alerts as 
+per the rules configured in the various security tools. Daily checks such as auditing DNS and firewall 
+configuration, performing daily compliance checks across the dashboards of different tools deployed, 
+and others are some of the Key Responsibility Areas (KRAs) of blue teamers.
+
+Blue teamers are also tasked with establishing various kinds of technical security controls over critical 
+assets. Hence, they have to identify and classify the most critical network components in the organization. 
+Organizations can utilize a Configuration Management Database (CMDB) to document the change 
+in any configuration they make to those assets. Also, CMDBs are used to centralize a record of all the 
+network components in any network infrastructure. Assets that are likely to shut down the business 
+altogether if they are hit by cyberattacks are categorized as critical assets. Most of these assets are 
+hardened with additional security controls. Along with risk assessment, blue teamers perform impact 
+assessment studies as well. This involves calculating the impact that various cyberattacks could have 
+if they hit certain critical assets and if those assets go down for a specific time.
+
+composition: analysts (soc, L1 L2 L3), incident responder, threat hunter, security consultant, security admin, iam admin, compliance analyst
+
+p.27 RED TEAM A red team’s mission consists of searching for known vulnerabilities that have already been disclosed 
+and have a Common Vulnerabilities and Exposures (CVE) ID
+
+The detailed responsibilities of a red team are beyond the scope of this chapter. However, it is important 
+to note that typically, the red team and the blue team work in tandem. Some of the areas where they 
+work together are as follows:
+• Creating a network topology/hierarchy map of the business’s network infrastructure so that 
+they can analyze the number of hosts running, as well as their statuses
+• Assessing the services running and the open ports on those systems
+• Identifying the vendor, firmware, and OS details among other relevant equipment parameters
+• Identifying and exploiting the CVEs in servers, hubs, firewalls, routers, L2/L3 switches, Wi-Fi 
+access points, and other network equipment
+• Hacking various kinds of physical security controls, such as glass doors, digital locks, CCTV 
+networks, and sometimes the security personnel as well
+
+p.28 The fundamental goal of the red and blue team exercises is to improve the organization’s overall 
+security posture. This is where the purple team notion comes into play. A purple team isn’t always 
+a standalone group, though it may be. A purple team’s purpose is to bring together the red and blue 
+teams while encouraging them to collaborate and exchange ideas to build a strong feedback loop. 
+The purpose of a purple team is to develop blue team capabilities while maximizing the results of red 
+team engagements. A company functions best when the red and blue teams collaborate to strengthen 
+the organization’s security posture.
+
+p.30 Blue teams, similar 
+to red and purple teams, utilize a variety of security technologies, including honeypots, sandboxes, 
+XDRs and NGAVs, threat detection frameworks, and SIEM solutions. The following is a list of some 
+of the most popular cybersecurity tools that are often used by these teams for their operational work:
+• Splunk
+• Haktrails
+• Cuckoo Sandbox
+• SecurityTrails API
+
+p.34 Every organization should look at the right metrics that apply to them. This helps them not only 
+objectively define the level of security they currently have but also ensure they are progressing and 
+improving with each passing day.
+
+p.34 Key Performance Indicators (KPIs), Key Risk Indicators (KRIs), and security postures give us a 
+glimpse into how the blue team is doing over time. This assists the managers and the leadership in 
+understanding what works and what does not, as well as making smarter decisions about future initiatives.
+Metrics provide measurable and verifiable data that is frequently used to show management and board 
+members that managers are working diligently to secure sensitive data and IT assets. Many Chief 
+Information Security Officers (CISOs) and Chief Information Officers (CIOs) are discovering 
+that reporting and giving context on cybersecurity metrics is a key aspect of their jobs, owing to 
+the growing requirements from the shareholders, regulators, and board. Many board members in 
+industries, such as finance, have a fiduciary or statutory obligation to manage cybersecurity risk and 
+also protect PII data. Some new laws and regulations have helped fuel this trend. Some notable laws/
+regulations are General Data Protection Regulation (GDPR), California Consumer Privacy Act
+(CCPA), and Lei Geral de Proteção de Dados Pessoais (LGPD), also referred to as the General Data 
+Protection Law from Brazil, and many such others around the globe. In the next section, we will look 
+at some of the main indicators that can be monitored by the blue teams to ensure compliance and 
+security for their organizations. 
+
+p.36 Blue teams across industries usually follow a few phases to embark on the journey to understand which 
+metrics work for them the best and how they would go about ensuring their organizations can get the 
+most value out of them. It is important to note that these phases are iterative and must be revisited 
+periodically. Over time, an organization’s tech footprint or business needs may change, and the threat 
+landscape will constantly evolve, leading to the KRI metrics having to be changed.
+There are five main phases in this journey.
+Phase 1 – discovery
+Phase 2 – nominating the relevant assets and KRIs
+Phase 3 – baselining and limits
+Phase 4 – monitoring, investigating, and reporting
+Phase 5 – risk management
+
+Selecting essential cybersecurity metrics:
+
+Inventory and Control of Enterprise Assets
+Inventory and Control of Software Assets
+Data Protection
+Secure Configuration of Enterprise Assets and Software
+Account Management
+Access Control Management
+Continuous Vulnerability Management
+Audit Log Management
+Email and Web Browser Protections
+Malware Defenses
+Data Recovery
+Network Infrastructure Management
+Network Monitoring and Defense
+Security Awareness and Skills Training
+Service Provider Management
+Application Software Security
+Incident Response Management
+Penetration Testing
+
+p.41 What pitfalls to avoid when automating the workflows of the blue 
+team
+When automating the workflow of the entire blue team, you will face many hurdles, right from the 
+initial phases of implementing the automation, such as a technical solution. The following pitfalls are 
+encountered by many organizations and you are advised to watch out for to avoid them as early as 
+possible while maturing your security program:
+• Lack of standards and best practices: For better or for worse, standard tool operating 
+methodologies look at exploring various features and capabilities that are used successfully 
+by other organizations. Unfortunately, there are no standards across any sector and especially 
+cross-sector that can be lifted and used as-is by a blue team.
+• Management orientation: Senior management understands and expects a control that can 
+explain the business benefits in clear dollar value. The notion of security metrics is still relatively 
+new in the business. Many senior executives are unsure of its worth, let alone its design, and 
+are unwilling to devote resources to its development.
+• The rate of change: Technology evolves quickly, and risks that are incorporated or inherent in 
+a specific technology today may rise or diminish when new versions or advances are released. 
+Workflows related to a specific technology or even a technology-centric process should be 
+re-evaluated regularly whenever the underlying technology undergoes a substantial upgrade.
+• Measures to maintain control: Internal control measures must be established before effective 
+indicators can be devised and executed. An organization that is unsure about its control measures 
+will not be able to develop meaningful indicators around it. Fortunately, many organizations 
+have gone through lengthy exercises to record essential control mechanisms as part of their 
+compliance procedures. These controls are frequently used to determine active risk indicators 
+on various security automation tools and can be used to develop measurable indicators.
+• Business risk management: People in charge of establishing and managing the technology 
+are primarily concerned with the technology itself, rather than the business risk posed by 
+its failure. Moreover, the degree of impact a security incident could have on the business is 
+difficult to measure. This creates friction between the blue teams and their leaders since they 
+can’t articulate the need for the controls
+
+p.42  Some organizations use Governance, Risk, and Compliance (GRC) products 
+to capture such metrics across various departments. On the other hand, Security Information and 
+Event Management (SIEM) solutions can also be used to gather KRIs, measure and record them, and 
+then present the data in the form of statistics on dashboards inside those security products. Robotic 
+Process Automation (RPA) can also be used. RPA is where technology is used to execute specified 
+tasks. Here, rule-based activities are performed to interact with existing applications. 
+
+---------------RISK ASSESSMENT (3)
+
+p.44 Following the NIST methodology
+In this part, we will focus on the National Institute of Standards and Technology (NIST) methodology 
+and how it shapes an organization. According to various experts, the NIST methodology is one of the 
+most prominent methodologies used in the world today. 
+The Department of Defense (DoD) in the United States released version 1.0 of its NIST 800-171 
+Assessment methodology on November 7, 2019, because of a cyberattack on the DoD Navy submarine 
+program in 2018, which caused a critical breach. Version 1.2 is the latest version at the time of writing 
+and was released on June 10, 2020. Contractors first anticipated such a risk assessment methodology 
+in January 2019, when Ellen Lord, Under Secretary of Defense for Acquisition and Sustainment, 
+tasked the Defense Contract Management Agency (DCMA) with auditing the compliance of DoD 
+contractors with the requirements of NIST 800-171. Of course, this was not the only reason why the 
+DoD changed the NIST methodology. Attackers are becoming more prominent today and the world 
+is changing, and information security methodologies need to change with it.
+To generalize this methodology, there are six steps according to NIST involved in a Risk Management 
+Framework (RMF), which are as follows (as shown in Figure 3.1):
+1. Identify: Essential activities to prepare an organization to manage security and privacy risks. 
+Preparation can be the hardest topic regarding risk management, but once that is completed, a 
+company is ready, ready to manage risk and achieve an RMF. The organization should identify 
+and categorize the systems and information processed, stored, and transmitted, based on impact 
+analysis. This impact analysis includes asset inventory, risk calculation, and threat identification.
+2. Select: Select the set of NIST SP 800-53 controls to protect a system based on risk assessment(s). 
+This is the most important step in an RMF, selecting what controls are needed for an enterprise. 
+Due to complexity and impact, choosing controls is generally reserved for top management 
+executives who have the experience required to build a system according to risk assessments, 
+which can give an understanding of both where the organization stands financially and technically 
+– does the organization have the right people regarding the tools that were chosen or not?
+3. Implement: Implement controls and document how those controls are deployed. This can be 
+accomplished by the risk management team, who use the systems we identified before and 
+who can explain what each system does, and finally, how those systems should be secured. 
+Documentation in this case is important so that if a control fails, we can find out effortlessly. 
+4. Assess: Assess to determine whether controls are in place, operating as intended, and producing 
+the desired results. This can be completed by the risk management team, but it is preferable to 
+include other teams in this procedure. 
+5. Authorize: A senior official, usually a Chief Information Security Officer (CISO), makes a 
+risk-based decision to authorize a system to operate. Unquestionably, the CISO has the final say, 
+but if the team is not sure that the system will work, the CISO should be open to all suggestions 
+and changes to the implementation before authorizing anything to go live.
+6. Monitor: Continuously monitor control implementation and risks to a system by implementing 
+risk assessments.
+
+p.59 Defining and implementing strategy is a Chief Information Security Officer’s (CISO) responsibility 
+when they enter an organization. What that means is that someone must predict a company’s impact 
+regarding information security and that will be the CISO. When all risk assessments are completed 
+without any controls in place yet, that is when the time comes for a defense strategy. 
+Defense strategy includes the controls and procedures required to secure an organization. In this 
+chapter, we will learn how to build strategic procedures and place controls in an organization’s perimeter 
+and within the organization itself. Strategic thinking must be followed by strategic action; each time 
+we deem something as important, we have to build toward that goal. 
+
+p.60 The blue team doesn’t exclusively mitigate attacks, but they strengthen an entire digital infrastructure by 
+performing vulnerability assessments and making sure that other teams can work without interruption 
+from outside forces. 
+
+p.61 Applications, like infrastructure, require measures so that the blue team can apply for better information 
+security during the development and production phases. Applications can also be vendor-related, but 
+we already covered that in the previous section. 
+Because the vulnerability landscape changes drastically every single day, after the development of 
+the product is complete, the blue team has to do vulnerability assessments at regular intervals and 
+submit bugs to the developers, who have to make sure those bugs are covered. In this case, a great 
+methodology to use is kanban. Through kanban, the blue team can ensure that the development team 
+has a kanban board that they can use to report any bug. The blue team can fill the board with work 
+items so that the team can choose which one to work on at a specific time and where to place it in the 
+work in progress of the Kanban board. After the work in progress is complete, the team can evaluate 
+again whether the vulnerability is covered by scanning for the vulnerability again. If the vulnerability 
+is not found, then the work item can move to a done or complete column. The blue team must 
+remember that vulnerability assessments are a continuous process, not a one-time deal. Covering a 
+vulnerability doesn’t mean the threat is over; it might even open the software to new threats that need 
+to be addressed before any incident occurs. Sometimes, software or programming library updates 
+introduce new vulnerabilities that need to be constantly monitored, both during the development 
+and production phases of the software life cycle
+
+p.63 When talking about systems, we are not just referring to computers but also other types of information 
+technology, such as scanners or other mobile technologies.
+A system is considered a generic supporting methodology or technology used by businesses that, if 
+implemented, can lead to any results required by the business. It can be anything. Blue teams have to 
+ensure that those systems are safe and protected from any alterations to their normal usage. Those 
+alterations could be changes to camera footage, deletion of camera footage, changes in code for 
+scanners, and so on. 
+If those situations happen, the business will likely lose revenue, and disasters and incidents will occur, 
+which can be avoided if the blue team remains vigilant and creates measures that will not allow any 
+external users to access the systems and ensure internal users are really careful when using any of 
+the systems.
+
+p.64 The real point of endpoint security is to prevent hackers from accessing any systems that endpoint 
+users might have access to. In order to secure an endpoint, we have to place the right controls internally 
+and externally with the same methods we used for the infrastructure and systems. The blue team takes 
+care of those endpoints, making sure that they can monitor those systems. Of course, installing those 
+systems should be the work of the service desk team, but if the team is not big enough, the blue team 
+can handle the installations as well. 
+
+Commonly, when endpoints have moved outside an organization’s premises, they tend to be harder to 
+regulate, monitor and control; however there are systems that can do those three things – for example, 
+Remote Access Control (RAC) for different purposes, such as installing the software needed for 
+the business, fixing computer issues remotely, and doing service desk-related procedures without 
+a physical presence in the home-working area.
+
+p.65 Cloud security is an area where blue teams can always receive help from other teams, usually related 
+to the cloud vendor. There are three different types of services, Infrastructure-as-a-Service (IaaS), 
+Platforms-as-a-service (PaaS), and Software-as-a-Service (SaaS). The way this works is that a blue 
+team can be given areas that they have to cover. No type of service is the same and there can’t be two 
+types for one infrastructure. However, there are some similarities between the different types. Of those 
+similarities, the first one is the abstraction, pooling, and sharing of scalable computer resources across 
+a network. Every type of service also allows cloud computing, which is the act of running workloads 
+within that system. Using a unique mix of technologies, every cloud is almost always created with an 
+Operating System (OS), a management platform, and Application Programming Interfaces (APIs). 
+Virtualization and automation software can also be added to increase the efficiency and capabilities 
+of every kind of cloud service.
+
+cloud service types: IaaS, PaaS, SaaS
+
+p.66 Traditionally, public clouds always run off-premises, but today’s Public Cloud Providers (PCPs) 
+have started offering cloud services on clients’ on-premise data centers. This has made location and 
+ownership distinctions obsolete. 
+Regarding public clouds, they can be used by abstracting the bare-metal IT infrastructure used by 
+cloud providers and being sold as IaaS, or they can be developed into a cloud platform sold as PaaS.
+The next type of cloud is the private cloud. Private clouds are defined as cloud environments, solely 
+dedicated to a single end user or group, where the environment runs behind the end user or group’s 
+firewall. All clouds become private clouds when the underlying IT infrastructure is dedicated to 
+a single customer with isolated access. This type of cloud is not just sourced from on-premises IT 
+infrastructure, but organizations are also now building private clouds on rented, vendor-owned data 
+centers located off-premises, which makes any location and ownership rules obsolete. This has led to 
+many subtypes of private cloud, including the following:
+• Managed private clouds
+• Dedicated clouds
+In the first subtype of a private cloud, customers create and use a private cloud that is deployed, 
+configured, and managed by a third-party vendor. Those clouds are a cloud delivery option that 
+helps enterprises with understaffed or underskilled IT teams to provide better private cloud services 
+and infrastructure.
+The second subtype of a private cloud, a dedicated cloud, is a cloud within another cloud. One way to 
+have a dedicated cloud is to place it on a public cloud or a private cloud. For example, an accounting 
+department can have its own dedicated cloud within the organization’s private cloud. 
+The following type of cloud is a hybrid cloud. This is an ostensibly single IT environment created from 
+multiple environments, connected through Local Area Networks (LANs), Wide Area Networks
+(WANs), Virtual Private Networks (VPNs), and/or APIs.
+
+p.68 When thinking about defense strategy, it is not always apparent that the workplace where we work 
+is parallel to a battlefield, and therefore we can’t predict certain types of behavior in the workplace. 
+Organizations have been struggling with the notion of trust for many years, and what they have found 
+out is that commitment to the company’s goals and objectives should be rewarded. Certainly, rewarding 
+employees with bonuses is one of the ways to prevent insider threats. However, if employees are not 
+trained properly, then the issue is bigger than we realize. We see many mistakes made by employees 
+that lead to insider threats. 
+
+p.69 The steps that the blue team must take in order to have better protection 
+against insider threats are as follows:
+• Gain stakeholders’ buy-in to invest in an insider threat prevention program. The CISO can 
+facilitate this step by speaking to the board members at their meetings.
+• Follow zero-trust principles to address insider risk. As mentioned previously, zero trust can be 
+a great measure to prevent risks like these but usually only for bigger organizations. For smaller 
+teams, building trust is really important.
+• Build a dedicated function to address insider risk. The blue team has to divide its functions 
+between outsider protection and insider protection. Of course, for smaller teams, the blue 
+team can be used, but for bigger organizations, there has to be a dedicated group that takes 
+care of insider threats. 
+• Create processes for an insider risk program and follow them. Strict policies should be 
+implemented and followed. Every investigation should be treated as if it will end up in court, 
+and policies must be applied consistently. 
+• Implement a comprehensive data security solution. A complete solution goes beyond Data 
+Layer Protection (DLP) to include monitoring, advanced analytics, and automated response to 
+incidents, thus preventing unauthorized, accidental, or malicious data access. The technologies 
+deployed by the organization must support its objectives and the goals of the blue team, taking 
+into regard the processes created in the last step and the mandate of the insider risk function.
+
+p.70 Responsibilities in blue team operations
+Blue teams operate in many information security sectors. Let’s look at them one by one. 
+The CISO, who is the lead of the blue team, always stands in every sector as the product owner to 
+those sectors: 
+1. Firstly, the infrastructure sector: Here, we see network security personnel whose prime 
+function is to prevent attackers from disrupting operations and getting data out of payloads. 
+This personnel includes firewall monitoring analysts, network operation analysts, network 
+engineers, and cybersecurity engineers. Generally, their goal is to protect the network and stop 
+interruptions to the operations of that network or infrastructure.
+2. Secondly, the system sector: Here, we have operational personnel who handle the systems of 
+an organization, making sure that everything works as planned and no one strays away from 
+normal operations. Roles deriving from this sector include operations analysts, systems analysts, 
+and cybersecurity analysts. 
+3. Thirdly, the endpoint sector: Here, we have monitoring personnel and other types of information 
+security analysts who work to protect end users from outside threats. Roles deriving from this 
+sector can include service desk personnel who report to cybersecurity analysts, who will track 
+their reports. 
+4. Fourthly, the cloud sector: In this sector, there are people who handle the operations of the 
+cloud, making sure that everything works as it should. This can include roles such as cloud 
+security analysts, infrastructure analysts, and cybersecurity analysts. 
+5. Lastly, the internal security sector: In this sector, the entire function works toward one 
+goal – the prevention and mitigation of insider threats. This can include roles such as human 
+relations analysts, security awareness officers, HR analysts, and cybersecurity analysts. 
+
+p.74 The Cyber Kill Chain is an adaptation of a military kill chain. It is a step-by-step process used to 
+identify and contain enemy activity – a systematic approach to identifying and eradicating it
+Recon - Weaponize - Deliver - Exploit - Install - Command & Control - Action
+Phases:
+1. Recon
+2.Weaponization
+3.Delivery
+4.Exploitation
+5.Installation
+6.Command and control
+7.Actions on objective
+
+p.84 There are also several different types of insider threats and the who and why behind these incidents 
+can vary. According to one study, we see the following:
+• Neglectful insiders are the most common vectors and account for 62% of all incidents
+• Neglectful insiders who have their credentials stolen account for 25% of all incidents
+• Hostile insiders are responsible for 14% of all incidents
+
+Different types of cyber threat actors: hobbyists, cybercriminals, hacktivists, corporate espionage
+
+p.89 Organizations have a legal obligation to report how they handle and store information related to 
+their customers as a result of the California Consumer Privacy Act (CCPA) and the General Data 
+Protection Regulation (GDPR). Organizations struggle to meet deadlines for these requests without 
+adequate processes in place, which places them in a vulnerable position. Aside from this, organizations 
+can also face heavy fines if they fail to comply with regulatory requirements for matters such as the 
+ethical storage of data. Fines of over £150 million were issued under the GDPR in 2020 alone.
+
+p.92 One of the most important things to consider when talking about governance is defining who the 
+stakeholders are and what their activity in the organization is. There can be two types of stakeholders:
+• Internal stakeholders
+• External stakeholders
+The governance team should identify internal stakeholders as corporate directors and employees who 
+are involved in the corporate governance process.
+External stakeholders, on the other hand, may include creditors, auditors, customers, suppliers, 
+government agencies, and the public at large.
+
+p.97 The CSF was released in February 2014 as voluntary guidance based on existing standards and practices 
+for critical infrastructure for companies to improve their security risk management. It is considered 
+the gold standard for building cybersecurity programs, along with being a scalable and customizable 
+approach that can work in organizations of any size across many industries.
+The framework covers 23 categories and 108 security controls organizing cybersecurity into 5 core 
+functions that we will see mentioned in many parts of this book:
+• Identify – Involves assessing and uncovering cybersecurity risks to systems, assets, data, and 
+capabilities. We’ve covered this part in Chapter 3, Risk Assessment.
+• Protect – Involves developing and implementing safeguards and controls to ensure the delivery 
+of critical infrastructure needs. This is covered in Chapter 8, Detective Controls.
+• Detect – Involves developing activities and controls to monitor and detect cybersecurity events. 
+This is covered in Chapter 9, Cyber Threat Intelligence.
+• Respond – This is considered a red team’s bread and butter, but a blue team member should 
+also be able to control and mitigate cybersecurity incidents.
+• Recovery – Involves developing and implementing processes to restore capabilities when and 
+if an incident/disaster occurs. This is covered in Chapter 10, Incident Response and Recovery.
+The CSF can help organizations address key security challenges in their technological environments, 
+such as the following:
+• Uncovering hidden risks and vulnerabilities
+• Leveraging the right tools and resources to address risks
+• Prioritizing risks to focus on critical threats
+• Understanding which assets need protectio
+
+p.99 (NIST) There are seven steps to complete regularly:
+1. Continually test and review.
+2. Keep documentation up to date.
+3. Perform internal audits.
+4. Keep senior management informed.
+5. Establish a regular management review process.
+6. Stay on top of corrective actions.
+7. Promote ongoing information security staff awareness.
+
+p.110 A preventive control, or preventative control, is a safeguard that is put in place with the intention 
+of preventing a security incident. The purpose of taking preventative measures is to eliminate or 
+reduce as much as possible the potential of a breach, which will inevitably lead to an impact on the 
+organization and the business.
+A preventive control makes an effort to thwart any unauthorized efforts to make a change or access 
+a system. This helps preserve the confidentiality, integrity, and availability of IT assets. Hence, a blue 
+team needs to deploy the appropriate level of controls and safeguards, per the risk assessment of each 
+IT asset in its scope.
+Moreover, any controls in the organization will need to be regularly monitored and updated to ensure 
+they are running at optimal levels and that the changing needs of the business, the industry, and the 
+threat landscape are taken into due consideration
+
+types: administrative, physical, technical/logical
+
+p.113 Policy management is required to ensure there is one single strategy and one consistent approach 
+enforced across the organization. Hence, this is usually the first step that is taken before embarking 
+on the journey of getting the relevant controls in place. (ex: SANS Institute)
+
+p.116 Network control refers to the act of stopping unapproved individuals and devices from joining a 
+private network. This can be accomplished by restricting access to the network. Organizations that 
+occasionally grant access to some users or devices from outside the network to their network could 
+use Network Access Control (NAC) to guarantee that these devices comply with corporate security 
+compliance standards
+NAC is one of the elements that contribute to the overall security of a computer network. Although 
+there is a great deal of NAC software available, the tasks are often carried out by a network access 
+server. An effective NAC system limits users’ connectivity to only those devices for which authorization 
+has been granted and which satisfy all applicable security requirements. This should include checks 
+to verify that all required security updates and controls have been installed on these devices. The 
+operators of the network are responsible for defining security policies that are used to evaluate if 
+a device or application satisfies the requirements of endpoint security standards and is, as a result, 
+permitted to connect to the network.
+The use of MFA could also be considered and either mandated or recommended to the user. This is 
+a much more secure method of authentication. Alternatively, for devices, a digital certificate could 
+also be used to uniquely identify authorized assets. 
+In more advanced setups, two layers of controls may be applied at the NAC level:
+• Pre-admission: This takes place before the user or endpoint device is granted access to the 
+network. This is because it takes place before the user or endpoint device makes a request 
+to enter the network. The pre-admission network control evaluates the access attempt and 
+decides whether or not to grant access based on whether or not the user or device making the 
+request can demonstrate that they are in compliance with the corporate security policy and 
+are authorized to access the network.
+• Post-admission: A procedure that is carried out inside of the network and given the name 
+post-admission NAC occurs whenever a user or device that has previously been granted access 
+to the network attempts to access a different part of the network. In that case, the NAC will be 
+able to censor lateral displacement inside the network and decrease the amount of damage that 
+is caused by a cyber-attack. Users and devices are needed to reauthenticate themselves every 
+time they submit a request to move to a different part of the network. This ensures that only 
+authorized users and devices may access the network
+
+p.118 Some common controls around data security are outlined here: 
+• Data encryption: This helps ensure data is protected both at rest on the servers and databases, 
+as well as in motion when being moved between various computing resources or while on the 
+way to the endpoints.
+• Data retention: This policy mandates the secure deletion of the organization’s data when it is 
+no longer needed. Such controls ensure the risk footprint is reduced.
+• Data backups: This is also a crucial control to ensure that any important data is regularly backed 
+up and is available in the event of any outage or incident. This helps with recovery efforts.
+• Secure disposal: Before any laptops, hard disks, or any other hardware are disposed of, they 
+should go through a secure data erasure process. This will ensure any organizational data is 
+securely deleted and cannot be recovered by any adversary.
+
+p.119 Endpoint security controls
+This layer refers to the practice of securing the endpoints or entry points of end-user devices such 
+as desktop computers, laptop computers, and mobile devices in order to prevent them from being 
+exploited by malicious actors and campaigns.
+Examples of end systems include desktops and laptops, as well as tablets and mobile devices. Some 
+organizations may even have Point-Of-Sale (POS) systems, printers, cameras, and other assets. 
+Endpoint safety is also referred to as endpoint protection. It is important to remember that these 
+endpoints could be employee-owned personal devices, corporate-owned devices, or employee-owned 
+but corporate-managed assets.
+More and more organizations have moved on to a hybrid work environment, increasing the use of a 
+Bring Your Own Device (BYOD) culture, making these endpoints more attractive to attackers. This 
+has increased access to endpoints for attackers. Unsecured and unmonitored endpoints can access 
+your assets or your organization’s confidential information. This enables attackers to expose your data 
+or take it hostage for any unlawful activity.
+
+p.123 Just as with preventive controls, detective controls too could be classified into the same three broad 
+categories. However, once again, it is important to note that in real-life instances, it is likely that one 
+control may spread across more than one category. Blue teams’ mission should be selecting the right 
+controls that are most applicable to their respective organizations:
+• Physical controls include measures to detect any unauthorized access to a physical building, 
+location, or IT assets. This includes controls such as fences, locks, security guards, security 
+alarms, CCTVs, cameras, motion sensors, and so on. The fundamental intention here is to 
+look for and record any physical breaches where the intruder may have been able to evade the 
+preventive physical controls.
+• Technical/logical controls include technical measures to protect IT assets. This could include 
+Intrusion Detection Systems (IDS), access logs, data backups, honeypots, and so on. The 
+value of these controls is to log and detect any unauthorized access to the organization’s data 
+or systems. This helps look for any intrusion where the threat actor was able to bypass the 
+preventive technical controls. Controls such as vulnerability assessments and penetration tests 
+also fall in this category.
+• Administrative controls include mandatory leave and job rotation for staff, to detect any 
+intentional fraud or espionage by internal staff. Most organizations mandate regular independent 
+audits or even external audits to review the security posture of the organization and identify 
+gaps. This helps act as an administrative detective control as well.
+
+p.124 A SOC is a team of information security professionals that collaborate to monitor, identify, evaluate, 
+and investigate any potential cybersecurity hazards posed to an organization. When looking for signs 
+of a cyber breach, continuous scans of computer networks, websites, computers, end-user devices, 
+and all IT assets are regularly conducted. This helps identify any potential vulnerabilities and, most 
+importantly, any attempts being made to breach the security controls. The SOC is in charge of looking 
+at massive amounts of logs, coming in from every security product and every control deployed by the 
+blue team. It needs to develop rules and identify any exceptions or threats. Next, incident response 
+processes need to be maintained and regularly tested to ensure any breach can be timely managed 
+and contained.
+In some organizations, the blue team could consist of a SOC role as well. For some other organizations, 
+it would be imperative for the blue team to work closely with the SOC. Typically, the requirements and 
+monitoring use cases would come in from the blue team and are implemented by the SOC. However, 
+the blue team also needs to monitor the latest threats, trends, and reports from the SOC to understand 
+the changing threat landscape and, moreover, to monitor the organization’s known vulnerabilities. This 
+will help the blue team design and upgrade the required security controls, to ensure the organization 
+is well protected from the latest threats.
+
+vuln testing, pen testing, red teaming, bug bounties, source code scanning, complience or hardening scans
+
+tools for defective controls:
+
+TIP: osint, socint, humint, dwi
+SOAR tools
+SIEM tools
+DF tools
+
+p.134 Cyber Threat Intelligence (CTI) can be defined as data that is collected, processed, and analyzed to 
+understand a threat actor’s motives, targets, and attack behaviors. The fundamental objective of CTI 
+is to enable an organization to make faster and better-informed decisions and to help the blue team 
+become proactive in their defense efforts
+Some popular sources to consider are the following:
+• Information Sharing and Analysis Centers (ISACs)
+• Information Sharing and Analysis Organizations (ISAOs)
+• Vendors – Subscriptions are available, which are either product agnostic or may even be specific 
+to a certain tool/product
+• OSINT – Open Source Intelligence feeds, available freely online
+• Government, Computer Emergency Response Team (CERTs), and regulators – Information
+disseminated by official channel
+
+types of threat intell: stif, tactical threat intell, operational threat intell
+
+Threat intelligence implementation: developing a plan, collection, processing, analysis, dissemination, feedback
+
+p.144 The MITRE ATT&CK framework currently has three iterations: 
+• Enterprise: Focuses on servers and infrastructure, both on-premises and in the cloud
+• Mobile: Focuses on the behavior on iOS and Android operating systems 
+• ICS: Focuses on industrial control systems and the actions an adversary may take there 
+
+p.148 An incident response plan is really important because without it, the teams working on any project 
+will find themselves in a really hard situation when responding to incidents. For example, a team was 
+building an application and had already launched that web application online. One night, a serious 
+Distributed Denial-of-Service (DDoS) attack coincided with a network intrusion and the team had 
+no idea how to respond to that attack. The developers did everything they could to stop the attack 
+from occurring but lost important data that was on the server at the time. This is where Blue teams 
+come in. The Blue Team member who is assigned this case should follow the procedure in place and 
+document any action. Stopping a DDoS attack, along with intrusion attempts, is not that simple. 
+However, following procedure is a must and a plan must have already been written by the CISO or 
+any other team member who handles planning. 
+
+p.153 During the next subsections we will be giving a better understanding of how a Blue Team follows a 
+specific playbook to address the attacks specified in each subsection. Most of the steps are the same but 
+they can follow different ways of determining how an attack is classified. In the following subsections 
+we will be putting forward the following playbooks:
+• Ransomware Attacks Playbook
+• Data Loss/Theft Attacks Playbook
+• Phishing Attacks Playbook
+
+p.166 Disaster recovery plans have almost the same structure as incident response plans, but let’s see it on 
+a part-by-part level again. 
+A disaster recovery plan consists of the following parts:
+• Purpose
+• System/application name and description
+• Recovery parameters
+• Recovery team
+• Definitions
+• Disaster recovery plan procedure
+• Revision histor
+
+p.170 Cyber security insurance, also referred to as cyber insurance or cyber liability insurance, is a deal that 
+an organization can take out to mitigate the financial risks involved in online business. For a monthly 
+or quarterly fee, the insurance transfers a portion of the risk to the insurance provider.
+Cyber insurance is a new and emerging industry. Companies that purchase this type of cybersecurity 
+insurance are now considered to be early adopters. Cyber security policies can change month to 
+month as the associated cyber risks are dynamic and fluctuating. Unlike established insurance plans, 
+cybersecurity insurance policy insurers only have limited data to shape risk models to establish 
+insurance coverages, rates, and premiums.
+Cyber insurance has its genesis in Errors and Omissions (E&O) insurance, a category of separate 
+insurance that protects against errors and defects in the services provided by an organization. E&O 
+insurance is similar to product liability insurance for companies that are selling products, either 
+physical or digital.
+
+p.175 we need to understand that prioritizing and implementing a blue team requires us to 
+look into the different ways that this blue team can be utilized. We will be mentioning some emerging 
+detection and prevention technologies and techniques, including the following:
+• Adversary emulation with some examples
+• A Virtual Chief Information Security Officer (VCISO)
+• Context-aware security
+• Defensive AI
+• Extended detection and response
+• Manufacturer usage description
+• Zero Trust
