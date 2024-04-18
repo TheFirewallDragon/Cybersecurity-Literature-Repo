@@ -34,3 +34,426 @@ Time to Brand Yourself – Not the Burning Type
 How to Land a Jay-Oh-Bee!
 Giving Back to Others and Yourself
 Trusting the Process
+
+p.27 Some terms you will hear often within cybersecurity are asset, vulnerability, risk, and 
+threat. These are key terms you should learn and know. We will cover these briefly in this 
+section
+Here are their breakdowns: 
+• Asset: This is anything in the environment that needs to be protected, such as data, 
+people, proprietary tools, and processes essential for business operations. 
+• Vulnerability: A weakness within your organization that can be exploited, such as 
+flaws in software code and out-of-date software. 
+• Risk: The likelihood or possibility a threat was successful in breaching your 
+network, the risk would be the asset's total loss. The following is an example of the 
+risk formula to identify your organization's risk: 
+Risk = Threat x Vulnerability
+• Threat: Anything that is trying to degrade, disrupt, or steal your asset is a threat. 
+This would include cybercriminals or insider threats. 
+The preceding is not an inclusive list, it is the basics to help you get started. We encourage 
+you to dig further into each of these to understand their roles within cybersecurity. Next, 
+we will discuss the CIA Triad.
+
+The CIA Triad is not the Central Intelligence Agency composed of US government 
+employees who provide national security intelligence to congressional leaders in America. 
+The CIA Triad in cyber means Confidentiality, Integrity, and Availability. These are the 
+core pillars of information security (InfoSec) a subset of cybersecurity. Throughout this 
+chapter, we will focus on the CIA Triad three pillars as they are foundational elements of 
+InfoSec. 
+
+p.29 Countermeasures to help reduce the likelihood of a data breach and increase 
+confidentially would include the following: 
+• Access control list
+• File and volume encryption 
+• Authentication through software to control access 
+• Administrative policies 
+• Continuing employee training and awareness 
+• Physical hardenings such as cameras and access control
+
+p.31 The first cybersecurity framework we will discuss is NIST. NIST stands for National 
+Institute of Standards and Technology. NIST is a framework that helps a company 
+develop organizational controls and risk management for their information security 
+program.
+
+The NIST framework is broken into three parts: 
+• Framework Core
+• Implementation Tiers
+• Framework Profiles 
+
+p.32 The Framework Core is made up of five functions. The easiest way to remember them 
+is to think of Identify and Protect as the organization's actions to prepare itself against 
+a cyberattack. Detect, Response, and Recover are all the things you will do after a breach 
+or incident occurs. 
+The five core functions are as follows: 
+1. Identify: Manages risks by correctly understanding assets, data, and other resources. 
+2. Protect: Protocols and countermeasures in place to protect critical infrastructure.
+3. Detect: Defines what makes an event versus regular network activity. 
+4. Respond: Response to events through predefined actions. 
+5. Recover: Recovery processes for repair services and network. 
+If you want to learn more about NIST and download the framework's Core Function and 
+Category spreadsheet, you can visit https://www.nist.gov/ and search for NIST 
+Framework. 
+
+p.33 SOC2 stands for Service Organization Control Type 2 and is a cybersecurity framework 
+and auditing standard developed by the American Institute of Certified Public 
+Accountants (AICPA) to ensure organizations are securely managing client and vendor 
+data. NIST and SOC2 may appear to be opposite sides of the same coin; both are designed 
+to review an organization's internal controls.
+
+
+p.37 Some of the techniques used for password hacking includes brute-force and dictionary 
+attacks: 
+• Brute-force attack is when the attacker will rely on guessing, often through 
+automation, and attempting as many times as possible. Typically the guesses are 
+attributed back to the user's likes and hobbies. If your password is complex enough, 
+it will take a long time to crack it. 
+• Dictionary attack is when the attacker attempts to use the most common 
+passwords.
+
+p.37 A cross-site scripting attack happens when a user goes to a legitimate website that 
+was injected with malicious code. When the victim visits this website, the website will 
+transmit the page with the attack payload in an HTML text. Then the malicious script will 
+execute on the host machine. The outcome could be seen by stealing cookies, capturing 
+screenshots, and logging keystrokes by prompting the user to log in again.
+
+p.38 An eavesdropping attack is also known as a snooping or sniffing attack. Unlike the 
+Man-in-the-Middle attack, an eavesdropping attacker listens either passively or actively 
+to the user's network. They listen to the network traffic to find data such as credit card info 
+or passwords. The best prevention against this type of attack is MFA and overall system 
+encryption.
+
+p.38 Attackers have been using rogue software attacks since 2008. The attacker will lure 
+its victims by making them think they have a virus on their machine. Once they have 
+struck panic in the victim, they will convince them to pay for a removal tool that is 
+masquerading as legitimate software. 
+The vector for this type of attack can be when a user goes to a website and suddenly sees 
+a popup saying, "Your system has been infected with malware, act now, click here to conduct 
+a virus scan." Once the victim clicks, depending on the victims antivirus, the download 
+begins. Another name for the malware used in this type of an attack is called scareware
+because the purpose is to scare the victim into reacting quickly. 
+
+Main domains (Area): Risk Assessment (Offensive Security), Governance (GRC), Threat Intelligence (External Threat Intell, Internal Threat Intell), Security Operation (Incident Response), Security Operation (Incident Response), Security Architecture (Cloud Security), Learning (Education, Training, Awareness)
+
+p.52 Traditionally, companies tend to patch vulnerabilities after incidents have happened as 
+they were not informed about those weaknesses in their systems, or they were informed, 
+but had other work prioritized, which eventually resulted in serious cyberattacks that 
+cost not only their reputation, but also their finances, and possibly other factors. As a 
+result, over time, companies have learned that this method is not very effective to protect 
+themselves from cyber criminals. As a result, Offensive Security came to the rescue. 
+Offensive Security refers to a proactive risk assessment approach, where cybersecurity 
+professionals actively look for potential vulnerabilities that organizations might 
+experience in the future. By performing Offensive Security techniques, companies can 
+discover and patch their systems' shortcomings before any actual attacks occur. To do so, 
+companies hire individuals or groups of experienced ethical hackers to hack their systems 
+legally and purposefully, by simulating the mindsets and actions of cyber criminals. This 
+helps address system weaknesses before they go into production, so they can implement 
+the appropriate security protocol immediately. Offensive Security can be applied to not 
+only systems, but also to applications, software, and more. 
+
+p.55 Organizations follow certain cybersecurity regulations and practices. To ensure that 
+those cybersecurity laws and resources are implemented correctly and effectively, more 
+than just a couple of IT employees are required. In fact, to have constructive and strategic 
+cybersecurity policies implemented, involvement by a company's management is essential. 
+This is known as cybersecurity governance. 
+
+The foundations of creating well-strategized cybersecurity practices is a combination 
+of Governance, Risk Management, and Compliance, commonly known as GRC. 
+
+p.56 Cyber criminals never sleep. As cyber specialists discover and eliminate existing cyber 
+attacks, cyber criminals come up with new ways and tools to perform new attacks. Thus, 
+cyber threats are always in existence, if not increasing. As a result, companies and Threat 
+Intelligence Analysts need to be ahead of the game by staying posted about the most 
+recent attacks, business trends, and even global news. This helps them analyze, predict, 
+and prevent existing and potential cyber attacks. The practice of improving cybersecurity 
+safeguards through sharing, learning, analyzing, and forecasting cyber threats and 
+adversaries is known as Cyber Threat Intel. 
+
+p.58 Let's look at what they mean: 
+• Strategic Threat Intelligence: Strategic Threat Intelligence focuses on the
+non-technical aspects of the threats, which are their risks, impacts, and effects on 
+the organizations. This is meant to help management levels with cyber defense 
+decision making. Often, this information is exchanged with GRC analysts so that 
+they can discuss the appropriate risk assessment and mitigation actions. 
+In contrast, both Tactical and Operational Threat Intelligence are tailored toward 
+technical audiences. 
+• Tactical Threat Intelligence: Tactical Threat Intelligence addresses the tactics of 
+threat actors, such as the procedure of the attack, which vulnerabilities attackers are 
+looking for, or which entry points attackers might use to compromise the system. 
+• Operational Threat Intelligence: Operational Threat Intelligence provides 
+in-depth and highly technical details of the threat. Information can be found are the 
+motives of the attack, the tools and techniques attackers might use, or indicators of 
+compromises, such as IP address, filenames, type of malware, and so on. 
+
+p.59 • Internal Threat Intel: Internal Threat Intel refers to the intelligence sources coming 
+from within the organization. This could be past incidents and incident response 
+reports and plans, security policies and practices, discovered vulnerabilities, 
+and so on. 
+• External Threat Intel: The opposite of Internal Threat Intel, External Threat Intel 
+is the threat resources coming from outside the organization. This includes Open 
+Source Intelligence, Technical Intelligence, and others
+
+p.60 Security Operation is the discipline of ensuring that an organization's business is not 
+interrupted by detecting, preventing, protecting, and responding to cybersecurity threats 
+and attacks. There are many different sub-branches of Security Operations, such as 
+Security Operations Center (SOC) and Security Information and Event Management
+(SIEM), both of which you learned about in the previous chapter. In this chapter, we'll 
+learn about something new: Incident Response
+
+p.62 Security Architecture refers to a high-level combination of different security processes, 
+designs, methods, and purposes to produce the overall security structure for a company's 
+entire infrastructure. In other words, Security Architecture can be understood as a 
+mixture of all the subfields we learned about previously, and more. Security Architecture 
+varies from organization to organization, as each should be designed specifically based on 
+the organization's business and objectives. To do so, Security Architects must understand 
+the company's business drivers, in order to translate them into security objectives. 
+
+p.63 In recent years, the term cloud computing has become more and more popular among 
+computer science professionals. Cloud computing can provide cheaper, more flexible, 
+and more powerful computing solutions for various use cases. As the popularity of cloud 
+computing rises, more cyber crimes and attacks are targeting cloud-based platforms. 
+Despite having attacks, cloud computing keeps expanding, and lots of futuristic 
+opportunities are emerging with this growth, without any tendency to stop in the near 
+future. There are many ways the cloud can be used, such as Platform as a Service (PaaS), 
+Infrastructure as a Service (IaaS), Software as a Service (SaaS), and much more. 
+Besides, cloud services are very favored by both individuals and organizations. Even 
+though cloud computing is expanding quickly, there are learning curves for end users 
+to catch up.
+
+different fields: 
+Risk Assessment and Offensive Security
+Governance and GRC
+Threat Intelligence – internal and external
+Security Operation and Incident Response
+Security architecture and cloud security
+Learning – education, training, and awareness
+
+p.78 • Financial services: Highly regulated and highly targeted.
+• Healthcare and public health: Regulated, medical device considerations, and 
+patient information confidentiality.
+• Government facilities and defense industrial base: Government work is unique 
+based on the large size of governments, resource availability, and it being the public 
+sector over the private sector. This public versus private is noteworthy enough that 
+we go into detail about it in its own section, Working in the public sector versus the 
+private sector later.
+• Information technology, communications, transportation, and emergency 
+services: These sectors are grouped to consider traditional information technology 
+systems that have high availability needs or have highly sensitive information. The 
+hyper-interconnectedness of our society dictates a large number of communications 
+and IT that directly relates to the support and upkeep of developing products for 
+national security, emergency services (such as 911!), and transportation, including 
+flights, shipping, and supply chain logistics.
+• Energy, chemical, nuclear reactors, materials, waste, dams, water and wastewater 
+systems, and critical manufacturing: These areas may seem diverse but from a 
+cybersecurity perspective, they are related to the heavy utilization of Operational 
+Technology (OT) that runs Industrial Control Systems (ICSes) to produce energy, 
+manufacture plastics and metal, and control temperatures and valve openings of 
+important and dangerous mechanical systems.
+
+p.93 As a brief primer on cloud service providers, the three big cloud service providers 
+currently are Amazon AWS, Google Cloud Platform (GCP), and Microsoft Azure. 
+There are different types of cloud service offerings also. There is Infrastructure as a 
+Service (IaaS), there is Platform as a Service (PaaS), and there is Software as a Service
+(SaaS). The best way to understand the shared responsibility model for these services is 
+graphically. The table in Figure 3.3 shows which partner is responsible for what aspect of 
+the infrastructure in these service models. 
+
+p.95 Office 365 (O365) is a solution provided by Microsoft that provides an organization 
+with Microsoft Office applications such as Word, PowerPoint, and Excel. Also, email 
+infrastructure no longer requires an organization to maintain Exchange Server 
+on-premises. 
+The O365 platform abstracts a lot of the system administration responsibilities, making 
+it possible to administer the platform by non-technical people or small business owners 
+that don't have server administration expertise. The functionality is related to account 
+management and some other high-level administrative functionality. 
+For example, Microsoft has abstracted the layers of having to understand how things 
+such as Active Directory (AD) work underneath the hood. When you're securing AD, 
+now you need to start prioritizing securing the user and the user access. User access 
+controls become critical to cybersecurity, especially since one of the attributes of the 
+cloud is it's accessible from anywhere! Your pool of viable threat actors and attack surface 
+just got larger.
+The same can be said with file shares. If you're hosting file shares in the cloud, who can 
+access them, who has accessed them, and the auditability of what has happened to files 
+all become important. These audit controls are available, but along with access control, 
+ensuring you are prioritizing logging, log aggregation, and SIEM ingestion now moves 
+to the front of the line in terms of controls.
+Some large recent data breaches were due to improperly configured AWS S3 storage 
+containers that were left open to the world. The service has the ability to be secure, but 
+when improper configuration management leaves the storage containers open to the 
+internet, all your data is on Pastebin.
+You have to consider audit records so you can be able to validate and understand what 
+happened if someone accesses something or if it's configured to go from private share 
+to public share. You also have to understand how to test those types of configurations 
+properly to make sure that they're actually secured. 
+AWS holds a significant market share in the cloud infrastructure services space with 
+Azure second and GCP third. All three of these appear in the upper-right panel of the 
+coveted (2020) Gartner Magic Quadrant for cloud service providers, indicating their 
+ability to execute and completeness of vision are leading the industry [13].
+
+p.97 There is a traditional structure to information security as an organizational capability. 
+Currently, information security typically reports through information technology or the 
+Chief Information Officer (CIO) so the Chief Information Security Officer (CISO) will 
+report to the CIO. The CISO is seen as a technology function within the organization. 
+The CISO reporting to the CIO makes sense because a percentage of information 
+security's scope of responsibility is interacting with information technology. It's explaining 
+to the administrators and the system owners how to properly configure their systems to be 
+secure, why multi-factor authentication is required, who needs to do patching, and so on.
+A minority of organizations have a different reporting structure for the information 
+security office. Common alternative reporting structures include reporting to legal, 
+risk, or even directly to the Chief Executive Officer (CEO). There are pros and cons 
+to each reporting structure, but the majority adopts information security reporting 
+through the CIO
+
+p.98 An argument for having the CISO not report to the CIO lies in the mission of the CIO. 
+CIOs of organizations are charged with ensuring IT services enable the business to achieve 
+its mission. If a system needs downtime (being unavailable for maintenance) for security 
+patching, this impact may be unacceptable to the business. If the CIO is the CISO's boss, 
+the CIO can overrule the CISO on bringing a system down for security patching. You see 
+the conflict now with this reporting structure?
+Information security is not exclusively an IT function within information security 
+offices. An information security office will have a Governance, Risk Management, and 
+Compliance (GRC) function. GRC is responsible for ensuring regulatory requirements 
+are met. GRC will help maintain and drive any cybersecurity program road map or 
+strategic growth initiative. The GRC office is involved in policy exceptions and imposing 
+sanctions related to policy violations. They also develop and distribute policies and 
+procedures for the organization. 
+
+p.99 Security operations identify a security incident, contain it to prevent further impact, and 
+then help the organization return to normal operations. Following activities like this, they 
+will typically investigate to identify the original cause of the incident and help prevent it 
+from happening again. 
+Another area within information security that is common is security engineering. This 
+group is responsible for the management of security technology solutions. These solutions 
+help secure network devices, servers, workstations, and other endpoint-type systems. 
+Specifically, this can mean administering the firewall, mobile device management
+(MDM), multi-factor authentication (MFA), and other tools that help secure the 
+environment.
+
+p.105 general security certs:
+CompTIA Security+
+Security+ cost analysis
+(ISC)² Certified Information Systems Security 
+Professional (CISSP)
+eLearnSecurity Junior Penetration Tester (eJPT)
+EC-Council Certified Ethical Hacker (C|EH)
+GIAC Penetration Tester (GPEN)
+CompTIA Pentest+
+eLearnSecurity Certified Professional Penetration Tester (eCPPT)
+... 
+
+p.144 There are many, many skills that cybersecurity defenders can learn about to be more 
+proficient at their job. This section will teach you about defensive skill development 
+through analyzing actual malicious network traffic for indicators of compromise and 
+interesting attributes.
+There are whole books dedicated to just learning about blue team skills. This section of 
+this book covers just a few of those many skills, but it is intended to give you a good taste 
+of that world and to give you practical hands-on experience. We will gain some experience 
+with Wireshark, a network traffic analysis tool, and take a brief look at malware analysis.
+
+p.156 Building and working through labs for hands-on cyber skills is great, but there are 
+more generalized ways of getting experience and socializing yourself within the 
+cybersecurity community. This section highlights alternative opportunities from the 
+traditional 9-5 entry-level position that allow you to apply cyber skills in controlled settings 
+and develop practical cybersecurity experience through methods including internships, 
+conference events, non-profit support, and looking within your own organization.
+
+-conferences
+-internship
+-insider opportunities
+
+p.173 If you decide you want to write more, starting as a tech blogger can be intimidating. 
+When all else fails, stick to the basics. If you don't feel confident with sharing your 
+unique thoughts about a cyber topic, then share the original article. It's about audience 
+engagement while showing your personal passion related to your brand. When you do 
+share articles, a good rule of thumb is to write at least 1-2 sentences about the article. 
+When people share articles with no context, it can appear as spam instead of convincing 
+someone to read what you shared. 
+
+• Twitter: Great for puns, humor, and short videos. You can cross-post onto Snapchat 
+and soon Instagram. You can link other accounts in your bio section. The age 
+demographics are young adults, millennials, and Generation Z. 
+• Discord: This platform is great for networking and communication if you are a 
+gamer. A lot of young kids are on here. Great platform to build a following and 
+connect followers to other accounts. 
+• Instagram: The age group is between 18 and 35 with over half being women. The 
+platform is used for live streaming and photo content. The age range is still young 
+adults and Generation Z. You can cross-post to Facebook and Instagram, live 
+stream, and share stories. 
+• Facebook: More of an older age demographic; however, surveys show roughly 75% 
+of users are between 18 and 44 years of age. Nonetheless, most young kids under the 
+age of 35 don't use this app as much. You can live stream and share stories.
+• LinkedIn: Over half the user base is between the ages of 25 and 34 years old. Great 
+for building business connections and your brand as a business professional. You 
+cannot cross-post; you can post videos and photos. You can live stream on this 
+platform. 
+• TikTok: 62% of users in the US are between the ages of 10 and 24 years old. This 
+is a great platform to engage the younger generation. The platform focuses on 
+entertaining and short videos. After you have 1,000 followers, you can live stream. 
+• Snapchat: This platform is focused on the younger generation and 73% of the users 
+are between 18 and 24 years old. This is a great platform that allows you to engage 
+the younger generation; typically Generation Z and millennial users are on this app. 
+It's also a great way to connect and draw users to other platforms. 
+• YouTube: The demographics of this platform may surprise you; of the primary US 
+users, about 72% are between the age of 15 and 25. This is still a good all-around 
+platform to connect with all demographics. YouTube is very good if you want to 
+develop a lot of video content. If you begin to do more public speaking and online 
+teaching, I highly encourage you to set up a YouTube page to share your recordings 
+through your YouTube channel on your other social media platforms. 
+
+p.191 Here is a list of blogs and news sites with editors and staff writers we recommend: 
+• Krebs on Security: In-depth security news and investigations – https://
+krebsonsecurity.com/.
+• ZDNet: Great all-round cybersecurity news impacting us globally –https://
+www.zdnet.com/blog/.
+• The Hacker News: Latest hacking news, cyber-attacks, and general cybersecurity 
+news – https://thehackernews.com/.
+• SANS: Great all-around information about cybersecurity – https://www.sans.
+org/blog/.
+• FireEye: Excellent intel source on threat actors and IOC data – https://www.
+fireeye.com/blog.html.
+• Dragos: Very robust blog site with additional outside resources to help with 
+research – https://www.dragos.com/resources/.
+• Talos: Another very robust site that provides articles and podcasts to fit your 
+research needs – https://blog.talosintelligence.com/.
+• ThreatWire, also known as Hak5: Great for cybersecurity news in video formatting 
+– https://www.hak5.org/category/blog.
+
+conferences: defcon, blackhat, bsides (universités)
+
+p.247 High turnover – employees quitting often!
+This is a touchy thing to mention because cybersecurity has a high turnover by design. 
+The typical length of a cybersecurity employee's time with a company is around 1.5 to 2 
+years. This is not that long compared to most careers. However, that doesn't mean that 
+it may also not be something to take note of when thinking about turnover due to toxic 
+work environments. 
+When looking for jobs and filling out applications, check sites such as LinkedIn for 
+employees that have worked within that company. How long did they stay? Was it a 
+year? Was it less than a year? It could be argued that if you were to survey 10 previous 
+employees of a company you're interested in, and collectively they have an average of 
+a year spent with that company, this may be a good indicator of a toxic company. 
+
+p.250 Understanding the SMART goalsetting 
+framework
+Have you ever felt like you are working hard but spinning your wheels? That you have 
+big dreams but cannot seem to reach them, no matter what you do or how hard you 
+try? Goals are the steps to dreams, and they are critical for long-term and sustainable 
+success. This section will help you take a step back and refine your goals by developing, 
+prioritizing, and being specific. In this section, we will review the SMART goalsetting 
+framework to provide guidance on how to create personalized goals to fit your career 
+desires. 
+
+SMART is a mnemonic acronym that stands for the following: 
+• Specific (what, who, where, and why) 
+• Measurable (motivational) 
+• Attainable (realistic) 
+• Relevant (in line with the overall dream) 
+• Time-based (end date and time-driven)
+
+p.256 Learning about the mentor and mentee 
+relationship
+The concept of mentoring has such incredible value, especially within the information 
+security community. It's a practical means for sharing knowledge and networking with 
+like-minded professionals. These relationships can have various forms and lifespans, but 
+there are techniques you can employ to find and maximize their utility.
+First, let's explain the difference between a mentor and mentee. Everybody was 
+a beginner at some point in any skill. Experienced people have acquired knowledge and 
+can share it with those that do not have it yet. They can mentor a mentee to transition 
+them from knowing nothing on a topic or skill to becoming proficient.
