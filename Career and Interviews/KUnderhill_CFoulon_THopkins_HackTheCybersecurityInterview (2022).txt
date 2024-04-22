@@ -36,3 +36,411 @@ CISO
 Behavioral Interview Questions
 Final Thoughts
 
+''Hacking Yourself''
+
+p.25 Instead, what the interviewer wants to hear is a brief summary of your career 
+with a focus on your impact on past employers. Think of this as your 30-second 
+elevator pitch.
+Here's an example:
+From the job posting, it's clear the person in this Security Operations Center
+(SOC) analyst role needs to be ready to go on day one and deliver results fast. That's 
+what I've been able to do at Acme Inc. I developed a new SIEM tool for them within 
+60 days of hire and created an automation program that reduced false positives by 
+12%. Would you like to hear more about anything I've mentioned so far?
+
+I would say my greatest strength is the ability to break down technical information 
+and present it in an easily digestible format for stakeholders across an organization.
+
+What is your greatest weakness?
+With this question, I would typically just bring up a weakness they already know 
+about and then end with some of the value I bring to an organization. I work too 
+hard would be a dumb answer here. The interviewer is typically trying to assess your 
+self-awareness with this question
+
+p.26 This one is usually asked as Where do you see yourself in 5 years? Some people will 
+tell you to answer I see myself working in your position, which is a dumb idea in 
+my opinion. That puts the interviewer on the defense, and you want to keep them 
+relaxed and liking you. I used to answer this one and then ask the interviewer a 
+question. The more you can keep the interview a conversation and not an interview, 
+the better off you are.
+
+p.27 Which key performance indicators (KPIs) would you have for me in this 
+position over the first 30, 60, and 90 days?
+What kind of person succeeds at this company?
+What do you enjoy most about working at this company?
+What do you see as my greatest strengths for this position?
+
+p.29 My favorite definition of cybersecurity comes from Dr. Mansur Hasib's best-selling book, 
+Cybersecurity Leadership, as follows:
+"Cybersecurity is the mission-focused and risk-optimized governance of information, which 
+maximizes confidentiality, integrity, and availability using a balanced mix of people, policy, 
+and technology, while perennially improving over time." (Hasib, 2015, p. 3)
+
+p.31 personal branding, work as a team
+
+p.40 General SOC knowledge questions!!!!!!!!!!!!!!!!!!!!!!!
+• What is information security and how is it achieved?
+• Explain risk, vulnerability, and threat.
+• What is the difference between asymmetric and symmetric encryption, and 
+which one is better?
+• What is an IPS and how does it differ from an IDS?
+• What is the difference between encryption and hashing?
+• What is a security misconfiguration?
+• What are black hat, white hat, and gray hat hackers?
+• What is a firewall?
+• How do you keep yourself updated with the information security news?
+• The world has recently been hit by an attack (that is, SolarWinds). What would 
+you do to protect your organization as a security professional?
+• What is the CIA triad?
+• HIDS and NIDS – which one is better and why?
+• What is a security policy?
+• What are the core principles of information security?
+• What is non-repudiation (as it applies to IT security)?
+• What is the relationship between information security and data availability?
+• What is the difference between logical and physical security? Can you give an 
+example of both?
+• What's an acceptable level of risk?
+• Can you give me an example of common security vulnerabilities?
+• Are you familiar with any security management frameworks, such as 
+ISO/IEC 27002?
+• What is a security control?
+• What are the different types of security controls?
+• What is information security governance?
+• Are open source projects more or less secure than proprietary ones?
+• Who do you look up to within the field of information security? Why?
+• How would you find out what a POST code means?
+• What is the chain of custody?
+• Do you prefer filtered ports or closed ports on your firewall?
+• What is a honeypot?
+• What information security challenges are faced in a cloud 
+computing environment?
+• How many bits do you need for an IPv4 subnet mask?
+• What are the layers of the OSI model?
+• What is encapsulation?
+• What are the three ways to authenticate a person?• What are the three ways to authenticate a person?
+• What is worse in firewall detection, a false negative or a false positive? And why?
+• What is the primary reason most companies haven't fixed their vulnerabilities?
+• What is the three-way handshake? How can it be used to create a DOS attack?
+• What are some of the responsibilities of level 1 and 2 SOC analysts?
+• What are the steps to building a SOC?
+• What is data protection in transit versus data protection at rest?
+• Is it an issue to give all users administrator-level access?
+• How do you protect your home WAP?
+• How can you tell whether a remote server is running IIS or Apache?
+• How often should you perform patch management?
+• What is Docker?
+ Are VXLANs scalable?
+• What is the difference between TCP and UDP?
+• What is a playbook/runbook in SOC?
+• What is the difference between firewall deny and drop?
+• Explain the different SOC models.
+• What is DNS? 
+• You receive an email from your bank stating that there is a problem with your 
+account. The email states you need to log in to your account to verify your 
+identity and even provides a link to your bank. If you don't verify your identity, 
+the email states that your account will be frozen. Tomorrow is payday and you 
+need to pay your rent that is past due via a wire transfer in the morning. What 
+should you do?
+• A friend of yours sends you an e-card via email. To view the e-card, you have to 
+click on an attachment. What do you do?
+• You are a new level 1 SOC analyst and receive a call from the IT helpdesk to 
+ensure you can access all systems. The IT helpdesk person is friendly to you and 
+asks you to confirm your password, so they can verify you meet the minimum 
+complexity requirements. What do you do?
+• What is cognitive cybersecurity?
+• What is the difference between SIEM and IDS systems?
+• What is port blocking?
+• What is ARP and how does it work?
+• What is port scanning?
+• A senior executive approaches you and demands that you break security policy 
+to let her access a social media website. What do you do?
+• Why would an organization bring in an outside consulting firm to perform a 
+penetration test?
+• What is an insider threat?
+• What is a residual risk?
+• What is data loss prevention (DLP)?
+• What is an incident response plan?
+GENERAL ATTACK KNOWLEDGE QUESTIONS
+• What is a botnet?
+• What are the most common types of attacks that threaten enterprise data 
+security?
+• What is XSS and how can you mitigate it
+• What is CSRF?
+SOC TOOLS QUESTIONS
+• What is Splunk?
+• Why is Splunk used for analyzing data?
+• What do SOAR solutions provide that SIEM tools usually don't?
+• Which of the following use a user's behavior as part of their process to 
+determine anomalous behavior on a network?
+• Which components listed are seen with many next-gen SIEM solutions, but not 
+traditional SIEMs?
+• Select all of the SIEM tools from the following
+
+p.62 Penetration testing (pentesting) or ethical hacking is where you assess the security of 
+networks, websites, endpoints, mobile devices, wireless devices, operational technology/
+industrial control system (OT/ICS) infrastructure, and the security of physical facilities. 
+This assessment might include performing vulnerability scanning and analysis, reviewing 
+source code, performing open source intelligence (OSINT), gaining access to a target by 
+exploiting vulnerabilities, escalating privileges, maintaining persistence, and more.
+A key thing here is that you have permission as a pentester to attack the target as defined
+in the statement of work (SOW) of the penetration test (pentest). If you don't have 
+permission, then it's illegal. Before starting action on any pentest, you need to review the 
+rules of engagement (ROEs) and determine the scope of the pentest and verify that the 
+client owns everything listed. I've reviewed SOWs before where the client mistyped an 
+Internet Protocol (IP) address and we could have been in legal trouble for performing 
+the pentest if we had not corrected the documentation. The right documentation is like a 
+get-out-of-jail-free card during a pentest.
+
+p.65 Questions:
+• Where do you go to research the latest vulnerabilities, and why?
+• Do you have a favorite hacker in history, and why are they your favorite?
+• What are some areas you are planning to improve in?
+• I need you to perform an internal pentest and I have an ROE document in place. 
+What do you do next?
+• What are the types of cross-site scripting (XSS), and which is the most 
+dangerous?
+• Can you explain XSS as though you were talking to a 10-year-old kid?
+• How can you perform XSS if <script> or alert tags are blocked?
+• What are some ways to mitigate XSS attacks?
+• What was the last script that you wrote, and what was its purpose?
+• What are some types of threat actors?
+• How do you scope out a pentesting engagement?
+• What are some ways you can gather information on a target during a pentest?
+• What is social engineering
+• What are some ways to perform physical pentesting?
+• What are the types of social engineering?
+• How can a company protect against social engineering attacks?
+• What is the content of a well-written pentest report?
+• How can you identify whether a web application that you came across might be 
+vulnerable to a blind Structured Query Language (SQL) injection attack?
+• What is a MITM attack?
+• What is CSRF?
+• What is an open redirect attack?
+• Which cookie security flags exist?
+• How do you bypass common file upload restrictions in web applications?
+• What is the last pentest tool that you've improved, fixed, and/or contributed to?
+• What is a Boolean blind SQL injection attack?
+• If you were able to successfully carry out the preceding blind SQL injection attack 
+and gained access to the company network, where would you go from there?
+• Can you identify the most common HTTP methods and how they can be used in 
+attacks against web applications?
+• What are the differences between attacking a web application and an application 
+programming interface (API)?
+• Describe the last business logic vulnerability that you found.
+• How do you measure the results of a pentest?
+• What are the phases of pentesting?
+• How can you leverage threat modeling in a pentest?
+• Compare bug bounty programs and a pentest.
+• What is an HTTP Desync attack?
+• What is the difference between vertical and horizontal privilege escalation?
+• How often should organizations have an external pentest performed?
+• What are the legal considerations for pentests?
+Which common vulnerabilities can you exploit in pentests?
+• What is a buffer overflow attack?
+
+p.80 INTERVIEW QUESTIONS FOR DIGITAL FORENSIC ANALYST
+
+p.98 I QUESTIONS CRYPTOGRAPHERS
+
+p.107 I QUESTIONS GRC/PRIVACY ANALYST
+
+p.120 I QUESTIONS SECURITY AUDITOR
+
+p.132 I QUESTIONS MALWARE ANALYST
+
+p.150 I QUESTIONS CYBERSECURITY MANAGER
+
+p.160 I QUESTIONS CYBERSECURITY SALES ENGINEER
+
+p.178 I QUESTIONS CISO
+
+p.195 Behavioral interview questions are asked to help the interviewer gain insight into how 
+you have handled past situations at work, which can help them see how you might handle 
+similar situations in their company.
+When answering behavioral interview questions, I recommend you use something such as 
+the S.T.A.R. technique, which stands for situation, task, action, and result.
+For the situation strand, you want to describe the situation you were in and set the scene 
+for the interviewer. For the task strand, describe the issue or situation that you were 
+confronted with. For action, describe the intervention or action you did in the situation. 
+And, finally, for the result strand, tell the interviewer how your actions solved the problem 
+and how you helped the company. When you answer, try to be clear and concise and 
+use quantifiable results wherever possible. For example, your action during the situation 
+might have resulted in a 20 percent reduction in IT support tickets, so be sure to mention 
+this fact to the interviewer
+
+COMMON BEHAVIORAL QUESTIONS
+• Can you describe a major change at a company you worked at and how you 
+handled this change?
+• Can you tell me about a situation in which you had to adjust to changes over 
+which you had no control and how you handled the situation?
+• Can you tell me about a time when you had to adapt to a difficult situation?
+• What do you do when your priorities need to change quickly? Can you provide 
+an example? 
+• Can you tell me about a project you worked on that was your idea and where you 
+led the implementation? 
+• Can you tell me about a time when you made a suggestion to improve the work 
+in your organization?
+• Describe an important goal you set in the past and how you reached it.
+• Describe two examples from previous jobs or life experiences that show you are 
+willing to work hard.
+• What were your study patterns in school? And how many hours do you spend 
+working each day? 
+• Describe a time when you had to go above and beyond the call of duty in order 
+to get a job done.
+• Can you tell me about a challenging time at your workplace when a job or task 
+had to be completed? How you were able to focus on completing the job or task?
+• Can you tell me about a time when you were effective in prioritizing tasks and 
+completing a project on schedule and within budget?
+• Describe a project you had that demanded a lot of initiative from you.
+• How do you stay current with industry trends, new technology, and your skills?
+• Describe a time you worked without close supervision and the result.
+• What impact did you have at your last job?
+• What was the most competitive work situation you have experienced? And how 
+did you handle it?
+ Describe a risky decision you made and the outcome.
+• Describe some challenges you faced in your last job and how you handled them.
+• Are there projects that you have started on your own recently? And what caused 
+you to start them?
+ Describe some things you have done to invest in yourself and improve 
+your skills.
+• Can you tell me about an idea that you came up with during your career and 
+how you applied it?
+• How do you handle disagreements with your management team?
+• If you have several projects you need to do, how do you prioritize getting 
+everything done?
+• Can you provide an example of how you use your analytical abilities?
+• Developing and using a detailed procedure is important in a job. Tell me about 
+a time when you had to develop and use a procedure to successfully complete 
+a project.
+Can you walk me through your decision-making process?
+ Please provide an example of a time when you used good judgment and logic to 
+solve a problem.
+• Provide an example of when you took a risk to achieve a goal. What was 
+the outcome?
+• Can you give an example of when using precision was critical for your job?
+• Tell me about a time when you had to analyze information and make a 
+recommendation. 
+• Can you give me an example of when you had to have attention to detail to 
+complete a task successfully? 
+ Give an example of a time when you had to address an angry customer and 
+diffuse the situation.
+• Can you tell me about a time when you were not able to build a relationship with 
+someone because they were too difficult to deal with?
+• Tell me about a time when you had to quickly establish rapport under 
+difficult conditions.
+• What do you think are the keys to establishing successful business relationships? 
+And can you provide an example of how you used them in your life? 
+• Describe how your position contributes to the company's overall objectives.
+• Are you a big-picture person or more detail-oriented?
+• Have you experienced a politically complex situation at work? If yes, please 
+describe it and how you came to a positive outcome.
+• Have you ever worked in a situation where the rules and guidelines were not 
+clear? How did it make you feel?
+• Can you tell me about a time when you demonstrated too much initiative 
+on a project?
+• Can you tell me about a situation where you were able to effectively "read" 
+another person and tailor your actions to your understanding of that 
+person's needs?
+• Can you share an experience where you didn't feel like you communicated 
+effectively? What happened and how did you resolve the situation 
+• How have you used effective communication to strengthen a relationship?
+ How would you communicate a difficult or unpleasant idea to your manager 
+• What is the most important presentation you have completed? 
+• Can you give an example of how you successfully communicated with someone 
+who didn't like you or who you didn't like?
+• Describe a time you had to sell an idea to your co-workers or a manager. What 
+was your process? And were you successful in selling the idea? 
+• How do you communicate critical information to your team? 
+• How do you keep your manager informed about your work?
+• How do you explain complex technical topics to non-technical stakeholders?
+• What types of communication situations cause you difficulty? Please provide 
+an example.
+• Tell me about a time you did a successful speech. How did you prepare for it?
+• Describe a time you had a conflict with your supervisor and how you handled it.
+• Can you tell me about a time you had to present complex information? How did 
+you assess that your audience retained the information?
+• Describe a time you used your communication skills effectively to make a point.
+• Tell me about a time you were effective in giving a workshop.
+• Give an example of a time when you needed to speak up during a project 
+and the outcome.
+• Can you tell me about a time you had to be assertive? What was the outcome?
+• Describe a time you used effective written communication to make a point.
+• Tell me about a challenge you faced while coordinating a project with 
+other teams. 
+• What have you done in your career to improve your verbal 
+communication skills?
+• How have you persuaded people with your documentation?
+• What are the most challenging documents you have done?
+• What is your process for preparing written communication?
+• Describe a time when you took accountability during a conflict with another 
+person and how you resolved the conflict to benefit both parties. 
+• Describe how you handle problems with customers? 
+• How do you go about establishing rapport with a customer? What have you done 
+to gain their confidence? Give an example.
+• What have you done to improve relations with your customers?
+ Discuss an important decision you have made regarding a task or project at 
+work. What factors influenced your decision?
+• Have you ever made a poor decision at work? How did you recover?
+• Describe a time when you had to make a quick decision.
+• Can you provide an example of a time when you didn't have enough information 
+to make a decision? What did you do?
+• What is your process of determining how to handle a difficult customer?
+• What is your process of making important decisions?
+• How do you involve your manager or others when you make a decision?
+• What is your process for identifying whether a decision you make is beneficial?
+• Tell me about a time you had to defend your decision successfully even though 
+key stakeholders were initially opposed to your decision. 
+• Which types of decisions do you make rapidly? And which types take you 
+longer? Please provide examples.
+• Describe a problem you have had when coordinating technical projects. 
+• What was your most difficult decision in the last 6 months and why was 
+it difficult?
+• Can you tell me your process for making highly technical decisions? 
+• Do you consider yourself a macro or micromanager? 
+• How do you make the decision to delegate work to your team?
+• What was the biggest mistake you have had when delegating tasks? 
+• Can you tell me about your biggest success when delegating tasks
+• Describe a situation where you had an option to leave the details of a project to 
+someone else or handle them yourself and what your decision was and why.
+• Reflecting back on previous jobs, overall, have those jobs required low attention 
+to detail, a moderate amount of attention, or a high amount of detail to be 
+successful in the job?
+• Can you share a situation where you found it challenging to handle the details of 
+a project? 
+• Can you describe a situation where you found attention to detail was 
+not important?
+• Have you ever developed or enhanced a training program? If yes, please tell me 
+your process for building one.
+• Describe a situation where you had multiple options to choose from. How did 
+you reach a decision about which options to choose? 
+• Were there any alternate options you developed as part of your review process? 
+• Can you share a major decision you have made in the past 12 months and how 
+you evaluated the other options that were available?
+• Are there types of decisions that you find more difficult to make than others? 
+Other skills/attributes flexibility, follow-up and control, initiative, interpersonal skills, innovation, integrity, introduction change, leadership, listening, motivation, negotiation, organizational responsibilities, performance management
+
+p.240 Finally, I want to leave you with sort of an affirmation I created for myself a while back. 
+Sometimes, we work so hard to achieve our goals that we are too hard on ourselves and 
+push a bit more than we should. I'm guilty of this as well so I've recently developed the 
+habit of reminding myself to give myself grace. From my perspective, G.R.A.C.E. is a 
+package deal, and on certain days I have to embody some of these mindsets more than 
+others, but the total package keeps me grounded. I'll share its contents with you:
+• Grit: 
+ Official definition: The passion and perseverance for long-term and meaningful 
+goals.
+ Tia's translation: DON'T QUIT.
+• Resilience:
+ Official definition: The ability to recover from a setback, adapt well to change, and 
+keep going in the face of adversity.
+ Tia's translation: ALWAYS GET UP.
+• Agility:
+ Official definition: The ability to think and understand quickly.
+ Tia's translation: BE QUICK ON YOUR FEET.
+222 Final Thoughts
+• Curiosity:
+ Official definition: A strong desire to learn or know something.
+ Tia's translation: NEVER STOP LEARNING.
+• Empowerment:
+ Official definition: The knowledge, confidence, means, or ability to do things or 
+make decisions for yourself.
+ Tia's translation: ASK FOR FORGIVENESS, NOT PERMISSION.
