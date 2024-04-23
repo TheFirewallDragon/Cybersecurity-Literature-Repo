@@ -40,3 +40,618 @@ DNS Security
 Securing Web and Email Services
 Enterprise Applications Security – Databases and Filesystems
 IP Telephony and Collaboration Services Security
+
+p.26 Communication networks have long been a critical part of any organization. Protecting 
+them against risks of all kinds, especially security risks, is critical to the operation of the 
+organization. Understanding the structure of data networks will help you understand 
+network vulnerabilities, where they exist, and where and how we can protect against them.
+
+p.29 The data center, core, and user networks
+First, let's see what the areas in the organization's data network are. The data center is the 
+network that holds the majority of the organization's servers. In many cases, as shown in 
+the following diagram, we have two data centers that work in high availability mode; that 
+is, if one data center fails, the other one can fully or partially take its place.
+The user networks depend on the size, geographical distribution, and the number of 
+users in the organization. The core network is the backbone that connects the users to the 
+data center, remote offices, and the internet. The distribution switches will be in central 
+locations in the campus and the access switches are located in buildings and small areas.
+
+p.41 There are three zones on the perimeter that act as boundaries between the organization's 
+private network and the internet:
+• Internal zone: This is the area that is used for organizing users and servers. It is also 
+referred to as the trusted zone. This is the zone with the highest level of security. No 
+access is allowed from the external zones to the internal zone and all access, if any, 
+should be through the DMZ.
+• Demilitarized Zone (DMZ): This is the area that users from the internet can access, 
+under restrictions. Here will be, for example, mail relays, which receive emails from 
+external servers and forward them to the internal server on the Secured Zone (SZ), 
+as well as websites and proxies, which act as mediation devices for controlling access 
+to important servers, and others.
+• External zone: This is the connection to external networks, such as Internet Service 
+Providers (ISPs) and other external connections.
+Usually, the architecture is more complex; there can be several DMZs for several purposes, 
+several SZs for different departments in the organization, and so on. The firewall's cluster 
+may also be distributed when each firewall is in a different location, and there can be more 
+than two firewalls.
+In the Zero-Trust architecture, created by John Kindervag from Forrester Research, we 
+talk about deeper segmentation of the network, which is when we identify a protected 
+surface made from the network's critical Data, Assets, Applications, and Services
+(DAAS), and designing the firewall topology and defenses according to it. In this 
+architecture, we talk about the trusted area, which is for users and servers, the untrusted 
+area, which is for external connections such as the internet, and the public areas, which is 
+for frontend devices and services that are being accessed from the external world. 
+Additional software can be implemented in the perimeter: intrusion detection and 
+prevention systems, sandboxes that run suspicious software that's been downloaded from 
+the internet, web and mail filters, and others. These can be implemented as software on 
+the firewall or as external devices.
+Attacks from the perimeter are common. There will be malicious websites, emails with 
+malicious attachments, intrusion attempts, and many others. 
+Data networks attacks can focus on the network itself or network components. Now 
+that we've talked about the network topology, let's learn how the network components 
+are built. 
+
+p.42 The data, control, and management planes
+Network devices perform three different operations: 
+• Process and forward the data in transit. This is referred to as the data plane.
+• Make forwarding decisions; that is, where to forward the data. This is referred to 
+as the control plane.
+• Enable the administrator, or the management system, to give commands and read 
+information from the device. This is referred to as the management plane. 
+
+p.43 The data plane
+The data plane is responsible for forwarding information. It receives instructions from 
+the control plane, such as routing tables, and forward packets from port to port. The 
+forwarding tables can learn from various control plane functions. For example, several 
+routing protocols can run in the control plane, while the result of them will be a single 
+routing table in the control plane that is translated into a single forwarding table on the 
+data plane. 
+The data plane is responsible for processing and delivering packets, so it is implemented 
+on network interfaces and device CPUs.
+Attacks on the forwarding table can be achieved by overloading the network, such as link 
+flooding attacks and Distributed Denial of Service (DDoS) attacks.
+The control plane
+The control plane is where we determine how data should be forwarded in the data plane. 
+The control plane includes routing protocols that exchange information between routers, 
+multicast protocols, Quality of Service (QoS) protocols, and any other protocol that 
+the network devices use to exchange information and make forwarding decisions. These 
+protocols are running in the control plane, and their result is a forwarding table that is 
+built in the data plane.
+The control plane is part of the network device software, and it runs in the device's CPU. 
+Several types of attacks can be performed on the control plane. Some of them simply try 
+to load the device resources (such as CPU and memory), while others try to confuse the 
+protocols running on the device by sending fake routing updates and trying to divert 
+traffic, to flood the device's ARP caches so that packets will be forwarded in the wrong 
+direction, and so on.
+The management plane
+The management plane is responsible for interacting with the network device, whether 
+these are interactions with the management system via protocols such as SNMP or 
+NetFlow, REST APIs, or any other method that the device can work with or via human 
+interactions with a Command-line Interface (CLI), web interface, or a dedicated client.
+SDN and NFV 21
+The management plane is implemented entirely by software. Attacks on the management 
+plane mostly try to break into the network device to log in, by human or by machine, and 
+make settings in violation of the enterprise policy with the intent to disrupt or break into 
+network activity. 
+Now that we've talked about network devices and their structure, let's talk about the new 
+designs in data networks; that is, SDN and NFV.
+
+p.49 Let's look at the cloud computing services mentioned in the preceding diagram in detail:
+• Infrastructure as a Service (IaaS): These are cloud services that provide us with 
+the hardware and VMs needed to run the environments. We only need to install, 
+configure, and maintain operating systems, applications, data, and user access 
+management when using IaaS.
+• Platform as a Service (PaaS): These are cloud services that provide the platform 
+– that is, the hardware and the operating system – so that the user can install their 
+applications directly.
+• Software as a Service (SaaS): These are cloud services that provide us with the 
+necessary software so that we can connect to the software and work with it.
+
+p.54 Attacks on servers 
+When attacking an organization's servers, the risk is to the organization's data, and 
+sometimes, this is the most dangerous risk. In this book, we will talk about threats to 
+networks and network services and how to secure them. 
+There are various types of attacks that can be carried on organization servers. Attacks can 
+be on the availability of the servers, on the services that run on them, or their information. 
+The following are some of the risks to servers:
+• Risks to servers and software such as HTTP, mail, IP, telephony, file servers, 
+databases, and other attacks. This will be covered in the third part of this book.
+• Risks involving DDoS targeting servers to prevent users from accessing them.
+• Risks involving breaking into servers to try to steal or destroy the information 
+running on them.
+• Risks involving impersonating users and data disruption.
+Risks to network applications, services, and servers will be discussed in the third part 
+of this book.
+
+p.55 Attacks on local area networks (LANs)
+Attacks on an organization's LANs can be implemented in several ways, but the intruder 
+must be inside the LAN or break into the LAN from an external network.
+The attacks here can be of several types:
+• Attacks network devices, as described in Chapter 7, Detecting Device-Based Attacks, 
+such as attacks on LAN switches and CPUs to cause them to drop packets and get to 
+the point of inactivity.
+• Attacks on network protocols, as described in Chapter 6, Finding Network-Based 
+Attacks, and Chapter 7, Detecting Device-Based Attacks, such as attacks on Spanning 
+Tree Protocol (STP), attacks on ARP caches, and many others.
+• Another category of attacks is eavesdropping and information theft. These types of 
+attacks will be described in Chapter 8, Network Traffic Analysis and Eavesdropping. 
+32 Data Centers and the Enterprise Network Architecture and its Components
+Attacks on network routers and routing protocols
+Attack on routers and routing protocols target the routers and the interactions between 
+them. The following are some attacks that can be performed on routers networks:
+• Attacks on the router's hardware and software, as described in Chapter 7, Detecting 
+Device-Based Attacks.
+• Attacks on routing protocols, misleading the routers to stop forwarding packets or 
+sending packets in the wrong direction.
+• Attacks on protocols that are not routing protocols that come to serve other 
+purposes such as Hot Standby Routing Protocol (HSRP)/Virtual Router 
+Redundancy Protocol (VRRP), multicast protocols, and so on.
+• Another common attack to be carried out on routers and Wide Area Networks
+(WANs) is a DDoS, where, by flooding the communication lines, the attacker can 
+prevent users from using the network. 
+We will learn how router networks can be jeopardized and how they can be protected in 
+Chapter 12, Attacking Routing Protocols. 
+
+p.62-63 Layer 1, the Physical Layer, is responsible for physical connectivity; this includes cables, 
+connectors, frequencies, modulation techniques, and more. Here, we have copper wires 
+or optical fibers, various modulation techniques in cellular and wireless communications, 
+and optical over-the-air transmissions. 
+Layer 2, the Datalink Layer, is responsible for the connectivity between directly attached 
+NEs. Layer 2 protocols define the frame structure and the way frames are sent to the 
+channel. In the preceding example, this is between the PC on the left and the router, between 
+the routers, and between the router on the right to the server. Here, the main protocol 
+that was used in the last decades in Ethernet, both for enterprise data centers and carrier 
+networks. Other common protocols include Synchronous Digital Hierarchy (SDH) in the 
+European version, Synchronous Optical Network (SONet) in the North American version, 
+and Optical Transport Network (OTN) that was used in large-scale provider networks.
+40 Network Protocol Structures and Operations
+Layer 3, the Network Layer, is responsible for the delivery of packets from end-to-end 
+NEs, through the network, such as from the PC to the server. Here, we have the Internet 
+Protocol (IP) that defines the packet structure and an addressing method, along with 
+routing protocols that are responsible for learning the network architecture and the path 
+along which packets are forwarded through it.
+Layer 4, the Transport Layer, is responsible for the delivery of segments from the source 
+application or source process to the destination application or application process. Here, 
+we have application codes or port numbers, which, together with the layer-3 address, 
+establish a socket that is the endpoint of the application. While the layer 3 packet takes the 
+packet from the source IP to the destination IP address, layer 4 will take the information 
+from the packet and forward it to the end application.
+Layers 5 to 7, the Session, Presentation, and Applications layers in the OSI-RM or the 
+Process layer in the TCP/IP architecture, make up the application itself, for example, 
+HTTP, DNS, and thousands of other well-known or proprietary applications. 
+
+p.64 When the user on the client on the left opens web browser (marked 1 in Figure 2.3), the 
+HTTP client initiates a request to the server and sends it to the TCP process (2) on the 
+client. The TCP process adds the TCP information to HTTP, that is, the process code 
+(port number) and the destination port number, which is code 80 for the HTTP server, 
+and forwards it to the IP process (3). The IP process adds the IP address of the client and 
+the IP address of the server. Then, it forwards the packet to the Network Interface Card
+(NIC), that is, the network adapter (4). The NIC adds the Media Access Control (MAC) 
+address and sends the frame to the NIC on the destination (5). Inside the destination, 
+which is the server, the NIC notes in the arriving frame that it contains IP information 
+and forwards it to the IP process (6). The IP process looks inside the packet and sees that 
+the higher layer protocol is TCP, and forwards it to TCP (7). TCP looks at the header and 
+sees code 80, which indicates that the higher layer protocol is HTTP, and forwards it to 
+the HTTP server process (8).
+
+p.71 Now, the switch takes forwarding decisions:
+• A unicast frame: When a device sends a frame to a specific destination, the switch 
+forwards the frame to the port that it learned the destination MAC address on. For 
+example, when A1 sends a frame to C7, the frame will be forwarded to port 3.
+• A broadcast frame: When a device sends a broadcast frame, that is, when the 
+destination address is filled with all Fs, the frame is flooded to all ports, for example, 
+ports 2 and 3. In the case of an unknown destination, the frame will also be flooded 
+to all the ports of the switch.
+• A multicast frame: When a frame is sent to a multicast group address, that is, a 
+MAC address that starts with 01:00:5e (for IPv4 implementations), the frame is 
+also sent to all the ports of the switch. In our example, a multicast frame sent from 
+A1 will be forwarded to ports 2 and 3. 
+• An unknown destination frame: When a frame with an unknown destination 
+enters the switch, the switch will flood to all of its ports.
+The MAC address table in the switch is also called the Context Addressable Memory
+(CAM), which stores the MAC addresses that the switch has learned. Depending on the 
+switch, the CAM table has a limit to the number of MAC addresses it can store. It could 
+be from 16,000/32,000 addresses for small size access switches up to 8 million/16 million 
+addresses and more for large-scale core and DC switches.
+
+p.78 The following protocols address the following improvements:
+• Rapid STP (RSTP) has scientifically shortened the time it takes to activate 
+redundancy in the case of a bridge or link failure. What can take up to a minute 
+in STP is now down to several seconds in RSTP.
+• Multiple STP (MST/MSTP) enables the use of multiple RSTP instances, so we can 
+configure it with different instances per VLAN or group of VLANs. For example, it 
+can be used as a simple mechanism of load sharing, in which different VLANs have 
+different root switches and traffic will be forwarded differently between them.
+Network breaches in the STP include the following:
+• Root role attack: This connects to the network with a low-priority switch in order 
+to become the root of the network. This type of attack can be used for two purposes: 
+first, to simply crash the network, and second, to become a root so that all traffic can 
+be forwarded through it, for example, for eavesdropping. The second type of attack 
+is a type of man-in-the-middle attack.
+• A TCN attack: A TCN attack is used to shorten the CAM table aging time from 
+300 seconds to 15 seconds, causing the switches to delete learned MAC addresses 
+and, therefore, flood the network with every frame that is sent to an unknown 
+MAC address.
+• Bridge Protocol Data Unit (BPDU) flooding: In this type of attack, we simply try 
+to overload the switch's CPU by sending a large number of BPDUs to the switch, 
+causing it to slow down to the point that it will start to lose traffic. This is referred 
+to as a type of DDoS attack.
+
+p.80 The IPv4 header holds the following fields:
+• Version (4 bits): This is 4 for IPv4 and 6 for IPv6.
+• Internet Header Length (IHL, 4 bits): The length of the header is 32-bit words; it 
+usually equals 5. The Options field is rarely used.
+• ToS/DiffServ (8 bits): This is the Quality of Service (QoS) byte. Initially, it was 
+defined as a Type of Service (ToS) byte (RFC 791, in September 1981), but it was 
+later changed to the Differentiated Services protocol (RFC 2474, in December 1998).
+• Fragmentation fields (note that the fragmentation mechanism is explained later):
+a) Identification: This is a unique packet identifier.
+b) Flags: Here, R is for "Reserved," and D is for "Don't Fragment," that is, when a 
+router sees an IP packet with this flag set to 1, the router is not allowed to fragment 
+it, even if the router will have to drop it and MF for more fragments.
+• Fragment offset: When fragmentation occurs, this field indicates the number of 
+bytes from the beginning of the original payload.
+• Time to Live (TTL, 8 bits): This specifies how long the datagram can live on the 
+network in terms of router hops. Each router decrements the value of the TTL 
+field by 1. If the TTL field drops to zero, the packet is discarded. 
+• Upper-Layer Protocol (8 bits): These are usually layer 4 protocols such as TCP 
+(code 6) or UDP (code 17). They can also be Internet Control Message Protocol
+(ICMP, code 1) or Open Shortest Path First (OSPF, code 89).
+• Header Checksum (8 bits): This is the checksum of the header.
+• Source and destination addresses: These are 32-bit addresses.
+• Options (32 bits): These are rarely used, especially not in standard organization 
+networks
+
+p.86 We can explain each protocol as follows:
+• Interior Routing Gateway (IGP) protocols: These are protocols that run between 
+routers under the same administrative authority. All routers are configured by 
+people from the same organization, and they are all trusted by one another. There 
+are several protocols here, from the old Routing Information Protocol (RIP), 
+Open Shortest Path First (OSPF), Intermediate System to Intermediate System
+(ISIS), and Cisco proprietaries to the old Interior Gateway Routing Protocol
+(IGRP) and Enhanced IGRP (EIGRP).
+• Exterior Routing Gateway (EGP) protocols: These are protocols that run between 
+different administrative authorities, usually between organizational networks 
+and Internet Service Providers (ISPs) or between ISPs. Here, a single protocol 
+is used – Border Gateway Protocol (BGP) version 4, that is, BGP4, which, in its 
+Exterior Gateway version, is eBGP. In BGP, we use Autonomous System (AS) 
+numbers to identify an administrative domain, that is, all the routers under the 
+same administration.
+
+p.93 The TCP principles of operation
+TCP is based on the following principles: connectivity, reliability, full-duplex data transfer, 
+flow control, and congestion control.
+Connectivity is the mechanism in which, before sending any information between the 
+two ends, they establish a connection between the two. Then they send and receive data 
+and, finally, terminate the connection.
+Reliability is the mechanism for each TCP segment, or several segments arrives to the 
+receiver, the receiver sends an acknowledgment to the sender, telling the sender that 
+information has been received.
+Full-duplex data transfer is when two ends of the TCP connection send data and 
+acknowledge it on the same connection. That is to say, in a connection between A and 
+B, A sends TCP information and B acknowledges it, while on the same packets, B sends 
+information and A acknowledges it.
+Flow control is the mechanism that is used by the two ends of the connection to notify 
+the other end of the maximum bytes per second they can accept. This is done by the 
+window-size field in the TCP header.
+Congestion control refers to how the two ends react to network congestion conditions, 
+for example, packet loss, delayed packets, and more.
+The TCP packet structure
+The TCP header, as you can see in Figure 2.28, is more complex than UDP. It starts with 
+a source port and a destination port. Then, the sequence number field and acknowledge 
+number field count the bytes that are sent and acknowledge them. The header length 
+provides the length of the header, including the options field, and the receiver's window 
+size tells the sender what the size of the buffer is allocated for the process on the receiver's 
+memory. The flags that are used include SYN (Sync) for starting a connection, Fin (Finish) 
+for closing a connection, RST (Reset) to reset a connection immediately, PSH (Push) to 
+push content to the application, and ACK (Acknowledge) to notify the receiver of the 
+packet that there is a valid value in the ACK field. The ECE, CWR, and NS flags are used for 
+congestion control and Checksum provides error checking within the packet.
+
+p.94 TCP connectivity and reliability mechanisms
+As we mentioned earlier, before sending any information, TCP establishes a connection 
+between the two ends. The connection is established in three packets:
+• Client to server SYN segment (SYN Flag = 1): The client sends a request to open a 
+connection to the server. The connection is sent from a random port on the client 
+to a well-known port on the server. In this packet, the client tells the server what 
+the client's initial sequence number is, that is, a number that the client gives the 
+first byte in the transmission. 
+• Server to client SYN-ACK (SYN=1, ACK=1): The server answers with both SYN=1 
+and ACK=1 to indicate that the connection request has been accepted. In this 
+segment, the server tells the client what the server's initial sequence number 
+is along with the server's buffer size.
+• Client to server ACK (ACK=1): In the third segment, the client confirms accepting 
+the SYN-ACK and tells the server what the size of the buffer is that the client 
+allocates for the connection.
+
+p.96 Vulnerabilities in layer 4 protocols
+There are tons of vulnerabilities in layer 4 protocols (along with useful ways to protect 
+against them). Let's examine some of these next:
+• Network flooding: There is nothing special to say here; it is possible to flood the 
+network in all the layers. You will be surprised how many attacks happen here.
+• TCP/UDP scanning: This is used in order to f﻿ind open ports that will allow us to 
+penetrate the network.
+Encapsulation and tunneling 73
+• TCP SYN attacks: This can crush network devices if no countermeasures are taken.
+• TCP RST and sequence attacks: This is used in order to close user connections or 
+to hijack them.
+• Using QUIC to penetrate networks: This is used because QUIC is not yet fully 
+recognized by firewalls.
+
+p.103 Symmetric versus asymmetric encryption 
+Encryption is performed by using a key and an algorithm. There are two types of encryption: 
+• A secret key or symmetric encryption uses the same key to encrypt and decrypt the 
+information. Here, we have protocols such as Data Encryption Standard (DES), 
+Triple-DES, and Advanced Encryption Standard (AES).
+• A private key or asymmetric encryption uses two keys – the first key to encrypt the 
+data and a second key to decrypt the data. Here, we have protocols such as Pretty 
+Good Privacy (PGP) and Rivest–Shamir–Adleman (RSA).
+
+p.110 Public key infrastructure and certificate 
+authorities 
+Public key infrastructure (PKI) defines the architecture for secured communications 
+between users. PKI defines a certificate authority (CA) that contains several attributes 
+to be used between users that establish communications.
+PKI provides several services:
+• Authentication: To prove to each side that the other side is who it claims to be
+• Integrity: To prove that data has not been changed during transmission
+• Confidentiality: To prove that no one can read the data during transmission
+PKI standardized the process of using certificates and using private and public keys for 
+secure communications between entities.
+PKI is mostly used to connect to web servers using Secure Socket Layer/Transport Layer 
+Security (SSL/TLS). In this section, we will describe the process and, in the SSL/TLS and 
+Proxies section, later in this chapter, we will get to the bits and bytes.
+
+p.112 Authentication basics and protocols
+Authentication is a process that identifies a person, device, or software process that's 
+accessing data or information. Authorization is a process that grants access rights to
+perform actions on data or information.
+There are three types of authentication mechanisms. These are what you know, what you 
+have, and what you are:
+• What you know: Usually user and password authentication
+• What you have: Usually smart cards and card readers
+• What you are: Biometrics such as fingerprint or eye retina scanning
+There are several resources that we usually access: 
+• The organization networks. This is usually done with an SSL/TLS-VPN or IPSec 
+VPN, which we will talk about later in this chapter.
+• External web services (bank accounts, social networks, and so on). This is usually 
+done with HTTPS, which uses SSL/TLS.
+• Internal access to organization resources. This is provided by Microsoft or Linux 
+mechanisms, and RADIUS/TACACS+ to access communication equipment. 
+There are several levels of authentication; we will look at each in this section, along with 
+their vulnerabilities.
+
+p.116 EAP protocols
+Several EAP-based methods have been standardized by the IETF:
+• EAP-TLS: Based on TLS authentication with certificate-based mutual 
+authentication and key derivation. Defined in RFC5216 (IETF, March 2008).
+• EAP-SIM: Defined for authentication and key derivation using the GSM SIM card. 
+Defined in RFC4186 (IETF, January 2006).
+• EAP-AKA: Defined for authentication and key derivation using the UMTS SIM 
+card, based on the UMTS AKA standard. First defined in RFC4187 (IETF, 
+January 2006).
+• EAP-AKA′: Provides an improved key separation between keys generated for 
+accessing different access networks. First defined in RFC5448 (IETF, May 2009).
+Due to its flexibility, EAP was adopted in later standards such as for Wi-Fi integration 
+with LTE (RFC7458, IETF, February 2015), EAP-TTLS, which lets you tunnel other 
+authentication protocols over EAP tunnels (RFC5281, IETF, August 2008), and in 
+proprietary implementations and other standard and proprietary implementations such 
+as Lightweight EAP (LEAP) and Flexible Authentication via Secure Tunneling EAP
+(EAP-FAST) from Cisco, Protected EAP (PEAP) from Microsoft, EAP over LAN (EAPoL), 
+which is used in port-based network access control in LANs (IEEE, 802.1X), and others.
+EAP-AKA and EAP-SIM use challenge-response authentication (such as CHAP), while 
+EAP-TLS, EAP-TTLS, PEAP, and EAP-FAST use TLS authentication.
+
+p.117 EAP architecture
+The EAP architecture is based on three entities:
+• The EAP Peer: This is the entity that requests access to the network. This is usually 
+a PC, laptop, tablet, and so on. In 802.1X, it is referred to as the supplicant.
+• The EAP Authenticator: The entity that the peer connects to, such as the wireless 
+LAN access point, LAN switch, cellular network gateway (LTE ePDG), and so on.
+• The EAP Server: The authentication server that provides authentication services to 
+the authenticator, such as a Remote Authentication Dial-In User Service
+(RADIUS) server.
+
+p.119 Hash functions and message digests
+Message authentication is used for the following purposes:
+• Protecting message integrity: To verify that a message that is sent is not changed 
+during transmission.
+• Verifying message authenticity: To validate the identity of the message originator; 
+that is, to verify who we get the message from.
+• Non-repudiation of its origin: To assure the sender that the message was delivered, 
+and to assure the recipient that it is from the sender. This ensures that neither of 
+them can deny that the message was processed.
+A hash function is a mathematical function that accepts a variable-length block of data as 
+input and produces a fixed-size hash value as output. The hash function's calculation result 
+is called a message authentication code (MAC). 
+96 Security Protocols and Their Implementation
+Hash functions are used to check data integrity. Some applications of hashes are as follows:
+• In security: To check if the messages or files that have arrived are the same ones that 
+were sent.
+• In data communications: To check the integrity of arriving frames, such as 
+Ethernet checksums.
+• In intrusion detection: To check if the messages were changed during transport 
+to bypass protection mechanisms.
+• Virus detection: To detect files that were changed by a virus.
+Two parameters should be supported by a hash function:
+• One-way hash: It should be computationally infeasible to resolve the origin 
+data from the hash.
+• Collision-free hash: It should be infeasible to find two messages with the 
+same hash.
+
+p.120 The most common hash functions are Message Digest 5 (MD5) and Secure Hash 
+Algorithm 1 (SHA1). MD5 was first standardized in RFC1321 (IETF, April 1992). MD5 
+generated a digest of 128 bits. SHA1 was first standardized by the US National Institute 
+of Standards and Technology (NIST) and creates 160-bit digests. Although smarter and 
+safer hash algorithms have been developed since MD5 and SHA1, such as SHA2, SHA3, 
+and others, MD5 and SHA1 are still the most common hash standards in commercial 
+implementations.
+
+p.123 In the next section, we will describe the protocol and how tunnels are initialized and 
+maintained during operation. 
+IPSec has three steps of operation:
+1. IKE Phase 1: Negotiating the security parameters and building the IKE 
+phase 1 tunnel.
+2. IKE phase 2: Building the IKE phase 2 tunnel.
+3. Data Transfer: Sending the information over the tunnel that was created in 
+IKE phase 2
+
+p.124 The first stage is negotiation. This step is initiated by the peer that wanted to send data 
+to the other. In this step, the following parameters are negotiated:
+• Hashing algorithm: Several options can be used. The common ones are MD5 
+and SHA.
+• Authentication: The two peers identify each other. Pre-shared keys and digital 
+certificates are the most common ones.
+• Diffie-Hellman (DH) Group: The strength of the key that will be used in the 
+key-exchange process (groups defined in RFC 3526).
+• Lifetime: How long IKE phase 1 will take. The quicker it takes, the more secure it is.
+• Encryption: What algorithm will be used for encryption.
+The second step is the key exchange. After the negotiation stage, the two peers will 
+exchange keys. By the end of this stage, the two peers will have a shared key.
+The third stage is authentication. In this stage, the two peers authenticate each other using 
+the authentication method they decided on in stage 1
+
+p.125 IPSec authentication and encryption protocols
+The protocols involved in authentication and integrity are AH and ESP:
+• Authentication Header (AH): This provides integrity and anti-replay protection. 
+AH protects the IP packet by generating a hash function and providing a hash value.
+• Encapsulating Security Payload (ESP): This provides integrity, anti-replay, and 
+encryption protection, which is why it is the most popular option
+
+p.133 Firewalls
+Firewalls provide the following features:
+• Packet filtering forwards or drops sessions based on Layer 3 and Layer 4 
+information. This mechanism is the easiest one to break.
+• Network Address Translation (NAT) is used to translate outgoing packets from 
+internal to external internet addresses. This mechanism provides security as a side 
+effect but is not considered to be a security mechanism.
+110 Security Protocols and Their Implementation
+• Stateful inspection watches the directions of TCP connections or UDP sessions 
+that are opened through it, not only the Layer 3 and Layer 4 information. This 
+method provides more security for the firewall.
+In addition to this, most modern firewalls can provide additional mechanisms, depending 
+on licensing:
+• Intrusion detection and prevention (IDPS): This can discover and block traffic 
+that comes in suspicious patterns.
+• Application awareness: The ability to check upper layers protocols, including 
+malicious traffic transferred through innocent protocols. 
+• Sandboxes: These can run delivered files before they are downloaded to the 
+user's devices. 
+• Artificial intelligence (AI): This is a feature with the ability to self-learn network 
+behavior and react to it. 
+Firewalls are the basic network protection devices in every network and they can be used 
+in several places:
+• Perimeter firewalls: To protect against risks coming from external networks, 
+including the internet.
+• Data center firewalls: These are placed between the user's network and the data 
+center to protect against risks coming from users risking the information on the 
+organization's servers.
+• Core firewalls: These are used to separate the organization's network departments, 
+if required, and provide higher-level security to the organization's departments that 
+require it.
+Deciding on which features to use depends on technical, economic, and business 
+considerations. It also depends on the firewall's location.
+
+p.187 If we summarize this definition, in general, cyber attacks are used for destroying 
+information, stealing information, or preventing users from accessing IT resources. 
+Network-based attacks can be used for the latter two actions:
+• Stealing information: This involves reconnaissance and information gathering, 
+which is used for listening to information that travels through the network and 
+copying or using it for advanced attacks on network resources.
+• Preventing users from using IT resources: This causes the network to crash and 
+stop functioning. This can be caused by several methods such as disrupting the 
+operations of ARP, starving Dynamic Host Configuration Protocol (DHCP), 
+confusing routing protocols, and more. Additionally, it can be performed by simply 
+loading the network to the point at which it will stop functioning
+
+p.207 STP, RSTP, and MST attacks
+As discussed in Chapter 2, Network Protocol Structures and Operations, there are three 
+types of potential attacks in STP:
+• Root role attack: This connects to the network with a low-priority switch in order 
+to become the root of the network. This type of attack can be used for two purposes: 
+the first is simply to crash the network, and the second is to become a root so that all 
+traffic will be forward through us, for example, for eavesdropping. The second type 
+of attack is a type of MITM attack.
+• Topology Change Notification (TCN) attack: This attack is used to shorten 
+the CAM table aging time from 300 to 15 seconds, causing the switches to delete 
+learned MAC addresses and, therefore, flood the network with every frame that 
+is sent to an unknown MAC address.
+• BPDU flooding: In this type of attack, we simply try to overload the switch CPU by 
+sending a large number of BPDUs to the switch, causing them to slow down to the 
+point that it will start to lose traffic. This can be referred to as a type of DDoS attack.
+Let's explore how to generate these attacks so that we can better understand how to 
+protect against them.
+
+p.293 Looking at the packet capture
+Having a first look at the packet capture is always a good point to start from. Some initial 
+indicators will immediately raise a flag that something might be wrong. Some of them 
+are listed here:
+• Unknown addresses—Addresses, especially on the internet. Addresses that you 
+resolve as being from Google, Amazon, Microsoft, and so on are probably OK. 
+Check for unknown names, regions, countries, and so on.
+• Sessions that do not make sense—Clients in the networks that send information 
+between them without a reason, unknown addresses, unknown TCP/UDP port 
+numbers, and so on.
+• Scanning patterns—A device that scans the network, scanning patterns coming 
+from several sources (distributed denial of service (DDoS)), and so on. 
+• Unknown protocols—Some protocols are common to enterprise networks: HTTP, 
+NetBIOS/SMB, DNS SMTP/Post Office Protocol (POP), and others. Any protocol 
+on the enterprise network that IS NOT from these should be checked.
+
+p.293 Establishing a baseline
+Establishing a baseline is a task you must perform. It might sound difficult, but it's very 
+simple when you know your network. In this section, we will talk about the common 
+protocols that run in a typical enterprise network, and we will look at their typical traffic 
+patterns. 
+Protocols that are common to enterprise networks can be categorized into several groups, 
+as follows:
+• Internet access protocols—HTTP, HTTP Secure (HTTPS), Google QUIC
+(GQUIC), SMTP, POP, and DNS
+• Organizational applications—NetBIOS/SMB, Microsoft Terminal Services
+(MS-TS), database applications, and multicasts
+• Network protocols—Routing protocols, discovery protocols, monitoring protocols, 
+and so on
+
+p.369 Even with the best research and implementation of highly protected algorithms, once 
+algorithms are made public, there is always a way to penetrate them. This is especially 
+true for wireless algorithms, as these algorithms were made with good intentions and to 
+provide users around the globe with a secure channel to access data over the internet, 
+but with time, the WLAN encryption algorithms started getting penetrated. The first 
+algorithm that was broken was Wired Equivalent Privacy (WEP), which used a single 
+key (static) to encrypt packets and then send them over the channel; hence, an attacker, 
+after dumping a good amount of data packets, can decipher the key within a few minutes. 
+Something better was required, and so WPA/WPA2 was introduced
+
+p.417 BGP mitigation
+The following methods can be used to prevent BGP hijacking:
+• BGP hijacking detection – Proper monitoring of the BGP-routed traffic can help 
+organizations to avoid BGP hijacking. This can be achieved if there is any latency 
+being seen in the network traffic from the normal latency Time To Live (TTL).
+• IP prefix filtering – The network administrators or ISPs should only declare the 
+fixed IP addresses rather than the complete internet. This will prevent the routers 
+to accept the fake IP address prefix declarations and also help in preventing 
+unintentional route hijacking.
+• BGPSec – Implement BGPSec, which will implement another layer of security at 
+the BGP protocol
+
+p.475 Email protocols and loopholes
+Email, short for electronic mail, is used to send and receive messages in electronic form. 
+To send or receive emails, there are three main protocols:
+• Post Office Protocol (POP(3))
+• Internet Message Access Protocol (IMAP(4))
+• Simple Mail Transfer Protocol (SMTP)
+452 Securing Web and Email Services
+All of these protocols are used to send and receive emails, but all of them are different from 
+each other. So, let’s understand the key differences between these three email protocols:
+• POP(3): The current version of POP is 3; hence, it is written sometimes as POP3 or 
+POP(3). The major difference between POP(3) and IMAP and SMTP is that after 
+sending or receiving emails from the server, it creates a local copy of the complete 
+mail in the client’s machine and then deletes the email copy from the exchange 
+server. Optionally, you can configure not to delete the email once downloaded. 
+POP(3) uses port numbers 110 or 995 (SSL/TLS). 
+• IMAP(4): The current version of IMAP is 4; hence, it is written sometimes as 
+IMAP4 or IMAP(4). IMAP is known as an advanced version of POP3 because after 
+creating a local copy of the header of an email message, it does not delete the email 
+from the exchange server. IMAP uses port numbers 143 and 993 (SSL/TLS).
+• SMTP: This is the primary protocol used to send or relay email messages to Mail 
+Exchange (MX) servers from email clients such as Outlook and Apple Mail. SMTP 
+uses port numbers 25, 465, and 587
