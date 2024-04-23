@@ -160,3 +160,233 @@ p.204 Spécifier le type de la valeur retournée dans l’en-tête de la fonctio
  de type double. C’est pourquoi l’en-tête de la fonction s’écrit :
  public static double périmètre (int r)
 
+p.208 différentes formes d'une fonction:
+Fonction avec résultat
+Fonction sans résultat
+Fonction à plusieurs paramètres
+Fonction paramètre
+
+p.218  La création et l’utilisation de fonctions dédiées à la résolution d’un
+ problème donné sont, nous l’avons observé au chapitre précédent, des
+ opérations fondamentales, qui permettent le développement de logiciels
+ dont le code source est facilement réutilisable.
+ Ces fonctions transforment la structure générale des programmes et
+ apportent, de ce fait, de nouveaux concepts, qu’il est important de bien
+ maîtriser avant d’étudier la programmation objet.
+
+p.219  1. Un programme contient :– une fonction principale, appelée fonction main() ;– un ensemble de fonctions définies par le programmeur ;– des instructions de déclaration de variables.
+ 2. Les fonctions contiennent :– des instructions de déclaration de variables ;– des instructions élémentaires (affectation, test, répétition, etc.) ;– des appels à des fonctions, prédéfinies ou non.
+ 3. Chaque fonction est comparable à une boîte noire, dont le contenu n’est
+ pas visible en dehors de la fonction.
+
+p.265 La construction
+ d’une classe est réalisée selon les deux principes suivants :
+ 1. Définition des données à l’aide d’instructions de déclaration de
+ variables et/ou d’objets. Ces variables sont de type simple, tel que nous
+ l’avons utilisé jusqu’à présent (int, char, etc.) ou de type composé,
+ prédéfini ou non (String, etc.).
+ Ces données décrivent les informations caractéristiques de l’objet que
+ l’on souhaite définir. Elles sont aussi appelées communément champ,
+ attribut ou membre de la classe.
+ 2. Construction des méthodes définies par le programmeur. Ce sont les
+ méthodes associées aux données. Elles se construisent comme de
+ simples fonctions, composées d’un en-tête et d’instructions, comme
+ nous l’avons vu aux chapitres précédents.
+ Ces méthodes représentent tous les traitements et comportements de
+ l’objet que l’on cherche à décrire.
+
+p.288 La communica on objet
+ En définissant un type ou une classe, le développeur crée un modèle, qui
+ décrit les fonctionnalités des objets utilisés par le programme. Les objets
+ sont créés en mémoire à partir de ce modèle, par copie des données et des
+ méthodes.
+ Cette copie est réalisée lors de la réservation des emplacements mémoire
+ grâce à l’opérateur new, qui initialise les données de l’objet et fournit, en
+ retour, l’adresse où se trouvent les informations stockées.
+ La question est de comprendre pourquoi l’interpréteur réalise cette copie en
+ mémoire, alors que cela lui était impossible auparavant.
+ Les données sta c
+ La réponse à cette interrogation se trouve dans l’observation des différents
+ programmes proposés dans ce manuel (voir les chapitres 6, « Fonctions,
+ notions avancées », et 7, « Les classes et les objets »). Comme nous l’avons
+ déjà constaté (voir, au chapitre précédent, la section « Construire et utiliser
+ ses propres classes »), le mot-clé static n’est plus utilisé lors de la
+ description d’un type, alors qu’il était présent dans tous les programmes
+ précédant ce chapitre.
+ C’est donc la présence ou l’absence de ce mot-clé qui fait que l’interpréteur
+ construise ou non des objets en mémoire.
+
+p.343  Le fait de déclarer autant de variables qu’il y a de valeurs présente les
+ inconvénients suivants :
+ • Si le nombre de notes est modifié, il est nécessaire de :– Déclarer de nouvelles variables.– Placer ces variables dans le programme, afin de les traiter en plus
+ des autres notes.– Compiler à nouveau le programme pour que l’interpréteur puisse
+ prendre en compte ces modifications.
+ • Il faut trouver un nom de variable pour chaque valeur traitée. Imaginez
+ déclarer 1 000 variables portant un nom différent !
+ Ces inconvénients majeurs sont résolus grâce aux tableaux. En effet, les
+ tableaux sont des structures de données qui regroupent sous un même nom
+ de variable un nombre donné de valeurs de même type. Les tableaux sont
+ proposés par tous les langages de programmation. Ils sont construits par
+ assemblage d’une suite finie de cases mémoire, comme illustré à la figure
+ 9-1
+
+p.345  Un tableau est un ensemble de cases mémoire. Chaque case constituant un
+ élément du tableau est identique à une variable. Il est possible de manipuler
+ chaque case du tableau de façon à :
+ • placer une valeur dans une case du tableau à l’aide de l’affectation ;
+ • utiliser un élément du tableau dans le calcul d’une expression
+ mathématique ;
+• afficher un élément du tableau.
+
+p.351  public static void main(String [] argument)
+ Cette instruction correspond à la définition de l’en-tête de la fonction main().
+ Vous êtes en mesure maintenant de déchiffrer chacun de ses termes pour en
+ comprendre l’utilité :
+ • Le mot-clé public précise au compilateur que la fonction main() est
+ accessible depuis l’extérieur de la classe où elle est définie. En
+ particulier, l’interpréteur Java peut y accéder pour l’exécuter.
+ • Le terme static explique que la fonction main() ne peut pas être copiée
+ plusieurs fois en mémoire. Elle ne peut pas être associée à un objet ni
+ être 
+instanciée, c’est-à-dire qu’il n’est pas possible d’écrire
+ unObjet.main().
+ • La fonction main() ne fournit pas de résultat, et c’est pourquoi elle est
+ définie comme void.
+ • Pour finir, elle possède, entre (), un paramètre défini comme tableau de
+ type String. Ce paramètre est utilisé pour passer des données en ligne de
+commande lors du lancement de la commande d’exécution du
+ programme
+
+p.384 À la différence de la programmation statique, dans laquelle le nombre de
+ données géré par l’application est fixé une fois pour toutes lors de
+ l’exécution du programme, la programmation dynamique offre l’avantage
+ de gérer un nombre indéterminé d’objets, en réservant des espaces
+ mémoire, au fur et à mesure des besoins de l’utilisateur.
+ Cette technique se montre très utile lorsque le nombre d’objets à traiter
+ n’est pas connu ni définissable avant l’exécution du programme. Par
+ exemple, tous les logiciels de gestion, et c’est une grande part des
+ programmes informatiques, se doivent de gérer les données qu’ils traitent
+ de façon dynamique.
+ En effet, sans programmation dynamique, vous pourriez voir une
+ bibliothèque refuser de nouveaux lecteurs sous prétexte que le logiciel
+ qu’elle utilise ne serait pas en mesure de traiter plus de 50 000 inscriptions,
+ ou encore voir un logiciel de traitement de texte s’interrompre parce qu’il
+ lui serait impossible de gérer la saisie et l’affichage de plus 10 000
+ caractères.
+ Pour éviter de telles situations, le langage Java propose différents outils qui
+ gèrent dynamiquement les données d’un programme. En particulier, il
+ existe des objets de type ArrayList, dont nous analysons les caractéristiques à
+ la section « Les listes ». Les objets de type HashMap, étudiés à la section « Les
+ dictionnaires », offrent aussi l’avantage de gérer les données de façon
+ dynamique, tout en organisant l’information de façon à faciliter son
+ exploitation.
+
+p.383 Les listes
+ Les listes sont des objets de type ArrayList, un type prédéfini du langage
+ Java. La gestion des listes est assez similaire à la gestion d’un tableau
+ puisque le programme crée une liste par ajout de données au fur et à mesure
+ des besoins de l’utilisateur. Les données sont enregistrées dans leur ordre
+ d’arrivée. Un indice géré par l’interpréteur permet de retrouver
+ l’information.
+ Les données enregistrées dans une ArrayList sont en réalité rangées dans un
+ tableau interne créé par l’interpréteur. La taille du tableau interne est gérée
+automatiquement par Java. Ainsi, lorsque la liste des éléments à ajouter
+ dépasse la taille du tableau interne, un nouveau tableau est créé et les
+ anciennes valeurs y sont copiées.
+
+p.422  Les instructions qui composent le bloc try (en français essayer) sont
+ exécutées.
+ • Si aucune erreur n’est transmise par les différents constructeurs qui
+ réalisent l’ouverture du fichier, le programme sort de la méthode ouvrir()
+ en retournant un booléen de valeur égale à true.
+ • Si une erreur est propagée par l’un des constructeurs, les instructions
+ placées dans le bloc catch (capture) sont exécutées, à condition que
+ l’erreur détectée soit du même type que celui placé entre parenthèses
+ derrière le terme catch. L’erreur FileNotFoundException étant du type
+ IOException, le programme sort de la méthode ouvrir(), en retournant un
+ booléen de valeur égale à false. Aucun fichier n’est donc ouvert.
+
+p.487 Les outils d’aide à la création d’interfaces graphiques sont appelés dans le
+ monde informatique, des IDE (Integrated Development Environment) que
+ l’on traduit en français par Environnement de développement intégré (EDI).
+
+p.596 La création et l’exécution d’une application Android s’effectuent dans le
+ cadre d’un projet Android Studio au sein duquel sont regroupées toutes les
+ ressources nécessaires à la bonne marche de l’application.
+ Pour créer un projet Android, une fois l’IDE Android Studio installée et
+ lancée, vous devez cliquer sur la rubrique « Start a new Android Studio
+ project » (figure 13-1) sur le panneau d’accueil ou sélectionner l’item
+ Nouveau projet du menu Fichier, si d’autres projets sont déjà ouverts.
+ Dans la boîte de dialogue Create New Project qui apparaît (figure 13-2)
+ vous devez choisir un modèle de présentation pour votre application
+ (Template). Sélectionnez Empty Activity puis cliquez sur Next.
+ L’étape suivante consiste à (figure 13-3) :
+ 1. Saisir le nom de l’application (ici, BonjourLeMonde).
+ 2. Définir le nom du package (ici, com.example.bonjourlemonde).
+ 3. Si le dossier d’enregistrement du projet indiqué par défaut ne vous
+ convient pas, spécifier un autre emplacement en cliquant sur la petite
+ icône représentant un dossier présent sur la ligne Save location.
+ 4. Définir le langage de programmation à Java.
+5. Déterminer le niveau de l’API Android que vous souhaitez utiliser pour
+ votre projet. Le niveau de l’interface de programmation (API) évolue à
+ chaque nouvelle version d’Android.
+ 6. Valider l’enregistrement du projet en cliquant sur le bouton Finish
+
+p.599-600  Arborescence du projet Android
+ Quelle que soit l’interface de développement utilisée, un projet de type
+ Android possède une structure bien définie. Grâce à cette hiérarchie, les
+ ressources et les codes sources sont facilement repérables, et le projet
+ devient plus lisible puisque bien organisé.
+ L’arborescence automatiquement générée par Android Studio se présente
+ sous la forme suivante (figure 13-4, repères  à ).
+ Le répertoire Java contient toutes les classes Java nécessaires au bon
+ fonctionnement de l’application. La classe principale, créée en même
+temps que le projet, est visible en double-cliquant sur la ressource
+ MainActivity située dans l’arborescence du projet. Nous examinerons ce
+ fichier plus en détail à la section « Les classes Java ».
+ Le répertoire res contient des sous-répertoires dans lesquels sont
+ enregistrées toutes les ressources utiles à l’application, comme des
+ images (drawable) ou des fichiers descriptifs des composants
+ d’affichage utilisés par l’application (layout). Il contient également des
+ valeurs textuelles (values). Ces éléments seront détaillés à la section
+ « Les fichiers ressources ».
+ Le répertoire manifests contient des fichiers importants dont
+ AndroidManifest.xml dans lequel sont définis les activités et services
+ proposés par l’application. Nous examinerons son utilité dans la section
+ « L’application Liste de courses » à la fin de ce chapitre.
+ Compila on et exécu on de projet
+ Une fois le projet compilé en cliquant sur le triangle vert proposé par
+ l’interface, Android Studio lance l’exécution de l’application en ouvrant
+ l’émulateur Android défini lors de la création du projet (voir section
+ « Développer des applications Android avec Android Studio – Créer un
+ émulateur Android », dans l’annexe Guide d’installations en fin d’ouvrage).
+ Une fois ouvert, le téléphone affiche l’application BonjourLeMonde (figure 13
+5)
+
+p.602  XML en quelques mots
+ L’utilisation d’un fichier au format XML permet de simplifier la façon
+ d’agencer les composants au sein d’une application Android.
+ En effet, le format XML (eXtensible Markup Language) est un langage de
+ description de données. Grâce à sa structure, il permet d’organiser les
+ données en les nommant et en les ordonnant selon une hiérarchie qui décrit
+ l’agencement des composants au sein de l’application
+
+p.642 Déposer une applica on Android sur un serveur
+ dédié
+ Pour mettre à disposition votre application sur Internet, vous devez réaliser
+ un certain nombre d’opérations. Commencez par vous inscrire sur la plate
+forme Android (voir section suivante « Créer un compte développeur »),
+ puis transformez votre projet Android Studio en application Android à part
+ entière (voir section suivante « Passer du projet à l’application »). Une fois
+ cela effectué, vous pourrez déposer l’application sur le site Google Play
+ (voir section suivante « Déposer une application »).
+ Créer un compte développeur
+ Pour 
+créer 
+un 
+compte développeur, rendez-vous sur le site
+ http://play.google.com/apps/publish, en vous connectant obligatoirement
+ avec votre adresse Gmail.
+ Pour créer votre profil développeur, vous devez compléter le formulaire de
+ la page d’accueil (figure 13-20). Une fois les champs correctement remplis,
+ cliquez sur Poursuivre et payer
