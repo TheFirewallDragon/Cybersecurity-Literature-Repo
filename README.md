@@ -21,11 +21,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Networking">Networking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privilege%20Escalation">Privilege Escalation</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Strategy">Strategy</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Intelligence">Threat Intelligence</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Threat%20Modeling">Threat Modeling</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Vulnerability%20Research">Vulnerability Research</a></li>
 </ul>
 
 <h2>Adversarial Tradecraft</h2>
@@ -146,37 +141,3 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     - IEEE Citation: [x] W. Rocchi, Cybersecurity and Privacy Law Handbook. Packt Publishing Ltd, 2022.
 <br> Available: https://www.amazon.ca/Cybersecurity-Privacy-Law-Handbook-beginners-ebook/dp/B0BGSGZ59F <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privacy/WRocchi_CybersecurityandPrivacyLawHandbook (2022).txt"> What I've learned, notes and finds.</a>
-
-<h2>Privilege Escalation</h2>
-
-<h3>"Privilege Escalation Techniques: Learn the art of exploiting Windows and Linux systems" by Alexis Ahmed</h3>
-    - IEEE Citation: [x] A. Ahmed, Privilege Escalation Techniques. Packt Publishing Ltd, 2021.
-‌<br> Available: https://www.amazon.ca/Privilege-Escalation-Techniques-exploiting-Windows-ebook/dp/B09CQ664SX <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Privilege%20Escalation/AAhmed_PrivilegeEscalationTechniques (2021).txt"> What I've learned, notes and finds.</a>
-
-<h2>Strategy</h2>
-
-<h3>"Cyber Warfare – Truth, Tactics, and Strategies: Strategic concepts and truths to help you and your organization survive on the battleground of cyber warfare" by Dr. Chase Cunningham</h3>
-    - IEEE Citation: [x] C. Cunningham and G. J. Touhill, Cyber Warfare - Truth, Tactics, and Strategies : Strategic Concepts and Truths to Help You and Your Organization Survive on the Battleground of Cyber Warfare. Birmingham: Packt Publishing, Limited, 2020.
-‌‌‌<br> Available: https://www.amazon.ca/Cyber-Warfare-Strategies-organization-battleground/dp/1839216999 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/CCunningham_CyberWarfare-Truth%2CTactics%2CandStrategies (2020).txt"> What I've learned, notes and finds.</a>
-
-<h3>"Cybersecurity – Attack and Defense Strategies: Improve your security posture to mitigate risks and prevent attackers from infiltrating your system, 3rd Edition" by Yuri Diogenes and Dr. Erdal Ozkaya</h3>
-    - IEEE Citation: [x] Y. Diogenes and Dr. Erdal Ozkaya, Cybersecurity – Attack and Defense Strategies. Packt Publishing Ltd, 2022.
-‌‌‌<br> Available: https://www.amazon.com/Cybersecurity-Strategies-security-attackers-infiltrating/dp/1803248777 <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Strategy/YDiogenes_EOzkaya_Cybersecurity-AttackandDefenseStrategies (2022).txt"> What I've learned, notes and finds.</a>
-
-<h2>Threat Intelligence</h2>
-
-<h3>"Practical Threat Intelligence and Data-Driven Threat Hunting: A hands-on guide to threat hunting with the ATT&CK™ Framework and open source tools" by Valentina Costa-Gazcon</h3>
-    - IEEE Citation: [x] V. Costa-Gazcon, Practical Threat Intelligence and Data-Driven Threat Hunting. Packt Publishing Ltd, 2021.‌
-‌‌‌<br> Available: https://www.amazon.ca/Practical-Threat-Hunting-setting-configuring/dp/1838556370 ‌‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Threat%20Intelligence/VGazcon_PracticalThreatIntelligenceandDataDrivenThreatHunting (2021).txt"> What I've learned, notes and finds.</a>
-  
-<h2>Vulnerability Research</h2>
- 
-<h3>"The Vulnerability Researcher's Handbook: A comprehensive guide to discovering, reporting, and publishing security vulnerabilities" by Benjamin Strout</h3>
-    - IEEE Citation: [x] B. Strout, The Vulnerability Researcher’s Handbook. Packt Publishing Ltd, 2023.
-‌‌<br> Available: https://www.amazon.com/Vulnerability-Researchers-Handbook-comprehensive-vulnerabilities/dp/1803238879 ‌‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Vulnerability%20Research/BStrout_TheVulnerabilityResearcher'sHandbook (2023).txt"> What I've learned, notes and finds.</a>
-
