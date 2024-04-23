@@ -18,7 +18,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Ethical%20Hacking">Ethical Hacking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Hardening">Hardening</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Identity%20and%20Access%20Management">Identity and Access Management</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Malware%20Analysis">Malware Analysis</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Networking">Networking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
@@ -106,18 +105,6 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - IEEE Citation: [x] Stian Thorgersen and Pedro Igor Silva, Keycloak - Identity and Access Management for Modern Applications. Packt Publishing Ltd, 2021.
 ‌‌<br> Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications (2021).txt"> What I've learned, notes and finds.</a>
-
-<h2>Malware Analysis</h2>
-
-<h3>"Mastering Malware Analysis: A malware analyst's practical guide to combating malicious software, APT, cybercrime, and IoT attacks, 2nd Edition" by Alexey Kleymenov and Amr Thabet</h3>
-  - IEEE Citation: [x] Alexey Kleymenov and A. Thabet, Mastering Malware Analysis. Packt Publishing Ltd, 2022.
-‌‌<br> Available: https://www.amazon.ca/Mastering-Malware-Analysis-practical-cybercrime/dp/1803240245 <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/AKleymenov_AThabet_MasteringMalwareAnalysis (2022).txt"> What I've learned, notes and finds.</a>
-
-<h3>"Malware Analysis Techniques: Tricks for the triage of adversarial software" by Dylan Barker</h3>
-  - IEEE Citation: [x] D. Barker, Malware Analysis Techniques. Packt Publishing Ltd, 2021. 
-‌‌‌<br> Available: https://www.amazon.ca/Malware-Analysis-Techniques-adversarial-software/dp/1839212276 <br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Malware%20Analysis/DBarker_MalwareAnalysisTechniques (2021).txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
 
