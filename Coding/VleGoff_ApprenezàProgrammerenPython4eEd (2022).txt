@@ -1,1 +1,124 @@
-Vous n'y connaissez rien en programmation et vous souhaitez apprendre un langage clair et intuitif ? Python est fait pour vous ! Vous découvrirez dans ce livre, conçu pour les débutants, tout ce dont vous avez besoin pour programmer, des bases à la bibliothèque standard, en passant par la programmation orientée objet et l'acquisition d'outils avancés ou professionnels pour devenir plus efficace. La 4e édition de cet ouvrage est enrichie et mise à jour pour tirer parti des nouveautés de Python 3.1x. Qu'allez-vous apprendre ?
+Vous n’y connaissez rien en programmation et vous souhaitez apprendre un langage clair et 
+intuitif ? Python est fait pour vous ! Vous découvrirez dans ce livre, conçu pour les débutants, tout 
+ce dont vous avez besoin pour programmer, des bases à la bibliothèque standard, en passant par 
+la programmation orientée objet et l’acquisition d’outils avancés ou professionnels pour devenir 
+plus efficace.
+ La 4e édition de cet ouvrage est enrichie et mise à jour pour tirer parti des nouveautés de Python 3.1x.
+ Qu’allez-vous apprendre ?
+ • Qu’est-ce que la programmation ? Quel langage
+ choisir ? Pourquoi Python ?
+ • Installation de Python et découverte
+ du langage
+ • Les concepts de la programmation
+ orientée objet
+ • Initiation aux interfaces graphiques
+ avec Tkinter
+ • Communication en réseau dans
+ les programmes Python
+ • Les bonnes pratiques pour améliorer
+ vos codes
+ • Les réflexes du « bon programmeur »
+ pour tirer parti de votre code et de celui
+ des autres
+ • Les outils du programmeur professionnel (chasse
+ aux erreurs, utilisation de bibliothèques…)
+ À propos de l’auteuR
+ Passionné d’informatique, Vincent Le Goff découvre au lycée la programmation en Python, un langage 
+qu’il affectionne tout particulièrement pour son aspect simple et puissant. Étudiant à IN’TECH, il se   
+spécialise en Système et Réseaux. Sur son temps libre, il publie des cours sur OpenClassrooms et participe 
+également à plusieurs projets open source. Une belle réussite quand on sait que Vincent est non-voyant 
+et malentendant 
+
+ 1. Introduction à Python. Vous y apprendrez d’abord, si vous l’ignorez, ce que
+ signifie programmer, ce qu’est Python et la syntaxe de base du langage.
+ 2. La Programmation Orientée Objet côté utilisateur. Après avoir vu les bases de
+ Python, nous allons étudier la façade objet de ce langage. Dans cette partie,
+ vous apprendrez à utiliser les classes que définit Python. Ne vous inquiétez pas,
+ les concepts d’objet et de classe seront largement détaillés ici. Donc, si ces mots
+ ne vous disent rien au premier abord, pas d’inquiétude!
+ 3. La Programmation Orientée Objet côté développeur. Cette partie poursuit
+ l’approche de la façade objet débutée dans la partie précédente. Cette fois,
+ cependant, au lieu d’être utilisateur des classes déjà définies par Python, vous
+ allez apprendre à en créer. Là encore, ne vous inquiétez pas : nous verrons tous
+ ces concepts pas à pas.
+ 4. Les merveilles de la bibliothèque standard. Cette partie étudie plus en détail cer
+tains modules déjà définis par Python. Vous y apprendrez notament à manipuler
+ les dates et heures, créer des interfaces graphiques, construire une architecture
+ réseau... et bien plus!
+ 5. Annexes. Enfin, cette partie regroupe les annexes et résumés du cours. Il s’agit
+ de notions qui ne sont pas absolument nécessaires pour développer en Python
+ mais que je vous encourage tout de même à lire attentivement.
+
+p.30  En fait, votre ordinateur se fonde aussi sur un langage pour communiquer avec vous
+ ou avec lui-même. Les opérations qu’un ordinateur peut effectuer à la base sont des
+ plus classiques : l’addition de deux nombres, leur soustraction, leur multiplication, leur
+ division, entière ou non. Et pourtant, ces cinq opérations suffisent amplement à faire
+ fonctionner les logiciels de simulation les plus complexes ou les jeux super-réalistes.
+ Tous ces logiciels fonctionnent en gros de la même façon :
+ — une suite d’instructions écrites en langage machine compose le programme;
+ — lors de l’exécution du programme, ces instructions décrivent à l’ordinateur ce
+ qu’il faut faire (l’ordinateur ne peut pas le deviner).
+
+p.32  Concrètement, voilà ce qu’on peut faire avec Python :
+ — depetits programmes très simples, appelés scripts, chargés d’une mission très
+ précise sur votre ordinateur;
+ — des programmes complets, comme des jeux, des suites bureautiques, des logiciels
+ multimédias, des clients de messagerie...
+ — des projets très complexes, comme des progiciels (groupes de plusieurs logiciels
+ fonctionnant ensemble, principalement utilisés dans le monde professionnel).
+ Voici quelques-unes des fonctionnalités offertes par Python et ses bibliothèques :
+ — créer des interfaces graphiques;
+ — faire circuler des informations au travers d’un réseau;
+ — dialoguer d’une façon avancée avec votre système d’exploitation;
+ — créer et héberger un site web dynamique;
+ — et bien d’autres...
+
+p.51 phrase = f"Je m'appelle {prénom} et j'ai {âge} ans."
+
+p.115  Les assertions sont un moyen simple de s’assurer, avant de continuer, qu’une condition est
+ respectée. Cette syntaxe est en théorie utilisée par les développeurs d’une fonctionnalité,
+ pas par les utilisateurs
+
+p.143  ma_liste.append(56) # On ajoute 56 à la fin de la liste
+
+p.145 Concaténation de listes
+ On peut également agrandir des listes en les concaténant avec d’autres
+
+p.151  À la différence des listes, les tuples, une fois créés, ne sont pas modifiables : il est
+ impossible d’y ajouter ou d’en retirer des objets.
+ Une petite subtilité ici : si on veut créer un tuple contenant un unique élément, on doit
+ quand même ajouter une virgule après celui-ci. Sinon, Python va automatiquement
+ supprimer les parenthèses et on se retrouvera avec une variable lambda et non un tuple
+ contenant cette variable.
+
+p.168  Le dictionnaire est un type de données extrêmement puissant et pratique. Il se rapproche
+ des listes sur certains points mais, sur beaucoup d’autres, il en diffère totalement. Python
+ utilise ce type pour représenter diverses fonctionnalités : on peut par exemple retrouver
+ les attributs d’un objet grâce à un dictionnaire particulier.
+ N’anticipons pas. Dans les deux chapitres précédents, nous avons découvert les listes.
+ Les objets de ce type sont des conteneurs, dans lesquels on trouve d’autres objets. Pour
+ accéder à ces derniers, il faut connaître leur position dans la liste, qui se traduit par des
+ entiers, appelés indices, compris entre 0 (inclus) et la taille de la liste (non incluse).
+ Le dictionnaire est aussi un objet conteneur. Il n’a quant à lui aucune structure ordonnée,
+ à la différence des listes. De plus, pour accéder aux objets contenus dans le dictionnaire,
+ on n’utilise pas nécessairement des indices, mais des clés qui peuvent être de bien des
+ types distincts.
+ Créer un dictionnaire
+ Voici le nom de la classe sur laquelle se construit un dictionnaire : dict. 
+
+p.222  Dans la partie précédente, j’avais brièvement décrit les objets comme des variables
+ contenant elles-mêmes des fonctions et variables. Nous sommes allés plus loin tout au
+ long de la seconde partie, pour découvrir que nos « fonctions contenues dans nos objets »
+ sont appelées des méthodes. En vérité, je me suis cantonné à une définition « pratique »
+ des objets, alors que derrière la POO (Programmation Orientée Objet) se cache une
+ véritable philosophie.
+
+p.230  Le paramètre self
+ Dans nos méthodes d’instance, qu’on appelle également des méthodes d’objet, on trouve
+ ce paramètre self dans la définition.
+ Une chose a son importance : quand vous créez un nouvel objet, ici un tableau noir, ses
+ attributs lui sont propres. C’est logique : si vous créez plusieurs tableaux noirs, ils ne
+ vont pas tous avoir la même surface. Donc les attributs sont contenus dans l’objet.
+ En revanche, les méthodes sont contenues dans la classe qui définit notre objet. C’est
+ très important. Quand vous tapez tab.écrire(...), Python va chercher la méthode
+ écrire non pas dans l’objet tab, mais dans la classe TableauNoir.
