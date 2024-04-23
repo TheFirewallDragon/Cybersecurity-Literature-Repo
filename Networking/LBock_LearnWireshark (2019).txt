@@ -45,3 +45,474 @@ Determining Network Latency Issues
 Subsetting, Saving, and Exporting Captures
 Discovering I/O and Stream Graphs
 Using CloudShark for Packet Analysis
+
+p.25 Packet analysis is the process of examining packets to understand the characteristics and 
+structure of the traffic flow.
+When monitoring the network for analysis, we capture traffic using
+specialized software. Once the data is captured and we save the file, the
+software stores the capture, in a file that is commonly called a packet
+capture or PCAP file.
+The analyst can complete packet analysis by either studying one packet at a time or as a
+complete capture. Packet analysis can be done during a live capture or by using a
+previously captured packet.
+Network administrators use packet analysis to gain information about current network
+conditions. Security analysts use packet analysis to determine whether there is anything
+unusual or suspicious about the traffic when carrying out a forensic investigation. Students
+use packet analysis as a learning tool, to better understand the protocols. In addition,
+packet analysis is also used by hackers to sniff network traffic in order to gain valuable
+information about the network while conducting footprinting and reconnaissance.
+We use packet analysis in many places, including on a LAN, on a host, or in the real world.
+We also use packet analysis when troubleshooting latency issues, testing Internet of
+Things (IoT) devices, and as a tool to baseline the network.
+Today, packet analysis using Wireshark is a valuable skill. However, analyzing packets has
+been around in the networking world for many years. As early as the 1990s, there were
+various tools that enabled analysts to carry out packet analysis on the network to
+troubleshoot errors and to monitor server and network behavior. In the next section, we'll
+examine some of the early tools used to monitor network activity.
+
+p.27 Evaluating devices that use packet analysis
+Packet analysis and packet sniffing are used by many devices on the network, including
+routers, switches, and firewall appliances. As data flows across the network, it passes
+through various network devices, which interpret the packet's raw bits and examine the
+field values in each packet to decide on what action should be taken.
+A router captures the traffic and examines the IP header to determine where to send the
+traffic, as a part of the routing process. An IDS will capture the traffic and examine the
+contents and alert the network administrator if there is any unusual or suspicious behavior.
+A firewall monitors all traffic and will drop any packets that are not in line with the Access
+Control List (ACL). For example, when data passes through a firewall, the device examines
+the traffic and determines whether to allow or deny the packets according to the ACL. For
+example, this ACL has the following entries:
+Allow outbound SYN packets. The destination port is 80.
+Allow inbound SYN-ACK packets. The source port is 80.
+
+p.31 Expert system and intelligent scrollbar
+Wireshark allows us to visualize issues while performing an analysis. The expert system
+categorizes various traffic conditions. It has a color code for each level that allows for easy
+identification of general workflow and possible critical events:
+Chat color: Gray provides information about typical workflows, such as a TCP
+window update or connection finish
+Note color: Cyan indicates items of interest, such as duplicate acknowledgments
+and TCP keep-alive segments
+Warn color: Yellow indicates a warning, such as a TCP zero window or
+connection reset
+Error color: Red is the highest level as there may be a serious problem, such as a
+retransmission or a malformed packet
+
+p.36 Using Wireshark, a hacker will try to obtain confidential information, such as usernames
+and passwords exchanged, while traveling through the network. Using packet analysis to
+sniff network traffic can achieve the following goals:
+Footprinting and reconnaissance: As a precursor to an active attack, hackers use
+Wireshark to capture unencrypted traffic in order to gather as much information
+about the target as possible. In addition, Wireshark can also be used to gather
+additional information such as IP and MAC address, open ports and services,
+and possible defense methods in place.
+Sniffing plain text passwords: Another use of packet sniffing by hackers is
+looking for passwords that are sent in plain text. Common protocols that are
+susceptible to packet sniffers are the protocols that are in plain text, such as
+SNMP, HTTP, FTP, Telnet, and VoIP.
+An organization can defend against unauthorized packet sniffing in a couple of ways.
+There is anti-sniffer software that can detect sniffers on the network. However, one of the
+best ways to prevent data exposure is to use encryption. If someone captures the traffic,
+then the encrypted data will appear meaningless.
+
+p.62 The EPAN contains four main Application Programming Interfaces (APIs), as shown in the
+preceding diagram:
+Protocol tree: Detailed analysis of a single packet
+Dissectors: Provide information on how to break down the protocols into the
+proper format according to the appropriate Request for Comment (RFC) or other
+specification
+Dissector plugins: Uses dissectors as separate functions
+Display filters: Allows you to filter captured data
+
+p.63 Displaying the captured data
+In Wireshark, along with many other packet analysis tools, there are many options to
+enhance your graphical experience. When you open a packet capture in Wireshark, the
+default layout displays three panels, as shown in the following screenshot:
+Packet list
+Packet details
+Packet bytes
+
+p.65 Analyzing the packet capture
+Once you have the capture, you can start analysis in real time or use a pre-captured file.
+Use the built-in tools to troubleshoot and examine the traffic:
+Filter traffic to display specific types of flows, such as DNS or HTTP traffic.
+Search for specific packets, that is, tcp.port = = 443.
+Turn on the coloring rules or use the expert system to easily spot problems.
+Follow the stream to see the details of a single conversation.
+Do a deep packet analysis of individual frames and examine the field values of
+the headers.
+Wireshark's statistics can range from basic information such as Capture File Properties to
+more detailed information such as Conversations, Flow Graphs, and Stream Graphs.
+In addition to the tools within Wireshark, you can subset the data to share the smaller file
+with coworkers and add comments to the file or in an individual frame.
+
+p.97 This first section has many choices for locating and opening files so you can begin your
+analysis:
+Open will launch a dialog box that will allow you to select any file; it'll go to the
+location of that file and allow you to select that file.
+Open Recent will list the recently accessed files.
+Merge will allow you to merge a file with the capture you have open. When
+merging, it's important that the time values are synchronized, as that is what
+Wireshark uses to merge the two files.
+Import from Hex Dump is convenient when someone has sent you a hex dump
+from another device for analysis. The import dialog box will step through
+selecting the appropriate choices when importing the file.
+Close will close the current capture. Prior to closing, Wireshark will ask you if
+you'd like to save the file.
+Save allows you to save the current file. This would be useful if you have added
+comments or modified the file and want to preserve the changes.
+Save As allows you to save the file as something other than the default
+extension, .pcapng. Once in the dialog box, you can select from the many
+different file formats that Wireshark has available.
+File Set offers the ability to work with a set of files. For example, if you're doing a
+firewall ruleset and you're going through a whole month of files, you can work
+through the list one by one.
+ This next File menu section takes a look at the many ways to export parts of a capture
+
+p.121 Reviewing the network architecture
+We live in an exciting, yet challenging period in history. Today, our internet-based
+ecosystem demands that business networks are available nearly 100 percent of the time.
+Enterprise networks must be able to adjust to changing traffic demands and maintain
+constant response times. In addition, they have to be agile enough to respond to
+unexpected security incidents.
+In today's networked environments, administrators face numerous challenges to keep the
+network up and operational. Effective packet analysis begins by understanding the
+network architecture. In order to determine where to tap in to identify trouble spots, it's
+important to recognize the way that different media and devices influence network traffic.
+And to that end, we will begin our discussion by learning the various types of networks.
+Comparing different types of networks
+Today's networked environments are complex and can include mobile phones, cloud
+computing, virtualization, social media, and the Internet of Things (IoT). The network 
+specialist deals with many different types of networks, which include Personal Area
+Networks (PANs), Local Area Networks (LANs), Campus Area Networks (CANs), and
+Wide Area Networks (WANs). All of these different types of networks will influence how 
+data is transmitted and will possibly be the cause of system failures and bottlenecks.
+
+p.121 A PAN is a network that shares data between devices that are close, normally within a
+range of 30 feet. Devices can connect to the internet or other networks. Because devices in a
+PAN generally communicate using low-powered wireless technology, we also use the term
+Wireless Personal Area Network (WPAN).
+A WPAN is a short-range network that connects personal devices to exchange information
+using the IEEE 802.15 standard and includes technologies such as Bluetooth, ZigBee, and
+Ultra-Wide Band.
+
+p.123 Exploring CANs
+A CAN is a large private local area network in a common entity such as a college, hospital,
+corporate campus, or military base that has two or more interconnected LANs.
+The CAN has a main campus where the central elements of a network reside, such as the
+data center and telephony, and provides connectivity, data, applications, and services to
+clients. Away from the main campus, there are remote locations.
+Because the CAN, at times, is spread across a larger geographic area such as a city, remote
+locations communicate over a WAN using an internet connection. Let's now discover the
+qualities of a WAN.
+Navigating WANs
+A WAN is a geographically-dispersed collection of LANs that span a large distance. The
+internet is the largest WAN, spanning the globe, and is a network of globally connected
+networks that bring people, processes, data, and things together.
+A WAN is different than a LAN in several ways. In most cases, no one entity owns a WAN;
+rather, WANs exist with shared or distributed ownership and management. WANs use
+common technology such as Multiprotocol Label Switching (MPLS), which is a data
+transport method for high-performance telecommunications networks. WANs carry the
+signal using the Plain Old Telephone System (POTS), fiber optic cables, wireless
+transmissions, and satellites.
+As you can see, there are many different types of networks, from very small PANs to large
+WANs. In the next section, let's explore each of the different types of media used to carry
+the signals.
+
+p.125 Fiber optic cable uses pulses of light to carry network traffic over longer distances. Fiber has
+high throughput that is naturally resistant to EMI. The signals are sent via laser or LightEmitting Diode (LED) using a core of glass or plastic. Many times, fiber is used as the
+backbone on a LAN and comes in two forms:
+Multimode (MMF): This uses multiple light signals, has a higher bandwidth
+than UTP, and is used to carry backbone traffic in a LAN. MMF can use either
+glass or plastic, using either LED or laser signals, over a distance to up to 2 km.
+Single mode (SMF): This uses a single light signal. Single mode fiber has a
+higher bandwidth than MMF and can carry a signal for many miles. SMF must
+use a laser to produce a bright, coherent light.
+Fiber optic has many benefits, but it is more expensive than twisted pair and requires
+special equipment to manage. As a result, LANs use fiber primarily for backbone traffic
+and use twisted pair for work areas. 
+
+p.126 Discovering wireless
+Wireless networks use unbound media, which allows users to roam freely while still being
+connected to the network. Over time, wireless networks have improved in speed and
+bandwidth, and as a result, you will most likely capture wireless traffic during a
+troubleshooting exercise.
+Wireless can provide connectivity for a LAN using Wi-Fi, or for a PAN using Bluetooth.
+Here, we will compare the two:
+Wi-Fi provides networking on a LAN using the IEEE 802.11 standards. The
+802.11 family has several standards; however, 802.11a, 802.11b/g/n and 802.11ac
+are currently the most widely used standards.
+Bluetooth provides networking on a PAN over short distances from fixed and
+mobile devices, which allows devices to communicate with each other to transfer
+files, control IoT devices, and provide hands-free calling in your car.
+As you can see, there are many variables that you may deal with while capturing and
+analyzing traffic using Wireshark. The type of network and the media will influence how
+you capture traffic and what you might see once it has been captured. In most cases,
+however, packet capture using Wireshark is done on a LAN.
+
+p.135 All of these options allow you to further refine your selection. Right-click and select one of
+several options that include A to B, B to A, A to Any, among others.
+At the bottom of the window, there are additional choices with which you can refine and
+customize your view:
+Name resolution: Wireshark will resolve the physical, network, and transport
+addresses for the specific conversation type. For example, if the TCP tab is
+selected, the transport address will be resolved.
+Limit to display filter: This will show only conversations included in the current
+display filter.
+Absolute start time: This will change the start time column to the absolute start
+time, which is in the Time of Day display format. If you uncheck this, the time
+will revert to the relative start time, which is in the Seconds since Beginning of
+Capture time display format.
+Copy: This will copy the list to the clipboard in either CSV or YAML (short for
+Yet Another Markup Language) format. You can then paste it into a notepad file
+or a spreadsheet.
+Follow Stream: This allows you to see the details of a single conversation. You
+must first select either a TCP or UDP conversation.
+Graph: This will launch and display a TCP Stream graph on the selected TCP
+conversation, as shown here
+
+p.204 Providing port addressing
+At the transport layer, we add a port address, which is used to identify a specific
+application or process. Port numbers fall into three main groups:
+Well-known ports range between 1 – 1,023 and include protocols such as HTTP,
+DNS, and SMTP.
+Registered ports range between 1,024 – 49,151 and are assigned and used for
+specific services such as gaming applications, OpenVPN, and IPSec.
+Dynamic, private, or ephemeral ports are in the range of 49,152 – 65,535 and are
+not assigned to any specific application. They are used temporarily during a
+session, generally by the client.
+When the transport layer header is applied to the data, a source and destination port are
+added. The type of port used depends on whether the packet is coming from the client or
+the server:
+If a client sends a packet, then the source port will be (in most cases) a randomly
+assigned dynamic or ephemeral port that is used, so when the server delivers a
+packet to the host, it uses that port to deliver the data.
+If a server sends a packet, then the source port will be either a well-known or a
+registered port.
+
+p.238 Starting at the top of the UDP header, we can see the UDP, followed by a summary of what
+the header represents with information on the source and destination ports:
+Source Port 16-bit: The source port field is the port on the receiver's side, and
+this field. In this case, the sender is a DNS client, as the source port in frame 1 is
+Source Port: 54585, which is not associated with any application; it is an
+ephemeral or temporarily assigned port that is used in this connection.
+Decoding TCP and UDP Chapter 9
+[ 222 ]
+Destination Port 16-bit: The destination port field is the port on the sender's side,
+and this field is 16bit. In this case, the port in frame 1 is Destination Port: domain
+(53). Port 53 is associated with DNS, and is the port on the DNS server accepting
+resolution requests to resolve a domain name.
+Length 16-bit: In a UDP packet, the length represents the number of bytes in the
+UDP header and any data that follows. In frame 1, we can see Length: 36, which
+is equal to the UDP header (8 bytes) and the DNS header (28 bytes).
+Checksum 16-bit: The UDP checksum is a calculated value of the data portion of
+the packet that is periodically recalculated during transmission to ensure data
+integrity. The UDP checksum is optional in IPv4; however, it is required in IPv6.
+The checksum is required in IPv6 primarily because IPv6 does not have a
+checksum, and the value in the UDP header is used to ensure data integrity.
+Anyone working on a network should have a solid understanding of the protocols that
+traverse the network. Although there are hundreds of protocols, this chapter focused on the
+functions of the transport layer of the OSI model, specifically the two predominant
+protocols, TCP and UDP.
+We evaluated TCP, a connection-oriented protocol. You now understand that, in order to
+achieve reliability, TCP sequences and acknowledges every octet. We saw that, in addition
+to transporting data, TCP monitors the transmission and provides not only flow control,
+but congestion control as well. So that you grasped how TCP is so effective in providing
+reliable data transport, we took a closer look at the header, along with the eight control
+flags. 
+Along with TCP, we looked at the other transport layer protocol, UDP, which ensures fast
+transportation of time-sensitive data and protocols such as DHCP and DNS. We discovered
+the four-field UDP header, which provides enough information to deliver data with no
+additional overhead.
+Now that you have a solid understanding of TCP, the next step is to gain a better
+understanding of how TCP establishes and tears down a connection in more detail. In the
+next chapter, we will step through the process of starting a TCP conversation and examine
+the TCP three-way handshake and resultant socket creation. We will look at the packet
+exchange and have a closer look at the TCP options. Finally, we'll study how TCP ends data
+transmission by exchanging FIN packets.
+
+p.246 Marking the TCP handshake
+One of the ways you can isolate a series of packets within Wireshark is by marking them.
+When we mark the packets, Wireshark will modify the packet to have a black background
+with white text. Once we mark them, we'll filter according to the marked packets to focus in
+on the handshake.
+In the file, we'll identify the handshake by marking the packets. We know that to begin a
+session, TCP starts with a handshake that uses three packets as follows:
+The client sends a SYN packet to the server.
+The server responds by sending a SYN ACK packet.
+The client sends a final ACK packet.
+Once the handshake is complete, the data flow begins.
+
+p.255 Scaling the window size
+TCP is a full-duplex communication protocol, in which the sender and receiver 
+communicate with each other. Flow control is an end-to-end control method where a host
+transmits a window size with every acknowledgment, indicating how many bytes it can
+accept, so the sender does not transmit too much data and overwhelm the host.
+Window scale (WS) is an option that allows the window size to be expanded, according to
+a scaling factor that is obtained from the TCP options exchanged during the three-way
+handshake. The WS value is used to increase the maximum window size that is allowed.
+Although optional, this provides information to the server of a more accurate Window Size
+value.
+Let's outline why this is an important option. In the TCP header, the Windows field value is
+16-bit, which permits a maximum size of 65,535 bytes. The original RFC for TCP was
+written in 1981. In the early 1980s, buffer sizes were small, so this value made sense.
+However, as time passed, it became evident that a larger value would be required, and the
+Window scale option provided a way to truly represent that value.
+When using the Window scale option, the total value can be up to 230. This value as a metric
+is beneficial when data travels, especially on high-bandwidth WAN links, because a larger
+WS will improve performance. Intermediary devices can be tuned to accept larger WS; for
+example, when configuring a Cisco router that supports Window scaling, you can adjust
+this value up to 1,073,741,823 bytes.
+
+p.303 Reviewing ICMP type and code values
+ICMP has been used for IPv4 for many years. There are many different types of ICMP
+messages, some of which should look familiar, such as these:
+Type 0: Echo reply
+Type 3: Destination unreachable
+Type 5: Redirect
+Type 8: Echo
+Type 9: Router advertisement
+Some, but not all, ICMP types have a corresponding set of code values that further define
+the ICMP message. For example, type 3 and type 9 both have a set of code values.
+Type 3 (destination unreachable) has many code values. Some of these code values are as
+follows:
+Code 0: Net unreachable
+Code 1: Host unreachable
+Code 2: Protocol unreachable
+Code 3: Port unreachable
+Code 4: Fragmentation needed and Don't fragment was Set
+Type 9 router advertisement only has two code values:
+Code 0: Normal router advertisement
+Code 16: Does not route common traffic
+In the next section, we'll review the type and code values for ICMPv6
+
+p.304 Defining ICMPv6 type and code values
+Along with ICMP for IPv4, ICMPv6 is used to communicate updates or error messages and
+has its own set of types to identify messages. Because ICMPv6 provides additional
+information on IPv6 router and host configuration, you'll find specific type values that help
+provide this information.
+A shortlist of ICMPv6 type values includes the following:
+Type 1: Destination unreachable
+Type 2: Packet too big
+Type 3: Time exceeded
+Type 4: Parameter problem
+Type 130: Multicast listener query
+Type 131: Multicast listener report
+In some cases, the type will have a corresponding code value to further define the message.
+If the type does not have a corresponding code value, the code value will be set to 0, as
+shown in the ICMPv6 multicast listener report screenshot.
+Let's look at the following examples.
+Type 1 (destination unreachable) has several code values. Some of them are as follows:
+Code 0: No route to destination
+Code 1: Communication with destination administratively prohibited
+Code 2: Beyond the scope of the source address
+Code 3: Address unreachable 
+Type 3 (time exceeded) has two codes, as follows:
+Code 0: Hop limit exceeded in transit
+Code 1: Fragment reassembly time exceeded
+As we have learned, ICMP headers hold a value for Type and Code to convey information
+on what is happening on the network. However, some of the ICMP types are no longer
+used since, over time, they have been found to be ineffective and are considered
+deprecated, such as these examples:
+Type 33: IPv6 Where-are-you (deprecated)
+Type 34: IPv6 I-am-here (deprecated)
+Type 35: Mobile registration request (deprecated)
+
+p.318 Breaking down the ARP header fields
+Within an ARP header, there are several values that provide information on the ARP
+transaction, as outlined in the following list:
+Hardware type: This lists the type of connection for the session. In frame 1, the
+hardware type is listed as Ethernet (1), which is common in today's networks.
+However, there are other types, such as IPsec tunnel (31) and Fiber Channel
+(18), as shown in the list found at https://www.iana.org/assignments/arpparameters/arp-parameters.xhtml#arp-parameters-2.
+Protocol type: This lists the internetworking protocol in use for the session. In
+frame 1, the protocol type is listed as IPv4 0x0800, which is standard on today's
+networks.
+Hardware size: The number of bytes of a hardware address. Frame 1: ARP request
+lists Hardware size: 6. A MAC address is 6 bytes or 48 bits, which is a standard
+MAC address length.
+Protocol size: This lists the bytes in the IP address. Frame 1 lists Protocol size: 4.
+An IPv4 address is 4 bytes or 32 bits, which is the length of an IPv4 address.
+Opcode: This lists what operation the sender is executing. Although there are
+many, as listed at https://www.iana.org/assignments/arp-parameters/arpparameters.xhtml#arp-parameters-1, the opcode is most likely request (1), as
+shown in the Frame 1: ARP request screenshot, or reply (2), as shown in the Frame
+2: ARP reply screenshot.
+Sender MAC address: Frame 1 lists the sender MAC address as
+00:15:5d:0f:49:18, which is the MAC address of the host sending the request.
+Sender IP address: This is the network address of the sender. Frame 1 lists
+172.16.2.3 as the sender's IP address.
+Target MAC address: This is the MAC address of the target. In frame 1, which is
+an ARP request, the target MAC is listed as all zeros, or 00:00:00:00:00:00.
+There is no MAC address listed because the target MAC address is unknown.
+Target IP address: This is the network address of the target. Frame 1 lists Target
+IP address: 172.16.2.27
+
+p.372 Providing file and packet comments
+Within Wireshark, you can comment on the entire capture to document what you found
+within the file. You might preserve this information, either for yourself, or to share with
+others when working with a team. Let's walk through an example of adding a comment
+using the Web Page.pcapng subset.
+To add a comment to the file, you can do one of the following:
+Select the comments icon in the lower left-hand corner, which looks like a pad
+and pencil.
+Go to Statistics | Capture File Properties and include your comments in the
+space below the Capture file comments.
+
+p.379 Although Wireshark is a powerful, versatile tool, there are times when you may need to
+involve your team in a packet analysis exercise. One site that makes it easy to share your
+packet captures with co-workers is CloudShark (CS). While CS does not have as many
+features as Wireshark, you can still execute a number of different packet analysis tasks with
+it
+
+p.380 Diving into an overview of CS
+Most of us would agree that Wireshark is a great tool for packet analysis, troubleshooting,
+and identifying malware and other anomalies on a network. However, Wireshark has some
+limitations, in that it must be installed on a PC or macOS, and the user may not have the
+skills to zero in on the actual problems. In addition, Wireshark is not designed to be used
+concurrently by multiple people, such as in a team.
+CS is a browser-based solution that provides a way to upload packet captures and share
+them with your co-workers. You can also do an analysis on the fly, or simply use it as a
+browser-based solution to learn about packet analysis.
+
+Finding CS
+CS is a browser-based solution that you can find at https://cloudshark.io/. Once on the
+website, you will see that there are many industries that use CS.
+These industries include the following:
+Government
+VoIP service providers
+Cyber defense
+Security
+Educational institutions
+
+p.396 Exploring wireless, protocols, and possible
+threats
+While there are many tools that are similar to those found in Wireshark, this last grouping
+contains an analysis tool unique to CS, which is Threat Assessments. This tool will allow
+you to run your capture and see whether any suspicious packets are flagged. 
+This last section covers the following tools:
+HTTP Analysis: This lists all of the URLs requested in the capture file, along
+with a count of the requests. 
+Decode Protocol As: If CS doesn't decode the protocol correctly, you can provide
+values so that CS can properly decode the protocol. 
+Using CloudShark for Packet Analysis Chapter 16
+[ 379 ]
+Wireless Networks: This provides a list of any wireless networks found in the
+file along with a sortable summary of the following: BSSID, SSID, vendor,
+Signal_dBm, channel, and security.
+Wireless Keys: This will open a dialog box to add any decryption keys for the
+wireless networks in the file.
+Threat Assessments: This is a more advanced option that will scan the capture
+for potentially malicious traffic within it. If none are found, the report will come
+back with the all clear!
+
+p.396 Discovering where to find sample captures
+While learning about packet analysis, it's important to study a variety of captures until you
+are proficient. This may take a while, but it will be well worth the effort. There are many
+online repositories for packet captures. Here are a few websites that can give you a variety
+of real network traffic:
+https://wiki.wireshark.org/SampleCaptures
+http://tcpreplay.appneta.com/wiki/captures.html
+https://www.netresec.com/?page=PcapFiles
+https://chrissanders.org/packet-captures/
+This is only a partial list of where you can get samples to hone your skills. Let's now take a
+look at a handy way to open a packet capture, right in CS.
