@@ -33,6 +33,418 @@ Exploiting Web-Based Applications
 Cloud Security Exploitation
 Bypassing Security Controls
 Exploitation
+
+p.26 Common pitfalls of vulnerability assessments, 
+penetration testing, and red team exercises
+In this section, we will discuss some misconceptions and limitations regarding traditional/classical 
+vulnerability scanning, penetration testing, and red team exercises. Let us now understand the 
+actual meaning of these three topics in simple terms and their limitations:
+• Vulnerability Assessment (VA): The process of identifying vulnerabilities or security 
+loopholes in a system or network through a vulnerability scanner. One of the misconceptions 
+about VA is that it will let you find all of the known vulnerabilities; well, that’s not true. 
+Limitations with VA include that only potential vulnerabilities are found, and it depends 
+purely on the type of scanner that you utilize. It might also include a number of false 
+positives and, to the business owner, there is no clear indication as to which ones do not 
+pose a relevant risk and which one will be initially utilized by the attackers to gain access. 
+The biggest pitfall of VA is false negatives, meaning the scanner did not find an issue that 
+the system or application has. 
+• Penetration testing (pentesting): The process of safely simulating the hacking scenarios 
+by exploiting vulnerabilities without much impact on the existing network or business. 
+There is also a lower number of false positives since testers will try to validate the 
+vulnerabilities and also attempt to exploit them. A limitation with pentesting is that 
+it uses only currently known, publicly available exploits; mostly, these are a focus for 
+project testing. We often hear from pentesters during an assessment, Yay! Got Root—but 
+we never hear the question, what can you do with it? This could be due to various reasons 
+such as project limitations, including the reporting of high-risk issues immediately to 
+the client, or the client only being interested in one segment of the network and only 
+wanting that part tested.
+One of the misconceptions about the pentest is that it provides the attacker 
+with a full view of the network, and you are safe once penetration testing 
+has been performed. This is not the case when attackers have found a vulnerability in the business process of your secure application.
+4 Goal-Based Penetration Testing
+• Red Team Exercise (RTE): A focused process of evaluating the effectiveness of an 
+organization to defend against cyber threats and improve its security by any possible 
+means; during an RTE, we can discover multiple ways of achieving project objectives/
+scenarios and goals, such as complete coverage of activities with the defined project 
+goal, including phishing (enticing a victim to enter sensitive information or download 
+malicious content through emails), vishing (enticing a victim to provide or do some actions 
+with malicious intent through phone calls), “WhatsApping” (engaging a victim through 
+WhatsApp messenger with malicious intent), wireless, disk drops (USB and SSD), and 
+physical penetration testing. The limitations with RTEs are time-bound, pre-defined 
+scenarios and an assumed rather than real environment. Often, the RTE is run with a fully 
+monitored mode for every technique, and tactics are executed according to the procedure, 
+but this isn’t the case when a real attacker wants to achieve an objective.
+
+p.32 Some of the key features of Kali Linux 2021.4 include:
+• Support for multiple desktop environments such as KDE, GNOME3, Xfce, MATE, e17, lxde, 
+and i3wm.021.
+• By default, Kali Linux has Debian-compliant tools that are synchronized with the Debian 
+repositories at least four times daily, making it easier to update packages and apply security 
+fixes.
+• There are secure development environments and GPG-signed packages and repositories.
+• There is support for ISO customization, allowing users to build their own versions of 
+customized Kali with a limited set of tools to make it lightweight. The bootstrap function 
+also performs enterprise-wide network installs that can be automated using pre-seed files.
+• Since ARM-based systems have become more prevalent and less expensive, support for 
+ARMEL and ARMHF in Kali Linux can be installed on devices such as rk3306 mk/ss808, 
+Raspberry Pi, ODROID U2/X2, Samsung Chromebook, EfikaMX, Beaglebone Black, CuBox, 
+and Galaxy Note 10.1.
+• Kali remains a free open-source project. Most importantly, it is well supported by an 
+active online community.
+
+p.80 The first step in a penetration test or an attack is information collection using OSINT. This is the 
+art of collecting information from public sources, particularly through the internet. The amount of 
+available information is considerable—most intelligence and military organizations are actively 
+engaged in OSINT activities to collect information about their targets, and to guard against data 
+leakage about them.
+
+p.83 Maltego is one of the most capable OSINT frameworks for both individual and organizational 
+reconnaissance. It is a GUI tool that can gather information on any individual by extracting 
+the information that is publicly available on the internet by various methods, such as email 
+addresses, URLs, social media network profiles of an individual, and mutual connections between 
+two individuals. It is also capable of enumerating the DNS, brute-forcing the normal DNS, and 
+collecting the data from social media in a format that can be easily read.
+We can utilize this tool by developing a visualization of the data that has been gathered. The 
+community edition, Maltego 4.2.17, is shipped along with Kali Linux. The easiest way to access 
+this application is to type maltego in the terminal. The tasks in Maltego are called transforms. 
+Transforms come built into the tool and are defined as being code scripts that execute specific tasks.
+
+p.111 To improve the effectiveness of active reconnaissance in providing detailed information, our 
+focus will be on using the stealthiest techniques, as these will be the most difficult to detect. In 
+this chapter, you will learn about the following:
+• Stealth scanning techniques
+• External and internal infrastructure, host discovery, and enumeration
+• Comprehensive reconnaissance of applications, especially recon-ng
+• Enumeration of internal hosts using DHCP
+• Enumerating services within the SaaS applications
+• Useful Microsoft Windows commands during penetration testing
+• Taking advantage of default configurations
+• Enumeration of users using SNMP, SMB, and rpcclient
+
+p.156 Using comprehensive tools (Legion)
+The former security tool Sparta is no longer available in the latest version of Kali, but it has been 
+complemented by another comprehensive tool called Legion, which is the same fork as Sparta. This 
+tool can help to speed up the penetration tester’s goal of compromising a system that combines 
+multiple tools, such as Nmap, and several other scripts and tools. This is a semi-automated tool 
+that can be very handy when attackers wish to perform focused information gathering, based 
+on the ports and services: 
+• Hosts: This will list down all the targets that are set by the pentesters
+• Services: This is a list of services that need to be run during the automatic run; for example, 
+if you configure to run Nmap and when port 80 is identified, it will automatically take 
+the screenshot
+• Tools: This will include all the tools that were run on a specific port, along with its relevant 
+outpu
+
+p.157 There are four types of machine learning algorithms:
+• Supervised: These learning algorithms are provided with a set of known data (labeled) 
+that includes the desired output. The goal of this type of learning is for the algorithm to 
+achieve a high level of accuracy by learning from patterns in the data to make predictions.
+• Unsupervised: These learning algorithms are trained with unlabeled data or datasets 
+that do not include the desired output. The algorithm tries to interpret and organize the 
+datasets.
+• Semi-supervised: This is a mix of the preceding types.
+• Reinforcement learning: These algorithms are based on regimented learning processes, 
+where the algorithm is provided with a clear set of actions, factors, and desired outcomes. 
+Most of the time, it is a trial-and-error method to explore different possibilities and options 
+to determine which is best
+
+p.163 Vulnerability scanning employs automated processes and applications to identify vulnerabilities 
+in a network, system, operating system, or application that may be exploitable.
+When performed correctly, a vulnerability scan delivers an inventory of devices (both authorized 
+and rogue devices), known vulnerabilities that have been actively scanned for, and usually a 
+confirmation of how compliant the devices are with various policies and regulations.
+Unfortunately, vulnerability scans are loud; they deliver multiple packets that are easily detected 
+by most network controls and make stealth almost impossible to achieve. They also suffer from 
+the following limitations:
+• For the most part, vulnerability scanners are signature-based; they can only detect known 
+vulnerabilities, and only if there is an existing recognition signature that the scanner can 
+apply to the target. To a penetration tester, the most effective scanners are open source; 
+they allow the tester to rapidly modify code to detect new vulnerabilities.
+• Scanners produce large volumes of output, frequently containing false-positive results 
+that can lead a tester astray; in particular, networks with different operating systems can 
+produce false positives with a rate as high as 70 percent.
+• Scanners may have a negative impact on the network; they can create network latency 
+or cause the failure of some devices. It is recommended to tweak the scan by removing 
+denial-of-service type plugins during initial scans.
+• In certain jurisdictions, scanning is considered hacking, and may constitute an illegal act.
+
+p.167 Unfortunately, not all exploits from the Exploit database and other public sources compile as 
+readily as 76.c. There are several issues that make the use of such exploits problematic, even 
+dangerous, for penetration testers, which are listed as follows:
+• Deliberate errors or incomplete source code are commonly encountered as experienced 
+developers attempt to keep exploits away from inexperienced users, especially beginners 
+who are trying to compromise systems without knowing the risks that go with their 
+actions.
+• Exploits are not always sufficiently documented; after all, there is no standard that governs 
+the creation and use of code intended to be used to compromise a data system. As a 
+result, they can be difficult to use, particularly for testers who lack expertise in application 
+development.
+• Inconsistent behaviors due to changing environments (new patches applied to the 
+target system and language variations in the target application) may require significant 
+alterations to the source code; again, this may require a skilled developer.
+• There is always the risk of freely available code containing malicious functionalities. A 
+penetration tester may think that they are conducting a proof of concept (POC) exercise 
+and will be unaware that the exploit has also created a backdoor in the application being 
+tested that could be used by the developer.
+
+p.202 Kali also facilitates attacks where the intruder has direct physical access to systems and the 
+network. This can be a risky attack, as the intruder may be spotted by an observant human or 
+caught on a surveillance device. However, the rewards can be significant because the intruder 
+can compromise specific systems that have valuable data.
+Physical access is usually a direct result of social engineering, especially when impersonation is 
+used. Common impersonations include the following:
+• A person who claims to be from the help desk or IT support and just needs to quickly 
+interrupt the victim by installing a system upgrade.
+• A vendor who drops by to talk to a client, and then excuses himself to talk to someone 
+else or visit a restroom.
+• A delivery person dropping off a package. Attackers can buy a delivery uniform online; 
+however, since most people assume that anyone who is dressed all in brown and pushing 
+a handcart filled with boxes is a UPS delivery person, uniforms are rarely a necessity for 
+social engineering!
+• Trade persons wearing work clothes, carrying a work order that they have printed out, 
+are usually allowed access to wiring closets and other areas, especially when they claim 
+to be present at the request of the building manager.
+• Dress in an expensive suit, carry a clipboard, and walk fast; employees will assume that 
+you’re an unknown manager. When conducting this type of penetration, we usually inform 
+people that we are auditors, and our inspections are rarely questioned.
+
+p.338 Exploiting security permission flaws
+The following are the most common vulnerabilities within AWS cloud services:
+• Excessive public subnets – The majority of organizations utilize the default VPC (Virtual 
+Private Cloud) feature that is built into AWS and make few changes when they utilize AWS 
+services, taking the easy approach. However, this approach has been proven dangerous 
+in many cases (an example would be botnet-based crypto-ransomware). Public subnets 
+are accessible by anyone on the internet, potentially exposing something that shouldn’t 
+normally be available. 
+316 Cloud Security Exploitation
+• IAM (Identity and Access Management) issues in organizations that do not utilize two- or 
+multi-factor authentication for high-privileged accounts and utilize a single account for 
+almost everything, providing the same level of access to all new accounts, putting them at 
+risk. There have been cases where employees’ accounts have been compromised through 
+email phishing leading to massive ransomware attacks that cost the organization almost 
+the same amount of money it would take to rebuild the entire company.
+• Misconfigured S3 buckets – In the previous section, we explored S3 bucket permission 
+misconfiguration. This is one of the most common themes noted during cloud penetration 
+testing. Although buckets are private by default, sometimes IT operations/development 
+teams or the third parties who manage these types of infrastructure tend to make them 
+public. That opens them up to the inevitable threat of adversaries, finding misconfigured 
+S3 buckets with sensitive information such as private keys or unattended files, including 
+backups or log files. 
+• Origin servers – The majority of the cloud service providers utilize a Content Delivery 
+Network (CDN) to distribute content to high-volume customers. Most of the time, these 
+are misconfigured, leaking the origin of the servers. One of our pentesters gave an example 
+of how this can lead to a security breach. During penetration testing, it is not uncommon 
+to find the origin servers and directly hit their vulnerabilities and even take over the 
+database with brute-force-style attacks. 
+• SSRF (Server Side Request Forgery) – This is an attack that can be abused to take 
+advantage of legitimate AWS functionality and gain access to metadata information, and 
+if exploited successfully attackers can retrieve valid user credentials for an IAM role. We 
+will explore this attack in this section.
+• DNS records – Most of the time, during the initial reconnaissance, attackers can easily 
+identify the S3 bucket details with the subdomain of the organization. The issue arises 
+when the operations team forgets to update their DNS records in a timely fashion, or even, 
+surprisingly, decommissions unattended S3 buckets still live and available to anyone on 
+the public internet.
+
+p.349 Obfuscating CloudTrail logs
+CloudTrail is a service within Amazon that monitors any actions that are done by users. Assuming 
+attackers now have high-privileged access to the environment, they will be able to modify the 
+settings by performing the following actions: 
+1. Identify the CloudTrail details by running sudo aws cloudtrail describe-details 
+–profile <profile name>.
+2. Attackers can choose to perform the removal of trails by running sudo aws cloudtrail 
+delete-trail --name cloudgoat_trail --profile <Profile name>.
+3. Alternatively, they can stop the logging by running sudo aws cloudtrail stop-logging 
+--name cloudgoat_trail --profile <Profile name>. However, it will trigger an alert 
+in GuardDuty (a threat detection service within AWS) about the logs not being captured. 
+We have explored the important aspects of cloud penetration testing with some practical examples. 
+Pentesters should always consider any cloud infrastructure as part of the internal/external scope 
+to ensure that objectives are met
+
+p.360 Metasploit Pro (Nexpose), available as a community edition on the Kali distribution, includes the 
+following to specifically bypass intrusion detection systems:
+• The scan speed can be adjusted in the Discovery Scan settings, reducing the speed of 
+interaction with the target by setting the speed to sneaky or paranoid
+• This implements transport evasion by sending smaller TCP packets and increasing the 
+transmission time between the packets
+• This reduces the number of simultaneous exploits launched against a target system
+• There are application-specific evasion options for exploits that involve DCERPC, HTTP, 
+and SMB, which can be set automatically
+Most antivirus software relies on signature matching to locate viruses, ransomware, or any other 
+malware. They examine each executable for strings of code known to be present in viruses (the 
+signature) and create an alarm when a suspect string is detected. Many of Metasploit’s attacks 
+rely on files that may possess a signature that, over time, has been identified by antivirus vendors.
+In response to this, the Metasploit framework allows standalone executables to be encoded to 
+bypass detection.
+
+p.383 Auditing and logging
+Most of the default configuration controls that Windows can potentially put in place involve 
+enabling system logs. The following is the list of logs that can be enabled by any organization to 
+utilize information during an incident/forensic analysis:
+• Credential validation
+• Computer account management
+• Distribution group management
+• Other account management level
+• Security group management
+• User account management
+• Process creation
+• Directive service access and changes
+• Account lockout/logoff/logon/special logon
+• Removable storage
+• Policy changes
+• Security state changes
+This provides a clear view of what types of logs the penetration testers must consider clearing 
+after the exploit phase in our cyber kill chain methodology.
+
+p.389 Modules
+MSF consists of modules that are combined to affect an exploit. The modules and their specific 
+functions are as follows:
+Chapter 10 367
+• Exploits: The code fragments that target specific vulnerabilities. Active exploits will exploit 
+a specific target, run until completed, and then exit (for example, a buffer overflow). Passive 
+exploits wait for incoming hosts, such as web browsers or FTP clients, and exploit them 
+when they connect.
+• Payloads: These are the malicious code that implement commands immediately following 
+a successful exploitation.
+• Auxiliary modules: These modules do not establish or directly support access between 
+the tester and the target system; instead, they perform related functions such as scanning, 
+fuzzing, or sniffing, which support the exploitation phase.
+• Post modules: Following a successful attack, these modules run on compromised targets 
+to gather useful data and pivot the attacker deeper into the target network. We will learn 
+more about the post modules in Chapter 11, Action on the Objective and Lateral Movement.
+• Encoders: When exploits must bypass antivirus defenses, these modules encode the 
+payload so that it cannot be detected using signature matching techniques.
+• No operations (NOPs): These are used to facilitate buffer overflows during attacks.
+
+p.396 Single targets using a simple reverse shell
+In this example, we’ll exploit two different vulnerabilities. The first one is the famous ProxyLogon 
+vulnerability that the Hafnium threat actor group exploited by misuing Microsoft Exchange 
+Server in March 2021, which stormed the internet and led to many cybersecurity incidents and 
+also financial fraud around the globe. There are four vulnerabilities that were primarily exploited: 
+• CVE-2021-26855: Server Side Request Forgery (SSRF) – Where attackers are able to 
+submit specifically crafted HTTP requests remotely without any authentication and the 
+server accepts untrusted connections on TCP port 443. 
+• CVE-2021-26857 – An insecure deserialization vulnerability within the Microsoft Exchange 
+Unified Messaging Service (UMS), allowing attackers to run malicious code under a highprivilege SYSTEM account. This can be exploited either with SSRF or stolen credentials.
+• CVE-2021-26858 and CVE-2021-27065 – These both relate to arbitrary file write 
+vulnerability to write files to a given directory. 
+In the following example, we will be demonstrating a combination of CVE-2021-26855, to bypass 
+the authentication and additionally impersonate an administrator account, and CVE-2021-27065
+to write an arbitrary file with the payload to provide us with remote code execution on the server.
+
+p.406 In this section, we will cover some basics that are required to develop a Windows exploit by 
+building a vulnerable application. From the exploit development perspective, the following are 
+the basic terms that penetration testers must understand when they develop an exploit:
+• Registers: All of the processes execute via registers; these are used to store information.
+• x86: This includes 32-bit systems that are mostly Intel-based; 64-bit systems are 
+represented as x64.
+• Assembly language: This includes low-level programming languages.
+• Buffer: This is a static memory holder in a program that stores data on top of the stack 
+or heap.
+Chapter 10 383
+• Debugger: Debuggers are the programs that can be utilized so that you can see the runtime 
+of a program while executing. You can also use them to look at the state of registry and 
+memory. Some of the tools that we will be using are immunity debuggers, GDB, and 
+OllyDbg.
+• ShellCode: This is the code that is created by the attackers in a successful exploitation.
+The following are the different types of registers:
+• EAX: This is a 32-bit register that is used as an accumulator and stores data and operands.
+• EBX: This is a 32-bit base register and acts as a pointer to the data.
+• ECX: This is a 32-bit register that’s used for looping purposes.
+• EDX: This is a 32-bit data register that stores I/O pointers.
+• ESI/EDI: These are 32-bit index registers that act as data pointers for all the memory 
+operations.
+• EBP: This is a 32-bit stack data pointer register.
+• Extended Instruction Pointer (EIP): This is a 32-bit program counter/instruction pointer 
+that holds the next instruction to be executed.
+• Extended Stack Pointer (ESP): This is a 32-bit stack pointer register that points exactly 
+to where the stack is pointing.
+• SS, DS, ES, CS, FS, and GS: These are 16-bit segment registers.
+• NOP: This stands for no operations.
+• JMP: This stands for jump instructions.
+
+p.408 The attacker can find out how it can be exploited to allow remote access by running their own code. 
+Now that the application is accessible and everything is set, attackers can begin the art of fuzzing.
+Although there are a number of fuzzing tools available, SPIKE is one of the defaults that is installed 
+on Kali Linux. SPIKE is a fuzzing toolkit that’s used to create fuzzers by providing scripting 
+capabilities; however, it is written in the C language. The following is a list of interpreters written 
+in SPIKE that can be utilized:
+• generic_chunked
+• generic_send_tcp
+• generic_send_udp
+• generic_web_server_fuzz
+• generic_web_server_fuzz2
+• generic_listen_tcp
+SPIKE allows you to add your own set of scripts without having to write a few hundred lines of 
+code in C. Other fuzzing tools that attackers can consider are Peach Fuzzer, BooFuzz, and FilFuzz.
+Once attackers connect to the target application, they should be able to see multiple options 
+available in the vulnerable server, which they can then play with. This includes STATS, RTIME, LTIME, 
+SRUN, TRUN, GMON, GDOG, KSTET, GTER, HTER, LTER, and KSTAN as part of valid commands that take 
+input. We will utilize the generic_send_tcp interpreter to fuzz the application. The format to use 
+the interpreter is as follows: . /generic_send_tcp host port spike_script SKIPVAR SKIPSTR:
+• host: This is the target host or IP.
+• port: This is the port number to be connected to.
+• spike_script: This is the SPIKE script to run on the interpreter.
+• SKIPVAR and SKIPSTR: This allows the testers to jump into the middle of the fuzzing session, 
+as defined in the SPIKE script.
+
+p.411 To conduct the successful buffer overflow for the given application involves the following steps:
+1. Finding the right length of the spiking 
+2. Fuzzing the right pattern 
+3. Finding the offset
+4. Overwriting the EIP 
+5. Finding the right address of the JMP ESP operation
+6. Checking for bad characters and placing a NOPS sled
+7. Generating shellcode 
+8. Setting up listeners and exploiting
+
+p.529 With a basic understanding of the bootloaders and different types of firmware, we will explore how 
+to unpack some firmware and update it with our custom firmware on a Cisco Meraki MR18 wireless 
+access point (an embedded device with Cisco firmware). Most of the time, during hardware 
+penetration testing, the firmware images will not include all the files to construct a complete 
+embedded system. Typically, we find the following in each embedded device:
+• Bootloader (1st/2nd stage)
+• Kernel
+• Filesystem images
+• User-land binaries
+• Resources and support files
+• Web server/web interface
+Modern embedded devices prevent the installation of different operating systems using their 
+own firmware, therefore to upgrade the device to a customizable operating system, we will utilize 
+OpenWRT, which is open-source firmware for residential gateways, originally created for Linksys 
+WRT54G wireless routers. It has grown into an embedded Linux distribution and now supports a 
+wide range of devices. With the device restrictions, to perform the upgrade or update it requires 
+a JTAG (which stands for Joint Test Action Group, an industry standard for verifying designs and 
+testing printed circuit boards after manufacture).
+JTAG can be used more from a TAP (Test Access Port) perspective no matter how restricted the 
+device is. The manufacturer will usually leave either a serial port or a few TAPs. In our experience, 
+if serial access is not yielding good results or the device is too locked down, it might be easier to 
+go for a JTAG port (but this is not always the case as the device might be completely locked down).
+
+p.537 UART stands for Universal Asynchronous Receiver/Transmitter. It is one of the first modes of 
+communication to computers. It goes back to 1960 when it was used to connect minicomputers 
+for teletypewriter machines (teletypes). The main purpose of UARTs is to transmit and receive the 
+serial data just like a standalone integrated circuit; it is not a protocol like SPI (Serial Peripheral 
+Interface) or I2C (Inter-Integrated Circuit). It is typically used by manufacturers to connect 
+microcontrollers to store and load programs. Every UART device has advantages and disadvantages. 
+The following are the advantages of UART:
+• It has only two wires, so it’s pretty straightforward. One is transmit (TX), and the other 
+is receive (RX).
+• There is no need for a clock signal.
+• Error checking can be performed by a parity bit.
+• If both sides are set up, then the structure of the data packet can be changed.
+• It’s widely used due to the availability of its documentation throughout the internet.
+It has the following limitations:
+• Testers cannot increase the data frame: it will be limited to 9 bits at most
+• There is no way to set up multiple slave or master systems
+• UART baud rates must be within 10%
+In this section, we will be using the USB to TTL (Transistor/Transistor Logic) adapter to perform 
+UART communication by connecting to the serial port of the device’s circuit board.
+These adapters typically include four ports:
+• GND: Ground (0V) supply
+• VCC: Voltage power supply, 3.3V (default) or 5V
+• TX: Serial transmit
+• RX: Serial receive
 Action on the Objective and Lateral Movement
 Privilege Escalations
 Command and Control
