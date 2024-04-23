@@ -35,3 +35,168 @@ VPN and Advanced Protection
 Troubleshooting Common Session Issues
 A Deep Dive into Troubleshooting
 Supporting Tools
+
+p.23 Traditionally, when considering the firewall as an element of your network, most likely 
+you will imagine a network design like the one in the following image, with two to four 
+areas surrounding a box. Most of the time, whatever is placed in the north is considered 
+dangerous, east and west are somewhat grey areas, and the south is the happy place where 
+users do their daily tasks. The box in the middle is the firewall
+In reality, a network design may look a lot more complex due to network segregation, 
+segmentation, remote offices being connected to the headquarters via all sorts of different 
+technologies, and the adoption of cloud vendors. 
+In a route-based firewall, zones are simply an architectural or topological concept that 
+helps identify which areas comprise the global network that is used by the company 
+and are usually represented by tags that can be attached to a subnet object. They hold 
+no bearing in any of the security decisions made by the system when processing 
+security policies.
+Understanding the zone-based firewall 5
+The zone-based firewall, on the other hand, will use zones as a means to internally classify 
+the source and destination in its state table. When a packet is first received, a source zone 
+lookup is performed. If the source zone has a protection profile associated with it, the 
+packet is evaluated against the profile configuration. If the first packet is a TCP packet, it 
+will also be evaluated against TCP state where the first packet needs to be a SYN packet, 
+and a SYN-cookie is triggered if the protection profile threshold is reached. Then, 
+a destination zone is determined by checking the Policy-Based Forwarding (PBF)
+rules and if no results are found, the routing table is consulted. Lastly, the NAT policy is 
+evaluated as the destination IP may be changed by a NAT rule action, thereby changing 
+the destination interface and zone in the routing table. This would require a secondary 
+forwarding lookup to determine the post-NAT egress interface and zone
+
+p.73 The RADIUS server profile
+RADIUS is one of the more popular authentication methods and supports the following 
+authentication protocols:
+• PEAP-MSCHAPv2: Protected Extensible Authentication Protocol (PEAP) with 
+Microsoft CHAP v2 provides improved security over PAP or CHAP by transmitting 
+both the username and password in an encrypted tunnel.
+• PEAP with Generic Token Card (GTC): PEAP with GTC enables the use of 
+one-time tokens in an encrypted tunnel.
+54 Setting Up a New Device
+• EAP-TTLS with PAP: EAP with Tunneled Transport Layer Security (TTLS) and 
+PAP is used to transport plain text credentials for PAP in an encrypted tunnel.
+• CHAP: Used if the RADIUS server does not support EAP or PAP or is not 
+configured for it.
+• PAP: Used if the RADIUS server does not support EAP or CHAP or is not 
+configured for it.
+• Palo Alto Networks uses vendor code 25461.
+
+p.74 The Kerberos server profile
+The Kerberos server profile is very simple to configure as it only requires an IP or FQDN 
+and a port number, but it does require a few specific configuration settings:
+• The firewall needs to have the domain set from Device | Setup | Management | 
+General Settings. 
+• The firewall is synced to an NTP server from Device | Setup | Services so that its 
+clock is in sync with the local ActiveDirectory server.
+• Its DNS servers need to be set to internal DNS servers that are joined to the domain, 
+rather than external DNS servers.
+
+p.75 The SAML server profile
+The SAML profile enables authentication against an external Single Sign-On (SSO) 
+provider (such as PingID and Okta).
+Your Identity Provider (IdP) should provide you with the following:
+• An identifier so that it can certify whether the authentication session originates 
+from you.
+• The root and intermediary certificates, which you can load to Device | Certificate 
+Management | Device Certificates to verify the identity of the SSO and Single Log 
+Out (SLO) sites
+• An SSO URL
+• An SLO URL
+
+p.130 Action options
+There are multiple actions that handle inbound connections, some of which are stealthy 
+and some of which are noisy and informative, depending on your needs:
+• Deny: This action will drop the session and enforce the default Deny action 
+associated with an application. Some applications may silently drop while others 
+send an RST packet.
+• Allow: This allows the session to go through.
+• Drop: This silently discards packets.
+• Reset Client: This sends a TCP RST to the client.
+• Reset Server: This sends a TCP RST to the server.
+• Reset Both: This sends a TCP RST to both the client and the server.
+If you check the Send ICMP Unreachable checkbox and the ingress interface is Layer 
+3, an ICMP Unreachable packet is sent to the client for all of the dropped TCP or UDP 
+sessions.
+
+p.137 Address objects
+To make managing destinations in your security and NAT policy a little easier, you can 
+create address objects by going to Objects | Addresses. When you create a new object 
+here, you can reuse the same object in different rules, and if something changes, you 
+only need to change the address object for all the security and NAT rules to be 
+automatically updated:
+1. Click on Add and provide a descriptive name for the address. It is good practice to 
+set up a naming convention so that you can repeat this process for all other address 
+objects. A good example is to prefix all server names with S_ and all networks with 
+N_ so that they're easily identifiable.
+2. Set a description if needed.
+3. Select the type of object that this will be.
+--IP Netmask lets you set an IP with a subnet mask down to /32 or /64 for a single 
+IPv4 or Ipv6 address (no need to add /32).
+--IP Range lets you define a range that includes all the IP addresses between the 
+first and last IP set in the range, separated with a dash (-).
+--IP Wildcard Mask lets you set a subnet masking that covers binary matches, 
+where a zero bit requires an exact match in the IP bit, and 1 is a wildcard. So, for 
+example, a wildcard subnet of 0.0.0.254 translates to 000000000.0000000.0
+000000.11111110. the first three bytes are set and in the last byte, all but the first 
+bit are wildcards. This means that if the associated IP address is set to 10.0.0.2
+(00001010.0000000.000000.00000010), all of the IPs in the subnet that 
+end in 0 will be matched (that is, all of the even IP addresses). If the IP is set to 
+10.0.0.1, all of the odd IPs would match. This type of object can only be used in 
+security rules.
+--FQDN lets you set a domain name that the firewall will periodically resolve 
+according to the Time To Live (TTL) and cache. Up to 10 A or AAAA records are 
+supported for each FQDN object. Use the Resolve link to verify that the domain can 
+be resolved.
+4. Add a tag to easily identify and filter policies for this object.
+5. Click OK.
+Once you have sets of objects that are similar, you can also create groups by going to 
+Objects | Address Groups. These groups can be used to bundle objects for use in security 
+or other policies.
+
+p.153 Controlling the bandwidth with quality of 
+service policies
+Quality of Service (QoS) is the collective name for several technologies that can 
+help improve the quality of applications and the data flows that they are applied to by 
+prioritizing them over other flows or reserving bandwidth to ensure adequate throughput 
+and acceptable latency. In this section, you will learn how QoS marking can be applied to 
+a firewall to interact with network devices downstream.
+There are two ways for a firewall to participate in applying QoS to network traffic:
+• Differentiated Services Code Point (DSCP) and Type of Service (ToS) headers 
+• QoS enforcement through built-in capabilities
+
+p.154 QoS enforcement in the firewall
+The firewall can also enforce bandwidth restrictions or guarantees, and that's what we will 
+focus on here. The Palo Alto Networks firewall uses a system of eight classes combined 
+with policies. 
+Each interface is set up with a QoS profile that mandates how each class is treated, and 
+then policies are created to identify sessions as belonging to a certain class. The default 
+class is class4, so anything that is not caught by a QoS rule will automatically become 
+class4 and be subject to the restrictions for that class.
+We'll use the following topology to build an example QoS policy:
+• An internet link on eth1/1 with a download bandwidth of 200 Mbps per second 
+and an upload bandwidth of 50 Mbps.
+• A DMZ network containing some servers on eth1/2 connected to a 1 Gbps 
+interface.
+• A LAN where the users sit on eth1/3 connected to a 1 Gbps interface.
+• Users need 20 Mbps of guaranteed upload and download bandwidth for their 
+enterprise Voice over Internet Protocol (VoIP), but some internet downloads need 
+to be limited to 50 Mbps. 
+• File share traffic between users and servers needs to be limited to 300 Mbps. 
+• Site-to-site VPN connections need a 20 Mbps guarantee for business-critical 
+applications.
+
+p.190 Setting up high availability
+High Availability (HA) is a configuration where two identical (the same chassis or 
+VM version) firewalls are connected to form a cluster. When clustering is enabled, 
+both systems will form a single entity to the outside and will handle failover for certain 
+problems, so the service remains available to users. These types of monitoring are or can 
+be performed in a cluster member to ensure its own and its peers' health:
+• Link monitoring: If an interface goes down, the member fails.
+• Path monitoring: If an IP becomes unavailable, the member fails.
+Setting up high availability 171
+• Heartbeat monitoring: The peers periodically send heartbeat packages and hello 
+messages to verify they are up and running.
+• Hardware monitoring: The member continually performs packet path health 
+monitoring on its own hardware and fails if a malfunction is detected.
+When you enable HA, you need to select a Group ID. This ID needs to be identical on 
+both members. The Group ID will also have an impact on the MAC addresses associated 
+with each interface as they switch to a virtual MAC that both firewalls will be able to claim 
+via gratuitous ARP in case one member fails.
