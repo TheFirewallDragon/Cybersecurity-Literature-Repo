@@ -36,3 +36,414 @@ Social Engineering, Password Guidance, and Policy
 The Cloud
 What about the US?
 Appendix
+
+p.28 We can define corporate governance as “a toolkit that enables management and the board to deal more 
+effectively with the challenges of running a company. Corporate governance ensures that businesses have 
+appropriate decision-making processes and controls in place so that the interests of all stakeholders are 
+balanced.” (This definition is taken from https://www.itgovernance.co.uk/.)
+A strong corporate governance framework can assist you in meeting the requirements of laws and 
+regulations such as GDPR, that is, the European privacy law.
+GDPR, for example, requires data controllers and processors to verify compliance with its standards 
+through specific documentation, such as applicable logs, rules, and procedures.
+Throughout this book, I will use examples from GDPR, although there are several other legislations 
+around, such as LGPD (the Brazilian privacy law) or CCPA from California, and many more about to 
+come. But GDPR is, with the UK variant, an umbrella for roughly 400 million people in 28 countries 
+and therefore, the most popular. 
+Using IT governance aspects will assist you in creating and maintaining proper policies and procedures 
+to help satisfy your data privacy obligations.
+IT governance is a component of corporate governance that aims to improve overall IT management 
+and get more value from investments in information and technology.
+
+p.29 IT governance frameworks have the following functions:
+• Assisting entities in efficiently managing their IT risks and ensuring that information and 
+technology operations are aligned with their overall business objectives
+• Showing demonstrable achievements in relation to broader business plans and goals
+• Complying with applicable legal and regulatory duties, such as those outlined in GDPR
+• Assuring stakeholders that your entity’s IT services are trustworthy
+• Facilitating a higher return on IT investment
+• Following any business governance or public listing guidelines or procedures
+According to ISACA (https://www.isaca.org), we can break IT governance (ISO 38500) 
+into five different domains:
+• Value delivery
+• Strategic alignment
+• Performance management
+• Resource management
+• Risk management
+Consider that there are several frameworks and methodologies to comply with IT governance, such
+as ISO 27001, NIST, ISO 27000 (aka ITIL), COBIT, ISO 31000, ISO 38500, and ISO 22301. Since we 
+are dealing with a security compliance framework, it would be better to stick to the most popular, 
+that is, ISO27001 and NIST, alongside ISO 27701 (privacy framework).
+
+p.31 The goal of the incident management procedure is to restore normal service operation as soon as 
+possible and to minimize the negative effect on business activities while maintaining agreed-upon 
+standards of service quality. The incident management process’s goals are to do the following:
+• Ensure that standardized processes and procedures are utilized for effective and timely incident 
+response, analysis, recording, continuous improvement and reporting
+• Increase incident visibility and communication to business and IT support personnel
+• Improve the business view of IT by taking a professional approach to addressing and communicating 
+problems as they might arise
+• Align incident management efforts and priorities with business priorities
+• Maintain satisfaction among users with IT service quality
+So, we conclude a very rapid journey on the essential topics concerning governance. Let’s move on to 
+an interesting topic, differences of NIST.
+
+p.31 Differences between ISO 27001 and NIST
+As it has fewer controls to implement, and since there’s no control over it (NIST doesn’t have a certification 
+scheme), NIST is considered somewhat less mature; also, as it is backed by the US government and not 
+an international committee, it is not considered much outside the US. But if you like plain instructions 
+and don’t want to spend a fortune, at least in the beginning, it can be a good idea to use NIST. Finally, 
+it is possible to get the best of both worlds by implementing both at the same time.
+
+p.42 Controls are a combination of technological, procedural, and behavioral components that work 
+together to achieve a specified, recognized, and recorded control goal. For example, your desktop user 
+systems are under attack from a harmful combination of viruses, worms, Trojans, and spam, which 
+will jeopardize the availability, confidentiality, and integrity of the data on your desktop. Email, online 
+browsing, and instant messaging are the attack vectors. Among the controls would be the following:
+• Anti-virus and anti-spyware software, anti-spam filters, firewalls, and automated updating are 
+examples of technical advances
+• Processes including software and firewall configuration, upgrading procedures, incident 
+management procedures, and acceptable usage policies
+• Behavioral – user awareness and training in dealing with these risks and techniques of reaction, 
+such as identifying when malicious software attempts to download into a PC
+This three-pronged approach is typical of all successful controls; implementing merely two of them 
+exposes a substantial vulnerability that can reverse all that has been put in place. The false sense of 
+security that most businesses gain from having only a partial solution in place may be very damaging
+
+p.67 Article 9 of the GDPR contains a comprehensive overview of the specific categories of data:
+• Information exposing race or ethnicity
+• Information exposing political viewpoints
+• Information exposing religious beliefs
+• Information exposing philosophical convictions
+• Information concerning membership in a labor organization
+• Genomic data
+• Biometric data (for the purpose of uniquely identifying a natural person)
+• Information on health
+• Information pertaining to sexual activity or orientation
+
+p.76 To achieve this purpose, the head of the IT function must prepare an IT security policy, which is an 
+organic set of formal rules that define the methods for managing the IT tools and data of the company 
+or body in question. The components of the policy are the following:
+• Authentication
+• Internal and external data integrity
+• Data backup
+• Host security
+• Network security
+• Physical security
+• The safety of operations
+• Configuration management (minimum security profile)
+• Alert mechanisms activated on systems (SIEM and similar)
+• The operating procedures for changing the policy in the event of unforeseen external events
+
+p.94 Among the advantages of risk management are the following:
+• Enhanced risk awareness within the company
+• Increased confidence in corporate aims and goals as a result of incorporating risk into strategy
+• Compliance coordination results in greater and more efficient compliance with regulatory and 
+internal compliance regulations
+• Enhanced operational efficiency via the implementation of risk protocols and control more 
+consistently
+• Increased employee and consumer workplace safety and security
+• A distinct competitive advantage in the market
+The following are some of the obstacles that risk management teams are likely to face:
+• Initially, costs increase because risk management strategies often need costly software and services
+• To comply with the growing focus on governance, business units must also devote time and 
+money
+• Reaching an agreement on the severity of a danger and how to address it may be a tough and 
+controversial task that can lead to analytical paralysis in certain cases
+• It is difficult to demonstrate the benefit of risk management to executives without concrete figures
+
+p.94 Let’s use the ISO 31000 standard (there are many around, from Committee of Sponsoring Organization, 
+COSO (https://www.coso.org/), to eBIOS (https://www.enisa.europa.eu/
+topics/threat-risk-management/risk-management/current-risk/riskmanagement-inventory/rm-ra-methods/m_ebios.html, a similar framework sponsored 
+by the European Community) but, for sake of simplicity, we are going to utilize something that you 
+have already heard of:
+• Consultation and communication – Since increasing risk awareness is a crucial component 
+of risk management, risk leaders must also design a communication strategy to disseminate 
+the organization’s risk policies and procedures to workers and other relevant parties. This stage 
+sets the tone for all risk-related choices. The audience consists of anybody interested in how 
+the company capitalizes on favorable risks and mitigates negative ones.
+78 Security Planning and Risk Management
+• Providing the context – This phase entails determining the organization’s specific risk appetite 
+and risk tolerance (i.e., the extent by which risk may deviate from risk appetite). Included in these 
+considerations are corporate goals, company culture, regulatory laws, and the political climate.
+• Risk identification – This stage identifies the risk scenarios that may have a favorable or negative 
+effect on the organization’s capacity to do business. As stated before, the resultant list should 
+be entered into an up-to-date risk registry.
+• Risk analysis – The probability and severity of each risk are examined in order to classify 
+them. The creation of a risk heatmap, which gives a visual picture of the nature and effect 
+of a company’s risks, might be beneficial in this situation. A worker calling in sick is a highprobability occurrence that has little or no influence on the majority of businesses. Depending 
+on its location, an earthquake is an example of a low-probability but high-impact danger.
+• Risk assessment – Here, companies consider how to address the threats they confront. 
+Techniques consist of at least one of the following:
+ Risk Avoidance – The objective of risk avoidance is to remove, withdraw from, or avoid 
+possible danger
+ Risk Mitigation – The process through which an organization minimizes or optimizes a risk
+ Risk Sharing (or Risk Transfer) – The organization contracts with a third party (e.g., an 
+insurer) to shoulder some or all of the expenses associated with a risk that may or may not arise
+ Risk Acceptance – A risk that fits within the risk appetite and tolerance of the company is 
+accepted without action
+• Risk Treatment – This phase involves implementing the agreed-upon controls and procedures 
+and verifying that they function as intended.
+• Monitoring and evaluation – Are the controls operating properly? Can they be made better? 
+Monitoring operations should monitor key performance indicators (KPIs) and search for key 
+risk indicators (KRIs) that might prompt a strategy adjustment.
+
+p.101 The ISO 27001 standard – what it is and what requirements it 
+establishes
+Annex A of ISO/IEC 27001 contains the objectives and controls, or the thematic areas considered 
+and the controls to be applied (the 14 thematic areas are then broken down into lower-level controls, 
+more details of which are provided in ISO/IEC27002). The areas, or domains, of the whole ISO/IEC 
+27001 are broken up into the following 14 controls:
+• A.5: Information security policy
+• A.6: Organization of information security
+• A.7: Human resource security
+• A.8: Asset management
+• A.9: Access control
+• A.10: Cryptography
+• A.11: Physical and environmental security
+• A.12: Operation security
+• A.13: Communications security
+• A.14: System acquisition, development, and maintenance
+• A.15: Supplier relationships
+• A.16: Information security incident management
+• A.17: Information security aspects of business continuity management
+• A.18: Compliance
+Each of these sections then contains subareas that provide directives without, however, providing 
+stringent specifications on the security measures that must be chosen and used in a specific case.
+
+p.104 At the heart of the iSMS is the risk analysis and assessment process, which allows you to assess the 
+riskiness of threats and therefore establish possible countermeasures.
+In this case, the suggestion is to adopt an approach already used in the company, if present, or to create 
+a new one that is simple enough so as not to make the project excessively complicated.
+Being able to identify relevant threats and weigh them accurately is a very difficult aspect and typically 
+requires coordinated work between security specialists.
+Without going into excessive detail, the risk analysis phases must be as follows:
+• Risk identification: This is the phase in which the possible risks must emerge, which, if they 
+materialize, would lead to a compromise in terms of the integrity, confidentiality, or availability 
+of data.
+• Risk measurement: Once the possible risks have been identified, they must be weighed 
+according to the impact they would have on the organization. They can be both quantifiable, 
+such as monetary impacts (usually in the case of material losses), and immaterial, as in the 
+case of damage to reputation.
+• Risk weighting: In this step, the results of the previous phase are compared with the risk criteria 
+to establish the priorities and methods of risk treatment.
+Ultimately, therefore, it is decided how to intervene when risk is encountered and how to proceed. 
+The options are as follows:
+• Accept the risk if it is not believed to substantially affect the overall risk
+• Transfer the risk, where possible, if, for example, it is easier than having to compensate for it 
+with mitigation actions
+• Cancel the risk, for example, by decommissioning a service if the cost of correcting the risk is 
+excessive compared to the actual benefit that this service entails
+• Mitigate the risk or implement one or more controls in order to bring the risk back to a value 
+that is considered acceptable
+
+p.111 All employees, vendors, and independent contractors should be aware of the following:
+• That you have an iSMS and the reasons why
+• That you have an information security policy and which portions are applicable to them
+• What they must do to assist the company in achieving its information security goals and how 
+they may help your firm safeguard its precious information
+• Which policies, procedures, and controls are applicable to them and the repercussions 
+of noncompliance
+• Awareness and comprehension of the following clauses 6.1 – Risk management, 6.2 – iSMS 
+goals, 9.1 – Wider measurement and evaluation, 9.2 – Internal audits, 9.3 – Management 
+reviews, 10.1 – Non-conformities and remedial measures, as well as continuous improvements 
+in accordance with 10.2. (Continual Improvement)
+• This information may often be communicated using current procedures and documentation, 
+such as orientations, employment contracts, toolbox discussions, supplier agreements, staff 
+briefings, and updates
+
+p.116 The standard says that recorded information required by the iSMS, as well as the standard itself, must 
+be accessible, usable, and sufficiently safeguarded against destruction or loss of integrity and identity, 
+regardless of its internal or external origin. For the correct management of recorded information, the 
+organization must provide distribution, retention, access, use, retrieval, preservation, and storage 
+methods, as well as control and disposal procedures.
+Documented information required by the information security management system and by ISO 27001 
+documentation must be appropriately checked to ensure (note: the originating clauses are in brackets):
+• iSMS scope (documents) (4.3)
+• High-level information security policy (documents) (5.2)
+• Risk assessment methodology (documents) (6.1.2)
+• Risk assessment report and risk treatments (record) (6.1.2, 6.13, 8.2, 8.3)
+• Statement of applicability (documents) (6.1.3 d)
+• Information security objectives (documents)( 6.2)
+• Evidence of competencies (record) (7.2)
+• Documented information as required by the iSMS (documents and record) (7.5.1 b)
+• Documents and records required by ISO 27001 (documents and record)( 7.5.1 a)
+• Monitoring and measurement results (record)( 9.1)
+• Internal audit program aid results (record) (9.2)
+• Results of management review (record) (9.3)
+• Non-conformances and results and corrective action (record) (10.1)
+
+p.142 Using the ISO 27001 controls
+The controls outlined in Annex A of ISO 27001 are a vital component of risk treatment and must be 
+chosen based on a comprehensive analysis of an organization’s information security threats.
+Typically, chosen controls must be justified by one of the following:
+• Risk assessment
+• Business need or best method
+• Legal or contractual requirement
+Once controls have been identified, organizations must submit a Statement of Applicability (SoA) 
+that must contain, at a minimum, all 114 controls listed in Annex A of ISO 27001, along with reasons 
+for inclusions and, preferably, concise descriptions of how they have been implemented. The SoA acts 
+as a tool for providing senior management with accurate information on the degree of risk to which 
+their organizations are exposed and the status of risk treatment efforts.
+
+p.172 The most prevalent vishing methods
+Cybercriminals often pose as trustworthy individuals, such as bank employees, Internal Revenue 
+Service officials, or insurance agents. These fraudsters believe that you will trust these individuals 
+enough to grant them access to your accounts or your money. In addition, they are very competent 
+at adapting what they say on phone calls based on your location, age, and other particular variables. 
+Here are some of the most prevalent approaches:
+• In one sort of vishing attack, fraudsters phone you to inform you that your account has been 
+hacked and is at risk of a cyber assault. The attacker may next attempt to persuade you to move 
+funds from your checking account to a more secure account, or request your login credentials 
+in order to resolve the issue. A legitimate bank would never phone a client to urge them to do 
+such an action, thus it is better to hang up immediately. Contact your bank if you have any 
+doubts about the status of your account.
+• Some con artists may phone you and offer you a loan, a reward, or a fantastic investment 
+opportunity. In most cases, these offers seem quite advantageous, thus the desire to accept them 
+is great. But don’t be fooled: if a contest you’ve never entered requests personal information, 
+you may safely hang up. Remember that not everything that glitters is gold; if an offer seems 
+too good to be true, then it probably is.
+• Tax scams are also popular. Some experienced vishing fraudsters pose as revenue agency officials 
+or debt collectors and intimidate victims by discussing outstanding taxes and threatening severe 
+penalties. These calls are very annoying but do not be afraid. Even if you have ongoing obligations, 
+you should always confirm that the collection agency requesting payment is authorized.
+• Social security scams are another common example. Cybercriminals pose as representatives of 
+a social security or welfare institution in order to get benefits or pensions, or to steal money. 
+Seniors are common victims of these scams because they often live alone and may be unaware 
+of the perils of phishing. To protect your loved ones against these scams, have a conversation 
+with them, explaining which types of fraud are most prevalent and encouraging them to never 
+provide their private information to strangers, especially over the phone
+
+p.175 Have you got a M.A.P.P.?
+What exactly is a M.A.P.P.? It is an abbreviation for Mitigation and Prevention Plan. Now, we will 
+understand the meaning of M.A.P.P. We need one of these to prevent and prepare for social engineering 
+attacks. You can easily set up a M.A.P.P. by following these four steps:
+• Learn how to recognize social engineering attacks (by creating a team of professional and 
+requesting a third-party company, able to simulate social engineering attacks, to create a realworld scenario)
+• Develop realistic and implementable policies
+• Conduct periodic real-world audits
+• Implement applicable security awareness programs
+
+p.182 Distribution models
+In addition to the type of cloud service, the cloud computing distribution model is then defined. In 
+this case, the main distribution methods are as follows:
+• Public model: Cloud services are made available by an external provider and are available 
+to anyone, free or paid. Some examples include Microsoft Azure and Amazon Web Services.
+• Private model: Cloud services are made available for access by a single organization, via the 
+internet or a private internal network. The private cloud can be managed by an external provider 
+or even internally by the company itself.
+• Hybrid model: Cloud services are provided by combining private clouds (third-party or 
+in-house) with public clouds as needed, taking advantage of the best of both infrastructures.
+• Other models: These include community cloud, multi-cloud, poly cloud, and HPC cloud. 
+Without going into detail, suffice it to say that – in addition to the aforementioned – there are 
+also other less popular solutions that can be used as needed.
+
+p.183 Cloud security – examples of measures that can prevent risks
+Cloud security, as anticipated, concerns a set of strategies aimed at achieving multiple objectives. This 
+includes archiving and network protection against cyberattacks, recovering any lost or stolen data, 
+and generally reducing the impact of compromised systems or personal data breaches.
+Too often, migrations to the cloud are carried out without first evaluating which data and processes 
+to move and without having defined cybersecurity measures suitable for your specific case.
+Everything must start, therefore, from the awareness of how data has been secured up until now, of 
+the infrastructures used, and of the weak points on which it is necessary to intervene. Therefore, have 
+a snapshot of the current situation to evaluate which cloud service offers adequate levels of security 
+and plan an adequate migration strategy.
+Depending on the case and the needs, there are different tools that a company can implement for solid 
+cloud security. Here are some examples:
+• An Identity and access management (IAM) system, for identity and access management
+• Micro-segmentation, thanks to which the implementation of the cloud is divided into distinct 
+segments, down to the level of a single workload, minimizing the damage of a possible attacker
+• Next-generation firewalls – compared to traditional ones, they add advanced features, such as 
+application-aware filters, deep packet inspection, and intrusion prevention systems
+• Cryptography so that data can only be decrypted using a specific key
+• Threat intelligence, monitoring, and prevention, or features aimed at analyzing traffic to identify, 
+block, or at least mitigate a malware attack
+
+p.193 Most US consumers think they are protected until they aren’t. Sadly, customers are unable to observe 
+and comprehend the flow of information because this ecosystem is largely opaque and concealed 
+from view. Unlike the EU, with its General Data Protection Regulation (GDPR), the United States 
+lacks a single legislation that protects the privacy of all kinds of data. Instead, it consists of a variety 
+of regulations with acronyms such as HIPAA, FCRA, FERPA, GLBA, ECPA, COPPA, and VPPA that 
+are intended to exclusively target particular categories of data in unique (and frequently outmoded) 
+situations:
+• Only communication between you and covered entities, such as physicians, hospitals, pharmacies, 
+insurers, and other such organizations, is covered by the Health Insurance Portability and 
+Accountability Act (HIPAA), which has little to do with privacy. People tend to think HIPAA 
+covers all health data, but it doesn’t. For instance, neither your Fitbit data nor the law’s restrictions 
+on who can inquire about your COVID-19 vaccination status are protected.
+• Information in your credit report is protected by the Fair Credit Reporting Act (FCRA). It 
+places restrictions on who can access credit reports, what data the credit agencies can gather, 
+and how information is acquired.
+• Who can seek student educational records is specified in the Family Educational Rights and 
+Privacy Act (FERPA). This involves granting the right to view education records kept by a 
+school to parents, qualified students, and other schools.
+• Consumer financial products, such as loan services or investment advising services, are required 
+to disclose how they share data as well as a customer’s choice to opt out under the GrammLeach-Bliley Act (GLBA). As long as they declare such use in advance, the law does not impose 
+The US status of privacy 177
+restrictions on how businesses utilize the data they acquire. It at least makes an effort to erect 
+barriers to the security of some personal information.
+• Government wiretapping of phone calls and other electronic signals is prohibited by the 
+Electronic Communications Privacy Act (ECPA) (although the USA Patriot Act redefined much 
+of this). Additionally, it establishes a wide range of guidelines for communication monitoring 
+by employers. The ECPA was passed in 1986, and critics frequently point out how out of date 
+it is. The ECPA does not defend against contemporary surveillance techniques, including law 
+enforcement access to older material saved on servers, in cloud storage documents, and in 
+search queries because it was written before the era of the modern internet.
+• The Children’s Online Privacy Protection Rule (COPPA) places restrictions on how much 
+information businesses can gather about children under the age of 13 in their databases.
+• The sharing of VHS rental records is prohibited by the Video Privacy Protection Act (VPPA). 
+Although it may seem absurd now, this regulation was created as a result of a journalist retrieving 
+Robert Bork’s video rental history when he was a candidate for the Supreme Court. However, 
+the VPPA hasn’t prevented streaming firms from operating.
+• A website or app that violates its own privacy statement may be targeted by the Federal Trade 
+Commission (FTC) under the Federal Trade Commission Act (FTC Act). The FTC has the 
+authority to look into instances of misleading users by claiming that video chats are end-toend encrypted. This is what it did when it filed a complaint against Zoom. Recently, some 
+organizations have urged the FTC to extend that authority to unlawful data practices.
+
+p.194 The California Consumer Privacy Act (CCPA) from 2018 and the California Privacy Rights Act
+(CPRA), which California voters approved in November 2020, are having a significant impact on 
+the landscape of privacy and data security, alongside the Virginia Consumer Data Protection Act
+(VCDPA) and the Colorado Privacy Act (Colopa or CPA).
+
+p.202 Computer safety
+Fortunately, attaining adequate cyber hygiene to thwart the vast majority of intrusions doesn’t necessitate 
+cutting-edge equipment or a highly qualified security group. Organizations must just make sure that 
+the fundamentals of cyber hygiene are followed. This comprises the following:
+• A two-factor authentication (2FA) process. Most credential-based assaults are thwarted by 
+multi-factor authentication (MFA) or 2FA. With the kind of passwordless technology that 
+is becoming more and more common in contemporary software, this is simpler than ever. 
+Wherever it is feasible, MFA should be enabled.
+• Least privilege accessibility. Using MFA to protect login to vital accounts is important, but it’s 
+also crucial to make sure that each account has access to only the systems they actually require. 
+In fact, researchers contend that different accounts should be used for email and internet 
+browsing than for accessing privileged systems.
+• Maintain device updates. Having the most recent patches and updates from a manufacturer is 
+a fundamental necessity for every device connected to a network. Using endpoint management 
+software, you can help make sure this occurs throughout the network.
+• Install malware-detecting software. Ensuring malware protection software is installed and used in 
+addition to more conventional antivirus software is another easy measure to take. This software 
+frequently offers both protection from assaults and alerts that an attack is being attempted.
+• Safeguard data. All of the aforementioned measures can prove to be quite efficient in protecting 
+crucial organizational data, but it’s also crucial that businesses have a clear awareness of the 
+data they possess, as well as its relative sensitivity and significance. In fact, this is frequently 
+required by laws such as the GDPR and supports a risk-based approach to data governance.
+
+p.206 ISO 27002
+The current version of ISO 27002 was issued in 2013 and is now hopelessly out of date. A great deal 
+has changed in the last 8 years! Let’s hope we won’t have to wait another 8 years for the next edition.
+As with the previous edition, ISO 27002 is meant to be independent in the sense that it may be utilized 
+by organizations who are uninterested in ISO 27001 and just want a set of information security rules 
+to implement inside their organization. In this regard, it is identical to other control frameworks, such 
+as the CSA’s NIST CSF. Choose your poison!
+The new version will go out possibly in the upcoming months where the only significant change is 
+that Annex A will match the new ISO 27002. This introduces 11 new controls, which are as follows:
+• Threat intelligence
+• Information security for use of cloud services
+• ICT readiness for business continuity
+• Physical security monitoring
+• Configuration management
+• Information deletion
+• Data masking
+• Data leakage prevention
+• Monitoring activities
+• Web filtering
+• Secure coding
