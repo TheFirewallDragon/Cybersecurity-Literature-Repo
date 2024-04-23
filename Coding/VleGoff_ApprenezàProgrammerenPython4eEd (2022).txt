@@ -122,3 +122,236 @@ p.230  Le paramètre self
  En revanche, les méthodes sont contenues dans la classe qui définit notre objet. C’est
  très important. Quand vous tapez tab.écrire(...), Python va chercher la méthode
  écrire non pas dans l’objet tab, mais dans la classe TableauNoir.
+
+p.236  Qu’est-ce que l’encapsulation?
+ L’encapsulation est un principe qui consiste à cacher ou protéger certaines données de
+ notre objet. Dans la plupart des langages orientés objet, tels que C++, Java ou PHP, on
+ va considérer que nos attributs d’objets ne doivent pas être accessibles depuis l’extérieur
+ de la classe. Autrement dit, vous n’avez pas le droit d’appeler, depuis l’extérieur de la
+ classe, mon_objet.mon_attribut.
+ On va définir des méthodes un peu particulières, appelées des accesseurs et muta
+teurs. Les accesseurs donnent accès à l’attribut. Les mutateurs servent à le modi
+f
+ ier. Concrètement, au lieu d’écrire mon_objet.mon_attribut, vous allez invoquer
+ mon_objet.get_mon_attribut()1. De la même manière, pour le modifier, écrivez
+ mon_objet.set_mon_attribut(valeur)2, et non pas
+ mon_objet.mon_attribut = valeur.
+
+p.251  Laméthode__getattr__
+ Laméthodespéciale__getattr__définitunaccèsànosattributspluslargequecelui
+ quePythonproposepardéfaut.Enfait,cetteméthodeestappeléequandvoustapez
+ objet.attribut(nonpaspourmodifier l’attributmaissimplementpouryaccéder).
+ Pythonrecherche l’attributet, s’il ne le trouvepasdans l’objet et siuneméthode
+ __getattr__existe, il l’appelleen lui passant enparamètre lenomde l’attribut
+ recherché,souslaformed’unechaînedecaractères.
+
+p.253  Nous allons commencer à travailler sur ce que l’on appelle la surcharge d’opérateurs.
+ Il s’agit assez simplement d’expliquer à Python quoi faire quand on utilise tel ou tel
+ 227
+LA PROGRAMMATION ORIENTÉE OBJET CÔTÉ DÉVELOPPEUR
+ opérateur. Nous allons ici examiner quatre méthodes spéciales qui interviennent quand
+ on travaille sur des objets conteneurs.
+
+p.254  Les objets conteneurs, j’espère que vous vous en souvenez, ce sont les chaînes de
+ caractères, les listes et les dictionnaires, entre autres. Tous ont un point commun : ils
+ contiennent d’autres objets, auxquels on accède grâce à l’opérateur [].
+
+p.310  Les décorateurs sont des fonctions de Python dont le rôle est de modifier le comportement
+ par défaut d’autres fonctions ou classes. Pour schématiser, une fonction modifiée par
+ un décorateur ne s’exécutera pas elle-même mais appellera le décorateur. C’est au
+ décorateur de décider s’il veut exécuter la fonction et dans quelles conditions.
+
+p.310  Il y a de nombreux cas dans lesquels les décorateurs sont un choix intéressant. Pour
+ comprendre l’idée, je vais prendre un unique exemple.
+ On souhaite tester les performances de certaines de nos fonctions : en l’occurrence,
+ calculer combien de temps leur est nécessaire pour s’exécuter.
+ Une possibilité, effectivement, consiste à modifier chacune des fonctions devant intégrer
+ ce test. Toutefois, ce n’est pas très élégant, ni très pratique, ni très sûr... bref ce n’est
+ pas la meilleure solution.
+ Une autre possibilité consiste à utiliser un décorateur. Il se chargera d’exécuter notre
+ fonction en calculant le temps qu’il lui faut et, par exemple, affichera une alerte si cette
+ durée est trop élevée.
+ Pour indiquer qu’une fonction doit intégrer ce test, il suffira d’ajouter une simple ligne
+ avant sa définition. C’est bien plus simple, clair et adapté à la situation.
+
+p.329  La méthode __init__ est là pour initialiser notre objet (en écrivant des attributs
+ dedans, par exemple) mais elle n’est pas là pour le créer. La méthode qui s’en charge,
+ c’est __new__.
+ C’est une méthode spéciale, vous en reconnaissez la particularité. C’est également une
+ méthode définie par object, que l’on peut redéfinir en cas de besoin.
+ Regardons plus précisément ce qui se passe quand on tente de construire un objet :
+ — On demande à créer un objet, en écrivant par exemple Personne("Doe",
+ "John").
+ — Laméthode __new__ de notre classe (ici Personne) est appelée et se charge
+ de construire un nouvel objet.
+ — Si__new__renvoieuneinstance dela classe, on appelle le constructeur __init__
+ en lui passant en paramètres cette nouvelle instance ainsi que les arguments
+ passés lors de la création de l’objet.
+ Maintenant, intéressons-nous à la structure de notre méthode __new__.
+ C’est une méthode de classe, ce qui signifie qu’elle ne prend pas self en paramètre.
+ C’est logique, d’ailleurs, son but étant de créer une nouvelle instance. Elle prend la
+ classe manipulée cls.
+ Autrement dit, quand on souhaite créer un objet de la classe Personne, la méthode
+ __new__ de cette dernière est appelée et prend comme premier paramètre la classe
+ Personne elle-même
+
+p.335  Les métaclasses en action
+ Comme vous vous en doutez, les métaclasses sont généralement utilisées pour des besoins
+ assez complexes. L’exemple le plus répandu est une métaclasse chargée de tracer l’appel
+ de ses méthodes. Autrement dit, dès qu’on appelle une méthode d’un objet, une ligne
+ s’affiche pour le signaler. Toutefois, cet exemple est assez difficile à comprendre car il
+ fait appel à la fois au concept des métaclasses et à celui des décorateurs, pour décorer
+ les méthodes tracées.
+ Je vous propose quelque chose de plus simple. Il va de soi qu’il existe bien d’autres
+ usages, dont certains complexes.
+ Essayons de garder nos classes créées dans un dictionnaire les prenant comme valeurs
+ et leurs noms comme clés.
+ Par exemple, dans une bibliothèque destinée à construire des interfaces graphiques,
+ on trouve plusieurs widgets1 comme des boutons, des cases à cocher, des menus, des
+ cadres... Généralement, ces objets sont des classes héritant d’une classe mère commune.
+ En outre, l’utilisateur peut, en cas de besoin, créer ses propres classes héritant de celles
+ de la bibliothèque.
+ Par exemple, la classe mère de tous nos widgets s’appellera Widget. De cette classe
+ hériteront Bouton, CaseÀCocher, Menu, Cadre, etc. L’utilisateur de la bibliothèque
+ pourra par ailleurs en dériver ses propres classes.
+
+p.337  En résumé
+ — Leprocessus d’instanciation d’un objet est assuré par deux méthodes, __new__
+ et __init__.
+ — __new__ est chargée de la création de l’objet et prend en premier paramètre sa
+ classe.
+ — __init__ est chargée de l’initialisation des attributs de l’objet et prend en
+ premier paramètre l’objet précédemment créé par __new__.
+ — Les classes étant des objets, elles sont toutes modelées sur une métaclasse.
+ — Àmoins d’être explicitement modifiée, la métaclasse de toutes les classes est
+ type.
+ — Onpeut utiliser type pour créer des classes dynamiquement.
+ — Onpeut faire hériter une classe de type pour créer une nouvelle métaclasse.
+ — Dans le corps d’une classe, pour spécifier sa métaclasse, on exploite la syntaxe
+ suivante : class MaClasse(metaclass=NomDeLaMetaClasse):.
+
+p.342  Les expressions régulières sont un puissant moyen de rechercher et d’isoler des expres
+sions dans une chaîne de caractères.
+ Pour simplifier, imaginez que vous codez un programme qui demande un certain nombre
+ d’informations à l’utilisateur afin de les stocker dans un fichier. Lui demander son nom,
+ son prénom et quelques autres informations, ce n’est pas bien difficile : on va utiliser la
+ fonction input et récupérer le résultat. Jusqu’ici, rien de nouveau.
+ En revanche, que se passe-t-il si on demande à l’utilisateur de fournir un numéro de
+ téléphone? Qu’est-ce qui l’empêche de taper n’importe quoi? Lorsqu’on lui demande
+ de fournir une adresse e-mail et qu’il tape quelque chose d’invalide, par exemple
+ « je_ne_te_donnerai_pas_mon_email », que va-t-il se passer quand on essayera de
+ lui envoyer automatiquement un courriel?
+ Si ce cas n’est pas géré, vous risquez d’avoir un problème. Les expressions régulières
+ sont un moyen de rechercher, d’isoler ou de remplacer des expressions dans une chaîne.
+ Ici, elles nous permettraient de vérifier que le numéro de téléphone saisi compte bien
+ dix chiffres, qu’il commence par un 0 et qu’il compte éventuellement des séparateurs
+ tous les deux chiffres. Si ce n’était pas le cas, on demanderait à l’utilisateur de le saisir
+ à nouveau.
+ Quelques éléments de syntaxe pour les expressions régulières
+ Si vous connaissez déjà les expressions régulières et leur syntaxe, passez directement à
+ la section consacrée au module re. Sinon, sachez que je ne pourrai vous les présenter
+ que brièvement, car c’est un sujet très vaste, qui mérite un livre à lui tout seul.
+ Concrètement, comment cela se présente-t-il?
+ Le module re sert à faire des recherches très précises dans des chaînes de caractères et
+ à y remplacer des éléments, le tout en fonction de critères particuliers. Ces critères, ce
+ sont nos expressions régulières. Pour nous, elles se présentent sous la forme de chaînes
+ de caractères.
+ Des caractères ordinaires
+ Quand on forme une expression régulière, on peut utiliser des caractères spéciaux et
+ d’autres qui ne le sont pas. Par exemple, si nous recherchons le mot chat dans notre
+ chaîne, nous pouvons écrire comme expression régulière la chaîne « chat ». Jusque là,
+ rien n’est très compliqué.
+ Toutefois, vous vous doutez bien que les expressions régulières ne se limitent pas à ce
+ type de recherche extrêmement simple, sans quoi les méthodes find et replace de la
+ classe str auraient suffit.
+
+p.344  Il est possible de préciser entre crochets plusieurs caractères ou classes de caractères.
+ Par exemple, si vous écrivez [abcd], cela signifie : l’une des lettres parmi a, b, c et d.
+ Pour exprimer des classes, utilisez le tiret- entre deux lettres. Par exemple, l’expression
+ [A-Z] signifie « une lettre majuscule ». Vous pouvez préciser plusieurs classes ou
+ possibilités dans votre expression. Ainsi, l’expression [A-Za-z0-9] signifie « une
+ lettre, majuscule ou minuscule, ou un chiffre ».
+ Vous contrôlez l’occurrence des classes comme pour les caractères seuls. Si vous voulez
+ par exemple rechercher 5 lettres majuscules qui se suivent dans une chaîne, votre
+ expression sera [A-Z]{5}.
+
+p.352 Le module time
+ Le module time est sans doute le premier à être utilisé quand on souhaite manipuler
+ des temps de façon simple.
+ Notez que, dans la documentation de la bibliothèque standard, ce module est classé dans
+ la rubrique Generic Operating System Services1. Ce n’est pas un hasard : time est un
+ module très proche du système. Cela signifie que certaines de ses fonctions risquent de
+ donner des résultats différents sur des systèmes différents. Je vais surtout m’attarder
+ sur les fonctionnalités les plus génériques possibles afin de ne perdre personne.
+ Comme toujours, je vous conseille de consulter la documentation officielle (en français)
+ du module : https://docs.python.org/fr/3/library/time.html
+
+p.354  Nous allons découvrir tout au long de ce chapitre des moyens d’afficher nos temps de
+ façon plus élégante et d’obtenir les diverses informations relatives à une date et une
+ heure. Je vous propose ici un premier moyen : une sortie sous la forme d’un objet
+ contenant déjà beaucoup d’informations.
+ Nous allons utiliser la fonction localtime du module time.
+ time.localtime()
+ Elle renvoie un objet contenant, dans l’ordre :
+ 1. tm_year : l’année sous la forme d’un entier;
+ 2. tm_mon : le numéro du mois (entre 1 et 12);
+ 327
+LES MERVEILLES DE LA BIBLIOTHÈQUE STANDARD
+ 3. tm_mday : le numéro du jour du mois (entre 1 et 31, variant d’un mois et d’une
+ année à l’autre);
+ 4. tm_hour : l’heure du jour (entre 0 et 23);
+ 5. tm_min : le nombre de minutes (entre 0 et 59);
+ 6. tm_sec : le nombre de secondes (entre 0 et 61, même si on n’utilisera ici que les
+ valeurs de 0 à 59);
+ 7. tm_wday : un entier représentant le jour de la semaine (entre 0 et 6, 0 correspond
+ par défaut au lundi);
+ 8. tm_yday : le jour de l’année, entre 1 et 366;
+ 9. tm_isdst : un entier représentant le changement d’heure local.
+
+p.408  Certains développeurs refusent de travailler sur du code qui n’est pas le leur s’il n’a
+ pas de documentation. Pour ce que j’en ai vu, un nombre plus important encore de
+ développeurs refuse de le faire si le code n’a pas de test.
+ Admettons que vous travaillez sur votre projet qui propose plusieurs fonctions, utilisées
+ par d’autres développeurs ou utilisateurs. Vous pouvez être tout seul sur le projet et ne
+ proposer qu’une dizaine de fonctions, c’est bien suffisant; le plus important, c’est que
+ votre code soit utilisé par d’autres.
+ Vous commencez à coder votre onzième fonction, qui utilise la troisième déjà développée.
+ Cependant, vous vous heurtez à un problème : votre nouvelle fonction ne marche pas
+ comme il faut.
+ Après enquête, vous vous rendez compte que ce n’est pas votre fonction 11 qui pose
+ problème, mais la fonction 3 que la 11 appelle. Elle ne répond plus à votre besoin et
+ vous vous dites, naturellement, « je vais la modifier ».
+ Vous modifiez donc votre fonction 3. La 11 marche, enfin, sans problème. Vous proposez
+ votre nouvelle version à vos utilisateurs.
+ Et vous recevez un choeur de protestations : jugez donc! Ils utilisaient votre fonction 3
+ sans problème, mais avec votre nouvelle version, rien ne marche plus.
+ Les tests sont une solution possible : pour chaque fonctionnalité, il y aura un test
+ et ce dernier va s’assurer que votre programme reste valide même quand vous le
+ modifierez, ce qui deviendra de plus en plus important au fur et à mesure qu’il gagnera
+ en fonctionnalités, bien entendu.
+
+p.409  Il existe aussi plusieurs méthodes de développement, dont le TDD (Test-Driven Deve
+lopment), qui veut que l’on écrive les tests avant d’écrire le code. Je ne rentrerai pas
+ dans le détail ici, mais je vous conseille vivement d’écrire vos tests unitaires même
+ si vous n’avez qu’un tout petit projet avec 4 ou 5 fonctions. Il y a une chance non
+ négligeable que le petit projet devienne grand; avec des tests à portée de main, vous
+ dormirez plus tranquille.
+
+p.462  Présentation de Tkinter
+ Tkinter (Tk interface) est un module intégré à la bibliothèque standard de Python,
+ bien qu’il ne soit pas maintenu directement par les développeurs du langage. Il offre un
+ moyen de créer des interfaces graphiques via Python.
+ Tkinter est disponible sur Windows et la plupart des systèmes Unix. Les interfaces que
+ vous pourrez développer auront donc toutes les chances d’être portables d’un système à
+ l’autre.
+ Notez qu’il existe d’autres bibliothèques pour créer des interfaces graphiques. Tkinter
+ a l’avantage d’être disponible par défaut, sans nécessiter une installation supplémentaire.
+
+Tkinter définit un grand nombre de widgets utilisables dans notre fenêtre. Nous allons
+ en présenter ici quelques-uns.
+Les labels
+Les boutons
+Une ligne de saisie
+Les cases à cocher
+Les boutons radio
+La liste déroulante
