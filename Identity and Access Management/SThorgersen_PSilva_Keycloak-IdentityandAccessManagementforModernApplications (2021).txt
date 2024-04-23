@@ -36,3 +36,347 @@ Authenticating Users
 Managing Tokens and Sessions
 Extending Keycloak
 Securing Keycloak and Applications
+
+p.24 If you are new to Keycloak, this chapter will quickly get you up to speed. We'll start with 
+a brief introduction to Keycloak. Then, you will find out how easy it is to install Keycloak 
+and get it up and running. After we have started Keycloak, you will learn about the 
+Keycloak admin console, which provides a great interface for managing and configuring 
+Keycloak. Finally, we'll take a quick look at the Keycloak account console as well, which 
+lets users of your applications manage their own accounts.
+
+p.53 OAuth 2.0 is by now a massively popular industry-standard protocol for authorization.
+At the heart of OAuth 2.0 sits the OAuth 2.0 framework, which has enabled a whole 
+ecosystem of websites to integrate with each other. Prior to OAuth 2.0 there was OAuth 
+1, as well as more bespoke solutions to allow third-party applications to access data on 
+behalf of the user, but these approaches were complex or not easily interoperable. With 
+OAuth 2.0, sharing user data to third-party applications is easy, doesn't require sharing 
+user credentials, and allows control over what data is shared.
+OAuth 2.0 is not only useful when dealing with third-party applications. It is also 
+incredibly useful for limiting access to your own applications. Just as it wasn't uncommon 
+for third-party applications to ask for your username and password to other sites, this was 
+a common pattern within the enterprise as well. Applications would, for example, ask for 
+your LDAP username and password, which would then be used to access other services 
+within the enterprise. This could effectively mean that if one application is compromised, 
+all services within the enterprise could also be compromised.
+There are four roles defined in OAuth 2.0:
+• Resource owner: This is typically the end user that owns the resources an 
+application wants to access.
+• Resource server: This is the service hosting the protected resources.
+• Client: This is the application that would like to access the resource.
+• Authorization server: This is the server issuing access to the client, which is the role 
+of Keycloak
+
+p.60 Keycloak has leveraged JWT as the format for access tokens from the very beginning of 
+the project. This was a very conscious decision for interoperability as well as performance 
+reasons.
+Using a standard format, which is relatively easily consumable, makes it easier to integrate 
+with Keycloak. As JWT is based on JSON, it can also easily be parsed and understood in 
+any programming language.
+In addition, as the resource servers are now able to directly read the value of the access 
+token, they do not always have to make a request to the OAuth 2.0 token introspection 
+endpoint, or the OpenID Connect UserInfo endpoint. This potentially eliminates two 
+additional requests to Keycloak for a request to the resource server, reducing latency 
+as well as significantly reducing the number of requests to Keycloak.
+JWT comes from a family of specifications known as JOSE, which stands for JavaScript 
+Object Signing and Encryption. The related specifications are as follows:
+• JSON Web Token (JWT, RFC 7519): Consists of two base64url-encoded JSON 
+documents separated by a dot, a header, and a set of claims
+• JSON Web Signature (JWS, RFC 7515): Adds a digital signature of the header 
+and the claims
+• JSON Web Encryption (JWE, RFC 7516): Encrypts the claims
+• JSON Web Algorithms (JWA, RFC 7518): Defines the cryptographic algorithms 
+that should be leveraged for JWS and JWE
+• JSON Web Key (JWK, RFC 7517): Defines a format to represent cryptographic 
+keys in JSON format
+
+p.61 In addition to the preceding specifications, the OpenID Connect Discovery endpoint 
+advertises an endpoint where the JSON Web Key Set (JWKS) can be retrieved, as well 
+as what signing and encryption mechanisms from the JWA specification are supported.
+When a resource server receives an access token, it is able to verify the token in the 
+following ways:
+• Retrieving the JWKS URL from the OpenID Connect Discovery endpoint.
+• Downloading the public signing keys for the OpenID Provider from the JWKS URL 
+endpoint. These are typically cached/stored at the Resource Server.
+• Verifying the signature of the token using the public signing keys from the OpenID 
+Provider.
+There are some potential issues with the JWT specifications that can lead to unexpected 
+vulnerabilities if care is not taken when validating a JWT. Let's take a look at two example 
+vulnerabilities that can occur through the incorrect application of these specifications:
+• alg=none: Interestingly enough, the JWS specification defines an algorithm value 
+that is none. This basically means the JWS is unsigned. As this is a valid value, 
+a JWT library could tell you a JWS is valid even though it has not actually been 
+signed.
+• RSA to HMAC: Another well-known issue is using the public RSA key, but setting 
+the algorithm to HMAC. Some libraries blindly accept these types of tokens as they 
+simply pick up the public RSA key and use it as the HMAC secret key.
+These types of vulnerabilities can be avoided with a few relatively simple steps:
+• Do not accept alg=none.
+• Only use a key for the algorithm and the use (signing or encryption) it is intended 
+for, and don't blindly trust the values in the JWT header.
+In general, you would want to pick up a trusted JWT library and make sure you use it in 
+the correct way. Or, even better, use an OpenID Connect/OAuth 2.0 library that supports 
+JWT as the access token, which can do it properly for you. If neither options are available 
+to you, it is very likely safer to use the token introspection endpoint than to try to validate 
+the token yourself. We will cover this in more detail in Chapter 5, Authorizing Access with 
+OAuth 2.0.
+
+p.82 A logout can for example be initiated by the user through clicking on a logout button 
+in the application. When the logout button is clicked, the application would send a request 
+to the OpenID Connect RP-Initiated logout.
+The application redirects the user to the Keycloak End Session endpoint, which is 
+registered in the OpenID Provider Metadata as end_session_endpoint. The 
+endpoint takes the following parameters:
+• id_token_hint: A previously issued ID token. This token is used by Keycloak to 
+identify the client that is logging out, the user, as well as the session that the client 
+wants to log out of.
+• post_logout_redirect_uri: If the client wants Keycloak to redirect back to 
+it after the logout, it can pass the URL to Keycloak. The client has to previously have 
+registered the logout URL with Keycloak.
+• state: This allows the client to maintain state between the logout request and the 
+redirect. Keycloak simply passes this parameter when redirecting to the client.
+• ui_locales: The client can use this parameter to hint to Keycloak what locale 
+should be used for the login screen.
+When Keycloak receives the logout request, it will notify other clients in the same 
+session about the logout. Then it will invalidate the session, which effectively makes 
+all tokens invalid
+
+p.101 Using the scope to limit token access
+The default mechanism in OAuth 2.0 to limit the permissions for an access token is 
+through scopes directly. Using scopes is especially useful with third-party applications 
+where users should consent to giving applications access to resources on their behalf.
+Within Keycloak, a scope in OAuth 2.0 is mapped to a client scope. If you only want to 
+have a scope that the application can request that is then used by a resource provider to 
+provide limited access to resources, you can simply define an empty client scope that has 
+no protocol mappers and doesn't have access to any roles.
+While defining scopes, it is important to not go overboard and to limit the number of 
+scopes you define, and consider how scope is represented to an end user, who should 
+understand what giving permissions to that scope implies, and not be confused by an 
+application requesting a large number of scopes.
+Scopes should usually also be unique within all applications in your organization, so you 
+may want to prefix the scope with the name of the service, or even consider using the 
+URL of the service as a prefix.
+Here are some example scopes to give you an idea:
+• albums:view
+• albums:create
+• albums:delete
+• https://api.acme.org/bombs/bombs.purchase
+• https://api.acme.org/bombs/bombs.detonate
+
+p.109 Understanding internal and external 
+applications
+When securing an application, the first thing to consider is whether the application is an 
+internal application or an external application. 
+Internal applications, sometimes referred to as first-party applications, are applications 
+owned by the enterprise. It does not matter who developed the application, nor does it 
+matter how it is hosted. The application could be an off-the-shelf application, and it can 
+also be a Software as a Service (SaaS)-hosted application, while still being considered 
+an internal application.
+
+p.111 Securing web applications
+When securing a web application with Keycloak, the first thing you should consider is the 
+architecture of the application as there are multiple approaches:
+• First and foremost, is your web application a traditional web application running on 
+the server side or a modern single-page application (SPA) running in the browser?
+• The second thing to consider is whether the application is accessing any REST APIs, 
+and if so, are the REST APIs a part of the application or external?
+If it is a SPA-type application invoking external APIs, then there are two further options 
+to consider. Does the application invoke the external REST API directly, or through 
+a dedicated REST API hosted alongside the application?
+Securing web applications 91
+Based on this, you should determine which of the following matches the architecture of 
+the application you are securing:
+• Server side: If the web application is running inside a web server or an application 
+server.
+• SPA with dedicated REST API: If the application is running in the browser and is 
+only invoking a dedicated REST API under the same domain.
+• SPA with intermediary API: If the application is running in the browser and 
+invokes external REST APIs through an intermediary API, where the intermediary 
+API is hosted under the same domain as the application
+• SPA with external API: If the application is running in the browser and only 
+invokes APIs hosted under different domains.
+
+p.114 Securing server-side web applications
+When securing a server-side web application with Keycloak, you should register 
+a confidential client with Keycloak. As you are using a confidential client, a leaked 
+authorization code can't be leveraged by an attacker. It is still good practice to leverage 
+the PKCE extension as it provides protection against other types of attacks.
+You must also configure applicable redirect URIs for the client as otherwise, you are 
+creating what is called an open redirect. An open redirect can be used, for example, in 
+a spamming attack to make a user believe they are clicking on a link to a trusted site. As an 
+example, if a spammer sends the https://trusted-site.com/...?redirect_
+uri=https://attacker.com URL to a user in an email, the user may only notice 
+the domain name is to a trusted site and click on the link. If you have not configured an 
+exact redirect URI for your client, Keycloak would end up redirecting the user to the site 
+provided by the attacker.
+With a server-side web application, usually, only the ID token is leveraged to establish 
+an HTTP session. The server-side web application can also leverage an access token if 
+it wants to invoke external REST APIs under the context of the user.
+
+p.133 In addition to choosing between the two architectural styles we've just mentioned, we 
+should also understand some key points when it comes to choosing an integration.
+There are quite a lot of client-side implementations for OpenID Connect and sometimes, 
+you may find hard to choose which one works better for you. If none of the options 
+suggested here work for you, it is important to be aware of how to choose alternatives.
+As a rule of thumb, the decision for a good integration should be based on 
+implementations that do the following:
+• Are widely adopted, actively maintained, and backed by a strong community of 
+developers.
+• Are up to date with the latest versions of the OAuth2 and OpenID Connect 
+specifications.
+• Are aligned with the security best practices for OAuth2 and OpenID Connect.
+• Provide a good user experience, a simple configuration, and a deployment model.
+• Hide details from developers as much as possible while still providing good defaults 
+to make your application aligned with security best practices.
+• Avoid vendor lock-in and keep your application compliant with OAuth2 and 
+OpenID Connect as much as possible. Keycloak can integrate with any client that's 
+compliant with these specifications.
+Ideally, you should be using whatever comes for free from the technology stack and 
+platform on which your applications are deployed
+
+p.164 Using a reverse proxy
+By running in front of your application, you can use reverse proxies to add additional 
+capabilities to your application. The most common proxies provide support for OpenID 
+Connect where enabling authentication is a matter of changing the proxy configuration.
+Whether using a proxy is better than having the integration code and configuration within 
+your application really depends on the use case and, depending on the circumstances, 
+it might be your only option or the option that will save you precious time from 
+implementing your own integration code, even if you have a library available for the 
+technology stack your application is using.
+Nowadays, OpenID Connect and OAuth2 support is a mandatory capability for proxies, 
+and you find support for these protocols in most of them, regardless of whether they're 
+open source or proprietary. As an example, two of the most popular proxies, Apache 
+HTTP Server and Nginx, provide the necessary extensions for these protocols.
+In this section, we are going to cover how to set up Apache HTTP Server in front of our 
+application so that we can integrate it with Keycloak and authenticate users using mod_
+auth_oidc. The documentation on how to install it is available at https://github.
+com/zmartzone/mod_auth_openidc.
+
+p.192 Configuring a database
+Keycloak relies on a single database to store all its data. Even when running multiple 
+instances of Keycloak, all of them will be talking to the same database. A database is 
+crucial for the overall performance, availability, scalability, reliability, and integrity of 
+Keycloak. Although Keycloak provides a cache layer to avoid database hits as much as 
+possible, a good database will help to make the system behave better when data needs to 
+be loaded from the database.
+By default, Keycloak is configured with a very simple H2 database that should not be used 
+in production, by any means. Instead, you should configure a more robust database such 
+as the following:
+• MariaDB 10.1.19
+• MariaDB Galera 10.1.19
+• MySQL 8.0
+• Oracle 19c RAC
+• Microsoft SQL Server 2017
+• PostgreSQL 11.5
+
+p.214 Keycloak allows you to interact with users during the authentication process using 
+a functionality called Required User Actions. This setting is related to the actions that the 
+user should perform prior to authenticating to a realm. Keycloak provides a good set 
+of common actions covering different scenarios, such as the following:
+• Verify Email: Send an email to the user – if one was set – to confirm it belongs 
+to that user.
+• Update Password: Ask the user to update their password.
+• Update Profile: Ask the user to update their profile by providing their first name, 
+last name, and email.
+
+p.230 Allowing users to manage their data
+In the previous sections, you learned how to manage users through the admin console as 
+an administrator. You also learned that users can self-register in a realm. However, one 
+of the main capabilities of Keycloak is to also allow users to manage their own accounts 
+through a service called Keycloak Account Console.
+The Keycloak Account Console is a regular application provided by Keycloak and is where 
+users can manage their own accounts. They can also do the following:
+• Update their user profile
+• Update their password
+• Enable second-factor authentication
+• View applications, including what applications they have authenticated to
+• View open sessions, including remotely signing out of other sessions
+
+p.276 Managing tokens
+As you learned from the previous section, tokens are usually bound to sessions. Therefore, 
+the token validity – not necessarily their lifetimes – depends on sessions.
+Tokens have their own lifetime and how long they are considered valid depends on how 
+they are validated. By leveraging JSON Web Token (JWT) as a format for tokens, Keycloak 
+enables applications to validate and introspect tokens locally without any additional 
+roundtrip to the server. However, this capability has a consequence where tokens, although 
+within their lifetime, might not be valid anymore if their sessions have expired.
+Without taking this into account, you might end up in a situation where tokens are no 
+longer valid but are still accepted by applications because they are within their lifetime, 
+therefore increasing the attack surface if tokens are leaked. As you are going to learn 
+from this chapter, you should always consider a clear strategy for token expiration 
+and revocation.
+When applications obtain tokens from Keycloak, they are given a set of tokens:
+• ID token
+• Access token
+• Refresh token
+As you learned from previous chapters, depending on the authorization grant the client 
+is using, Keycloak might issue all those tokens or only a subset of them. Each token has 
+its own lifetime.
+
+p.320 Regularly rotating all your signing and encryption keys is highly recommended. You may 
+want to consider doing so as frequently as once a month.
+Luckily, Keycloak allows you to rotate keys in a way that is seamless and non-interrupting. 
+This is because new keys can be made active, while the old keys are still permitted to 
+verify tokens for a while.
+Rotating keys have several benefits, such as the following:
+• Reduces the amount of content that's signed or encrypted with a specific key.
+• Reduces the time available to anyone who wants to try and crack your keys.
+300 Securing Keycloak and Applications
+• Cleans up unused refresh tokens or long expiration access tokens, regardless of user 
+session timeout settings.
+• If an attacker were able to gain access to the keys or – even worse – such a leak was 
+not discovered, the impact would be reduced. 
+
+p.327 Keycloak embeds Infinispan, which is leveraged when you create a cluster of Keycloak 
+nodes. Unlike the database, Keycloak does not send any very critical information through 
+the cluster, where most of the sensitive data is kept in a local cache, thus leveraging cluster 
+communication only for invalidations. It does store information about user sessions in 
+the cluster, which are distributed across the cluster. Sessions themselves contain some 
+information such as the session ID, the expiration date, and associated client sessions. 
+Even if an attacker gains access to this information, they are limited in terms of what they 
+can do with it, since accessing any session through Keycloak requires a token or cookie 
+to be signed by Keycloak.
+It would still be a good idea to secure cluster communication, at the very least with 
+a firewall. For additional protection, you can enable authentication and/or encryption 
+for cluster communication.
+Tip
+At the time of writing this book, the Keycloak documentation does not 
+provide instructions on how to secure cluster communication. Neither 
+does the documentation for the underlying WildFly application server. 
+On the other hand, the Red Hat Jboss Enterprise Application Platform 
+documentation, which is the Red Hat supported version of WildFly, provides 
+great documentation for securing the cluster. You can find this documentation 
+at https://access.redhat.com/documentation/en-us/
+red_hat_jboss_enterprise_application_platform/7.3/
+html/configuration_guide/configuring_high_
+availability#securing_cluster.
+
+p.332 There are plenty of books and good resources on the internet that can help you learn 
+how to secure web applications. Some of the steps involved in securing web applications 
+include the following:
+• Authentication: Since you are reading a book about Keycloak, chances are you are 
+planning to use Keycloak to authenticate users to your applications. Once a user 
+has been authenticated and a session has been established, it is important that the 
+session is also secure.
+• Authorization: Least privilege access is a great principle to follow. If you limit the 
+access that's granted to users for them to perform their job, you are reducing the 
+impact of a compromised account or a rogue employee.
+• Understand and protect against common attacks: Make sure your applications 
+are protected against common vulnerabilities such as injection and cross-site 
+scripting (XSS).
+• Regular updates: Web application security is a continuous effort, and you should 
+continuously strive to improve the security of your application. You should also 
+regularly update frameworks, libraries, and any tools you are leveraging.
+• Data security: Sensitive data should be encrypted at rest, and all data should be 
+encrypted in transit. This should also apply to any backup data. Just like the web 
+application itself, it is important to have good authentication and authorization 
+in place.
+• Logging and monitoring: Without sufficient logging and monitoring, you will not 
+be able to identify if you have been compromised. Logging and monitoring can also 
+be a valuable tool to prevent larger impacts due to an ongoing attack.
+• Firewall: Firewalls and WAFs add an extra layer of defense to your web 
+applications. Relying on only a web application firewall for protection is far from 
+ideal, though – you should build security into the application itself.
+One of the best places to start learning more about web application security is the Open 
+Web Application Security Project (OWASP) Top 10. The OWASP Top 10 is a list of some 
+of the most critical security risks to web applications. For each risk, it provides easy to 
+understand details of the vulnerabilities, as well as tips on how to protect your application.
