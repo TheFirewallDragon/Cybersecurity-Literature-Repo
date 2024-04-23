@@ -37,3 +37,422 @@ The CTO and Security by Design
 The CMO and CPO—Convergence Between Privacy and Security
 The World of the Board
 The Recipe for Building a Strong Security Culture—Bringing It All Together
+
+p.9  “Cybersecurity is perhaps the most challenging issue facing the modern 
+boardroom – every organization has or will deal with a potentially devastating 
+cyber incident, malicious or unintentional, and yet directors still find themselves 
+struggling to understand whether their organization is effectively managing 
+that risk. It doesn’t help that the constantly evolving threat landscape and the 
+highly technical nature of cyber discussions can further alienate the board 
+from understanding the right questions to ask. The result is often a sidelining 
+of cyber risk to technical experts – the IT department and the CISO – which 
+can lead to a potentially critical failure of effective cyber risk management. 
+Shamane, Magda, and Hai take a robust, straightforward response to this 
+challenge, laying out a clear set of questions for both directors and C-suite 
+executives. These go to the heart of effective cybersecurity risk management – are you communicating cybersecurity risk clearly, comprehensively, and 
+effectively amongst the C-suite and to the board, and are you regularly 
+monitoring your performance as an enterprise? Cyber is not an IT issue, 
+it’s a business issue, which requires the whole business to be aligned and 
+equipped to respond to, and that starts at the very top. As one director put 
+it  recently, “No one thinks a cyber-attack will happen to them until it does, 
+and that’s when robust cyber governance shows its merit.” I would highly 
+encourage any prospective and current board members or C-suite executives 
+to read the chapter for boards in depth, and ask those very questions of their 
+organization without delay.”
+ Nicholas Chilton, Head of Board Advisory – South 
+Pacific, Nasdaq Center for Board Excellence
+
+p.30  As a Chief Executive Officer (CEO), chief administrator, or just Chief 
+Executive (CE) in charge of managing an organization, four goals are critical 
+for businesses in the new normal: 
+• Cloud and digital transformation, which has accelerated due to 
+long-term remote working.
+ • Increasing the pace of automation, supported by technology adoption.
+ • Placing sustainability at the heart of all initiatives.
+ • Skills development and talent retention, which gets harder by the 
+day due to changing job market demand.
+ We live in a globally connected world, where information is the lifeblood of 
+an organization, and technology the blood vessels. Traditionally, companies 
+build trust through physical files and locks, protecting their customers’ interests 
+with manual security processes. As businesses evolve and the nature of how 
+they deliver products and services to customers changes, their reliance on 
+technology also increases, whether they realize it or not. 
+
+p.36  Understanding cybersecurity 
+challenges, organization, and 
+reporting 
+Cybersecurity is a young and emerging profession. That is one reason why it 
+is not fully understood or taken seriously by many C-level executives. While 
+many CEOs and board members have extensive cross-functional experience in 
+accounting, finance, marketing, or HR, few have much cybersecurity experience. 
+As a result, cyber risks are not commonly understood in boardrooms. Many 
+companies leave cybersecurity to the organization’s Chief Information Officer 
+(CIO)/Chief Technology Officer (CTO), and cyber risk management is 
+perceived as a cost confined to the IT department where it must compete 
+for resources/budget against new initiatives for revenue generation, profit 
+increase, customer acquisition, and so on.
+
+p.46  T
+ he CISO is an invaluable resource and leader in helping an organization 
+develop the most appropriate cybersecurity strategy, but they cannot do this 
+alone. Once the board and CEO are aligned in their risk tolerance and a cyber 
+strategy has been created and approved, it must include a plan to create a 
+culture of cybersecurity and embed it within the organization. All staff must 
+understand the fundamentals of cybersecurity instead of merely complying 
+with policies and following technical guidelines. Senior management must 
+lead by example. Cybersecurity strategies must align with business goals, be 
+assessed against an organization’s risk tolerance, be planned and executed 
+accordingly through collaboration between business units, and not be in 
+competition with other departments for resources. 
+Once an organization has established solid cybersecurity fundamentals across 
+the board, once it is part of the culture, the business can operate effectively 
+and without major disruptions or regulatory implications if a cybersecurity 
+incident occurs. 
+
+p.47 Gillian Findlay, board member and former CEO at Vamp, a global branded 
+content platform, and former Chief Operating Officer (COO) at Australian 
+Software as a Service (SaaS) unicorn SafetyCulture, shared a typical CEO’s 
+concerns: “There are so many cybersecurity issues that should be front of mind 
+for any CEO, but ransomware has become the most front of mind. We cannot 
+expect end users to protect their company from this threat, so companies must 
+secure end-user devices while enabling the employees to work efficiently and 
+effectively. Otherwise, ransomware breaches will continue to blight our lives.”
+
+p.52 A Chief Financial Officer (CFO) is the senior executive in charge of a 
+company’s financial operations. A traditional CFO will typically act as a 
+f
+ inancial controller, which is more detail-oriented, and even if they are 
+not from a financial background, they manage just the numbers and focus 
+on transactions. A more modern CFO will be very forward-thinking. They 
+manage risks and the future of the business.
+ While the Chief Executive Officer (CEO) sets the direction, culture, and 
+budget for the company, the CFO is the agent of change, supporting that 
+direction, implementing the company culture, and preparing the budget 
+for the CEO. 
+Enterprise Risk Management (ERM) is a strategy across an enterprise, 
+designed to identify potential events that may affect the company’s finances, 
+operations, and objectives and keep risk within the parameters of the company’s 
+risk appetite. The CEO’s commitment and that of every management team 
+member, including the CFO, are critical to the success of ERM adoption 
+and execution.
+ T
+ he executive team’s contributions, particularly in risk management, are 
+required to meet the organization’s strategic goals. Nowadays, this requires 
+considering cyber risk and integrating it into ERM.
+
+p.88  Rogier Roelofs, Asia Pacific CIO at ABN AMRO Clearing Bank, added his 
+top three recommendations for the enablement of our CIOs:
+ • Be aware of the regulations around information and cybersecurity. It 
+is an increasingly complex area, especially for companies operating 
+across different countries. This creates a lot of complexity because the 
+CIO has to think about different requirements in multiple jurisdictions 
+and how to comply with all of those items at the same time. Where in 
+the past CIOs would mostly think about compliance and regulations as 
+a geographical concern related to the jurisdiction in which they were 
+located, nowadays you will not get away with that. The CIO needs 
+to have a holistic cross-border view of distributed, processed, and  
+stored data. 
+• Most organizations designate one person to be ultimately 
+accountable for cybersecurity. However, it’s the responsibility of all 
+senior management to manage cybersecurity risks in their areas 
+and protect the interests of all stakeholders. Unfortunately, many 
+executives do not see cybersecurity as a senior leadership issue, and 
+therefore, creating cyber-savvy boards is of the utmost importance. 
+T
+ he role of the CIO is to take ownership and develop a robust 
+cybersecurity culture. This does not simply mean implementing 
+62     Your CIO—Your Cyber Enabler
+ various policies and procedures. Instead, senior management must 
+make clear through their own actions that cybersecurity is essential 
+to the organization’s mission, and the CIO should take the lead in this 
+by creating transparency, accountability, and strong communication 
+within the organization. 
+• CIOs should embed cybersecurity into the company’s software 
+development processes. Although the focus is a lot on DevOps, 
+this is not good enough, as it should be DevSecOps. This means 
+everybody in the IT organization needs to have the mindset that 
+they are responsible for fast and secure software delivery.
+
+p.94  Although handling cybercrime is challenging, there are ways that CIOs, with 
+the CISO’s support, can outthink, outsmart, and outmaneuver cybercriminals. 
+CIOs must play a role in driving technology transformation efforts that 
+include planning for better cyber resiliency. 
+T
+ heresa Payton, CEO at Fortalice, author of MANIPULATED: Inside the 
+Cyberwar to Hijack Elections and Distort the Truth, and the first female 
+CIO at the White House, shared her views with Shamane on the actions 
+critical for CIOs to fortify resiliency in the face cybercriminals. To make an 
+evolutionary change, her top three actions are:
+ • Understand and educate yourself about what drives human nature 
+and incorporate that into your cybersecurity.
+ • Get to know the criminals. Create decoys of authentic-looking 
+human profiles and systems that look valuable and leave them 
+vulnerable to cybercriminals. Then, study the criminal elements 
+that attack the decoys and learn from what they do.
+ • Beat the criminals at their own game. Leverage the power of AI and 
+behavior-based analytics to create behavior-based profiles of criminal 
+activities, and then use those profiles to create a digital bodyguard to 
+protect employees and systems against digital criminal behavior
+
+p.94  T
+ he cybersecurity burden should not rest solely on a security team or a user’s 
+shoulders. Instead, the CIO needs to build a digital bodyguard around each 
+human and their digital life every single step of the way. To begin, Theresa 
+recommends CIOs take two critical actions:
+ • Know your user stories. Start collecting your organization’s user 
+stories now. Don’t try to fix things at first; just listen. Listen for the 
+opportunities to redesign your process and security around the 
+employees’ experience using the technologies.
+ • Focus on awareness and behavior. Leverage AI to study legitimate 
+use cases and behavior at your organization and then train the AI to 
+alert your security team when behavior doesn’t match that baseline.
+
+p.95 Give your users a safety net by installing easy and elegant Multi-Factor 
+Authentication (MFA) options—there are some great technologies out there, 
+and the benefits of using them are significant. According to research studies 
+conducted by Microsoft (https://techcommunity.microsoft.
+ com/t5/azure-active-directory-identity/your-pa-word
+doesn-t-matter/ba-p/731984), MFA stops 99.9% of password-based 
+cybercrime in its tracks.
+
+p.95  T
+ he CIO focuses on managing the information technology for the business 
+while balancing business goals, ensuring competitive edge, and advocating 
+for innovation, all in alignment with the CISO to ensure that security and 
+privacy are part of the technology roadmap. The CIO’s role in cybersecurity 
+extends further, ensuring the effectiveness and continuity of operations. 
+Rogier Roelofs of ABN AMRO Clearing Bank puts it very clearly:
+ “Although the CISO might be primarily responsible for the 
+cybersecurity roadmap, the CIO should have an in-depth 
+understanding of how this affects the IT landscape and the 
+consequences for the business, something the CISO doesn’t 
+have. I do see too many CIOs being very traditional in 
+how they see their role and responsibilities. Too old-school. 
+T
+ hey are too closely focused on the IT landscape itself 
+and therefore missing out on what this means for the 
+business. CIOs should utilize their technical know-how 
+with a robust knowledge of the business side of the 
+organization, increasing their visibility and authority 
+through strong communication about cybersecurity so the 
+environment can act accordingly.”
+
+p.96  T
+ he following list details some of the activities of the CIO and their role in 
+supporting cyber resilience:
+ • Establish goals and plans for the company’s information technology 
+strategy, considering cybersecurity and privacy as key decision
+making components.
+ • Choose and install appropriate technology to simplify all internal 
+processes and optimize their strategic advantages while balancing 
+security and privacy.
+ • Don’t compromise usability for security; discuss with your CISO 
+and find the right balance.
+ • Enhance the consumer experience by designing and customizing 
+technical systems and platforms, focusing on cybersecurity and 
+privacy as a differentiator and added value instead of cost.
+ • Plan the installation of new systems and give directions to IT 
+specialists and other organizational personnel, while ensuring the 
+CISO’s security requirements are met. This includes managing the 
+expectations of business stakeholders in relation to the organization’s 
+exposure to cyberattacks and data breach risks.
+ • Approve technical equipment and software acquisitions, and form 
+strategic alliances with IT companies while considering their security 
+and privacy posture, to support the organization’s cyber resilience. 
+70     Your CIO—Your Cyber Enabler
+ • Supervise the organization’s technical infrastructure (networks and 
+computer systems) to guarantee optimal functioning, and leverage 
+this to support your CISO’s priorities in detecting and responding 
+to security events.
+ • Manage initiatives using information technology while involving 
+your CISO in the initial steps. It is always cheaper to build security 
+controls into a solution versus applying remediations when a 
+vulnerability is compromised, or an attack occurs.
+ • Keep an eye out for innovative solutions or improvements in 
+technology that might give the business a competitive edge while 
+always remembering that cyber maturity varies from company to 
+company, from country to country, and from function to function.
+ • Analyze the costs, benefits, and risks associated with information 
+technology to advise management and make recommendations 
+while considering potential financial losses and important security 
+investments when making technological choices. 
+
+p.103  Cybersecurity requires collaboration and buy-in across an organization. 
+T
+ hat must first come from the top. Under the direction of the CISOs, the 
+leadership and board of directors must do the following: 
+• Understand who owns and is liable for cyber risk. Following a data 
+breach or cyberattack, the board of directors, not the CISO, will bear 
+most of the consequences, legal fines, and other impacts.
+ • Define cyber risk in the context of business risk. The majority of firms 
+cannot appropriately define the cyber risk they face, nor the potential 
+for substantial business disruption due to a cyberattack. Has your 
+organization thought through the impact of a cyberattack, leading 
+to a product recall? Probably not. It is vital to put such risks in a 
+business context rather than considering them as technical issues.
+ • Quantify cyber risk through identifying, protecting, detecting, 
+responding to, and recovering from cyberattacks. 
+• Consider the cybersecurity implications of third-party vendors and 
+suppliers. They are often the weakest link, especially when cloud 
+technologies are used and, too often, security is assumed by default. 
+Generally, contractual provisions often do not include explicit 
+reference to security or privacy obligations.
+ • Establish indicators for resilience and monitor your cyber maturity. 
+
+p.119 Enterprises long have used risk management to assess financial risks and 
+operational risks, among others. The traditional risk management process 
+has evolved along with a business’s scope, size, and value, and each category 
+of risk (operational, cyber, financial, and so on) has been followed by its own 
+risk approach and methodologies in the risk management process.
+ Today, business risk management techniques need to be adapted because 
+most businesses are either technology-dependent or rely on IT to run their 
+operations. In reality, though, we still face significant divergence in the 
+understanding of stakeholders of risk management language, especially 
+regarding cyber risks. This distinction is particularly pronounced between 
+business managers and IT security, risk analysts, and CISOs. Because of 
+this misalignment, companies continue to  face challenges in implementing 
+important controls to mitigate their risks.
+
+p.121  Once good scenarios are constructed, the CISO starts the quantification 
+process. As part of this process, the CISO needs to identify the different 
+areas that could be affected and whether alternative work practices can be 
+used during a period of downtime. This activity is done in collaboration 
+with the relevant CxO in charge of the affected business activity or initiative. 
+T
+ he following are examples of the impacted areas:
+ • Business: Profit loss, market share losses, and share value fluctuation, 
+among others
+ • Resources: Employees’ overtime and resources to address specific 
+requirements, among others
+ • Legal: Lawsuits due to service unavailability or further damages 
+• Communication: Communication requirements due to a lack of 
+service availability 
+• Data: Loss/theft of data or data encryption 
+• IT: Including the time of recovery and build
+
+p.144 T
+ he COO should proactively engage employees throughout the organization 
+in tackling cybersecurity concerns, playing the role of an enabler and 
+supporter of the Chief Information Security Officer (CISO). Part of an 
+effective cybersecurity strategy is detection, response, and recovery. Regular 
+testing enables the COO and CISO to discover and correct problems, alter 
+procedures, and retrain people as required to assure preparedness for when a 
+cyberattack occurs. This preparedness is critical to avoid significant business 
+interruptions, activity paralysis, and even physical damage
+
+p.155  Test, test, test. Did we mention your plan 
+must be tested?
+
+p.155 Questions to ask your COO 
+T
+ he following is a list of questions to ask your COO about how they incorporate 
+cybersecurity into their business operations planning: 
+• How do you consider cybersecurity in your operations?
+ • Do you cover OT (applicable to only specific industries)?
+ • Who are your main stakeholders?
+ • Do you hold recurring meetings with the CISO?
+ • Have you integrated a cyber incident response plan in your BCP and 
+Disaster Recovery (DR)?
+
+p.163  T
+ he CTO can become a security ally by working with the security team to 
+ensure all systems are properly patched and updated, firewalls and other 
+security measures are in place and functioning properly, and user accounts are 
+properly secured. The CTO can also help to identify potential vulnerabilities 
+in a system and work with the security team to develop solutions.
+ T
+ he CTO’s top priorities should include a culture and work environment 
+that cultivates cybersecurity as one of its foundational cornerstones. CTOs 
+should set a good example for their employees and educate them on the 
+significance of personal and professional cyber hygiene, including security 
+in the technology development process.
+
+p.168 Given the increased importance of cybersecurity in business today, here are 
+some other considerations you can discuss with your CTO to get a sense of 
+how they approach cybersecurity at your organization:
+ • What steps have we taken to improve our cybersecurity posture in 
+alignment with our CISO’s guidance? 
+• How do you evaluate what degree of risk is acceptable in our 
+adoption of technology?
+ • Is there such a thing as too much security?
+ • How do you decide which security investments to make?
+ • Are you allocating appropriate spending to cybersecurity tools and 
+controls that will safeguard our customers’ peace of mind?
+ • How would you respond in the event of a cybersecurity emergency 
+experienced by a customer?
+
+p.181 Questions to ask your CMO and CPO
+ When a firm starts growing quickly with a data-driven marketing strategy, it 
+is critical to ensure privacy and security are integrated at every step, rather 
+than considering them at the end of the process. The following questions 
+for your CMO and CPO are the ones we recommend focusing on initially:
+ • Who owns the data governance process? Does this process involve 
+our CPO (or CMO) and our CISO?
+ • Is there any redundancy in our privacy and security assessments? 
+How can they be further streamlined?
+ • How do we ensure efficient compliance with data protection 
+requirements, especially with the current massive technological 
+adoption?
+ • Does our incident response process include the CMO, CPO,  
+and CISO? 
+• Is there a communication/PR plan to respond to a cyber incident 
+and data breach?
+
+p.184  A board of directors’ essential role, whether it serves a publicly listed company, 
+a privately owned firm, or a not-for-profit organization, is to offer leadership 
+and governance to enable an organization to fulfill its objectives and purpose. 
+Board members function as fiduciaries or legal advisors to the organizations, 
+instituting solid ethical and legal governance and financial management 
+procedures. Additionally, they often are responsible for fundraising and 
+advocacy for the organization. 
+Commonly, boards are made up of non-executive and executive directors, led 
+by the board chairperson. The board is jointly accountable for the company’s 
+performance and governance. It assigns day-to-day operating responsibilities 
+to the CEO. They are aided in their efforts by an executive committee and 
+other committees, including but not limited to the audit committee, risk 
+committee, nominations committee, and remuneration committee. The 
+board should conduct active oversight and control over the development 
+and execution of the firm’s risk management policies and procedures.
+
+p.187  T
+ he board’s structure is often determined in an organization’s constitution 
+or a shareholders’ agreement, a legal document executed by all the parties 
+who have a stake in the company. There are also board charters describing 
+the firm’s governance. Good governance rules would recommend that a 
+minimum number of independent directors also be appointed to the board 
+to provide different perspectives, including directors who have a range of 
+experiences in a particular subject.
+
+p.204  Cyber resilience prepares an organization to maintain and even accelerate 
+business growth by anticipating, reacting to, and recovering from cyberattacks. 
+A cyber-resilient organization can adapt to both known and unknown 
+crises, dangers, adversities, and obstacles. The ultimate purpose of cyber 
+resiliency is to help an organization thrive in the face of adversity (be it a 
+crisis, pandemic, financial volatility, and so on).
+
+p.214  Cloud technology is a way of storing and accessing data and applications 
+over the internet instead of on your computer’s hard drive. There are three 
+types of cloud computing: infrastructure as a service (IaaS), platform as 
+a service (PaaS), and software as a service (SaaS). IaaS is where you rent 
+storage, servers, and networking from a cloud provider. PaaS is where you 
+use a cloud provider to run your applications, so you don’t have to worry 
+about managing the underlying infrastructure. SaaS is where you access to 
+the whole application without much customization available. 
+
+p.219  Questions to ask yourself about 
+building a culture
+ • As a leader, what are some creative ways I can use to set an example 
+in building a healthy security culture?
+192     
+T
+ he Recipe for Building a Strong Security Culture—Bringing It All Together
+ • Who are the other allies I can collaborate with to build a culture 
+together? What role can they play?
+ • What ideas do our C-executives have about building a security
+aware culture that we can tap into?
+ • How can we get support from middle management in driving our 
+cybersecurity program?
+ • How can we leverage the current organizational culture to build and 
+support a healthy cybersecurity culture?
+ Try out some of these questions and see whether they lead to a different 
+approach and outcome!
