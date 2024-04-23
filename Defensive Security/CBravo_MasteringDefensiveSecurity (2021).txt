@@ -41,3 +41,608 @@ Leveraging Pentesting for Defensive Security
 Practicing Forensics
 Achieving Automation of Security Tools
 The Master's Compilation of Useful Resources
+
+p.49 While perimeter defense is mostly based on a single layer of protection (normally a 
+network layer), Defense in Depth (DiD) takes this further by applying a plurality of 
+security layers in which each layer offers a new line of defense against an attack.
+Normally, those layers are independent and each of them provides a different security 
+mechanism that increases the overall security. The benefit of this independence is that 
+a vulnerability that affects one layer may be irrelevant to the other layer. This is a great 
+advantage over a pyramidal model where, if the foundation is affected, the rest will fall.
+However, this independence also has its downside in terms of the complexity of the 
+operations. In this case, managing all the different layers (configuration, test, updates, 
+maintenance) is not an easy task, but who says that our job will be easy!
+
+p.51 Tip
+Once you have identified the different systems and data, create a Kanban-like
+board in which the columns are the levels of security (with an associated cost), 
+and then schedule a meeting with relevant upper management (CEO, CFO) 
+and ask them to place the different systems and data in the desired security 
+level (columns). This is a great tool for you when it comes to supporting your 
+budget request, but also when delegating the responsibility of the security level 
+selected for each system/infrastructure or dataset.
+
+p.53 Creating layers by type or functionality of the control
+Here, you create the layers based on the functionality or type of controls.
+The idea is that you correlate what you are trying to secure against the controls applicable 
+to it. For example, there will be cases in which corrective controls may not be relevant, 
+while in other cases, it should be the priority. Remember that in security, everything needs 
+to be tailor-made based on the business.
+
+p.58 Pentesting services
+You can pretty much test anything; however, here is a list of the most common types of 
+pentesting offered:
+• Network services
+• Databases
+• Web applications
+Comparing the blue and red teams 35
+• Web services
+• APIs
+• Wireless networks
+• BYOD
+• VPN
+• Social engineering
+• Physical intrusions
+• Code/applications
+Benefits of pentesting
+Many organizations are still reluctant to perform some type of pentesting on their 
+environments, so let me share with you some benefits to motivate a company to use this 
+great asset:
+• External feedback about your infrastructure, including weak points, vulnerabilities, 
+and improvement areas
+• An opportunity to close security gaps before they are exploited by criminals
+• Objective evaluation
+• Support of your continuous improvement initiatives
+• External validation of your hard work!!!
+Tips
+Hiring a dedicated red team may be expensive; however, if you have someone 
+in your team with offensive skills, you can leverage that experience to perform 
+mini testing (like a mini purple team).
+Having a purple team does not replace the need for a red team as the inputs 
+from an external "unbiased" tester provide additional insights and value.
+Be careful when hiring a red team as they will handle very sensitive 
+information about the company. Here, the rule is that you should always work 
+with a partner that you can trust.
+Involve your legal team and make sure that a confidentiality and data privacy 
+contract is signed with the red team
+
+p.63 The vulnerability assessment process
+Each company has its own unique way in which to perform a vulnerability assessment; 
+however, most of them are based on the following stages.
+Vulnerability identification
+Vulnerability analysis
+Risk assessment
+Vulnerability remediation
+
+p.64 When should you check for vulnerabilities? 
+You must constantly be on the lookout for new vulnerabilities; however, there are some 
+events in which you must do an assessment to find new vulnerabilities. Here are some 
+examples:
+• Before the purchase of any devices, systems, or software: Make sure that the 
+manufacturer constantly releases patches for known vulnerabilities.
+• Every time a new system is acquired: There will be cases when a new system is 
+acquired without your consent. So, in those cases, you will need to make sure that 
+any vulnerability is fixed before implementation.
+• When a new business is acquired: This is to ensure their security policies match 
+your security policies.
+• When a new office/branch location is opened: This is to check for vulnerabilities 
+related to availability (or the redundancy of services) as well as physical security 
+vulnerabilities.
+• When moving to another physical location: This is similar to the previous 
+example. You need to make sure the new location does not add any new 
+vulnerabilities regarding availability and physical security.
+• The contract of a new contractor: This is to make sure they don't bring equipment 
+that could bring vulnerabilities to your environment; for example, a third party that 
+is hired to perform a job in your company should not be using a non-supported 
+operating system (such as Windows XP).
+Now, let's do an in-depth review of the most common types of vulnerabilities that you 
+could face as a cybersecurity professional.
+
+There are many types of vulnerabilities. However, here, I will try to summarize the most 
+important ones.
+Software vulnerabilities
+User vulnerabilities
+Physical vulnerabilities
+Web vulnerabilities 
+IoT vulnerabilities
+Vulnerabilities on SCADA/ICS 
+Supplier vulnerabilities
+Client vulnerabilities
+Dependencies
+Process vulnerabilities 
+
+p.69 USB HID vulnerabilities 
+This vulnerability should, ideally, have been a subtopic of the Types of vulnerabilities
+section. However, I decided to create an entire section dedicated to these vulnerabilities 
+because they are a very common and dangerous vulnerability that is present in almost 
+all companies and infrastructures. Therefore, it is key that you clearly understand them 
+and be prepared to apply a plurality of methods, systems, strategies, and techniques to 
+effectively protect your company against them.
+
+p.74 Bash Bunny
+The Bash Bunny by Hak5 is one of the world's most advanced USB attack platforms. This 
+small and powerful USB enables the attacker to perform a plurality of attacks with a single 
+device. So, while the USB Rubber Ducky just has capabilities to inject keystrokes, the Bash 
+Bunny has additional capabilities such as USB ethernet control, mass storage, and a serial 
+console (essentially, the device is a small Unix box). To make this even more dangerous, 
+the Bash Bunny allows the attacker to combine all of the preceding capabilities, making 
+this device a serious threat to your infrastructure. If you want to know more, please refer 
+to http://www.bashbunny.com.
+WHID Injector 
+Previous examples have a limitation because attacks need to be preloaded on the device, 
+but what if you want to inject your payloads remotely? Well, this is exactly what you can 
+do with the WHID (https://github.com/whid-injector/WHID). 
+The WHID is based on inexpensive (but powerful) hardware that works over the 
+ESPloitV2 software to perform the remote injection of commands. To make the attackers' 
+lives easier, you can use an app to control the injections remotely. The app is available
+on nethunter at https://store.nethunter.com/en/packages/whid.usb.
+injector/.
+P4wnpi
+This is a very cool project that uses a Raspberry Pi Zero (which is a wonderful 
+IoT-enabled single-board computer) to perform a plurality of USB HID attacks:
+Understanding cybersecurity vulnerabilities and threats 51
+Figure 2.8 – The Raspberry Pi Zero with a USB A port
+One of the characteristics that make this attack very dangerous is that the Raspberry Pi 
+Zero W has Wi-Fi capabilities built-in, enabling the attacker to execute actions remotely 
+and even exfiltrate data to an external server in real time.
+
+p.83 Risk management is a very interesting topic, and there are hundreds of books and 
+certifications about this topic. However, instead of giving you a lot of overwhelming 
+information, I will try to summarize all the available knowledge regarding risk 
+management, tropicalize it to the cybersecurity environment, and present you with just 
+the right information you need in order to manage your risks like a pro!
+To make this simple, let's define a risk as an event that will have an impact on your 
+systems or infrastructure if a given condition is met. Those events are normally triggered 
+by a threat (or a threat agent) that leverages a given vulnerability.
+Now, the process of identifying and analyzing the impact and the probability of that event 
+happening is called risk management.
+All systems and infrastructures have a plurality of associated risks, so it is crucial that you 
+identify and mitigate them as early as possible.
+
+p.84 Risk identification
+First, you need to identify the risks associated with your infrastructure or systems. Now, 
+let me share some tips that will help you here:
+1. Make a detailed and extensive inventory of your assets: Most of the time, risks 
+are not discovered because ghosts or legacy systems have not been identified, so it is 
+key that you start by doing a thorough discovery of your assets to make sure that all 
+your infrastructure and systems are covered.
+2. The ongoing discovery of new assets: Remember that this is an ongoing task and 
+that you need to regularly scan your environment and network to uncover any new 
+devices that have been added to your infrastructure.
+3. Asset evaluation: A good practice here is to evaluate your assets to determine 
+which are critical for your organization (that is, your crown jewels) so that you 
+can justify a higher investment to defend them. This will also help you in terms 
+of prioritization and risk analysis.
+
+p.85 During this identification process, you will have to create a risk register, which is 
+a database of all of the identified risks. There are hundreds of templates that you can use, 
+and all of them vary in terms of their size and the number of columns used. However, 
+you can create your own risk register using Excel. Just make sure you include the minimal 
+factors, as follows:
+• Risk_ID: The unique identifier of the risk.
+• Description: A clear and concise description of the risk.
+• Risk_Owner: The person who is in charge of monitoring the risk.
+62 Managing Threats, Vulnerabilities, and Risks 
+• Risk_Trigger: The event(s) that will convert the risk into an issue.
+• Risk_Category: To help you better manage all risks, it's recommended that you 
+create groups of risks; for example, physical access, network, software, web apps, 
+and more.
+• Probability (Qualitative): Here, you can use 3 or 5 ratings (such as insignificant, 
+low, medium, high, and critical).
+• Impact (Qualitative): Rate the impact to the business if the risk is materialized.
+• Risk_Response: Describe the kind of response you implemented to reduce the 
+probability and/or impact of the risk (such as mitigate, transfer, and so on)
+
+p.100 Are you confused about the scope of the DRP and the BCP? Well, don't worry because 
+that is very common. In fact, a quick search on the topic will show you that even authors 
+don't agree on the boundaries of those two terms; however, let me try to make it as simple 
+as possible.
+The differences between the BCP and the DRP are as follows:
+• The DRP can be considered as a subset of the overall BCP.
+• The DRP is about restoring a critical server in the case of a disaster (reactive).
+• The BCP is about preventing business downtime (proactive).
+• The BCP is business-related (processes), while the DRP is more IT-related 
+(systems and data).
+• The BCP can be applied during normal operations to prevent disruptions, while 
+DRP is just executed if there is a disaster
+
+p.101 Creating a DRP
+Here is an overview of the items that you must include when creating a DRP:
+• Scope: Here, you must define the scope of the DRP. While, normally, companies 
+just create an overall DRP, there are cases in which you will find benefits in creating 
+segmented DRPs; for example, one for systems, one for networks, and one for data. 
+• Assumptions: Identify all the assumptions that are relevant to this DRP. One 
+example of a common assumption is that certain items are covered in the BCP 
+(such as backups, redundancies, and failovers).
+• Activation criteria: Identify the triggers to consider if an event is a disaster. For 
+example, if there is a power outage and the mitigation strategy (such as secondary 
+power generators) is not working.
+• Scenarios and response strategies: Here, you need to include a set of scenarios 
+that can be considered as disasters and outline how to mitigate them to restore your 
+business operations. For example, the local server is down and the secondary server 
+on the cloud is not accessible.
+
+p.164 Creating your training strategy
+As you know, patching is one of the most important strategies in defensive security, and 
+this strategy can also be applied to people through education and training. Therefore, you 
+MUST invest time and other resources to make sure you have a strong training strategy.
+Let's take a look at the key points that you need to consider when creating your own 
+training strategy:
+1. Personalize it based on your company culture, your threat landscape, and the type of 
+data managed by the company.
+2. For smaller companies, you can create a single training session to cover all 
+employees; however, mid-to-large-sized companies and corporations MUST have 
+different types of customized training. This training can be segregated based on the 
+type of employee, the organizational level, the data managed, or data access.
+3. Define the delivery method (for example, live training, webinar, videos, animations, 
+web-based interactive learning, and more).
+4. Define the frequency of the training.
+5. Define the success criteria to "pass" the training, for example, by scoring at least 80 
+percent on the final assessment.
+6. Define a rewarding schema; for example, providing a digital badge that can be 
+shared on social media.
+7. Get buy-in from HR and the senior management to make the training mandatory.
+
+p.165 Therefore, you should always push to avoid giving admin right to all users; however, if 
+your company decides to grant admin rights to all employees, then you need to take the 
+following countermeasures:
+1. Define a clear policy about software installation.
+2. Create a whitelist and blacklist of applications that can be installed.
+3. If possible, create a repository to host the whitelisted software (this reduces the risk 
+of a user installing hacked versions of the software).
+4. Set alerts if a blacklisted software is installed on a corporate workstation.
+
+p.166 Performing random social engineering campaigns
+The best way to evaluate the level of preparedness or exposure that users have against 
+a social engineering attack is by testing them with real-life controlled attacks.
+Here is how you can do this:
+• Set up your environment: Purchase a domain from where you will launch the 
+attacks. Look for similar names as the ones that a real attacker will use, for example, 
+support-companyname.com.
+• Test one attack per cycle: First, you need to define the cycles, such as every 3 
+months, 6 months, or 1 year. For example, phishing in early 2020, baiting in late 
+2020, quid pro quo in early 2021, and extorsion in late 2021.
+• Analyze the results: The goal of this is not to chase after your employees and put 
+them on a "wall of shame." Instead, this is about gathering intelligence to determine 
+areas of improvement for upcoming training and education.
+• Set up rewards: You can set up a rewarding system for those employees that found 
+the attack and used the proper channels to report it to the cybersecurity team.
+Rewards are not always about money
+You can also leverage free perks such as digital badges, a wall of fame, 
+a secure employee of the month (you might want to use a catchier name such 
+as "Cybersecurity Rockstar"), a preferential parking spot for a month, or more.
+Summary 143
+• Announcements and communications: You might not want to spoil your 
+assessments by communicating the start of it. However, it is a good idea to send 
+a communication after the assessments are finished so that people are aware of 
+these types of initiatives, but also to share some relevant numbers with them (for 
+instance, how many people fell victim to the attack, potential losses, and more).
+To avoid disruption of services, we recommend that you roll out these campaigns to a 
+randomly selected group of individuals (depending on the size of the company, this could 
+be between 10 percent to 60 percent of employees). Additionally, you need to ensure that 
+this random selection includes participants from all the organizations across the company 
+(for instance, HR, sales, and IT).
+
+p.172 Recognizing an unauthorized AP in your infrastructure
+The WiFi Pineapple has a very cool module called Recon. This is a very clean interface 
+that allows you to see the invisible. This is because it will show you information about what 
+is happing with the Wi-Fi (AP and devices) in your infrastructure.
+Let's explore the valuable information that you can gather here:
+• Information about the SSID (broadcasted or hidden).
+• MAC address of the AP.
+• Security type (WPA, WPE, mixed, and so on).
+• Information about whether WPS is enabled.
+• Wi-Fi channel used by the AP.
+• Signal strength.
+• Clients connected to each AP.
+• Client information, including the MAC address and name of the manufacturer 
+(gathered by analyzing the first three octets of the MAC address dynamically).
+• You can also discover clients that are not associated with any AP (including IoT 
+devices, speakers, cameras, and so on).
+
+p.176 Metasploit is considered an exploitation framework, which means that it's a powerful 
+pack of tools and utilities that you can leverage to test your infrastructure.
+It includes a variety of tools that can be used for the following purposes:
+• Information gathering (passive and active)
+• Vulnerability scanning
+• Exploitation
+• Post-exploitation
+• And many other additional modules including some to help the attacker to cover 
+its tracks
+
+p.248 Configuring host-based firewalls
+We are all familiar with firewalls as devices to regulate incoming and outgoing network 
+traffic to prevent the entry of malicious code or attacks and to prevent the exfiltration 
+of data.
+Host-based firewalls are firewall rules that can be activated at the OS level so that you 
+can apply incoming and outgoing network traffic protection for your system.
+One feature of host-based firewalls is that they are configured per system, offering 
+a higher level of flexibility when needed.
+There are several host-based firewalls for Unix systems, such as iptables, firewalld, 
+netfilter, ipfw, and more. 
+
+Chains
+Chains are the set of rules defined for a particular task.
+iptables uses three sets of rules (chains) to manage traffic: input chains, output chains, 
+and forward chains:
+• Input chains: These are the rules applied to incoming traffic from the network to 
+the local machine.
+• Output chains: These are the rules applied to outgoing traffic from the network to 
+the local machine.
+226 Hardening a Unix Server 
+• Forward chains: These are the rules applied to packets that are neither emitted 
+by the host nor directed to the host. They are the packets that the host is merely 
+routing.
+
+p.254 Advanced management of logs
+As you may know, logs are records of the activities or actions on a given system, OS, 
+or application. They are really important as a source of truth during investigations to 
+determine what can be the cause of downtime, or any other incident.
+Best practices state that all logs must be enabled to ensure that you keep track of 
+everything that is happening in your system. Remember, logs are the main source of 
+information during audits or forensic analysis, therefore, you need to make sure they 
+are available for them.
+Additionally, nowadays, the cost of storage is really low, so it would be hard for you to 
+justify that a log was disabled to save space.
+Another good practice is to keep all logs centralized on an external device, so in case 
+of a full system failure or hard drive crash, you will still be able to retrieve the logs. 
+Furthermore, attackers normally cover their tracks by deleting the logs, but having an 
+external copy of the logs will make it harder for the attacker to delete their tracks from 
+them (because the attacker will have to also compromise the other system where the logs 
+are backed up or centralized).
+
+p.255 Leveraging the logs
+A Security Information and Event Management (SIEM) system can collect and leverage 
+all those logs (data) and, after some training, configuration, and correlation, transform 
+that data into useful security insights (information and knowledge).
+The value of those systems is that they can analyze huge amounts of data from logs (which 
+is normally wasted) to detect patterns and uncover vulnerabilities. They even have the 
+power to detect ongoing attacks (including advanced persistent threats).
+Another good feature of SIEM systems is that they allow you to easily find known signs of 
+attacks, for example, the following signs:
+• Repeated failed login attempts at the same hour, every X number of days
+• An abnormal number of login attempts
+• Logins at unusual hours from unknown addresses
+• Unknown addresses trying to log in on several systems
+• Login attempts with default credentials (admin/admin)
+Also, remember that you can also collect logs from other devices such as routers, proxies, 
+and firewalls. These are extremely important because some of them can alert you about 
+some hard-to-detect attacks, such as a zombie machine infected to carry out crypto 
+mining, DDOS attacks, and more. 
+
+p.290 Advanced network audits
+Wireshark enables you to perform a deep analysis of the network to help you achieve the 
+following objectives:
+• Compliance audits
+• Internal security audits
+• Performance analysis
+• Network risk assessments
+268 Enhancing Your Network Defensive Skills 
+• Malware traffic analysis
+• Vulnerability assessments
+• Identification of data exfiltration
+• Network-hardening analysis
+Those tasks can be performed either by an internal cybersecurity professional or by a 
+service provider (either a third-party company or an external cybersecurity professional).
+
+p.291 An IDS is a passive monitoring solution that detects unwanted intrusions in our 
+networks.
+
+p.302 The advanced Key Croc
+A hardware-based keylogger is probably the most common example of a physical cyberattack. A hardware keylogger is very compact and can be easily connected and disguised, 
+which makes it an extremely dangerous threat.
+But there is an even more dangerous device called the Key Croc – more dangerous 
+because this powerful keylogger comes packed with features such as the following:
+• Human Interface Device (HID) emulation
+• Predetermined HID keystroke injection
+• Remote submissions of HID keystroke injection
+• A listener to trigger the keystroke when a predetermined action is performed
+• Ability to send data directly to the cloud in near real time
+• Execution of payloads (from a huge library of payloads already available)
+• Remote access capabilities through SSH
+• Loaded with Metasploit to execute remote attacks and exploitations
+• Transforms into a USB storage device with a single button
+
+p.303 USB threats
+As seen in Chapter 2, Managing Threats, Vulnerabilities, and Risks, there are many malicious 
+USB HID devices that when connected can be used to execute a plurality of attacks. 
+As mentioned in that chapter, most computer systems are vulnerable to these attacks 
+because they leverage the inherent trust of HID drivers and therefore are not detected 
+by most antivirus systems or even USB OS restrictions (as those apply to mass storage 
+devices and not HIDs).
+Some examples of those USB devices are the following:
+• USB Rubber Ducky
+• Bash Bunny 
+• O.MG Keylogger Cable
+
+p.343 Securing data in use
+Data in use is basically the information in Random Access Memory (RAM). In the past, 
+this data was not considered as vulnerable, however, attackers discovered ways to retrieve 
+information from memory, so it is important to ensure that mechanisms are in place to 
+protect this data.
+Securing Kubernetes and APIs 321
+The main way to protect this type of data is at the OS level by ensuring the server and 
+applications are patched with the latest security updates to prevent any memory leak.
+SaaS users can apply some mechanisms to reduce the risks of these attacks, such as the 
+following:
+• Close the cloud session when not in use.
+• Log out from the web tool (instead of just closing the browser).
+PaaS users can apply the same best practices as SaaS users, plus also ensure that they use 
+the latest version of the platform available and avoid the use of platforms with known 
+vulnerabilities that can lead to a memory leak.
+IaaS users need to go a step further by following these best practices:
+• Install the latest version of the OS.
+• Perform regular patching of the OS.
+• Keep all software up to date (especially with security updates).
+• Remove any vulnerable software from the servers.
+We just covered the basics of cloud security. Now, it's time to move to a deeper topic to 
+understand how we can enhance security when working with Kubernetes.
+
+p.344 Kubernetes is one of the most used platforms to deploy cloud applications. Due to its 
+popularity, it is important that you understand the basics of securing Kubernetes to 
+enhance the protection of your cloud environment. 
+
+p.357 We will start with a step-by-step guide to install two must-have cybersecurity tools, 
+shown here: 
+• Damn Vulnerable Web Application (DVWA)
+• Burp Suite
+DVWA is a great tool that gives you a safe virtual environment in which you can test and 
+even become familiar with several vulnerabilities on web applications.
+On the other hand, Burp Suite is an excellent tool to test a given web application in real 
+time.
+Once we have both tools configured, we will then do a lab to show you how to test a web 
+application against the following two types of attacks:
+• A Structured Query Language (SQL) injection attack
+• A brute-force attack 
+As a summary, here are the main topics that we will cover in this chapter:
+• Gathering intelligence about your site/web application
+• Leveraging DVWA
+• Overviewing the most common attacks on web applications
+• Using Burp Suite
+• SQL injection attack on DVWA
+• Brute-forcing web applications' passwords
+
+p.373 Burp Suite is a great platform that allows us to look for vulnerabilities in our web 
+applications. In fact, if you have web applications, you must have at least one person 
+trained to use Burp Suite to test the security of your web applications.
+But don't worry if you don't have any experience with this tool—this section is for you!
+Here, you will learn how to set up Burp Suite to be ready for the next sections, in which 
+you will see how to use Burp Suite and DVWA to test a web application against two very 
+common attacks: SQL injection and brute-force attacks.
+
+p.396 Part of the powerful options of OpenVAS is the capability to perform two types of tests: 
+unauthenticated and authenticated testing.
+An unauthenticated test is less invasive because it just tests general vulnerabilities based on 
+the software, configuration, and ports found. 
+On the other hand, an authenticated test is more powerful because it allows you to add 
+another factor to the test—that is, the user's session, authentication, and authorization.
+Here, OpenVAS will use valid credentials (provided by the tester) to run local security 
+checks (LSCs) to gather more details about the vulnerabilities on the target systems.
+Examples of the credentials that can be used in an authenticated test are given here:
+• Server Message Block (SMB): To check the patch level and locally installed 
+software on Windows systems such as Adobe Acrobat Reader or the Java suite
+• Secure Shell (SSH): To check the patch level on Unix and Linux systems
+• ESX integrated (ESXi): To test the VMware ESXi servers locally
+• Simple Network Management Protocol (SNMP): To test network components 
+such as routers and switches
+
+p.428 The importance of logs
+As mentioned before, let's do a review of the most relevant topics that highlight the 
+importance of logs and why you must invest time and resources into log management:
+• Compliance and audit: You must ensure that your logs are aligned with applicable 
+regulations. In fact, missing logs could result in very high fines for your company, 
+therefore you must ensure your logs policy is aligned with all local and international 
+regulations, such as Payment Card Industry Data Security Standard (PCI-DSS), 
+Healthcare Information Portability and Accountability Act (HIPAA), General 
+Data Protection Regulation (GDPR), and so on.
+• Troubleshooting: While this task may be out of your scope (and may be performed 
+by the Information Technology (IT) department), you should consider this when 
+creating your logs policy to ensure this is aligned with the IT department's needs to 
+perform troubleshooting activities. Additionally, you need to ensure that they have 
+access only to the logs they need to reduce the risk of other logs being altered or 
+deleted.
+• Investigations: Logs are a powerful tool to detect wrongdoers, including external 
+and internal users. Therefore, you must ensure that critical systems are generating 
+logs. Also, you need to ensure that logs are activated on new systems (such as 
+Internet of Things (IoT) devices) to also keep track of the activity on those devices.
+• Sanctions and legal actions: Logs are typically used as a legal way to prove that 
+some activities were performed by a given user and, therefore, they are normally 
+used as evidence to take legal or internal actions. Therefore, archiving and ensuring 
+the integrity of logs are essential tasks. 
+• Key metrics validation: Logs can help you to confirm whether a given ServiceLevel Agreement (SLA) or contract requirement was met or breached. For 
+example, logs can confirm whether a service you provide was down and whether the 
+uptime was breached or not based on contractual requirements.
+• Support cybersecurity tools: Many cybersecurity tools such as SIEM use logs as 
+their main inputs, therefore good log management will enhance the functionality of 
+said tools. 
+• Log integrity: As we learned, logs are very important, but their effectiveness relies 
+on their integrity, so you must ensure that logs remain untouched. There are several 
+attacks aimed to alter log files; in fact, this is known as log spoofing. To learn 
+more about this, please refer to the OWASP page about log injection at https://
+owasp.org/www-community/attacks/Log_Injection.
+
+p.429 Knowing your enemy's best friend – 
+Metasploit
+
+p.452 Digital forensics is a very complex topic because, as you will see in this chapter, evidence 
+can be gathered even if you don't have access to the device. Consequently, to be admitted 
+on trial, digital evidence must comply with a plurality of conditions and regulations to 
+ensure that the digital evidence was handled properly and that it was taken into custody 
+appropriately. Therefore, the role of the digital forensics specialist is key to ensuring 
+the success of the digital forensics process. This chapter aims to give you a very good 
+introduction to the topic and serve as a starting point in case you need to face this process.
+
+p.457 When talking about forensics in terms of defensive security, we must perform forensics in 
+several fields, including the following:
+• Data analysis
+• Log analysis
+• Email forensics
+• Database forensics
+• Malware forensics 
+• Memory forensics
+• Mobile forensics
+• Network forensics
+
+p.463 As soon as you discover an attack, there are a lot of things that need to be done with the 
+utmost priority, including restoring the systems and services that have been impacted. 
+However, another critical task is to find and secure all the evidence related to the attack. 
+This task is critical as it allows you to do the following:
+• Determine whether the attack was executed by an insider or outsider.
+• Determine whether the insider was a malicious insider or an inadvertent user.
+• Determine the vulnerability exploited by the attacker.
+• Determine the impact on business data in terms of the confidentiality, integrity, 
+and availability (CIA) triad.
+• Determine the systems or services impacted by the attack.
+• Collect evidence to execute legal or corrective actions (from HR).
+Now that you know about the importance of collecting evidence, let's look at some best 
+practices regarding the collection process itself.
+
+p.493 There are thousands of Business Continuity Plan (BCP) templates on the web; however, 
+the ones created by government agencies are usually the best option because they are well 
+prepared, based on international standards, and free:
+• BCP template from Manchester City Council: https://www.manchester.
+gov.uk/downloads/download/5701/mbcf_business_continuity_
+plan_template
+• BCP template and guide from Hertfordshire County Council in the UK: 
+https://www.hertfordshire.gov.uk/services/business/
+business-advice/business-continuity-and-fire-safety.aspx
+• BCP template from Durham County Council in the UK: https://
+www.durham.gov.uk/media/888/Small-Business-andVoluntary-Organisations-Business-Continuity-Plan/pdf/
+SmallBusinessAndVoluntaryOrganisationBusinessCont
+inuityTemplate.pdf?m=635568457135400000
+• BCP template provided by the City of Cambridge: https://www.
+cambridgema.gov/-/media/Files/CDD/EconDev/SmallBusiness/
+unitedwaybusinesscontinuitytemplate.pdf
+
+p.499 Regulations and standards
+PCI-DSS is the standard that must be used by companies that deal with credit card 
+information and payment data. Their official site is as follows: https://www.
+pcisecuritystandards.org/
+HIPAA is a US regulation designed to protect sensitive medical records of patients: 
+https://www.hhs.gov/hipaa/index.html
+GDPR is a regulation created by the European Union to protect the personal data of 
+their citizens: https://gdpr.eu/
+
+p.500 NIST Cybersecurity Framework
+The most famous cybersecurity framework available is NIST: https://www.nist.
+gov/cyberframework
+ISO 27001
+The 27001 series is the family of ISO standards related to cybersecurity: https://www.
+iso.org/isoiec-27001-information-security.html
+IoT Security Foundation
+A list of publications regarding cybersecurity (including an IoT security 
+framework) is designed by the IoT Security Foundation: https://www.
+iotsecurityfoundation.org/best-practice-guidelines/
+MITRE ATT&CK Matrix
+The matrix is a curated knowledge base of adversary tactics and techniques based on 
+real-world cases and observations: https://attack.mitre.org/
+OWASP Top 10
+The Open Web Application Security Project (OWASP) is a nonprofit foundation aimed 
+to enhance the security of web resources and apps. It is well known for the publication of 
+the top 10 web application security risks: https://owasp.org/
+Cybersecurity Maturity Model
+The Enterprise Cybersecurity Maturity Model (ECM2) enables cybersecurity 
+professionals to determine the current cybersecurity level of a company in a few simple 
+steps and provides guidelines on the required steps to move to the next level. You can also 
+register on their site to become part of the next release as a contributor or editor: 
+www.ecm2.info
