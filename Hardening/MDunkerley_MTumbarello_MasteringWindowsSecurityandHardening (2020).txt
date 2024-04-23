@@ -40,3 +40,527 @@ Security Monitoring and Reporting
 Security Operations
 Testing and Auditing
 Top 10 Recommendations and the Future
+
+p.35 The threat landscape within the cyber world is extremely diverse and is continually 
+becoming more complex. The task of protecting users, data, and systems is becoming 
+more difficult and requires the advancement of even more intelligent tools to keep the bad 
+actors out. Today, criminals are more sophisticated, and large groups have formed with 
+significant financial backing to support the wrongdoings of these groups. The following is 
+a list of cyber threats:
+• National governments
+• Nationstates 
+• Terrorists
+• Spies
+• Organized crime groups
+• Hacktivists
+• Hackers
+• Business competitors
+• Insiders/internal employees
+
+p.35 To shed some light on real-world examples of data breach sources today, Verizon has 
+created a 2020 Data Breach Investigations Report (https://enterprise.verizon.
+com/resources/reports/dbir/). The report is built on a set of real-world data and 
+contains some eye-opening data on attack sources:
+• External actors: 70%
+• Organized criminal groups: 55%
+• Internal actors: 30%
+• Partners: 1%
+• Multiple parties involved: 1%
+
+p.36 Malware is software or code designed with malicious intent that exploits vulnerabilities 
+found within the system. The following types of threats are considered malware:
+• Adware
+• Spyware
+• Virus (polymorphic, multipartite, macro, or boot sector)
+• Worm
+• Trojan
+• Rootkit
+• Bots/botnets
+• Ransomware
+• Logic bomb
+In addition to malware, the following are types of attack techniques that can be used to 
+exploit vulnerabilities:
+• Keylogger
+• Phishing
+• Spear phishing
+• Whale phishing
+• SQL injection attack
+• Cross-Site Scripting (XSS)
+• Denial of Service (DoS)
+• Session hijacking
+• Man-in-the-Middle Attacks (MITM)
+• Password attacks (brute-force, dictionary, or birthday attacks)
+• Credential reuse
+• Identity theft
+• Advanced persistent threats
+• Distributed Denial of Service (DDoS)
+• Intellectual property theft
+• Shoulder surfing
+• Golden Ticket: Kerberos attacks
+
+p.41 One of the more common projects that OWASP provides is the OWASP Top 10, which
+provides the most critical web application security risks. The latest version available was 
+published in 2017 and is presented here:
+1. Injection
+2. Broken authentication
+3. Sensitive data exposure
+4. XML External Entities (XXE)
+5. Broken access control
+6. Security misconfiguration
+7. Cross-Site Scripting (XSS)
+8. Insecure deserialization
+9. Using components with known vulnerabilities
+10. Insufficient logging and monitoring
+
+p.49 Another important factor to consider with baselining is that your organization may be 
+required to follow strict regulatory compliance regulations that will enforce the need to 
+ensure specific security requirements are adhered to. Baselines help when you are audited 
+or when the need to provide evidence arises. Some regulatory compliance examples 
+include the following:
+• Payment Card Industry Data Security Standard (PCI DSS)
+• Health Insurance Portability and Accountability Act (HIPAA)
+• Federal Information Security Management Act (FISMA)
+• The Sarbanes-Oxley Act
+• General Data Protection Regulation (GDPR)
+• California Consumer Privacy Act (CCPA)
+
+p.50 As you begin to define and deploy your baselines, you will find that one baseline will not 
+fit all situations. You will need to document and build them for different use cases. The 
+following list gives some examples of where unique baselines may need to be defined:
+• Network devices, such as switches, routers, firewalls, and so on
+• Windows systems, such as servers and clients
+• Linux/Unix systems
+• Storage/file servers
+• Database servers
+• Web servers
+• Application servers
+As we look more specifically at the Windows environment, you may end up with baselines 
+for different architectures.
+For Windows Server, you have the following:
+• The Windows Domain Controller (DC) server
+• Windows Server Internet Information Services (IIS)
+• The Windows SQL database server
+• The Windows DNS server
+• Windows Remote Desktop services
+For the Windows client, you have the following:
+• The standard Windows client (the user workstation)
+• Privileged Access Workstation (PAW)
+• The Windows Virtual client
+
+p.70 Moving beyond standard hardware-based server models comes virtualization. The ability 
+to run many servers on only a few physical servers changed the dynamics of the data 
+center significantly. Today, we are in a major shift to cloud computing. Organizations 
+are slowly moving away from the traditional on-premise data center and moving all 
+their workloads into cloud environments. With the cloud data center, organizations 
+can continue to run traditional servers and services, but the overhead of owning and 
+managing physical infrastructure is greatly reduced or eliminated.
+Another major change with a shift to the cloud is the elimination of onsite facility 
+management and physical operations. Building and maintaining a data center is an 
+enormous undertaking that is challenging and comes with substantial cost implications 
+when designing for highly available services and disaster recovery as part of a business 
+continuity plan. Moving to the cloud changes these dynamics significantly. Your cost 
+model changes to a subscription model with no ownership of any hardware or physical 
+facilities, and a robust business continuity plan becomes more feasible to design. 
+This shift also changes the dynamics of security for the data center. Traditionally, physical 
+security with access controls, locks, badge readers, and security cameras was all that 
+was needed. This goes away with the cloud, but how do you ensure the cloud provider 
+is protecting the access and controls? How do you ensure your data is safe? These are all 
+valid concerns and change the way we manage security as opposed to the traditional data 
+center perspective. We will cover these questions in more detail throughout this book.
+
+p.75 Implementing access management in 
+Windows servers
+The concept of building a solid access foundation is critical as it relates to server 
+management as part of the overall infrastructure. You must consider everything, from 
+physical access to the servers to protecting unified management consoles for managing 
+multiple virtual servers at once. In the next few sections, we will discuss physical access 
+and user access to the infrastructure and the importance of each. Next, we will discuss 
+privileged isolation through a tiered model approach and provide an overview of 
+privileged access management (PAM) and privileged identity management (PIM) 
+solutions. Implementing these tools will help you provide a robust system of server 
+access management. It is highly recommended that you become familiar with the topics 
+mentioned in this section and understand how critical they are when implemented in 
+your organization. First, let's look at physical access and security.
+
+p.76 Privileged Access Management, Just-in-Time Access, 
+and Privileged Identity Management
+Continuing from the previous tip on identity, let's introduce three critical access 
+models that need to be considered for implementation within your server environment. 
+Privileged Access Management (PAM), Just-In-Time (JIT) access, and Privileged 
+Identity Management (PIM) are all privileged access models that provide an additional 
+layer of protection to your admins while they access your infrastructure. These models 
+help ensure that privileged user accounts are only available as needed, have an expiration 
+date regarding their usage, and are fully audited and monitored when accessing Windows. 
+Privileged accounts can be your weakest link if they're not protected properly and 
+investing in these models should be a requirement
+
+p.77 Using a tiered model for privileged access 
+The concept of the tiered model is to isolate and build layers of containment between the 
+Windows systems in your environment. This is accomplished through Active Directory
+(AD) Organizational Units (OU) by designing a structure that is divided into three 
+or more parent containers. They are labeled tier 0, tier 1, and tier 2. Tier 0 contains the 
+systems, accounts, and security groups of the highest security concern such as domain 
+controllers, Azure AD connect servers, and identity management systems. The goal of 
+this isolation or "tiered" approach is to prevent escalation by provisioning account access 
+to only the tier they need access to in order to perform an operation. If an account from 
+a lower tier gets compromised, its elevation will be restricted to its assigned tier or lower 
+in the model. For example, a user account in tier 1 will only access systems in tier 1 or tier 
+2. They wouldn't be allowed access to tier 0. Let's review each of the tiers in a three-tier 
+model in more detail.
+
+p.82 Here 
+is a high-level list of best practices to keep in mind when thinking about the scope of 
+privileged access for your Windows servers and business services:
+• Enforcing multi-factor authentication (MFA) should be at the top of the list. 
+Require MFA for all cloud-based accounts using Azure MFA or another provider. 
+For on-premise servers, you can install Azure MFA Server and have finer control 
+over MFA methods.
+• Deploy a Privileged Access Management (PAM) solution.
+• Use just-in-time access to assign permissions dynamically and avoid permanent 
+assignment for your privileged accounts. Helpful services include Azure 
+Privileged Identity Management (PIM) coupled with Azure Security Center 
+just-in-time access.
+• Have an effective account provisioning and deprovision process. Automate disabling 
+accounts when employees leave the company.
+• Frequently audit privileged accounts in your environment.
+• Limit the number of administrators. Always consider job role and function when 
+provisioning administrative accounts and ensure the principal of least privilege 
+applies. 
+• Separate administrative accounts with regular user’s accounts. This will help 
+mitigate credential exposure if the administrator’s workstation becomes 
+compromised. 
+• Limit access to email and internet browsing when applicable from privileged 
+systems.
+• Enforce strict fine-grained password policies on administrative accounts.
+• Limit the amount of emergency “backdoor” accounts and monitor their usage.
+• Ensure any changes to the environment go through an approval process by a change 
+advisory board. This can include access to highly sensitive systems.
+
+p.83 Understanding Windows Server management 
+tools
+There are many tools available for Windows Server that are useful for both managing 
+and securing the infrastructure. Management technologies were traditionally developed 
+for on-premises deployments, but now, with cloud-based SaaS offerings, it seems the 
+available solutions are growing exponentially. Microsoft offers solutions for enterprisegrade management through its System Center suite of tools such as Operations Manager
+(SCOM) and Configuration Manager (SCCM). There are also third-party paid solutions 
+from companies such as ConnectWise, SolarWinds, and CA Technologies, to name a few. 
+Each offers a different feature set, depending on your management needs and varying 
+price points. In this section, we will review the more common built-in tools available in 
+Windows Server, including Server Manager, Event Viewer, and Windows Server update 
+services for patch management. Then, we will discuss Windows Admin Center and how it 
+can be used to help transition workloads into the Azure cloud. 
+
+p.101 The requirements to deploy Azure Update Management are as follows:
+• Azure Subscription
+• New or existing resource group
+• Log Analytics workspace
+• Azure Automation account
+• Deployment of the Microsoft Monitoring Agent (MMA)
+• Microsoft Update or WSUS configured on your systems
+
+p.104 When building a business continuity (BC) and disaster recovery (DR) strategy, most 
+organizations outline recovery time objectives (RTOs) and recovery point objectives
+(RPOs) for business-critical services and applications. By using the Azure Site Recovery 
+service, these workloads and virtual machines are replicated from primary to secondary 
+sites. If a regional outage occurs in Azure, you can initiate a failover to the secondary 
+region to meet the RTO/RPO objectives of the business continuity plan. Let's take a look 
+at these in more detail: 
+• Recovery Time Objective (RTO): The established duration of time for each 
+business process in which services must be restored to meet SLAs.
+• Recovery Point Objective (RPO): The maximum amount of data that could be 
+lost during a major outage. For example, if the RPO is 24 hours and the last backup 
+was completed 6 hours ago at the time of an outage, there is 18 hours of time until 
+the business will suffer a significant volume of data loss, as defined by the business 
+objective’s RPO
+
+p.109 Technical requirements
+In this chapter, we will be referencing the following tools and services. If you wish to 
+follow along, you can review the licensing requirements and download them from the 
+links that follow:
+• Windows Assessment and Deployment Kit:
+https://docs.microsoft.com/en-us/windows-hardware/
+get-started/adk-install
+• Windows Deployment Services (Windows Server roles and features)
+• Microsoft Deployment Toolkit:
+https://docs.microsoft.com/en-us/configmgr/mdt/
+Additionally, we will be covering the following tools that require additional licensing:
+• Microsoft Endpoint Configuration Manager (MECM/SCCM):
+https://www.microsoft.com/en-us/cloud-platform/systemcenter-pricing
+• Microsoft Intune licensing:
+https://docs.microsoft.com/en-us/intune/fundamentals/
+licenses
+• Windows Autopilot licensing:
+https://docs.microsoft.com/en-us/windows/deployment/
+windows-autopilot/windows-autopilot-requirements
+Tip
+Most Intune licenses also cover the use of System Center Configuration 
+Manager and don't require a standalone purchase.
+
+p.110 Device management evolution
+Using a device management model, many large organizations have adopted Microsoft 
+Endpoint Configuration Manager (MECM), formally known as System Center 
+Configuration Manager (SCCM), which has been the standard for many years. 
+Configuration Manager is a fully mature device management solution also used for image 
+building and deployment. To operate effectively, an Configuration Manager hierarchy 
+requires resources and the deployment of infrastructure either on-premises or in IaaS. 
+As new PC hardware is purchased and new Windows builds are released, a lengthy 
+and complex life cycle process to support the new requirements typically follows. This 
+traditional model can make organizations less agile regarding staying up to date with the 
+latest updates and security trends. Recently, we have seen disruption to this model and 
+a shift that is changing the dynamics of device management. Throughout the book, we 
+may refer to Configuration Manager as MECM, SCCM, and ConfigMgr. All are common 
+acronyms used to reference Configuration Manager.
+In recent years, this shift has come with the adoption of MDM tools that evolved with 
+the growth of iOS and Android. This growth has shown two parallel environments 
+within enterprises. One for phones and tablets, and the other for desktops and laptops. 
+This generates a lot of overhead and a unique skill set to support, manage, and operate 
+two separate environments. It also adds overhead to your security strategy as both your 
+platforms need to meet the security requirements of your policies. Validating security 
+within multiple environments can create challenges and adds its own complexity.
+A major advantage of using an MDM solution is a shift from primarily an imaging model 
+to an out-of-the-box approach. The ability to take your device out of the box, turn it on, 
+and receive your policies, configurations, and security settings layered on top of your 
+original OS is a game changer. This approach has been well-received and adopted for 
+corporate-owned iOS and Android devices. With the release of Windows 10, Microsoft 
+has followed suit and enabled the ability to enroll Windows into an MDM tool, allowing 
+a shift away from traditional imaging and the overhead it brings. More recently, Windows 
+10 with Intune also allows the merging of two separate enterprise tools into one unified 
+management approach for your device management program with Intune and SCCM 
+co-management.
+
+p.117 Windows Assessment and Deployment Kit (Windows ADK) contains all the tools 
+that are used to create custom images. We will discuss this first as it is a prerequisite for 
+Microsoft Deployment Toolkit (MDT). Here is a list of what Windows ADK can do and 
+why it's used:
+• Creates custom boot images or WIM files using the Windows Preinstallation 
+Environment (WinPE). WinPE is used for deployment and recovery and can later 
+leverage a Preboot Execution Environment (PXE) or boot from USB.
+• Creates an unattended (XML) Windows Setup answer file. The answer file is used 
+to automate the selection of options during the Windows setup process. Unattend 
+XML can apply custom configurations and security features such as setting registry 
+keys, disabling Windows features, and running custom scripts.
+• Backs up user data using USMT for migration or break-fix scenarios.
+• Creates a reference hardened image used for deployment.
+• Creates a Provisioning Package (PPKG) using Windows Configuration 
+Designer (WCD). This can be applied after an image and can enforce security 
+settings; automate Azure AD Join; and add certificates, applications, and network 
+configurations such as Wi-Fi.
+
+p.118 WCD is an installation option of Windows ADK. Using a PPKG file is useful for 
+automating the application of custom configurations and security settings. PPKG packages 
+are useful for smaller organizations that may not have the resources to build and maintain 
+images. PPKG are small files that can apply your baselines directly to an out-of-the-box or 
+OEM Windows 10. Additional settings available in WCD include the following:
+• Bulk MDM enrollment and Azure AD join
+• Certificate enrollment
+• Network profiles such as Wi-Fi and proxies
+• Security restrictions such as password, device lock, encryption settings, update 
+settings, and other privacy settings
+• Customizations such as start tiles
+
+p.120 MDT helps to reduce the complexity of using the standalone Windows ADK (which is 
+a pre-requisite to using MDT). The following are additional security features of MDT to 
+consider when creating a hardened image:
+• The ability to apply local Group Policy Objects
+• The ability to enable BitLocker in the WinPE environment (offline BitLocker)
+• Customizable WindowsRE (recovery environment)
+• The ability to add local administrators to devices
+• The ability to add or remove Windows Server roles and features
+• Support for UEFI
+• USMT support to automate the backup of user data and settings
+
+p.166 UEFI is also a form of BIOS and is now standard on most manufactured hardware. BIOS 
+and UEFI (BIOS) have a similar boot process regarding the initializing flow but with some 
+differences. UEFI does not rely on a boot sector to copy a Master Boot Record and uses 
+what's known as a boot manager to determine what to boot. The traditional BIOS runs 
+16-bit code and leverages only the Master Boot Record, which presents limitations such 
+as support for drives larger than 2 TB. UEFI uses the GUID Partition Table (GPT) and 
+supports 32-bit or 64-bit code processes in "protected mode" before transferring control 
+over to the OS during the runtime (RT) processes. The higher bit support has more 
+space that allows for friendlier UIs and faster boot times. UEFI incorporates security 
+technologies such as Secure Boot and additionally supports booting over the network or 
+from flash memory.
+
+p.169 Windows computers containing a TPM provide enhanced security features that can be 
+leveraged for the following types of functions:
+• Encryption, decryption, and other cryptographic functions
+• Key storage and generation
+• Integrity validation (security such as Secure Boot for firmware and boot loaders)
+• Strong user and device authentication technologies (Windows Hello for Business 
+and Virtual Smart Cards)
+• Antimalware boot measurements for start state integrity checks
+• Virtualized-based security features such as Windows Device Guard and 
+Credential Guard
+• BitLocker drive encryption
+• Health attestation services for both local and remote attestation
+
+p.216 Configuring Windows Defender Exploit Guard Network Protection 
+using Group Policy
+In this section, we will configure Network Protection so that we can block connections 
+and customize the toast notifications presented to users when they visit a low-reputation 
+IP or URL. To complete this exercise, the Exploit Guard ADMX and ADML files must be 
+imported into C:\Windows\PolicyDefinitions or to your Group Policy central 
+store. Follow these steps to enable Network Protection using Group Policy:
+1. Open the Group Policy Management snap-in console from a management 
+workstation and create a new GPO linked to an OU that contains the computer 
+systems you wish to target.
+2. Give it a friendly name such as Windows Defender Exploit Guard – 
+Network Protection, right-click it, and choose Edit.
+3. Navigate to Computer Configuration > Policies > Administrative Templates > 
+Windows Components > Windows Defender Antivirus > Windows Defender 
+Exploit Guard > Network Protection.
+4. Open the Prevent users and apps from accessing dangerous websites policy 
+setting and set it to Enabled.
+5. To set the customized toast notifications, go to Computer Configuration > Policies 
+> Administrative Templates > Windows Components > Windows Security > 
+Enterprise Customization.
+6. Choose Configure Customized Notifications and set it to Enabled.
+7. Choose Configure customized contact information and set it to Enabled.
+8. Open Specify contact company name and set it to Enabled and enter a 
+company name.
+9. Choose Specify contact phone number or Skype ID and set it to Enabled. Enter 
+the phone number of your support line.
+10. Choose Specify contact website and set it to Enabled. Enter your IT or 
+support website.
+
+p.239 The following are a few recommendations to better 
+manage local admin accounts:
+• For domain-joined systems, implement a system known as a Local Admin 
+Password Solution (LAPS) to rotate local administrative account passwords if they 
+must exist. For more information, including a link to download the LAPS solution, 
+visit https://www.microsoft.com/en-us/download/details.
+aspx?id=46899.
+• Use a PAM solution from reviewed vendors, such as Thycotic or BeyondTrust, to 
+manage the local administrative accounts on your workstations. These vendors 
+offer robust solutions, can manage multiple account types, and have reporting and 
+auditing functionalities built into them.
+• If you are using Windows Autopilot, set the user account type to standard in the 
+Autopilot profile. This will allow the user to enroll a device onto Azure AD and 
+Intune but remain a standard user.
+• For Azure AD-joined devices, leverage the additional local administrators on the 
+Azure AD-joined devices setting in Device Settings, also known as the Device 
+Administrators Azure AD role.
+
+p.279 This chapter will cover a range of technologies including several step-by-step instructions. 
+To follow along, you will need the following technical requirements as a minimum:
+• Configuration Manager
+• An Intune subscription
+• Permissions to modify Group Policy
+• The Microsoft Security Compliance Toolkit
+• The Convert-GPOtoCI PowerShell script: https://github.com/
+SamMRoberts/Convert-GPOtoCI
+• Azure Security Center standard
+• Azure Bastion
+
+p.286 Creating a Configuration Item
+Follow these steps to create a new Configuration Item. We will be building a 
+Configuration Item to apply a Google Chrome policy to disable the password manager:
+1. In the Configuration Manager console, go to Assets and Compliance, choose 
+Compliance Settings, and select Configuration Items. Click on the Create 
+Configuration Item button in the toolbar.
+2. Give it a friendly name, for example, Google Chrome – Computer. Enter 
+a description and choose Windows Desktops and Servers (custom) under the 
+settings for devices managed with the Configuration Manager client.
+3. Keep all versions selected in the Supported Platforms section as they are.
+4. Choose New in Specify settings for this operating system and set the 
+following options:
+Name: Chrome – PasswordManagerEnabled
+Description: Disable the Google Chrome password manager
+Setting type: Registry Value
+Data type: Integer
+Hive Name: HKEY_LOCAL_MACHINE
+Key Name: Software\Policies\Google\Chrome
+Value Name: PasswordManagerEnabled
+5. Select the Create the registry value as a REG_DWORD data type if remediated 
+for noncompliant rules option.
+6. Click on the Compliance Rules tab and choose New. Set the following options in 
+the Specify rules to define compliance conditions for this setting menu:
+Name: PasswordManagerEnabled – 0 – Dword
+7. In the Setting must comply with the following rule section, choose Equals from 
+the drop-down list and enter the value of 0.
+8. Select both options to Remediate noncompliant rules when supported and 
+Report noncompliance if this setting instance is not found.
+9. Choose Information for Noncompliance severity for reports.
+10. Choose OK and then OK again. Click on Next to see your compliance rule.
+11. Click on Next to view the summary and create the Configuration Item.
+
+p.296 Device configuration profiles are where the majority of settings are configured for device 
+security and personalization settings. Examples of the profile types that can be configured 
+include the following: 
+• Administrative Templates for ADMX-backed policies such as Group Policy 
+preferences that exist today
+• Device restriction profiles that contain security features such as password settings, 
+privacy, and personalizations
+• Delivery optimization to control the bandwidth and caching for Windows Update 
+for Business
+• Device firmware settings for vendors that support the Device Firmware 
+Configuration Interface (DFCI) in UEFI
+• Endpoint Protection to configure features of Microsoft Defender such as Firewall, 
+SmartScreen, Exploit Guard, and Encryption
+• Trusted, SCEP, and PKCS certificate deployments
+• VPN configurations
+• Custom profiles for deploying OMA-URIs that have yet to be implemented 
+in the UI
+These are only a few of the available options for Windows 10 and later device platforms, 
+and Microsoft is doing a great job of constantly exposing new features to the UI.
+
+p.385 Windows Server 2019 includes the following new security highlights:
+• Windows Defender ATP
+• Windows Defender ATP Exploit Guard
+• Security with Software-Defined Networking (SDN)
+• Improvements with Shielded Virtual Machines (VMs)
+• HTTP/2 to provide a safer web experience and faster browsing
+• Encrypted networks
+
+p.386 The following roles are features in Windows Server 2019 that are available to help with 
+securing and hardening your environment:
+• Active Directory Certificate Services
+• Active Directory Domain Services
+• Active Directory Federation Services
+• Active Directory Rights Management Services
+• Device Health Attestation
+Installing Windows Server roles and features 379
+• Host Guardian Service
+• Network Policy and Access Services
+• Remote Access
+• Remote Desktop Services
+• Windows Server Update Services
+• BitLocker Drive Encryption
+• BitLocker Network Unlock
+• Group Policy Management
+• Remote Server Administration Tools (RSAT)
+• Windows Defender Features (installed by default)
+• Windows PowerShell (installed by default)
+
+p.407 Ensuring your Windows servers are properly hardened is critical to maintaining a good 
+security posture and minimizing the attack surface. A best practice for Windows server is 
+to only enable the roles and services required to perform necessary functions and to lock 
+down the network to only allow the required ports and sources to communicate. Next, 
+we will look at implementing a security baseline. We will cover how to implement the 
+Microsoft Security and Compliance toolkit recommended baseline for member servers, 
+discuss network access controls and the various logon types used to access servers, 
+configure inactivity timeouts for interactive sessions, and configure account lockout 
+policies. Finally, we will discuss implementing a fine-grained password policy in order to 
+enforce strict requirements to highly privileged accounts and securing the logon process 
+before learning about how to use Azure Disk Encryption to encrypt data on VMs that live 
+in Azure.
+
+p.434 The capabilities of the MDATP solution can be broken down into the following areas:
+• The Threat & Vulnerability Management feature discovers device vulnerability 
+and misconfigurations using Microsoft Intelligent Security Graph. This provides 
+real-time detection and response insights. 
+• Attack surface reduction is used to describe the technology for mitigation 
+of potential attack surfaces using controls such as hardware-based isolation, 
+application controls, exploit protection, network protection, and controlled 
+folder access.
+• Next-generation protection combines machine learning, analytics, and threatresistance research from the cloud to offer near-real-time protection against new 
+and emerging threats.
+• EDR refers to the use of sensors to detect near-real-time events and to create alerts. 
+EDR responses create incidents that can be tracked and actioned by the SOC.
+• The automated investigation and remediation features are what MDATP uses 
+to examine common alerts and known techniques to take immediate action 
+on an alert. 
+• Microsoft Threat Experts is an additional service offering of proactive hunting with 
+collaboration from Microsoft security experts directly from the MDATP portal.
+• Advanced Hunting uses the Kusto Query Language (KQL) for query-based 
+filtering and deep analysis of MDATP telemetry
