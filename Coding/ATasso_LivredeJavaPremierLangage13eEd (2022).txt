@@ -1,1 +1,162 @@
+Apprendre Java en douceur
+Vous avez décidé de vous initier à la programmation et souhaitez opter pour un langage largement utilisé dans le monde professionnel ? Java se révèle un choix idéal comme vous le constaterez dans ce livre conçu pour les vrais débutants en programmation.
+
+Vous apprendrez d'abord, à travers des exemples simples en Java, à maîtriser les notions communes à tous les langages : variables, types de données, boucles et instructions conditionnelles, etc. Vous franchirez un nouveau pas en découvrant par la pratique les concepts de la programmation orientée objet (classes, objets, héritage), puis le fonctionnement des librairies graphiques AWT et Swing (fenêtres, gestion de la souris, tracé de graphiques). Cet ouvrage vous expliquera aussi comment réaliser des applications Java dotées d'interfaces graphiques conviviales grâce au logiciel libre NetBeans (version 11). Enfin, vous vous initierez au développement d'applications avec l'interface Android Studio.
+
+Chaque chapitre est accompagné de deux types de travaux pratiques : des exercices, dont le corrigé est fourni sur l'extension web du livre, et un projet développé au fil de l'ouvrage, qui vous montrera comment combiner toutes les techniques de programmation étudiées pour construire une véritable application Java.
+
+À qui s'adresse ce livre ?
+Aux étudiants de 1er cycle universitaire (IUT, Deug...) ou d'écoles d'ingénieurs
+Aux vrais débutants en programmation : passionnés d'informatique et programmeurs autodidactes, concepteurs de sites Web souhaitant aller au-delà de HTML et JavaScript, etc.
+Aux enseignants et formateurs recherchant une méthode pédagogique et un support de cours pour enseigner Java à des débutants
+
+p.24  Avant de réaliser une application concrète, telle que celle proposée en projet
+ dans cet ouvrage, nécessairement complexe par la diversité des tâches
+ qu’elle doit réaliser, simplifions-nous la tâche en ne cherchant à résoudre
+ qu’un problème à la fois.
+ Considérons que créer une application, c’est décomposer cette dernière en
+ plusieurs sous-applications qui, à leur tour, se décomposent en micro
+applications, jusqu’à descendre au niveau le plus élémentaire. Cette
+ démarche est appelée analyse descendante. Elle est le principe de base de
+ toute construction algorithmique
+
+p.26 Ordonner la liste des opérations
+
+p.29  Un ordinateur est composé de deux parties distinctes, la mémoire centrale
+ et l’unité centrale.
+ La mémoire centrale permet de mémoriser toutes les informations
+ nécessaires à l’exécution d’un programme. Ces informations correspondent
+ à des données ou à des ordres à exécuter (instructions). Les ordres placés
+ en mémoire sont effectués par l’unité centrale, la partie active de
+ l’ordinateur.
+ Lorsqu’un ordinateur exécute un programme, son travail consiste en grande
+ partie à gérer la mémoire, soit pour y lire une instruction, soit pour y
+ stocker une information. En ce sens, nous pouvons voir l’ordinateur comme
+ un robot qui sait agir en fonction des ordres qui lui sont fournis. Ces
+ actions, en nombre limité, sont décrites ci-après.
+
+p.32  Un programme est essentiellement un outil qui traite l’information. Cette
+ information est transmise à l’ordinateur par l’utilisateur. L’information est
+ saisie par l’intermédiaire du clavier ou de la souris. Cette transmission de
+ données à l’ordinateur est appelée communication d’entrée (input en
+ anglais). On parle aussi de saisie ou encore de lecture de données.
+ Après traitement, le programme fournit un résultat à l’utilisateur, soit par
+ l’intermédiaire de l’écran, soit sous forme de fichiers, que l’on peut ensuite
+ imprimer. Il s’agit alors de communication de sortie (output) ou encore
+ d’affichage ou d’écriture de données.
+
+p.34  Le code binaire associé à chaque code d’opération (addition, test, etc.) n’est pas nécessairement
+ identique d’un ordinateur à un autre. Ce code binaire est déterminé par le constructeur de
+ l’ordinateur. De ce fait, une instruction telle que l’addition de deux nombres n’a pas le même code
+ binaire d’une machine à une autre. Il existe donc, pour un même programme, un code binaire qui
+ diffère suivant le type d’ordinateur utilisé.
+
+p.41  
+ public class Cercle
+ {
+public static void main(String [] arg)
+ {...}}
+
+ System.out.println(''...'');    (bibliothèque system)
+
+p.62  Une variable permet la manipulation de données et de valeurs. Elle est
+ caractérisée par les éléments suivants :
+ • Un nom, qui sert à repérer un emplacement en mémoire dans lequel une
+ valeur est placée. Le choix du nom d’une variable est libre. Il existe
+ cependant des contraintes, que nous présentons à la section « Les noms
+ de variables ».
+ • Un type, qui détermine la façon dont est traduite la valeur en code
+ binaire ainsi que la taille de l’emplacement mémoire. Nous examinons
+ ce concept à la section « La notion de type ». Plusieurs types simples
+ sont prédéfinis dans le langage Java, et nous en détaillons les
+ caractéristiques à la section « Les types de base en Java »
+
+p.88  Le cast
+ La conversion avec perte d’information est autorisée dans certains cas grâce
+ au mécanisme du cast. Il peut être utile de transformer un nombre réel en
+ entier, par exemple pour calculer sa partie entière. Pour cela, le compilateur
+ demande de convertir explicitement les termes de l’opération dans le type
+ souhaité en plaçant devant la variable ou l’opération le type de conversion
+ désiré. Ainsi, pour transformer un float en int, il suffit de placer le terme
+ (int) devant la variable ou l’opération de type float  
+
+p.110  Java est un langage conçu avant tout pour être exécuté dans un
+ environnement Internet et utilisant des programmes essentiellement axés
+ sur le concept d’interface graphique (gestion des boutons, menus, fenêtres,
+ etc.). Dans ce type d’environnement, la saisie de données est gérée par des
+ fenêtres spécialisées, appelées fenêtres de dialogue.
+ L’objectif de cet ouvrage est d’initier le lecteur au langage Java et, surtout,
+ de lui faire comprendre comment construire et élaborer un programme.
+ Pour cet apprentissage (algorithme et langage), il n’est pas recommandé de
+ se lancer dans l’écriture de programmes utilisant des boutons, des menus et
+ autres fenêtres sans avoir étudié au préalable toute la bibliothèque AWT
+ (Abstract Windowing Toolkit) de Java. Cette bibliothèque facilite, il est vrai,
+ la construction d’applications graphiques, mais elle complique et alourdit
+ l’écriture des programmes.
+ Dans cet environnement, le langage Java propose la fonction
+ System.in.read(), qui permet la saisie de données au clavier, sans
+ l’intermédiaire de fenêtres graphiques. 
+
+p.135  Dans le langage Java, le point-virgule constitue une instruction à part
+ entière, qui représente l’instruction vide. Par conséquent, écrire le
+ programme suivant ne provoque aucune erreur à la compilation :
+ if (première > deuxième) ;
+ System.out.println(deuxième + "  " + première) ;
+
+p.149 La notion de répétition est une des notions fondamentales de la
+ programmation. En effet, beaucoup de traitements informatiques sont
+ répétitifs. Par exemple, la création d’un agenda électronique nécessite de
+ saisir un nom, un prénom et un numéro de téléphone autant de fois qu’il y a
+ de personnes dans l’agenda.
+ Dans de tels cas, la solution n’est pas d’écrire un programme qui comporte
+ autant d’instructions de saisie qu’il y a de personnes mais de faire répéter
+ par le programme le jeu d’instructions nécessaires à la saisie d’une seule
+ personne. Pour ce faire, le programmeur utilise des instructions spécifiques,
+ appelées structures de répétition, ou boucles, qui permettent de déterminer
+ la ou les instructions à répéter.
+
+p.173 
+rappel: boucle for sur java
+for (initialisation; condition; incrément)
+ {
+ }
+ plusieurs instructions ;
+
+p.188  Définir les paramètres
+ Pour éviter d’avoir à recopier chaque fois des marches à suivre qui ne
+ diffèrent que sur un détail, l’idée est de construire un algorithme général.
+ Cet algorithme ne varie qu’en fonction d’ingrédients déterminés, qui font
+ que le programme donne un résultat différent.
+ En généralisant l’algorithme du thé ou du café chaud, on exprime une
+ marche à suivre permettant de réaliser une boisson chaude. Pour obtenir un
+ résultat différent (café ou thé), il suffit de définir comme paramètre de
+ l’algorithme l’ingrédient, café ou thé, à choisir.
+ La marche à suivre s’écrit en remplaçant les mots café ou thé par le mot
+ ingrédient
+
+p.191 La bibliothèque Math
+ La bibliothèque mathématique du langage Java est composée d’un
+ ensemble de fonctions prédéfinies, qui permettent de calculer toutes sortes
+ d’équations mathématiques. Parmi ces fonctions, se trouvent les fonctions
+ trigonométriques (sinus, cosinus, tangente, etc.), logarithmiques, d’arrondis,
+ de calcul de puissances ou de racines carrées.
+ Ces fonctions sont regroupées dans la bibliothèque de programmes Math. Le
+ nom de chaque fonction débute toujours par le terme Math, suivi d’un point
+ puis du nom de la fonction
+
+p.198 Nous appelons donc la fonction qui réalise ce calcul, c’est-à-dire
+ périmètre().
+ L’instruction résultat = Math.sqrt(a) ; calcule la racine carrée du nombre a,
+ dont la valeur a été saisie au clavier à l’instruction précédente. Elle place
+ ensuite le résultat de ce calcul dans la variable résultat.
+ En modifiant le nom d’appel de la fonction Math.sqrt() par périmètre(), nous
+ obtenons un programme qui appelle la fonction périmètre() et qui, par
+ conséquent, calcule le périmètre d’un cercle dont la valeur du rayon a, est
+ saisie au clavier. La valeur du périmètre est placée dans la variable résultat
+ par l’intermédiaire du signe d’affectation =.
+
+p.204 Spécifier le type de la valeur retournée dans l’en-tête de la fonction.
+ Pour notre exemple, la valeur retournée est contenue dans la variable p
+ de type double. C’est pourquoi l’en-tête de la fonction s’écrit :
+ public static double périmètre (int r)
 
