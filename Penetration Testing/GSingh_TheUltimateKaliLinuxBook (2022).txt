@@ -39,6 +39,488 @@ Working with Active Directory Attacks
 Advanced Active Directory Attacks
 Delving into Command and Control Tactics
 Advanced Wireless Penetration Testing
+
+p.28 Identifying threat actors and their intent
+All around the world, there is a huge demand for cybersecurity professionals as many 
+organizations are beginning to understand the need for skilled professionals to help them 
+secure and safeguard their assets. One of the most valuable assets to any organization 
+is data. Threat actors such as hackers are improving their game plan and hacking has 
+become a business on the dark web. Threat actors use advanced and sophisticated attacks 
+and threats to compromise their target's systems and networks, steal their data using 
+various techniques of exfiltration to bypass threat detection, and sell the stolen data on the 
+dark web. 
+Years ago, hackers would manually perform these tasks; however, these days they have 
+created advanced threats such as ransomware, which is a crypto-malware designed 
+to compromise vulnerable systems. Once a system is infected with ransomware, it will 
+encrypt all the data within the local drives except the operating system. Additionally, 
+ransomware has the capabilities of also compromising any cloud storage that is linked to 
+the infected system. For example, imagine a user's system has Google Drive, Microsoft 
+OneDrive, or even Dropbox and data is constantly synchronized. If the system is infected, 
+the infection could also affect the data within the cloud storage. However, some cloud 
+providers have built-in protection against these types of threats. 
+Ransomware encrypts the data and holds it hostage while presenting a payment window 
+on the victim's desktop requesting payment to recover the data. During this time, the 
+responsible threat actor is also exfiltrating your data and selling it on the dark web. 
+
+p.43 Network penetration testing (external and internal)
+Network penetration testing focuses on identifying security weaknesses in a targeted 
+environment. The penetration test objectives are to identify the flaws in the target 
+organization's systems, their networks (wired and wireless), and their networking devices 
+such as switches and routers. 
+The following are some tasks that are performed using network penetration testing: 
+• Bypassing an Intrusion Detection System (IDS)/Intrusion Prevention 
+System (IPS) 
+• Bypassing firewall appliances 
+• Password cracking 
+• Gaining access to end devices and servers 
+• Exploiting misconfigurations on switches and routers 
+Now that you have a better idea of the objectives of network penetration testing, let's take 
+a look at the purpose of cloud penetration testing. 
+
+p.44 Physical penetration testing 
+Physical penetration testing focuses on testing the physical security access control systems 
+in place to protect an organization's data. Security controls exist within offices and data 
+centers to prevent unauthorized persons from entering secure areas of a company. 
+Physical security controls include the following: 
+• Security cameras and sensors: Security cameras are used to monitor physical 
+actions within an area. 
+• Biometric authentication systems: Biometrics are used to ensure that only 
+authorized people are granted access to an area. 
+• Doors and locks: Locking systems are used to prevent unauthorized persons from 
+entering a room or area. 
+• Security guards: Security guards are people who are assigned to protect something, 
+someone, or an area. 
+
+p.46 Gaining access 
+This phase can sometimes be the most challenging phase of them all. In this phase, the 
+threat actor uses the information obtained from the previous phases to exploit the target. 
+Upon successful exploitation of vulnerabilities, the threat actor can then remotely execute 
+malicious code on the target and gain remote access to the target system. 
+The following can occur once access is gained: 
+• Password cracking 
+• Exploiting vulnerabilities 
+• Escalating privileges 
+• Hiding files 
+The gaining access (exploitation) phase can at times be difficult as exploits may work 
+on one system and not on another. Once an exploit is successful and system access is 
+acquired, the next phase is to ensure that you have a persistent connection back to the 
+target. 
+
+p.143 Proxychains
+A proxy is a system such as a server that sits between a source and a destination host 
+on a network. If a sender wants to communicate with a destination server, the sender 
+forwards the message to the proxy, which is then forwarded to the destination server. The 
+destination server will think the message is originating from the proxy and not the actual 
+source. Using proxy servers within the field of IT has many benefits. In cybersecurity, it is 
+commonly used to anonymize the origin of network traffic. 
+Penetration testers use proxychains, which allow them to create a logical chain of 
+connections between multiple proxy servers when sending traffic to a target network or 
+the internet. Proxychains allow a penetration tester to configure various types of proxies, 
+such as the following:
+• HTTP
+• HTTPS
+• SOCK4
+• SOCK5
+Simply put, the traffic from the attacker's system will be forwarded to proxyserver1, 
+proxyserver2, proxyserver3, and so on until the last server within the chain forwards the 
+traffic to the actual target system on the network or internet. Using proxychains does not 
+encrypt your traffic compared to VPNs, but it does provide anonymity for your network 
+traffic and prevents your real IP addresses from being exposed to the target.
+
+p.174 Open service ports are doorways to a target system, and they indicate whether 
+services are running on the device. As shown in the preceding screenshot, the 
+following can be determined by a cybersecurity professional and a threat actor:
+ Port 21: There's a File Transfer Protocol (FTP) server.
+ Port 53: This system is providing Domain Name System (DNS) services
+ Port 80: There's a web server on this device.
+ Port 110: This device is providing Post Office Protocol 3 (POP3) services for 
+email clients.
+ Port 143: This system is running Internet Message Access Protocol 4
+(IMAP4) services for email clients. 
+ Port 3389: Microsoft Remote Desktop Protocol (RDP) operates on this port 
+by default, which means RDP is currently active. 
+ Port 8181: Provides email services over this port. 
+
+p.200 There are many public DNS servers on the internet; some are created by threat actors 
+with malicious intentions, such as redirecting unaware users to malicious websites. As a 
+result, I recommend using a trusted DNS provider on all of your networking devices and 
+computers to improve your online safety. The following are some popular DNS servers on 
+the internet:
+• Cloudflare DNS: https://1.1.1.1/
+• Quad 9 DNS: https://www.quad9.net/
+• Cisco OpenDNS: https://www.opendns.com/
+• Google Public DNS: https://developers.google.com/speed/publicdns
+Additionally, DNS servers not only resolve a hostname to an IP address – they also 
+contain various records that are used for various types of resolution.
+The following are the different record types:
+• A: Resolves a hostname to an IPv4 address.
+• AAAA: Resolves a hostname to an IPv6 address.
+• NS: Contains the name servers' information.
+• MX: Contains the mail exchange (email) servers.
+• PTR: Resolves an IP address to a hostname.
+• CNAME: Provides a canonical name or an alias.
+• RP: Specifies the person that's responsible for the domain.
+• SOA: Contains information about the administrator of the domain.
+• SRV: Contains a service port number for a specific service of the domain.
+You're probably thinking, what does learning about DNS have to do with information 
+gathering as a penetration tester? As an aspiring penetration tester, DNS enumeration is 
+the technique of probing specific DNS records for a specific organization's domain. In 
+other words, you ask a DNS server about the IP addresses and server names for a target 
+organization. Simply put, you can retrieve both the hostname and the IP addresses of a 
+target's public servers, such as their email servers.
+
+p.219 Discovering live hosts on the network is an essential stage when performing a penetration 
+test. Let's imagine you're an ethical hacker or a penetration tester; your target organization 
+permits you to directly connect your attacker machine with Kali Linux on their network 
+to perform security testing from their internal network. You're eager to start discovering 
+security vulnerabilities and hacking systems, but you're not sure which systems are online, 
+nor their host operating systems. 
+In this section, you will learn about the skills you will need to perform various types of 
+active reconnaissance on an organization's networks using various tools and techniques. 
+However, to ensure you can perform these exercises in a safe space, please use the 
+following guidelines:
+• Ensure you do not scan systems that you do not own or have been granted legal 
+permission. 
+• Ensure the network adapter of Kali Linux is assigned to the PentestNet lab network 
+within VirtualBox Manager.
+• Power on both the Metasploitable 2 and OWASP BWA virtual machines and ensure 
+these systems are receiving an IP address on the 172.30.1.0/24 network. 
+• The PentestNet network will be our simulated organization network. 
+
+p.225 Whenever a packet is sent from one device to another, the source IP address is included 
+within the header of the packet. This is the default behavior of the TCP/IP protocol stack; 
+all address details must be included within all packets that need to traverse a network. 
+When performing a scan as an ethical hacker and a penetration tester, we try to remain 
+undetected by our target organization. During a real cyberattack, if an organization is 
+unable to detect suspicious activities on their network and systems, the threat actor can 
+simply achieve their objectives without obstructions. However, if an organization can 
+detect suspicious activities as soon as they occur, the blue team can take action quickly to 
+stop the potential threat and safeguard their systems. 
+During a penetration test, it's important to simulate a real-world cyberattack to test 
+the threat detection systems within the target organization. While many organizations 
+with security solutions help protect them from cyberattacks and threats, not all network 
+devices and security solutions are configured properly, so they may not detect a 
+penetration tester on their network.
+
+p.239 Over the past few years, cloud computing has become one of the fastest-growing trends 
+in the IT industry. Cloud computing allows companies to migrate and utilize computing 
+resources within a cloud provider's data center. Cloud computing providers have a pay-asyou-go model, which means that you only pay for the resources you use. Some cloud 
+providers allow pay-per-minute schemes, while others use a pay-per-hour structure.
+There are some very well-known cloud providers within the industry:
+• Amazon Web Services (AWS)
+• Microsoft Azure
+• Google Cloud
+A common service that cloud providers usually offer to customers is a storage facility. 
+The AWS storage facility is known as Simple Storage Service (S3). Whenever a customer 
+enables the S3 service, a bucket is created. A bucket is a storage unit within the AWS 
+platform where the customer can add or remove files. In Microsoft Azure, the file storage 
+facility is known as Azure Files. Additionally, on Google Cloud, the storage facility is 
+known as Google Cloud Storage
+
+p.280 WPScan
+While there are many web applications within the e-commerce industry, there are many 
+organizations that deploy the WordPress web application as their preferred Content 
+Management System (CMS). While WordPress provides a very stylish and clean 
+presentation of websites, many organizations do not update their WordPress platforms 
+and plugins, thereby leaving their web server and web application vulnerable to potential 
+cyberattacks from threat actors on the internet. 
+Within Kali Linux, you will learn about the WPScan tool, which allows penetration testers 
+to perform vulnerability scanning and enumeration on the WordPress web application 
+on a target server. For this exercise, we will be using the OWASP BWA virtual machine as 
+it has a pre-installed WordPress web application located at http://<OWASP BWA IP 
+address>/wordpress. 
+
+p.296 The following are various techniques that are used by antivirus 
+solutions to detect a potential threat within an application or network traffic:
+• Signature-based: Signature-based detection is one of the most common and 
+perhaps an older technique that's used by threat detection and prevention systems. 
+These techniques allow the antivirus application to look for matching code or 
+patterns within a file, software, or network traffic. Once a match has been found, 
+an alert is triggered and the antivirus takes action to prevent the threat. The 
+disadvantage of using signature-based detection is that the antivirus solution relies 
+on knowing the signature of a piece of malware to be able to detect files that contain 
+the same malicious code. Without the signature of a new piece of malware, the 
+antivirus program will miss the threat.
+• Behavioral-based: In behavioral-based threat detection, if an antivirus or 
+antimalware program detects a file or an application on a host system to be not 
+functioning within normal operating methods, it is placed within a sandbox 
+environment. Within this sandbox environment, the potentially harmful application 
+is executed within this virtual space, which allows the antivirus and antimalware 
+programs to look out for any real potential threats or dangers. 
+274 Understanding Network Penetration Testing
+• Heuristic-based: In heuristic-based threat detection, the antivirus and antimalware 
+program usually need some rules to help it determine whether a file or application 
+is harmful to the system or network. Furthermore, algorithms are also used to 
+determine whether the executable file or running application has any malicious 
+code within its instructions that have the potential to cause harm or data loss on the 
+host system.
+While antivirus and antimalware vendors usually implement one or more of these 
+techniques, the cybersecurity industry is continuously evolving, with new detection 
+methods being available in antimalware software. In the following subsections, you 
+will learn how to create reverse shell payloads using various techniques to evade threat 
+detection systems. 
+
+p.308 Working with wireless adapters
+As an aspiring ethical hacker and penetration tester, you may be assigned to perform a 
+wireless penetration test on the organization's wireless network infrastructure to discover 
+any security vulnerabilities and to assess the resilience of the wireless network. 
+While many penetration testers will have Kali Linux deployed on a laptop to improve 
+their mobility, using the wireless network interface cards that are built into laptops is 
+not the most efficient way to perform wireless penetration testing. Therefore, it's highly 
+recommended to use an external wireless network adapter that supports the following 
+features:
+• IEEE 802.11 operating standards such as 802.11a/b/g/n/ac
+• Operating frequencies of 2.4 GHz and 5 GHz band
+• Monitor mode to detect nearby wireless networks
+• Packet injection
+The following are two wireless network adapters that are commonly used by penetration 
+testers:
+• The Alfa AWUS036NHA High Gain Wireless B/G/N USB adapter, which supports 
+2.4 GHz
+• The Alfa AWUS036ACH Long-Range Dual-Band AC1200 Wireless USB 3.0 Wi-Fi 
+adapter, which supports both 2.4 GHz and 5 GHz
+
+p.317 Managing and monitoring wireless modes
+When working with a wireless network adapter as an ethical hacker or penetration tester, 
+it's vital to have a clear understanding of the various modes that you can operate a wireless 
+network adapter in. Let's look at each mode of operations that's connected to Kali Linux:
+• Managed: This is the default mode for all wireless network adapters. It allows a host 
+system such as Kali Linux to connect to an access point or a wireless router. This 
+mode does not allow an ethical hacker or penetration tester to perform any type of 
+wireless penetration testing technique.
+• Monitor: This mode allows ethical hackers and penetration testers to scan for nearly 
+IEEE 802.11 wireless networks, capture wireless frames such as beacons and probes, 
+and perform packet injection attacks on a target wireless network.
+• Master: This mode allows Linux-based systems to operate as access points or 
+wireless routers.
+• Ad hoc: This mode allows the host system to directly connect to another host 
+system, without the need to use an access point or wireless router. Each host will be 
+directly connected to the other in the form of a mesh network. 
+• Repeater: This mode allows a host device to simply accept an inbound wireless 
+signal and reproduce it to other clients on the network. Keep in mind that repeaters 
+are typically used to extend the signal coverage of a wireless network.
+• Secondary: This mode allows a host to operate as a backup device for a master or 
+repeater system.
+
+p.332 The following are various types of password-based attacks:
+• Brute force: In a brute force attack, every possible combination is tried against 
+the system. This is a very time-consuming process as every possible password 
+combination is tested against the authentication system of the target until the valid 
+password is retrieved.
+• Dictionary attack: In a dictionary attack, the threat actor uses a pre-populated 
+wordlist that contains thousands or even millions of possible passwords. These are 
+then tested against the authentication system of the target. Each word from the 
+wordlist is tested; however, the attack will not be successful if a valid password is not 
+found within the wordlist being used by the threat actor.
+• Password guessing: This is a common technique that's used by many people, even 
+threat actors and penetration testers, who are attempting to gain unauthorized 
+access to a system. I have often seen IT professionals use simple and even default 
+passwords on their networking devices, security appliances, and even the client and 
+server systems within their organization.
+• Password cracking: In this technique, the threat actor uses various tools and 
+techniques to retrieve valid user credentials to gain unauthorized access to a system. 
+Sometimes, a threat actor may capture a user's password while it's being transmitted 
+across a network in plaintext by an insecure network protocol, or even retrieve the 
+cryptographic hash of a password.
+• Password spraying: This is the technique where a threat actor uses a single 
+password and tests it against an authentication system with different usernames. The 
+idea is to test which user account within a specific list uses a single password. This 
+technique is good when testing which users within the organization's network use 
+weak or common passwords.
+• Credential stuffing: This technique allows a threat actor to use a common wordlist 
+of usernames and passwords against the authentication system of a target host. This 
+technique checks which combination of usernames and passwords are valid user 
+credentials.
+• Online password attack: In an online password attack, the threat actor attempts 
+to gain unauthorized access to a hostSPACEthat is running a network service. This 
+allows authorized users to log into the system across a network. A simple example of 
+an online password attack is a threat actor attempting to retrieve the username and 
+password of a valid user to gain access to a server that is running RDP.
+310 Performing Network Penetration Testing
+• Offline password attack: In an offline password attack, the threat actor uses various 
+tools and techniques to retrieve the valid password of a password-protected file, 
+such as a document or even the cryptographic hash of a user's password. A simple 
+example of this is capturing a domain administrator's username and password hash 
+from network packets. The username is usually in plaintext, but you may need/want 
+to retrieve the password from the hash value.
+
+p.592 Elements of social engineering
+Being excellent at social engineering takes a bit of time to develop as a skill. One of the key 
+aspects of being a good people person is communicating effectively with anyone, whether 
+in person, over the telephone, or even using a digital medium such as emails or instant 
+messaging. Being a good people person usually means being able to interpret a person's 
+mood and mindset during a conversation and even determine whether the person trusts 
+easily or not. Using social engineering as a penetration tester, you need to understand 
+a person's emotional intelligence based on their tone of voice, body language, gestures, 
+choice of words, and even how easily they may develop trust during a conversation. While 
+this may sound a bit complicated, it's mostly about being able to quickly interpret and 
+predict a person's reaction based on a situation during a conversation. I'm sure you have 
+already noticed your friends, colleagues, and even family members' reactions during 
+various types of conversations on occasion. Being observant, interpretational, and having 
+a good situational awareness mindset will be beneficial during social engineering.
+To ensure you are excellent at social engineering, the following are the key elements that 
+are commonly used by threat actors and penetration testers: 
+• Authority – During a social engineering attack, a threat actor may pretend to 
+be someone of high authority within the target organization. Imagine that the 
+threat actor calls the customer service department of their target organization and 
+informs the agent that they are calling from the IT helpdesk and require their user 
+credentials to perform a system configuration change on their computer. 
+• Intimidation – Threat actors use intimidation to drive fear into their potential 
+victim's mind if they do not perform the instructed task or provide the requested 
+information. Imagine a user doesn't want to provide the user credentials to their 
+system. A threat actor may inform the user that if they do not provide their 
+username and password now, their system will be affected and may be compromised 
+by possible malware, and their manager will be upset at the lack of cooperation.
+• Consensus – This element allows threat actors to use social proof that an action 
+is considered to be normal because others are doing the same thing. The threat 
+actor may inform the potential victim that other users within their department 
+or organization had no issues providing their user credentials; their systems are 
+configured and upgraded.
+Types of social engineering 569
+• Scarcity – This factor is used to inform the potential victims that an event needs to 
+be completed within a specific time, such as immediately. A threat actor may inform 
+the potential victim that if they do not provide their user credentials now, the time 
+to perform the system configurations or upgrade will not be available in the future.
+• Urgency – Applying urgency into a situation usually implies the importance of 
+a task. Threat actors commonly apply urgency during a social engineering attack 
+to convince the potential victim of the importance of providing the requested 
+information or performing a task. 
+• Familiarity – This element is used by threat actors to build some type of familiarity 
+or relationship between themselves and the potential victim. Threat actors may 
+discuss a potentially mutual friend, a sporting event, or anything that ensures the 
+potential victim opens to the conversation and starts trusting the threat actor.
+• Trust – Establishing trust during a social engineering exercise increases the 
+likelihood of the attack being successful. Threat actors can use various choices of 
+words to build a trusting relationship with the potential victim. Once the trusting 
+relationship is created, the threat actor can exploit the trust and get the potential 
+victim to reveal confidential information easily and even perform tasks.
+
+p.593 Human-based
+In human-based social engineering, the threat actor or penetration tester usually 
+pretends to be someone with authority, such as a person who is important within the 
+organization. This means the threat actor can attempt to impersonate a director or senior 
+member of staff and request a password change on the victim's user account. An easy 
+form of impersonation that usually gets a user to trust you quickly is posing as technical 
+support. Imagine calling an employee while you're pretending to be an IT person from the 
+organization's helpdesk team and requesting the user to provide their user account details. 
+Usually, end users are not always aware of human-based threats in cybersecurity and 
+would quickly trust someone who is pretending to be technical support.
+The following are additional types of attacks related to human-based social engineering:
+• Eavesdropping – Eavesdropping involves listening to conversations between people 
+and reading their messages without authorization. This form of attack includes 
+the interception of any transmission between users, such as audio, video, or even 
+written communication.
+• Shoulder surfing – Shoulder surfing is looking over someone's shoulder while they 
+are using their computer. This technique is used to gather sensitive information, 
+such as PINs, user IDs, and passwords. Additionally, shoulder surfing can be done 
+from longer ranges, using devices such as digital cameras.
+• Dumpster diving – Dumpster diving is a form of human-based social engineering 
+where the attacker goes through someone else's trash, looking for sensitive/
+confidential data. Victims insecurely disposing of confidential items, such as 
+corporate documents, expired credit cards, utility bills, and financial records, are 
+considered to be valuable to an attacker.
+
+p.594 The following are common types of computer-based social engineering:
+• Phishing – Attackers usually send an illegitimate email containing false information 
+while masking it to look like a legitimate email from a trusted person or source. 
+This technique is used to trick a user into providing personal information or other 
+sensitive details.
+Imagine receiving an email that includes your bank's name as the sender name and 
+the body of the email has instructions informing you to click on a provided link to 
+reset your online banking credentials. Email messages are usually presented to us 
+in Rich Text Format, which provides very clean and easy-to-read text. This format 
+hides the HyperText Markup Language (HTML) code of the actual message 
+and displays human-readable plain text instead. Consequently, an attacker can 
+easily mask the Uniform Resource Locator (URL) to send the user to a malicious
+website. The recipient of the phishing email may not be able to identify misleading 
+or tampered-with details and click on the link.
+• Spear phishing – In a regular phishing attack, the attacker sends hundreds of 
+generic email messages to random email addresses over the internet. With spear 
+phishing, the attacker sends specially crafted messages to a specific group of people. 
+Spear-phishing attacks have higher response rates compared to normal phishing 
+attacks because the emails are crafted to seem more believable than others.
+• Whaling – Whaling is another type of computer-based social engineering 
+attack. Similar to phishing, a whaling attack is designed to target the high-profile 
+employees of a target organization. High-profile employees usually have high 
+authority in both their job duties and their computer accounts. Compromising 
+a high-profile employee's user account can lead to the threat actor reading 
+confidential emails, requesting information from various departments such as 
+financial records, and even changes within the IT infrastructure to permit remote 
+access for the threat actor.
+• Pharming – This is a type of social engineering where the attacker is able to 
+manipulate the Domain Name System (DNS) records on either a victim's system 
+or DNS server. Changing the DNS records will ensure users are redirected to a 
+malicious website rather than visiting the legitimate website. A user who wants 
+to visit a website such as www.example.com may be redirected to www.
+malciouswebsite.com with a different IP address. This technique is used to 
+send a lot of users to malicious or fake websites to gather sensitive information, 
+such as user credentials from unaware site visitors.
+572 Performing Client-Side Attacks – Social Engineering 
+• Water hole – In this type of attack, the threat actor observes where employees 
+of a target organization are commonly visiting such as a website. The threat actor 
+will create a fake, malicious clone of the website and attempt to redirect the users 
+to the malicious website. This technique is used to compromise all of the website 
+visitors' devices and not just the employees of the target organization. This attack 
+helps the threat actor to compromise a target organization that has very strict 
+security controls, such as DiD. This type of attack helps hackers to perform 
+credential harvesting, which is used to gather users' credentials.
+
+p.613 The HTTP response usually contains a lot of information that helps penetration testers 
+determine whether the web application is secure or not. The following is a breakdown of 
+the information found within the preceding screenshot:
+• The first line contains the protocol (HTTP) and its version (1.1), HTTP Status code 
+(200), and the status message (OK).
+• Content-Type – This informs the client how to interpret the body of the HTTP 
+response message.
+• Content-Length – This specifies the length of the message in bytes.
+• Date – This contains the date and time of the response from the server.
+The following is a list of HTTP status codes and their descriptions:
+• HTTP status code 100:
+ Code 100 – Continue
+ Code 101 – Switching protocol
+ Code 102 – Processing
+ Code 103 – Early hints
+• HTTP status code 200:
+ Code 200 – OK
+ Code 201 – Created
+ Code 204 – No content
+Understanding web applications 591
+• HTTP status code 300:
+ Code 301 – Moved permanently
+ Code 302 – Found
+ Code 304 – Not modified
+ Code 307 – Temporary redirect
+ Code 308 – Permanent redirect
+• HTTP status code 400:
+ Code 400 – Bad request
+ Code 401 – Unauthorized
+ Code 403 – Forbidden
+ Code 404 – Not found
+ Code 409 – Conflict
+• HTTP status code 500:
+ Code 500 – Internal server conflict
+ Code 501 – Not implemented
+ Code 502 – Bad gateway
+ Code 503 – Service unavailable
+ Code 504 – Gateway timeout
+ Code 599 – Network timeout
+
+p.615 Over the years, OWASP has published a list of the top security vulnerabilities that exist 
+within web applications from community research. This list has come to be known as the 
+OWASP Top 10, which contains the details of the most severe and critical security risks 
+within web applications. As mentioned, over time this list is modified to highlight the 
+most critical security risks, and as of 2021, the following are the OWASP Top 10: 2021
+security risks in web applications:
+1. A01:2021 – Broken access control
+2. A02:2021 – Cryptographic failures
+3. A03:2021 – Injection
+4. A04:2021 – Insecure design
+5. A05:2021 – Security misconfiguration 
+6. A06:2021 – Vulnerable and outdated components
+7. A07:2021 – Identification and authentication failures
+8. A08:2021 – Software and data integrity failures
+9. A09:2021 – Security logging and monitoring failures
+10. A10:2021 – Server-side request forgery
 Performing Client-Side Attacks - Social Engineering
 Understanding Website Application Security
 Advanced Website Penetration Testing
