@@ -1,0 +1,200 @@
+Over 8 years ago, the Red Team Field Manual (RTFM) was born out of operator field notes inspired by years of Red Team missions. While tools and techniques change, operators still constantly find themselves in common operating environments, with time running out. The RTFM has provided a quick reference when there is no time to scour the Internet for that perfect command.
+
+RTFM version 2 has been completely overhauled, with the addition of over 290 new commands and techniques. It has also been thoroughly updated and tested to ensure it works against modern operating systems. Version 2 includes a new Mac OS section and a section outlining tradecraft considerations. Searching has been streamlined through an expanded table of contents and appendix, and readability has been considerably improved through new text formatting. Finally, RTFM v2 will come in multiple formats including paperback, hardback (coming August 2022), Kindle eBook and an all-new wide margin note taking edition.
+
+OPEN SOURCE INTELLIGENCE (OSINT)
+	Network
+		Network Resources
+		WHOIS Resources
+	OSINT Resources
+		Relationship and Recon Tools
+		Google Searches
+		People Search
+		OSINT Websites
+WINDOWS
+	Windows OS Details
+		Windows 10 & 11 Versions
+		Windows Server Versions
+		Windows ''NT' Versions
+		Windows Administrative Binaries
+		Environment Variables
+		Windows Key Files & Locations
+		Registry Run Keys
+		Registry Run Keys Cont
+	Windows System Enumeration
+		Windows Situational Awareness
+		Operating System Information
+		Process & Service Enumeration
+		Windows Account Eumeration
+		Network Info & Configuration
+		Registry Commands & Important Keys
+		Remote System Enumeration
+	Data Mining Windows
+		File Info & Searching
+		Tree Filesystem to Searchable File
+		Using Volume Shadow Service (VSS)
+	Remote Execution
+		sc.exe Remote Execution
+		MMC COM Object
+		Remote Schtasks Execution
+	Windows Active Directory
+	Domain and User Enumeration
+		Domain Enumeration with Net.exe
+		Domain Enumeration with DSQuery
+		Domain Enumeration with DSQuery Cont
+		Finding User System in a Windows Domain
+	Windows [Re]Configuration
+		Remote Desktop Protocol (RDP) Configuration
+		Misc [Re]Configuration
+		Disable Windows Defender
+		Windows Event Viewer Manipulation
+	User Level Persistence
+		Scheduled Task User Persistence
+		Run Key User Persistence
+		Startup Directories
+		at.exe Schedule (WinXP)
+		Poisoning Existing scripts
+	System Level Persistence
+		Schtasks on Boot
+		Service Creation
+		Wndows 10 .DLL Hijack (WPTSEXTENTIONS)
+	Windows Scripting
+		PowerShell Scripting
+		PowerShell Basics
+		PowerShell OneLiners
+		PowerShell OneLiners Cont
+		Windows Batch Scripting
+		Batch Scripts
+		Batch Scripts Cont
+	Post Exploitation
+		Mimikatz Credential Manipulation
+		Windows Privilege Escalation Checklist
+		File System Redirection
+MAC OS	
+	Mac OS Details
+		Mac OS Versions
+		File System Structure
+	Mac OS Syste, Enumeration
+		Mac OS Situational Awareness
+		User Plist File Enumeration
+		User enumeration & Modification
+		Create user & make administrator
+		Create A Group
+		Group enumeration & Modification
+*NIX
+	Linux OS Details
+		File System Stucture
+		Important File/Directory Descriptons
+		/etc/shadow File Format
+		/etc/shadow Hash Tyes
+		/etc/shadow File Format
+	Linux System Enumeration
+		Operating System Information
+		Manipulate Packages Using RPM (Red Hat)
+		Manipulate Packages Using DPKG
+		Update System Using Apt Get
+		Situational Awareness & Process Manipulations
+¸		User Account Enumeration & Configuration
+		Network Configuration
+		Network Configuration Cont
+		DNS Zone Transfer
+	Linux File Manipulation
+		File Manipulation
+		File Compression & Chunking
+		File Hashing
+	Linux Persistence
+		rc.local
+		Linux Service
+		Crontab
+		Poisoning Existing Scripts
+	Linux Scripting
+	Linux Post Exploitation
+		Misc Commands
+		Mount USB Device
+		Bash History Manipulation
+	Linux Tools
+		SSH
+		Setup SSH Keys
+		SSH Forwarding/Tunneling
+		TCPDump & TCPReplay
+		TCPDump & TCPReplay Cont:
+		Screen
+		IPTables
+		IPTables Examples
+		Service Manipulation
+	Solaris OS
+		Solaris File System Structure
+		Solaris Commands
+NETWORKING
+	Common Ports
+		Common Ports
+		Health Care Protocol & Ports
+		Scada Protocols & Ports
+		TTL Fingerprinting
+	IPv4
+		Classful IPv4 Ranges
+		Reserved Private Ranges
+		Subnetting
+		Calculating Subnet Range
+	IPv6
+		Broadcas Addresses
+		Interface Addresses
+		IPV6 Tools
+	Networking
+		Cisco Commands
+		SNMP Tools
+		DNSRecon & NMap Reverse DNS
+TECHNOLOGIES
+	Wireless
+		Frequency Chart
+		Helpful RF Websites
+		Kismet Command Reference
+		Linux Wi-Fi Commands
+		Linux Bluetooth
+		Linux Wi-Fi Testing
+		Wi-Fi DOS Attacks
+	Web
+		User Agent String Keywords
+		HTML Beef Hook Technique
+		Embedded iframe
+		Firefox Type Conversions
+		Wget Capture Session Token
+		Curl
+		Automated Web Screenshots (WitnessMe)
+		SQLMap
+	Databases
+		MSSQK
+		POSTGRES
+		MySQL
+		Oracle
+TOOLS
+	Nmap
+		Scan Types
+		Scan Options
+		Output/Input Options
+		Firewall Evasion
+		Misc Flags
+	Wireshark
+		Wireshark Filter Options
+		Comparison Operators
+		Logical Operators
+		Wireshark Examples
+	Netcat
+		Netcat Examples
+		Download a File
+		Upload a File
+	Metasploit
+		Metasploit Options
+		Create & Catch Payloads (msfvenom)
+		Start MSF DB (Kali)
+		Meterpreter Pass a Shell
+		Meterpreter Commands
+		Nmap Through Meterpreter Socks Proxy
+	Ettercap
+		Ettercap Commands
+		Ettercap Filter
+		hping 3
+		arping
+	Password Cracking
+		Hydra
+		John The Ripper

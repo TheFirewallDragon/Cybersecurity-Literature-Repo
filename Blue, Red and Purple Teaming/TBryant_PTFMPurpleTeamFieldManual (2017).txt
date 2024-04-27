@@ -1,0 +1,53 @@
+Red teams can show flaws that exist in your network before they are compromised by malicious actors and blue teams traditionally assess current security measures and identify security flaws. The teams can provide valuable feedback to each other, but this is often overlooked, enter the purple team. The purple team allows for the integration of red team tactics and blue team security measures. The purple team field manual is a manual for all security professionals and integrates red and blue team methodologies.
+
+---WINDOWS
+General Information
+Initial access
+Execution
+Persistence
+Privilege Escalation
+Defense Evasion
+Credential Access
+Discovery
+Lateral Movement
+Collection
+Command and Control
+Exfiltration
+---*NIX
+General Information
+Initial Access
+Execution
+Persistence
+Privilege Escalation
+Defense Evasion
+Credential Access
+Discovery
+Lateral Movement
+Collection
+Command and Control
+Exfiltration
+---Network
+General Information
+Attack
+Detection
+---OSINT
+OSINT
+---Container Breakout
+Kubernetes
+Docker
+---Malware Analysis
+Static Analysis
+Dynamic Analysis
+---Wireless
+---Attack Frameworks
+---Web
+User Agents
+---Database
+MySQL
+PostgreSQL
+MS SQL
+---Scripting
+Powershell
+Python
+Bash
+ASCII Table
