@@ -32,6 +32,16 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
 
 <h2>Blue, Red and Purple Teaming</h2>
 
+<h3>"Blue Team Field Manual (BTFM)" by Alan J White and Ben Clark</h3>
+  - IEEE Citation: [x] A. White and B. Clark, BTFM : blue team field manual. United States: Alan White, 2017.
+<br> Available: https://www.amazon.ca/Blue-Team-Field-Manual-BTFM/dp/154101636X <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/AJWhite_BClark_BTFMBlueTeamFieldManual%20(2017).txt"> What I've learned, notes and finds.</a>
+
+<h3>"RTFM: Red Team Field Manual v2" by Ben Clark and Nick Downer</h3>
+  - IEEE Citation: [x] B. Clark and N. Downer, RTFM, red team field manual. United States Createspace Independent Publishing Cop, 2022.
+<br> Available: https://www.amazon.ca/RTFM-Red-Team-Field-Manual-dp-1075091837/dp/1075091837/ref=dp_ob_title_bk <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/BClark_NDowner_RTFMRedTeamFieldManualv2%20(2022).txt"> What I've learned, notes and finds.</a>
+
 <h3>"Purple Team Strategies: Enhancing global security posture through uniting red and blue teams with adversary emulation" by David Routin, Simon Thoores and Samuel Rossier</h3>
   - IEEE Citation: [x] D. Routin, S. Thoores, and S. Rossier, Purple team strategies : enhancing global security posture through uniting red and blue teams with adversary emulation. Birmingham: Packt Publishing, 2022.
 <br> Available: https://www.amazon.ca/Purple-Team-Strategies-Enhancing-adversary/dp/1801074291 <br>
@@ -41,6 +51,11 @@ So, let's learn together and stay ahead of the cybersecurity game. Dive into the
   - IEEE Citation: [x] K. Sehgal and Nikolaos Thymianis, Cybersecurity Blue Team Strategies. Packt Publishing Ltd, 2023.‌
  <br> Available: https://www.amazon.ca/Cybersecurity-Blue-Team-Strategies-organization/dp/1801072477 <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/KSehgal_NThymianis_CybersecurityBlueTeamStrategies (2023).txt"> What I've learned, notes and finds.</a>
+
+<h3>"PTFM: Purple Team Field Manual" by Tim Bryantr</h3>
+  - IEEE Citation: [x] T. Bryant, PTFM. Pragma LLC, 2021.
+<br> Available: https://www.amazon.ca/PTFM-Purple-Team-Field-Manual/dp/1736526707 <br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Blue%2C%20Red%20and%20Purple%20Teaming/TBryant_PTFMPurpleTeamFieldManual%20(2017).txt"> What I've learned, notes and finds.</a>
 
 <h2>Career and Interviews</h2>
 
