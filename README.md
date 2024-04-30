@@ -4,9 +4,7 @@
 
 In this collection, you'll find books that cover a range of topics from purple teaming to threat modeling. These are the gems that have been keeping me up at night (in a good way!), and I wanted to share and compile them in a compehensive list.
 
-I'll be updating this list as I come across new and exciting stuff. Whether you're a cybersecurity pro or just getting started, there's something here for everyone.
-
-So, let's learn together and stay ahead of the cybersecurity game. Dive into these reads, and let's make the digital world a safer place, one page at a time!</p>
+I'll be updating this list as I come across new and exciting stuff. Whether you're a cybersecurity pro or just getting started, there's something here for everyone.</p>
 
 <ul>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Adversarial%20Tradecraft">Adversarial Tradecraft</a></li>
