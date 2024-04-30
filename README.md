@@ -114,6 +114,13 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 ‌‌<br> Available: https://www.amazon.ca/Keycloak-Management-Applications-protocols-applications/dp/1800562497 ‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Identity%20and%20Access%20Management/SThorgersen_PSilva_Keycloak-IdentityandAccessManagementforModernApplications (2021).txt"> What I've learned, notes and finds.</a>
 
+<h2>Methodology and Norms</h2>
+
+<h3>"Open Source Security Testing Methodology Manual (OSSTMM)" by Pete Herzog</h3>
+  - IEEE Citation: [x] L. Bock, Learn Wireshark. Packt Publishing Ltd, 2022.
+‌‌‌‌<br> Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X ‌‌‌‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark (2019).txt"> What I've learned, notes and finds.</a>
+
 <h2>Networking</h2>
 
 <h3>"Learn Wireshark: A definitive guide to expertly analyzing protocols and troubleshooting networks using Wireshark, 2nd Edition" by Lisa Block</h3>
