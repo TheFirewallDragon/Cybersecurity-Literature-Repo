@@ -16,6 +16,7 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Ethical%20Hacking">Ethical Hacking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Hardening">Hardening</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Identity%20and%20Access%20Management">Identity and Access Management</a></li>
+    <li><a href="">Methodology and Norms</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Networking">Networking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Penetration%20Testing">Penetration Testing</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Privacy">Privacy</a></li>
@@ -117,8 +118,8 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 <h2>Methodology and Norms</h2>
 
 <h3>"Open Source Security Testing Methodology Manual (OSSTMM)" by Pete Herzog</h3>
-  - IEEE Citation: [x] L. Bock, Learn Wireshark. Packt Publishing Ltd, 2022.
-‌‌‌‌<br> Available: https://www.amazon.com/Learn-Wireshark-definitive-analyzing-troubleshooting/dp/180323167X ‌‌‌‌<br>
+  - IEEE Citation: [x] P. Herzog, Open Source Security Testing Methodology Manual (OSSTMM). ISECOM, 2010.
+‌‌‌‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Networking/LBock_LearnWireshark (2019).txt"> What I've learned, notes and finds.</a>
 
 <h2>Networking</h2>
