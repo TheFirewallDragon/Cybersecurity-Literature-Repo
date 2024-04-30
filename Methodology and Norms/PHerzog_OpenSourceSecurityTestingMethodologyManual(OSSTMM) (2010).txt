@@ -1,0 +1,206 @@
+p.3 This manual provides test cases that result
+in verified facts. These facts provide
+actionable information that can
+measurably improve your operational
+security. By using the OSSTMM you no
+longer have to rely on general best
+practices, anecdotal evidence, or
+superstitions because you will have
+verified information specific to your needs
+on which to base your security decisions.
+
+p.4 This is a methodology to test the operational security of physical locations, human interactions, and all
+forms of communications such as wireless, wired, analog, and digital. Those who want to jump right into
+testing while using it may find the following quick-start information helpful.
+
+Introduction................................................................................................................................................................11
+Purpose..................................................................................................................................................................13
+Document Scope.................................................................................................................................................13
+Liability....................................................................................................................................................................13
+Certification and Accreditation.........................................................................................................................14
+Related Projects....................................................................................................................................................17
+Chapter 1 – What You Need to Know......................................................................................................................20
+1.1 Security.............................................................................................................................................................23
+1.2 Controls............................................................................................................................................................24
+1.3 Information Assurance Objectives...............................................................................................................27
+1.4 Limitations........................................................................................................................................................28
+1.5 Actual Security................................................................................................................................................31
+1.6 Compliance....................................................................................................................................................31
+Chapter 2 – What You Need to Do..........................................................................................................................33
+2.1 Defining a Security Test..................................................................................................................................33
+2.2 Scope...............................................................................................................................................................34
+2.3 Common Test Types.......................................................................................................................................36
+2.4 Rules Of Engagement....................................................................................................................................38
+2.5 The Operational Security Testing Process....................................................................................................41
+2.6 Four Point Process...........................................................................................................................................43
+2.7 The Trifecta......................................................................................................................................................44
+2.8 Error Handling..................................................................................................................................................46
+2.9 Disclosure.........................................................................................................................................................51
+Chapter 3 – Security Analysis...................................................................................................................................53
+3.1 Critical Security Thinking.................................................................................................................................54
+3.2 Recognize the OpSec Model........................................................................................................................56
+3.3 Look for Pattern Matching as a Sign of Errors..............................................................................................57
+3.4 Characterize the Results................................................................................................................................57
+3.5 Look for Signs of Intuition................................................................................................................................58
+3.6 Transparent Reporting....................................................................................................................................59
+Chapter 4 – Operational Security Metrics..............................................................................................................62
+4.1 Getting to Know the Rav...............................................................................................................................63
+4.2 How to Make a Rav........................................................................................................................................67
+4.3 Turning Test Results into an Attack Surface Measurement........................................................................70
+4.4 The Operational Security Formula................................................................................................................79
+4.5 The Controls Formula......................................................................................................................................80
+4.6 The Limitations Formula..................................................................................................................................83
+4.7 The Actual Security Formula..........................................................................................................................85
+Chapter 5 – Trust Analysis.........................................................................................................................................87
+5.1 Understanding Trust .......................................................................................................................................87
+5.2 Fallacies in Trust...............................................................................................................................................89
+5.3 The Ten Trust Properties..................................................................................................................................90
+5.4 The Trust Rules..................................................................................................................................................91
+5.5 Applying Trust Rules to Security Testing........................................................................................................94
+Chapter 6 – Work Flow..............................................................................................................................................96
+6.1 Methodology Flow..........................................................................................................................................97
+6.2 The Test Modules ............................................................................................................................................99
+6.3 One Methodology........................................................................................................................................103
+Chapter 7 - Human Security Testing......................................................................................................................105
+Chapter 8 - Physical Security Testing....................................................................................................................120
+Chapter 9 - Wireless Security Testing....................................................................................................................138
+Chapter 10 - Telecommunications Security Testing............................................................................................151
+Chapter 11 - Data Networks Security Testing.......................................................................................................167
+Chapter 12 - Compliance......................................................................................................................................185
+Regulations..........................................................................................................................................................186
+Chapter 13 – Reporting with the STAR...................................................................................................................192
+Chapter 14 – What You Get....................................................................................................................................204
+The Möbius Defense...........................................................................................................................................205
+Get What We Need............................................................................................................................................206
+Chapter 15 – Open Methodology License...........................................................................................................208
+The OML 3............................................................................................................................................................208
+
+p.19 related projects:
+Source Code Analysis Risk Evaluation (SCARE)
+Home Security Methodology and Vacation Guide (HSM)
+Hacker Highschool (HHS)
+The Bad People Project (BPP)
+Security Operations Maturity Architecture (SOMA)
+Business Integrity Testing (BIT)
+Smarter Safer Better
+Mastering Trust
+
+p.27 Interactive Controls
+1. Authentication is a control through the challenge of credentials based on identification and
+authorization.
+2. Indemnification is a control through a contract between the asset owner and the interacting
+party. This contract may be in the form of a visible warning as a precursor to legal action if posted
+rules are not followed, specific, public legislative protection, or with a third-party assurance
+provider in case of damages like an insurance company.
+3. Resilience is a control over all interactions to maintain the protection of assets in the event of
+corruption or failure. 
+4. Subjugation is a control assuring that interactions occur only according to defined processes. The
+asset owner defines how the interaction occurs which removes the freedom of choice but also the
+liability of loss from the interacting party.
+5. Continuity is a control over all interactions to maintain interactivity with assets in the event of
+corruption or failure.
+Process Controls
+6. Non-repudiation is a control which prevents the interacting party from denying its role in any
+interactivity.
+7. Confidentiality is a control for assuring an asset displayed or exchanged between interacting
+parties cannot be known outside of those parties. 
+8. Privacy is a control for assuring the means of how an asset is accessed, displayed, or exchanged
+between parties cannot be known outside of those parties.
+9. Integrity is a control to assure that interacting parties know when assets and processes have
+changed.
+10. Alarm is a control to notify that an interaction is occurring or has occurred.
+
+p.30 Within the OSSTMM the five Limitation classifications are:
+1. Vulnerability is the flaw or error that: (a) denies access to assets for authorized people or processes,
+(b) allows for privileged access to assets to unauthorized people or processes, or (c) allows
+unauthorized people or processes to hide assets or themselves within the scope.
+2. Weakness is the flaw or error that disrupts, reduces, abuses, or nullifies specifically the effects of the
+five interactivity controls: authentication, indemnification, resilience, subjugation, and continuity.
+3. Concern is the flaw or error that disrupts, reduces, abuses, or nullifies the effects of the flow or
+execution of the five process controls: non-repudiation, confidentiality, privacy, integrity, and
+alarm.
+4. Exposure is an unjustifiable action, flaw, or error that provides direct or indirect visibility of targets or
+assets within the chosen scope channel. 
+5. Anomaly is any unidentifiable or unknown element which has not been controlled and cannot be
+accounted for in normal operations. 
+
+p.35 These 7 steps will take you to the start of a properly defined security test. 
+1. Define what you want to protect. These are the assets. The protection mechanisms for these assets
+are the Controls you will test to identify Limitations.
+2. Identify the area around the assets which includes the protection mechanisms and the processes
+or services built around the assets. This is where interaction with assets will take place. This is your
+engagement zone. 
+3. Define everything outside the engagement zone that you need to keep your assets operational.
+This may include things you may not be able to directly influence like electricity, food, water, air,
+stable ground, information, legislation, regulations and things you may be able to work with like
+dryness, warmth, coolness, clarity, contractors, colleagues, branding, partnerships, and so on. Also
+count that which keeps the infrastructure operational like processes, protocols, and continued
+resources. This is your test scope.
+4. Define how your scope interacts within itself and with the outside. Logically compartmentalize the
+assets within the scope through the direction of interactions such as inside to outside, outside to
+inside, inside to inside, department A to department B, etc. These are your vectors. Each vector
+should ideally be a separate test to keep each compartmentalized test duration short before too
+much change can occur within the environment.
+5. Identify what equipment will be needed for each test. Inside each vector, interactions may occur
+on various levels. These levels may be classified in many ways, however here they have been
+classified by function as five channels. The channels are Human, Physical, Wireless,
+Telecommunications, and Data Networks. Each channel must be separately tested for each
+vector.
+6. Determine what information you want to learn from the test. Will you be testing interactions with
+the assets or also the response from active security measures? The test type must be individually
+defined for each test, however there are six common types identified here as Blind, Double Blind,
+Gray Box, Double Gray Box, Tandem, and Reversal. 
+7. Assure the security test you have defined is in compliance to the Rules of Engagement, a guideline
+to assure the process for a proper security test without creating misunderstandings,
+misconceptions, or false expectations.
+The end result will be a measurement of your Attack Surface. The attack surface is the unprotected part
+of the Scope from a defined Vector.
+
+p.45 four point process
+1. Induction: (Z) establishing principle truths about the target from environmental laws and facts. The
+Analyst determines factual principles regarding the target from the environment where the target
+resides. As the target will be influenced by its environment, its behavior will be determinable within this
+influence. Where the target is not influenced by its environment, there exists an anomaly to be
+understood. 
+2. Inquest: (C) investigating target emanations. The Analyst investigates the emanations from the
+target and any tracks or indicators of those emanations. A system or process will generally leave a
+signature of its existence through interactions with its environment. 
+3. Interaction: (A/B) like echo tests, standard and non-standard interactions with the target to trigger
+responses. The Analyst will inquire or agitate the target to trigger responses for analysis.
+4. Intervention: (X/Y/Z) changing resource interactions with the target or between targets. The
+Analyst will intervene with the resources the target requires from its environment or from its
+interactions with other targets to understand the extremes under which it can continue operating
+adequately.
+
+p.56 The Six Step Analysis Technique
+1. Build your knowledge of the target from a variety of the most contemporary, factual resources
+while avoiding commercially biased and speculative information.
+2. Determine the global level of experience for the type of target and the amount of information
+possibly known about it. 
+3. Determine any bias or ulterior motives in the information sources. 
+4. Translate jargon from information sources to similar or known words for comparison because what
+may sound new or complicated may just be a trick to differentiate something common.
+5. Be sure the test equipment has been properly calibrated and the test environment verified to
+assure the results are not contaminated by the test itself.
+6. Assure that the translation state of tools or test processes has been removed as much as possible
+so that the results do not come from the indirect sources in a process or the pre-analysis from some
+tools.
+
+p.65 The rav is a scale measurement of the attack surface, the amount of uncontrolled interactions with a
+target, which is calculated by the quantitative balance between operations, limitations, and controls.
+Having the ravs is to understand how much of the attack surface is exposed. In this scale, 100 rav (also
+shown as 100% rav for simplicity of understanding although not precisely a percentage) is perfect
+balance and anything less is too few controls and therefore a greater attack surface. More than 100 rav
+shows more controls than are necessary which itself may be a problem as controls often add interactions
+within a scope as well as complexity and maintenance issues. 
+
+p.71 RAV CALCULATOR
+
+p.92 ten trust propreties: size, symmetry, visibility, subjugation, consistency,
+integrity, offsets, value, components, porosity
+
+p.101 There are four phases in the execution of this methodology:
+A. Induction Phase
+B. Interaction Phase
+C. Inquest Phase
+D. Intervention Phase
