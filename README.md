@@ -10,10 +10,10 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Adversarial%20Tradecraft">Adversarial Tradecraft</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Blue%2C%20Red%20and%20Purple%20Teaming">Blue, Red and Purple Teaming</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Career%20and%20Interviews">Career and Interviews</a></li>
+    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Certification%20Prep">Certification Prep</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Coding">Coding</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Cyber%20Resilience">Cyber Resilience</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Defensive%20Security">Defensive Security</a></li>
-    <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Ethical%20Hacking">Ethical Hacking</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Hardening">Hardening</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Identity%20and%20Access%20Management">Identity and Access Management</a></li>
     <li><a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/tree/main/Methodology%20and%20Norms">Methodology and Norms</a></li>
@@ -68,6 +68,13 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 ‌<br> Available: https://www.amazon.ca/Hack-Cybersecurity-Interview-jumpstarting-cybersecurity-ebook/dp/B09V2S1T35 <br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Career%20and%20Interviews/KUnderhill_CFoulon_THopkins_HackTheCybersecurityInterview (2022).txt"> What I've learned, notes and finds.</a>
 
+<h2>Certification Prep</h2>
+
+<h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
+  - IEEE Citation: [x] D. Meredith and C. Rees, Certified Ethical Hacker (CEH) V12 312-50 Exam Guide : Keep up to Date with Ethical Hacking Trends and Hone Your Skills with Hands-On Activities. Birmingham: Packt Publishing, Limited, 2022.
+‌<br> Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094 ‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide%20(2022).txt"> What I've learned, notes and finds.</a>
+
 <h2>Coding</h2>
 
 <h3>"LIVRE DE JAVA PREMIER LANGAGE (LE) 12E ÉD." by Anne Tasso</h3>
@@ -93,13 +100,6 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
   - IEEE Citation: [x] C. Bravo and D. Kitchen, Mastering Defensive Security. Packt Publishing Ltd, 2022. 
 ‌<br> Available: https://www.amazon.com/Mastering-Defensive-Security-techniques-infrastructure/dp/1800208162 ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Defensive%20Security/CBravo_MasteringDefensiveSecurity (2021).txt"> What I've learned, notes and finds.</a>
-
-<h2>Ethical Hacking</h2>
-
-<h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
-  - IEEE Citation: [x] D. Meredith and C. Rees, Certified Ethical Hacker (CEH) V12 312-50 Exam Guide : Keep up to Date with Ethical Hacking Trends and Hone Your Skills with Hands-On Activities. Birmingham: Packt Publishing, Limited, 2022.
-‌<br> Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Ethical%20Hacking/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide (2022).txt"> What I've learned, notes and finds.</a>
 
 <h2>Hardening</h2>
 
