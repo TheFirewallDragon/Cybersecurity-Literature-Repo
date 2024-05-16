@@ -71,6 +71,8 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 <h2>Certification Prep</h2>
 
 <h3>"Complete Exam Study Guide: CompTIA Security+ SY0-701" by guidesdigest</h3>
+- IEEE Citation: [x] Complete Exam Study Guide: CompTIA Security+ SY0-701. guidesdigest, 2023.
+<br> Available: https://guidesdigest.com/courses/comptia-security-sy0-701-study-guide-practice-exam-tests/ ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/GuidesDigest%20_Security%2BCompleteStudyGuideExamSY0-701%20(2023).txt"> What I've learned, notes and finds.</a>
 
 <h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
