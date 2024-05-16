@@ -70,6 +70,9 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 
 <h2>Certification Prep</h2>
 
+<h3>"Complete Exam Study Guide: CompTIA Security+ SY0-701" by CompTIA</h3>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/CompTIA%20_Security%2BCompleteStudyGuideExamSY0-701%20(2023).txt"> What I've learned, notes and finds.</a>
+
 <h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
   - IEEE Citation: [x] D. Meredith and C. Rees, Certified Ethical Hacker (CEH) V12 312-50 Exam Guide : Keep up to Date with Ethical Hacking Trends and Hone Your Skills with Hands-On Activities. Birmingham: Packt Publishing, Limited, 2022.
 ‌<br> Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094 ‌<br>
