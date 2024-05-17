@@ -75,15 +75,15 @@ I'll be updating this list as I come across new and exciting stuff. Whether you'
 <br> Available: https://guidesdigest.com/courses/comptia-security-sy0-701-study-guide-practice-exam-tests/ ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/GuidesDigest%20_Security%2BCompleteStudyGuideExamSY0-701%20(2023).txt"> What I've learned, notes and finds.</a>
 
+<h3>"CompTIA PenTest+ Certification All-in-One Exam Guide, Second Edition (Exam PT0-002)" by Heather Linn and Raymond Nutting</h3>
+  - IEEE Citation: [x] H. Linn and R. Nutting, CompTIA PenTest+ Certification All-In-One Exam Guide, Second Edition (Exam PT0-002). New York: McGraw-Hill Education, 2022.
+‌<br> Available: https://www.amazon.com/CompTIA-PenTest-Certification-Second-PT0-002/dp/1264274890 ‌<br>
+  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/HLinn_RNutting_CompTIAPenTest%2BCertificationAll-in-OneExamGuide(Exam%20PT0-002)2nd%20Edition%20(2022).txt"> What I've learned, notes and finds.</a>
+
 <h3>"Certified Ethical Hacker (CEH) v12 312-50 Exam Guide: Keep up to date with ethical hacking trends and hone your skills with hands-on activities" by Dale Meredith and Christopher Rees</h3>
   - IEEE Citation: [x] D. Meredith and C. Rees, Certified Ethical Hacker (CEH) V12 312-50 Exam Guide : Keep up to Date with Ethical Hacking Trends and Hone Your Skills with Hands-On Activities. Birmingham: Packt Publishing, Limited, 2022.
 ‌<br> Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094 ‌<br>
   - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/DMeredith_CertifiedEthicalHacker(CEH)v12312-50ExamGuide%20(2022).txt"> What I've learned, notes and finds.</a>
-  
-<h3>"CompTIA PenTest+ Certification All-in-One Exam Guide, Second Edition (Exam PT0-002)" by Heather Linn and Raymond Nutting</h3>
-  - IEEE Citation: [x] H. Linn and R. Nutting, CompTIA PenTest+ Certification All-In-One Exam Guide, Second Edition (Exam PT0-002). New York: McGraw-Hill Education, 2022.
-‌<br> Available: https://www.amazon.com/Certified-Ethical-Hacker-312-50-hands/dp/1801813094 ‌<br>
-  - <a href="https://github.com/TheFirewallDragon/Cybersecurity-Literature-Repo/blob/main/Certification%20Prep/HLinn_RNutting_CompTIAPenTest%2BCertificationAll-in-OneExamGuide(Exam%20PT0-002)2nd%20Edition%20(2022).txt"> What I've learned, notes and finds.</a>
   
 <h2>Coding</h2>
 
