@@ -2456,3 +2456,270 @@ Protection Regulation (EU GDPR).
 ISO 31000. ISO 31000, “Risk management,” is a family of standards
 related to risk management. It provides guidelines that organizations can
 adopt to manage risk.
+
+p.643 A closed-circuit television (CCTV) system transmits signals from video
+cameras to monitors that are similar to TVs. In addition to providing security,
+a CCTV system can also enhance safety by deterring threats.
+
+p.654 Redundancy adds duplication to critical system components and networks
+and provides fault tolerance. If a critical component has a fault, the
+duplication allows the service to continue as if a fault never occurred. In
+other words, a system with fault tolerance can suffer a fault, but it can
+tolerate it and continue to operate. Organizations often add redundancies to
+eliminate single points of failure:
+Disk redundancies using RAID
+NIC redundancy with NIC teaming
+Server redundancies by adding load balancers
+Power redundancies by adding dual power supplies, generators and/or
+UPSes
+Site redundancies by adding hot, cold, or warm sites
+
+p.656 A redundant array of inexpensive disks (RAID) subsystem provides fault
+tolerance for disks and increases system availability. Even if a disk fails,
+most RAID subsystems can tolerate the failure, and the system will continue
+to operate. RAID systems are becoming much more affordable as the price of
+drives falls and disk capacity steadily increases. The following sections
+discuss common RAID levels and how they can contribute to IT resilience.
+RAID 0 - 10
+
+p.658 An active/active load balancer can optimize and distribute data loads across
+multiple computers or multiple networks. For example, if an organization
+hosts a popular website, it can use multiple servers hosting the same website
+in a web farm. Load-balancing software distributes traffic equally among all
+the servers in the web farm, typically located in a DMZ. Active/active load
+balancing is one way to implement a concept known as clustering, where
+several different servers work together to appear as one resource to end users.
+The term load balancer makes it sound like it’s a piece of hardware, but a
+load balancer can be hardware or software. A hardware-based load balancer
+accepts traffic and directs it to servers based on factors such as processor
+utilization and the number of current connections to the server. A softwarebased load balancer uses software running on each of the servers to balance
+the load. Load balancing primarily provides scalability, but it also contributes
+to high availability. Scalability refers to the ability of a service to serve more
+clients without any decrease in performance. Availability ensures that
+systems are up and operational when needed. By spreading the load among
+multiple systems, it ensures that individual systems are not overloaded,
+increasing overall availability.
+
+p.674 A business impact analysis (BIA) is an important part of a BCP. It helps an
+organization identify critical systems and components that are essential to the
+organization’s success. These critical systems support mission-essential
+functions. Mission-essential functions are the activities that must continue or
+be restored quickly after a disaster. The BIA also helps identify vulnerable
+business processes, which are the processes that support mission-essential
+functions.
+
+ The
+BIA does not recommend solutions. However, it provides management with
+valuable information so that they can focus on critical business functions. It
+helps them address some of the following questions:
+What are the critical systems and functions?
+Are there any dependencies related to these critical systems and
+functions?
+What is the maximum downtime limit of these critical systems and
+functions?
+What scenarios are most likely to impact these critical systems and
+functions?
+What is the potential loss from these scenarios?
+
+ recovery time objective (RTO)
+
+ recovery point objective (RPO)
+
+p.679 When working with a BIA, experts often attempt to predict the possibility of
+a failure. For example, what is the likelihood that a hard disk within a RAID
+configuration will fail? The following two terms are often used to predict
+potential failures:
+Mean time between failures (MTBF). The MTBF provides a measure
+of a system’s reliability and is usually represented in hours. More
+specifically, the MTBF identifies the average (the arithmetic mean) time
+between failures. Higher MTBF numbers indicate higher reliability of a
+product or system. Administrators and security experts attempt to
+identify the MTBF for critical systems with the goal of predicting
+potential outages.
+Mean time to repair (MTTR). The MTTR identifies the average (the
+arithmetic mean) time it takes to restore a failed system. In some cases,
+people interpret MTTR as the mean time to recover, and both mean
+essentially the same thing. Organizations that have maintenance
+contracts often specify the MTTR as a part of the contract. The supplier
+agrees that it will, on average, restore a failed system within the MTTR
+time. The MTTR does not provide a guarantee that it will restore the
+system within the MTTR every time. Sometimes, it might take a little
+longer, and sometimes it might be a little quicker, with the average
+defined by the MTTR.
+
+p.705 Hashes and checksums are similar, but there are some differences. In general,
+hashes are much longer numbers and used in strong cryptographic
+implementations. A checksum is typically a small piece of data, sometimes
+only 1 or 2 bits, and is used to quickly verify the integrity of data.
+
+p.706 Message Digest 5 (MD5) is a common hashing algorithm that produces a
+128-bit hash value. Hashes are commonly shown in hexadecimal format
+instead of a stream of 1s and 0s. For example, an MD5 hash is displayed as
+32 hexadecimal characters instead of 128 bits. Hexadecimal characters are
+composed of 4 bits and use the numbers 0 through 9 and the characters a
+through f.
+
+p.706 Secure Hash Algorithms (SHA) are a group of hashing algorithms with
+variations grouped into four standards— SHA-0, SHA-1, SHA-2, and SHA3:
+SHA-0 is flawed and not used.
+SHA-1 is an updated version that creates 160-bit hashes. It is similar to
+the MD5 algorithm. Weaknesses were discovered and it is no longer
+approved for most cryptographic uses.
+SHA-2 improved SHA-1 to overcome potential weaknesses. It includes
+four versions. SHA-256 creates 256-bit hashes and SHA-512 creates
+512-bit hashes. SHA-224 (224-bit hashes) and SHA-384 (384-bit
+hashes) create truncated versions of SHA-256 and SHA-512,
+respectively.
+SHA-3 (previously known as Keccak) is an alternative to SHA-2. The
+U.S. National Security Agency (NSA) created SHA-1 and SHA-2.
+SHA-3 was created outside of the NSA and was selected in a non-NSA
+public competition. It can create hashes of the same size as SHA-2 (224
+bits, 256 bits, 384 bits, and 512 bits).
+
+p.707 Another method used to provide integrity is with a Hash-based Message
+Authentication Code (HMAC). An HMAC is a fixed-length string of bits
+similar to other hashing algorithms such as MD5 and SHA-256 (known as
+HMAC-MD5 and HMAC-SHA256, respectively). However, HMAC also
+uses a shared secret integrity key to add some randomness to the result and
+only the sender and receiver know the secret key.
+
+p.708 Hashing is a one-way function that creates an alphanumeric string of
+characters. You cannot reverse the hash to re-create the original file.
+Passwords are often stored as hashes instead of storing the actual password.
+Additionally, applications often salt passwords with extra characters before
+hashing them.  
+
+p.718-719 An online password attack attempts to discover a password from an online
+system. For example, an attacker can try to log on to an account by
+repeatedly guessing the username and password. Many tools are available
+that attackers can use to automate the process. For example, ncrack is a free
+tool that can be used to run online brute force password attacks.
+Offline password attacks attempt to discover passwords from a captured
+database or captured packet scan. For example, when attackers hack into a
+system or network causing a data breach, they can download entire
+databases. They then perform offline attacks to discover the passwords
+contained within these downloaded databases.
+
+p.720 A password spraying attack is a special type of brute force or dictionary
+attack designed to avoid being locked out. An automated program starts with
+a large list of targeted user accounts. It then picks a password and tries it
+against every account in the list. It then picks another password and loops
+through the list again.
+
+p.720 In a pass the hash attack, the attacker discovers the hash of the user’s
+password and then uses it to log on to the system as the user. Any
+authentication protocol that passes the hash over the network in an
+unencrypted format is susceptible to this attack. It has been widely associated
+with Microsoft LAN Manager (LM) and NT LAN Manager (NTLM), two
+older security protocols used to authenticate Microsoft clients. However, this
+attack has enjoyed success against other protocols, such as Kerberos.
+
+p.735 A key element of asymmetric encryption is a digital certificate. A digital
+certificate is a digital document that typically includes the public key and
+information on the owner of the certificate. Certificate authorities (CAs)
+issue and manage certificates. Digital certificates are used for a variety of
+purposes beyond just asymmetric encryption, including authentication and
+digital signatures.
+Common certificate elements:
+serial number
+issuer
+validity dates
+subject
+public key
+key usage
+certificate attributes
+CN
+O
+L
+S
+C
+
+p.742 Tokenization is an obfuscation technique that involves replacing sensitive
+data with non-sensitive placeholders or tokens. These tokens retain essential
+information about the original data without revealing any sensitive
+information. Tokenization is commonly used in the context of payment
+processing and securing Personally Identifiable Information (PII). The goal is
+to reduce the risk of unauthorized access or data breaches while still allowing
+systems to function with the non-sensitive tokens.
+For example, credit card numbers can be tokenized to protect sensitive
+cardholder information. Instead of storing the actual card number, a random
+token is generated and stored in its place. The original card number is
+securely stored in a separate database or token vault, which maps tokens back
+to their corresponding original data. This way, even if the database
+containing the tokens is compromised, the attacker cannot access the actual
+credit card numbers.
+
+p.753 Secure/Multipurpose Internet Mail Extensions (S/MIME) is one of the most
+popular standards used to digitally sign and encrypt email. Most email
+applications that support encryption and digital signatures use S/MIME
+standards.
+S/MIME uses both asymmetric encryption and symmetric encryption. It can
+encrypt email at rest (stored on a drive) and in transit (data sent over the
+network). The current version uses the Cryptographic Message Syntax
+(CMS), which allows it to use a wide variety of different hashing algorithms
+and encryption algorithms. Many asymmetric algorithms use certificates and
+require a PKI to distribute and manage certificates. When implementing
+S/MIME, you typically use the following ports:
+Port 995 for Post Office Protocol 3 (POP3) over Transport Layer
+Security (TLS), or POP3-over-TLS
+Port 587 for Simple Mail Transfer Protocol (SMTP) over Transport
+Layer Security (TLS), or SMTP-over-TLS
+Port 993 for Internet Message Access Protocol (IMAP) over Transport
+Layer Security (TLS), or IMAP-over- TLS
+
+p.805 Data types: regulated data, financial information, intellectual property, legal information
+
+p.808 A data retention policy identifies how long data is retained, and sometimes
+specifies where it is stored. This reduces the amount of resources, such as
+hard drive space or backup tapes, required to retain the data. Retention
+policies also help reduce legal liabilities. For example, imagine if a retention
+policy states that the company will only keep emails for one year. A court
+order requiring all emails from the company can only expect to receive email
+from the last year.
+
+p.808 Data sanitization methods ensure that data is removed or destroyed from any
+devices before disposing of the devices. A computing device’s life cycle
+starts when it’s put into service and ends when it is disposed of. Information
+also has a life cycle. It begins when the data is created and should end when
+the data is no longer needed. However, if computing devices aren’t sanitized
+when they reach the end of their life cycle, unauthorized entities may gain
+access to the data.
+
+p.814 An incident response policy defines a security incident and incident
+response procedures. Incident response procedures start with preparation to
+prepare for and prevent incidents. Preparation helps prevent incidents such
+as malware infections. Personnel review the policy periodically and in
+response to lessons learned after incidents.  
+
+p.819 The order of volatility from most volatile to
+least volatile is:
+Cache. This is data in the cache memory, including the processor cache
+and hard drive cache. Data in the cache is removed as new data is used.
+RAM. Data in RAM is used by the operating system (OS) and
+applications.
+Swap file or pagefile. A swap file (sometimes called a pagefile) is an
+extension of RAM and is stored on the system hard drive. However, the
+pagefile isn’t a typical file, and the system rebuilds the pagefile when
+rebooting. This makes the pagefile more volatile than other files stored
+on hard drives.
+Disk. Data files are stored on local disk drives, and they remain there
+even after rebooting a system.
+Attached devices such as USB drives will also hold data when a system
+is powered down.
+Network. Networks typically have servers and shared folders accessible
+by users and used to store log files. These remote systems often have
+more robust backup policies in place, making them the least volatile.
+
+p.825 A trend in incident response is the use of Security Orchestration,
+Automation, and Response (SOAR) tools to respond to low-level security
+events automatically. The key is that SOAR tools respond automatically,
+which frees up administrators to focus on other administrative and
+cybersecurity tasks. A SOAR platform is typically a combination of tools
+that can work together to detect and respond to suspicious activity.
+
+p.835 When working with vendors, it’s also important to be aware of end of life
+(EOL) and end of service life (EOSL) policies. EOL generally refers to the
+date when a product will no longer be offered for sale. You can think of this
+as the shelf life of the product. EOSL indicates the date when you expect a
+lack of vendor support because vendors no longer create patches or upgrades
+to resolve vulnerabilities for the product.
