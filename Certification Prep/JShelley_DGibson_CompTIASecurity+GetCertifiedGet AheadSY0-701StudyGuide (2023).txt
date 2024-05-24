@@ -1,0 +1,2458 @@
+Introduction
+Who This Book Is For
+Appendices
+How to Use This Book
+Remember This
+Vendor Neutral
+Additional Online Resources
+Additional Web Resources
+Assumptions
+Set a Goal
+About the Exam
+Passing Score
+Exam Prerequisites
+Beta Questions
+Exam Format
+Question Types
+Multiple Choice
+Performance-Based Questions
+Question Complexity
+Practice Test Questions Strategy
+Exam Test Provider
+Voucher Code for 10 Percent Off
+Exam Domains
+Exam Objectives to Chapter Map
+1.0 General Security Concepts
+2.0 Threats, Vulnerabilities, and Mitigations
+3.0 Security Architecture
+4.0 Security Operations
+5.0 Security Program Management and Oversight
+Recertification Requirements
+701 Pre-Assessment Questions
+Pre-Assessment Answers
+Chapter 1: Mastering Security Basics
+Understanding Core Security Goals
+Security Scenarios
+Ensure Confidentiality
+Provide Integrity
+Increase Availability
+Resource Availability Versus Security Constraints
+Introducing Basic Risk Concepts
+Selecting Effective Security Controls
+Control Categories
+Technical Controls
+Managerial Controls
+Operational Controls
+Physical Controls
+Control Types
+Preventive Controls
+Deterrent Controls
+Detective Controls
+Corrective Controls
+Compensating Controls
+Directive Controls
+Combining Control Categories and Types
+Logging and Monitoring
+Operating System/Endpoint Logs
+Windows Logs
+Linux Logs
+Network Logs
+Firewall Logs
+IDS/IPS Logs
+Packet Captures
+Application Logs
+Metadata
+Centralized Logging and Monitoring
+SIEM Systems
+Syslog
+Chapter 1 Exam Topic Review
+Chapter 1 Practice Questions
+Practice Question Answers
+Chapter 2: Understanding Identity and Access Management
+Exploring Authentication Management
+Comparing Identification and AAA
+Comparing Authentication Factors
+Something You Know
+Something You Have
+Something You Are
+Two-Factor and Multifactor Authentication
+Passwordless Authentication
+Authentication Log Files
+Managing Accounts
+Credential Policies and Account Types
+Privileged Access Management
+Requiring Administrators to Use Two Accounts
+Prohibiting Shared and Generic Accounts
+Deprovisioning
+Time-Based Logins
+Account Audits
+Comparing Authentication Services
+Single Sign-On
+LDAP
+SSO and a Federation
+SAML
+SAML and Authorization
+OAuth
+Authorization Models
+Role-Based Access Control
+Using Roles Based on Jobs and Functions
+Documenting Roles with a Matrix
+Establishing Access with Group-Based Privileges
+Rule-Based Access Control
+Discretionary Access Control
+Filesystem Permissions
+SIDs and DACLs
+Mandatory Access Control
+Labels and Lattice
+Establishing Access
+Attribute-Based Access Control
+Analyzing Authentication Indicators
+Chapter 2 Exam Topic Review
+Chapter 2 Practice Questions
+Practice Question Answers
+Chapter 3: Exploring Network Technologies and Tools
+Reviewing Basic Networking Concepts
+OSI Model
+Basic Networking Protocols
+Implementing Protocols for Use Cases
+Data in Transit Use Cases
+Email and Web Use Cases
+Directory Use Cases
+Voice and Video Use Cases
+Remote Access Use Case
+Time Synchronization Use Case
+Network Address Allocation Use Case
+Domain Name Resolution Use Case
+Understanding Basic Network Infrastructure
+Switches
+Hardening Switches
+Routers
+Hardening Routers
+Simple Network Management Protocol
+Firewalls
+Host-Based Firewalls
+Network-Based Firewalls
+Failure Modes
+Implementing Network Designs
+Security Zones
+Screened Subnet
+Network Address Translation Gateway
+Physical Isolation and Air Gaps
+Logical Separation and Segmentation
+Network Appliances
+Proxy Servers
+Caching Content for Performance
+Content Filtering
+Reverse Proxy
+Unified Threat Management
+Jump Server
+Zero Trust
+Control Plane vs. Data Plane
+Secure Access Service Edge
+Chapter 3 Exam Topic Review
+Chapter 3 Practice Questions
+Practice Question Answers
+Chapter 4: Securing Your Network
+Exploring Advanced Security Devices
+Understanding IDSs and IPSs
+HIDS
+NIDS
+Sensor and Collector Placement
+Detection Methods
+Data Sources and Trends
+Reporting Based on Rules
+Alert Response and Validation
+IPS Versus IDS—In-line Versus Passive
+Honeypots
+Honeynets
+Honeyfile
+Honeytokens
+Securing Wireless Networks
+Reviewing Wireless Basics
+Band Selection and Channel Overlaps
+MAC Filtering
+Site Surveys and Heat Maps
+Access Point Installation Considerations
+Wireless Cryptographic Protocols
+WPA2 and CCMP
+Open, PSK, and Enterprise Modes
+WPA3 and Simultaneous Authentication of Equals
+Authentication Protocols
+IEEE 802.1X Security
+Controller and Access Point Security
+Captive Portals
+Understanding Wireless Attacks
+Disassociation Attacks
+Wi-Fi Protected Setup
+Rogue Access Point
+Evil Twin
+Jamming Attacks
+IV Attacks
+Near Field Communication Attacks
+RFID Attacks
+Bluetooth Attacks
+Wireless Replay Attacks
+War Driving and War Flying
+Using VPNs for Remote Access
+VPNs and VPN Concentrators
+Remote Access VPN
+IPsec as a Tunneling Protocol
+SSL/TLS as a Tunneling Protocol
+Split Tunnel Versus Full Tunnel
+Site-to-Site VPNs
+Always-On VPN
+L2TP as a Tunneling Protocol
+HTML5 VPN Portal
+Network Access Control
+Host Health Checks
+Agent Versus Agentless NAC
+Authentication and Authorization Methods
+PAP
+CHAP
+RADIUS
+TACACS+
+AAA Protocols
+Chapter 4 Exam Topic Review
+Chapter 4 Practice Questions
+Practice Question Answers
+Chapter 5: Securing Hosts and Data
+Virtualization
+Thin Clients and Virtual Desktop Infrastructure
+Containerization
+VM Escape Protection
+VM Sprawl Avoidance
+Resource Reuse
+Replication
+Snapshots
+Implementing Secure Systems
+Endpoint Security Software
+Hardening Workstations and Servers
+Configuration Enforcement
+Secure Baseline and Integrity Measurements
+Using Master Images for Baseline Configurations
+Patching and Patch Management
+Change Management
+Application Allow and Block Lists
+Disk Encryption
+Boot Integrity
+Boot Security and UEFI
+Trusted Platform Module
+Hardware Security Module
+Decommissioning and Disposal
+Protecting Data
+Data Loss Prevention
+Removable Media
+Protecting Confidentiality with Encryption
+Database Security
+Protecting Data in Use
+Summarizing Cloud Concepts
+Cloud Delivery Models
+Software as a Service
+Platform as a Service
+Infrastructure as a Service
+Cloud Deployment Models
+Multi-cloud Systems
+Application Programming Interfaces
+Microservices and APIs
+Managed Security Service Provider
+Cloud Service Provider Responsibilities
+Cloud Security Considerations
+On-Premises Versus Off-Premises
+On-Premises
+Off-Premises
+Hardening Cloud Environments
+Cloud Access Security Broker
+Cloud-Based DLP
+Next-Generation Secure Web Gateway
+Cloud Firewall Considerations
+Infrastructure as Code
+Software-Defined Networking
+Edge and Fog Computing
+Deploying Mobile Devices Securely
+Mobile Device Deployment Models
+Connection Methods and Receivers
+Mobile Device Management
+Hardening Mobile Devices
+Unauthorized Software
+Hardware Control
+Unauthorized Connections
+Exploring Embedded Systems
+Understanding Internet of Things
+ICS and SCADA Systems
+Embedded Systems Components
+Hardening Specialized Systems
+Embedded System Constraints
+Chapter 5 Exam Topic Review
+Chapter 5 Practice Questions
+Practice Question Answers
+Chapter 6: Comparing Threats, Vulnerabilities, and Common Attacks
+Understanding Threat Actors
+Threat Actor Types
+Attacker Attributes
+Threat Actor Motivations
+Threat Vectors and Attack Surfaces
+Shadow IT
+Determining Malware Types
+Viruses
+Worms
+Logic Bombs
+Trojans
+Remote Access Trojan
+Keyloggers
+Spyware
+Rootkit
+Ransomware
+Bloatware
+Potential Indicators of a Malware Attack
+Recognizing Common Attacks
+Social Engineering and Human Vectors
+Impersonation
+Shoulder Surfing
+Disinformation
+Tailgating and Access Control Vestibules
+Dumpster Diving
+Watering Hole Attacks
+Business Email Compromise
+Typosquatting
+Brand Impersonation
+Eliciting Information
+Pretexting
+Message-Based Attacks
+Spam
+Spam over Instant Messaging
+Phishing
+Spear Phishing
+Whaling
+Vishing
+Smishing
+One Click Lets Them In
+Blocking Malware and Other Attacks
+Spam Filters
+Antivirus and Anti-Malware Software
+Signature-Based Detection
+Heuristic-Based Detection
+File Integrity Monitors
+Why Social Engineering Works
+Authority
+Intimidation
+Consensus
+Scarcity
+Urgency
+Familiarity
+Trust
+Threat Intelligence Sources
+Research Sources
+Chapter 6 Exam Topic Review
+Chapter 6 Practice Questions
+Practice Question Answers
+Chapter 7: Protecting Against Advanced Attacks
+Identifying Network Attacks
+Denial of Service Attacks
+SYN Flood Attacks
+Forgery
+On-Path Attacks
+Secure Sockets Layer Stripping
+DNS Attacks
+DNS Poisoning Attacks
+Pharming Attack
+URL Redirection
+Domain Hijacking
+DNS Filtering
+DNS Log Files
+Replay Attacks
+Summarizing Secure Coding Concepts
+Input Validation
+Client-Side and Server-Side Input Validation
+Other Input Validation Techniques
+Avoiding Race Conditions
+Proper Error Handling
+Code Obfuscation
+Software Diversity
+Outsourced Code Development
+Data Exposure
+HTTP Headers
+Secure Cookie
+Code Signing
+Analyzing and Reviewing Code
+Software Version Control
+Secure Development Environment
+Database Concepts
+SQL Queries
+Web Server Logs
+Other Application Attacks
+Memory Vulnerabilities
+Memory Leak
+Buffer Overflows and Buffer Overflow Attacks
+Integer Overflow
+Other Injection Attacks
+DLL Injection
+LDAP Injection
+XML Injection
+Directory Traversal
+Cross-Site Scripting
+Automation and Orchestration for Secure Operations
+Automation and Scripting Use Cases
+Benefits of Automation and Scripting
+Other Considerations
+Chapter 7 Exam Topic Review
+Chapter 7 Practice Questions
+Practice Question Answers
+Chapter 8: Using Risk Management Tools
+Understanding Risk Management
+Threats
+Risk Identification
+Risk Types
+Vulnerabilities
+Risk Management Strategies
+Risk Assessment Types
+Risk Analysis
+Supply Chain Risks
+Comparing Scanning and Testing Tools
+Checking for Vulnerabilities
+Network Scanners
+Vulnerability Scanning
+Credentialed vs. Non-Credentialed Scans
+Configuration Review
+Penetration Testing
+Rules of Engagement
+Reconnaissance
+Footprinting Versus Fingerprinting
+Initial Exploitation
+Persistence
+Lateral Movement
+Privilege Escalation
+Pivoting
+Known, Unknown, and Partially Known Testing
+Environments
+Cleanup
+Responsible Disclosure Programs
+System and Process Audits
+Intrusive Versus Non-Intrusive Testing
+Responding to Vulnerabilities
+Remediating Vulnerabilities
+Validation of Remediation
+Capturing Network Traffic
+Packet Capture and Replay
+Tcpreplay and Tcpdump
+NetFlow
+Understanding Frameworks and Standards
+ISO Standards
+Industry-Specific Frameworks
+NIST Frameworks
+NIST Risk Management Framework
+NIST Cybersecurity Framework
+Reference Architecture
+Benchmarks and Configuration Guides
+Audits and Assessments
+Chapter 8 Exam Topic Review
+Chapter 8 Practice Questions
+Practice Question Answers
+Chapter 9: Implementing Controls to Protect Assets
+Comparing Physical Security Controls
+Access Badges
+Increasing Security with Personnel
+Monitoring Areas with Video Surveillance
+Sensors
+Fencing, Lighting, and Alarms
+Securing Access with Barricades
+Access Control Vestibules
+Asset Management
+Hardware Asset Management
+Software Asset Management
+Data Asset Management
+Platform Diversity
+Physical Attacks
+Card Skimming and Card Cloning
+Brute Force Attacks
+Environmental Attacks
+Adding Redundancy and Fault Tolerance
+Single Point of Failure
+Disk Redundancies
+RAID-0
+RAID-1
+RAID-5 and RAID-6
+RAID-10
+Server Redundancy and High Availability
+Active/Active Load Balancers
+Active/Passive Load Balancers
+NIC Teaming
+Power Redundancies
+Protecting Data with Backups
+Backup Media
+Online Versus Offline Backups
+Full Backups
+Recovering a Full Backup
+Differential Backups
+Order of Recovery for a Full/Differential Backup Set
+Incremental Backups
+Order of Recovery for a Full/Incremental Backup Set
+Choosing Full/Incremental or Full/Differential
+Snapshot and Image Backups
+Replication and Journaling
+Backup Frequency
+Testing Backups
+Backups and Geographic Considerations
+Comparing Business Continuity Elements
+Business Impact Analysis Concepts
+Site Risk Assessment
+Impact
+Recovery Time Objective
+Recovery Point Objective
+Comparing MTBF and MTTR
+Continuity of Operations Planning
+Site Resiliency
+Restoration Order
+Disaster Recovery
+Testing Plans with Exercises
+Tabletop Exercises
+Simulations
+Parallel Processing
+Fail Over Tests
+Capacity Planning
+Chapter 9 Exam Topic Review
+Chapter 9 Practice Questions
+Practice Question Answers
+Chapter 10: Understanding Cryptography and PKI
+Introducing Cryptography Concepts
+Providing Integrity with Hashing
+Hash Versus Checksum
+MD5
+Secure Hash Algorithms
+HMAC
+Hashing Files
+Hashing Messages
+Using HMAC
+Hashing Passwords
+Understanding Hash Collisions
+Understanding Password Attacks
+Dictionary Attacks
+Brute Force Attacks
+Password Spraying Attacks
+Pass the Hash Attacks
+Birthday Attacks
+Rainbow Table Attacks
+Salting Passwords
+Key Stretching
+Providing Confidentiality with Encryption
+Symmetric Encryption
+Block Versus Stream Ciphers
+Common Symmetric Algorithms
+AES
+3DES
+Blowfish and Twofish
+Asymmetric Encryption
+Key Exchange
+The Rayburn Box
+Certificates
+Ephemeral Keys
+Elliptic Curve Cryptography
+Key Length
+Obfuscation
+Steganography
+Tokenization
+Masking
+Using Cryptographic Protocols
+Protecting Email
+Signing Email with Digital Signatures
+Encrypting Email
+S/MIME
+HTTPS Transport Encryption
+TLS Versus SSL
+Encrypting HTTPS Traffic with TLS
+Downgrade Attacks on Weak Implementations
+Blockchain
+Identifying Limitations
+Resource Versus Security Constraints
+Speed and Time
+Size and Computational Overhead
+Entropy
+Predictability
+Weak Keys
+Reuse
+Plaintext Attack
+Exploring PKI Components
+Certificate Authority
+Certificate Trust Models
+Registration Authority and CSRs
+Online Versus Offline CAs
+Updating and Revoking Certificates
+Certificate Revocation List
+Validating a Certificate
+Certificate Pinning
+Key Escrow
+Key Management
+Comparing Certificate Types
+Comparing Certificate Formats
+Chapter 10 Exam Topic Review
+Chapter 10 Practice Questions
+Practice Question Answers
+Chapter 11: Implementing Policies to Mitigate Risks
+Change Management
+Business Processes
+Technical Implications
+Documentation and Version Control
+Protecting Data
+Understanding Data Types
+Classifying Data Types
+Securing Data
+Data Retention
+Data Sanitization
+Incident Response
+Incident Response Plan
+Communication Plan
+Incident Response Process
+Incident Response Training and Testing
+Threat Hunting
+Understanding Digital Forensics
+Acquisition and Preservation
+Legal Holds and Electronic Discovery
+Admissibility of Documentation and Evidence
+Reporting
+Understanding SOAR
+Playbooks
+Runbooks
+Security Governance
+Governance Structures
+External Considerations
+Security Policies
+Security Standards
+Security Procedures
+Security Guidelines
+Data Governance
+Data Roles
+Monitoring and Revision
+Third-Party Risk Management
+Supply Chain and Vendors
+Vendor Assessment
+Vendor Selection
+Vendor Agreements
+Security Compliance
+Compliance Monitoring and Reporting
+Privacy
+Data Inventory and Retention
+Security Awareness
+Computer-Based Training
+Phishing Campaigns
+Recognizing Anomalous Behavior
+User Guidance and Training
+Awareness Program Development and Execution
+Chapter 11 Exam Topic Review
+Chapter 11 Practice Questions
+Practice Question Answers
+Post-Assessment Questions
+Post-Assessment Answers
+
+p.31 Achieve high scores on practice exams!!!!!!!!! I typically tell people that they
+should get scores of at least 90 percent on practice tests for the
+CompTIA Security+ exam. However, don’t focus on only your scores.
+Make sure you understand the content, too.
+
+p.42 The cost of the CompTIA Security+ exam voucher is $392 in the United
+States if you purchase it at full price, though CompTIA may raise the price in
+the future. However, you can get a 10 percent discount using the discount
+code CERT10 in the CompTIA store. This code sometimes changes, so if
+you have any difficulty using it, visit https://getcertifiedgetahead.com/ to check for
+an updated code. That site also includes instructions on how to use the
+voucher.
+
+1.0 General Security Concepts. 12 percent of examination content
+2.0 Threats, Vulnerabilities, and Mitigations. 22 percent of
+examination content
+3.0 Security Architecture. 18 percent of examination content
+4.0 Security Operations. 28 percent of examination content
+5.0 Security Program Management and Oversight. 20 percent of
+examination content
+
+1.1 Compare and contrast various types of security controls. Chapter 1
+Categories Chapter 1
+Technical Chapter 1
+Managerial Chapter 1
+Operational Chapter 1
+Physical Chapter 1
+Control Types Chapter 1
+Preventive Chapter 1
+Deterrent Chapter 1
+Detective Chapter 1
+Corrective Chapter 1
+Compensating Chapter 1
+Directive Chapter 1
+1.2 Summarize fundamental security concepts. Chapters 1, 2, 3, 4, 8, 9,
+10
+Confidentiality, integrity, and availability (CIA) Chapter 1
+Non-repudiation Chapter 10
+Authentication, authorization, and accounting (AAA) Chapter 2
+Authenticating people Chapter 2
+Authenticating systems Chapter 2
+Authorization models Chapter 2
+Gap analysis Chapter 8
+Zero trust Chapter 3
+Control plane Chapter 3
+Adaptive identity Chapter 3
+Threat scope reduction Chapter 3
+Policy-driven access control Chapter 3
+Policy Administrator Chapter 3
+Policy Engine Chapter 3
+Data Plane Chapter 3
+Implicit trust zones Chapter 3
+Subject/System Chapter 3
+Policy Enforcement Point Chapter 3
+Physical Security Chapter 9
+Bollards Chapter 9
+Access control vestibule Chapter 9
+Fencing Chapter 9
+Video surveillance Chapter 9
+Security guard Chapter 9
+Access badge Chapter 9
+Lighting Chapter 9
+Sensors Chapter 9
+Infrared Chapter 9
+Pressure Chapter 9
+Microwave Chapter 9
+Ultrasonic Chapter 9
+Deception and disruption technology Chapter 4
+Honeypot Chapter 4
+Honeynet Chapter 4
+Honeyfile Chapter 4
+Honeytoken Chapter 4
+1.3 Explain the importance of change management processes and the
+impact to security. Chapter 11
+Business processes impacting security operation Chapter 11
+Approval process Chapter 11
+Ownership Chapter 11
+Stakeholders Chapter 11
+Impact analysis Chapter 11
+Test results Chapter 11
+Backout plan Chapter 11
+Maintenance window Chapter 11
+Standard operating procedure Chapter 11
+Technical implications Chapter 11
+Allow lists/deny lists Chapter 11
+Restricted activities Chapter 11
+Downtime Chapter 11
+Service restart Chapter 11
+Application restart Chapter 11
+Legacy applications Chapter 11
+Dependencies Chapter 11
+Documentation Chapter 11
+Updating diagrams Chapter 11
+Updating policies / procedures Chapter 11
+Version control Chapter 11
+1.4 Explain the importance of using appropriate cryptographic
+solutions. Chapters 5, 10
+Public key infrastructure (PKI) Chapter 10
+Public key Chapter 10
+Private key Chapter 10
+Key escrow Chapter 10
+Encryption Chapters 5, 10
+Level Chapter 5
+Full-disk Chapter 5
+Partition Chapter 5
+File Chapter 5
+Volume Chapter 5
+Database Chapter 5
+Record Chapter 5
+Transport/communication Chapter 10
+Asymmetric Chapter 10
+Symmetric Chapter 10
+Key exchange Chapter 10
+Algorithms Chapter 10
+Key length Chapter 10
+Tools Chapter 5, 10
+Trusted Platform Module (TPM) Chapter 5
+Hardware Security Module (HSM) Chapter 5
+Key management system Chapter 10
+Secure enclave Chapter 5
+Obfuscation Chapter 10
+Steganography Chapter 10
+Tokenization Chapter 10
+Data masking Chapter 10
+Hashing Chapter 10
+Salting Chapter 10
+Digital signatures Chapter 10
+Key stretching Chapter 10
+Blockchain Chapter 10
+Open public ledger Chapter 10
+Certificates Chapter 10
+Certificate authorities Chapter 10
+Certificate revocation lists (CRLs) Chapter 10
+Online certificate status protocol (OCSP) Chapter 10
+Self-signed Chapter 10
+Third-party Chapter 10
+Root of trust Chapter 10
+Certificate signing request (CSR) generation Chapter 10
+Wildcard Chapter 10
+2.0 Threats, Vulnerabilities, and Mitigations
+2.1 Compare and contrast common threat actors and motivations.
+Chapter 6
+Threat actors Chapter 6
+Nation-state Chapter 6
+Unskilled attacker Chapter 6
+Hacktivist Chapter 6
+Insider threat Chapter 6
+Organized crime Chapter 6
+Shadow IT Chapter 6
+Attributes of actors Chapter 6
+Internal/external Chapter 6
+Resources/funding Chapter 6
+Level of sophistication/capability Chapter 6
+Motivations Chapter 6
+Data exfiltration Chapter 6
+Espionage Chapter 6
+Service disruption Chapter 6
+Blackmail Chapter 6
+Financial gain Chapter 6
+Philosophical/political beliefs Chapter 6
+Ethical Chapter 6
+Revenge Chapter 6
+Disruption/chaos Chapter 6
+War Chapter 6
+2.2 Explain common threat vectors and attack surfaces. Chapter 6
+Message-based Chapter 6
+Email Chapter 6
+Short Message Service (SMS) Chapter 6
+Instant messaging (IM) Chapter 6
+Image-based Chapter 6
+File-based Chapter 6
+Voice call Chapter 6
+Removable device Chapter 6
+Vulnerable software Chapter 6
+Client-based vs. agentless Chapter 6
+Unsupported systems and applications Chapter 6
+Unsecure networks Chapter 6
+Wireless Chapter 6
+Wired Chapter 6
+Bluetooth Chapter 6
+Open service ports Chapter 6
+Default credentials Chapter 6
+Supply chain Chapter 6
+Managed service providers (MSPs) Chapter 6
+Vendors Chapter 6
+Suppliers Chapter 6
+Human vectors/social engineering Chapter 6
+Phishing Chapter 6
+Vishing Chapter 6
+Smishing Chapter 6
+Misinformation/disinformation Chapter 6
+Impersonation Chapter 6
+Business email compromise Chapter 6
+Pretexting Chapter 6
+Watering hole Chapter 6
+Brand impersonation Chapter 6
+Typosquatting Chapter 6
+2.3 Explain various types of vulnerabilities. Chapters 4, 5, 7, 8, 10
+Application Chapter 7
+Memory injection Chapter 7
+Buffer overflow Chapter 7
+Race conditions Chapter 7
+Time-of-check (TOC) Chapter 7
+Time-of-use (TOU) Chapter 7
+Malicious update
+Operating systems (OS)-based Chapter 5
+Web-based Chapter 7
+Structured Query Language injection (SQLi) Chapter 7
+Cross-site scripting (XSS) Chapter 7
+Hardware Chapter 5
+Firmware Chapter 5
+End-of-life Chapter 5
+Legacy Chapter 5
+Virtualization Chapter 5
+Virtual machine (VM) escape Chapter 5
+Resource reuse Chapter 5
+Cloud-specific Chapter 5
+Supply chain Chapter 8
+Service provider Chapter 8
+Hardware provider Chapter 8
+Software provider Chapter 8
+Cryptographic Chapter 10
+Misconfiguration Chapter 5
+Mobile Device Chapter 5
+Side loading Chapter 5
+Jailbreaking Chapter 5
+Zero-day Chapter 4
+2.4 Given a scenario, analyze indicators of malicious activity. Chapters 2,
+4, 8, 6, 7, 9, 10
+Malware attacks Chapter 6
+Ransomware Chapter 6
+Trojan Chapter 6
+Worm Chapter 6
+Spyware Chapter 6
+Bloatware Chapter 6
+Virus Chapter 6
+Keylogger Chapter 6
+Logic bomb Chapter 6
+Rootkit Chapter 6
+Physical attacks Chapters 4, 9
+Brute force Chapter 9
+Radio frequency identification (RFID) cloning Chapter 4
+Environmental Chapter 9
+Network attacks Chapters 4, 6, 7
+Distributed denial-of-service (DDoS) Chapter 7
+Amplified Chapter 7
+Reflected Chapter 7
+Domain Name System (DNS) attacks Chapter 7
+Wireless Chapter 4
+On-path Chapter 7
+Credential replay Chapter 7
+Malicious code Chapter 6, 7
+Application attacks Chapters 7, 8
+Injection Chapter 7
+Buffer overflow Chapter 7
+Replay Chapter 7
+Privilege escalation Chapter 8
+Forgery Chapter 7
+Directory traversal Chapter 7
+Cryptographic attacks Chapter 10
+Downgrade Chapter 10
+Collision Chapter 10
+Birthday Chapter 10
+Password attacks Chapter 10
+Spraying Chapter 10
+Brute force Chapter 10
+Indicators Chapter 2
+Account lockout Chapter 2
+Concurrent session usage Chapter 2
+Blocked content Chapter 2
+Impossible travel Chapter 2
+Resource consumption Chapter 2
+Resource inaccessibility Chapter 2
+Out-of-cycle logging Chapter 2
+Published/documented Chapter 2
+Missing logs Chapter 2
+2.5 Explain the purpose of mitigation techniques used to secure the
+enterprise. Chapters 1, 2, 3, 5
+Segmentation Chapter 5
+Access control Chapter 2
+Access control list (ACL) Chapter 2
+Permissions Chapter 2
+Application allow list Chapter 5
+Isolation Chapter 3
+Patching Chapter 5
+Encryption Chapter 5
+Monitoring Chapter 1
+Least privilege Chapter 1
+Configuration enforcement Chapter 5
+Decommissioning Chapter 5
+Hardening techniques Chapters 3, 5
+Encryption Chapter 5
+Installation of endpoint protection Chapter 5
+Host-based firewall Chapter 3
+Host-based intrusion prevention system (HIPS) Chapter 5
+Disabling ports/protocols Chapter 5
+Default password changes Chapter 5
+Removal of unnecessary software Chapter 5
+3.0 Security Architecture
+3.1 Compare and contrast security implications of different architecture
+models. Chapters 3, 5, 9
+Architecture and infrastructure concepts Chapter 5
+Cloud Chapter 5
+Responsibility matrix Chapter 5
+Hybrid considerations Chapter 5
+Third-party vendors Chapter 5
+Infrastructure as code (IaC) Chapter 5
+Serverless Chapter 5
+Microservices Chapter 5
+Network infrastructure Chapters 3, 5
+Physical isolation Chapter 3
+Air-gapped Chapter 3
+Logical segmentation Chapter 3
+Software-defined networking (SDN) Chapter 5
+On-premises Chapter 5
+Centralized vs. decentralized Chapter 5
+Containerization Chapter 5
+Virtualization Chapter 5
+IoT Chapter 5
+Industrial control systems (ICS)/supervisory control and data acquisition (SCADA)
+Chapter 5
+Real-time operating system (RTOS) Chapter 5
+Embedded systems Chapter 5
+High availability Chapter 9
+Considerations Chapter 5
+Availability Chapter 5
+Resilience Chapter 5
+Cost Chapter 5
+Responsiveness Chapter 5
+Scalability Chapter 5
+Ease of deployment Chapter 5
+Risk transference Chapter 5
+Ease of recovery Chapter 5
+Patch availability Chapter 5
+Inability to patch Chapter 5
+Power Chapter 5
+Compute Chapter 5
+3.2 Given a scenario, apply security principles to secure enterprise
+infrastructure. Chapters 1, 3, 4, 5
+Infrastructure considerations Chapters 3, 4
+Device placement Chapter 3
+Security zones Chapter 3
+Attack surface Chapter 3
+Connectivity Chapter 3
+Failure modes Chapter 3
+Fall-open Chapter 3
+Fall-closed Chapter 3
+Device Attribute Chapter 4
+Active vs. passive Chapter 4
+Inline vs. tap/monitor Chapter 4
+Network appliances Chapter 3, 4
+Jump server Chapter 3
+Proxy server Chapter 3
+Intrusion prevention system (IPS)/intrusion detection system (IDS) Chapter 4
+Load balancer Chapter 3
+Sensors Chapter 4
+Port security Chapter 4
+802.1X Chapter 4
+Extensible Authentication Protocol (EAP) Chapter 4
+Firewall types Chapter 3
+Web application firewall (WAF) Chapter 3
+Unified threat management (UTM) Chapter 3
+Next-generation firewall (NGFW) Chapter 3
+Layer 4/Layer 7 Chapter 3
+Secure communication/access Chapter 3, 4, 5
+Virtual private network (VPN) Chapter 4
+Remote access Chapter 4
+Tunneling Chapter 4
+Transport Layer Security (TLS) Chapter 3
+Internet protocol security (IPSec) Chapter 4
+Software-defined wide area network (SD-WAN) Chapter 5
+Secure access service edge (SASE) Chapter 3
+Selection of effective controls Chapter 1
+3.3 Compare and contrast concepts and strategies to protect data.
+Chapters 3, 5, 9, 10, 11
+Data types Chapter 11
+Regulated Chapter 11
+Trade secret Chapter 11
+Intellectual property Chapter 11
+Legal information Chapter 11
+Financial information Chapter 11
+Human- and non-human-readable Chapter 11
+Data classifications Chapter 11
+Sensitive Chapter 11
+Confidential Chapter 11
+Public Chapter 11
+Restricted Chapter 11
+Private Chapter 11
+Critical Chapter 11
+General data considerations Chapters 5, 9, 10
+Data states Chapter 10
+Data at rest Chapter 10
+Data in transit Chapter 10
+Data in use Chapter 10
+Data sovereignty Chapter 9
+Geolocation Chapter 5
+Methods to secure data Chapters 3, 10, 11
+Geographic restrictions Chapter 11
+Encryption Chapter 10
+Hashing Chapter 10
+Masking Chapter 10
+Tokenization Chapter 10
+Obfuscation Chapter 10
+Segmentation Chapter 3
+Permission restrictions Chapter 11
+3.4 Explain the importance of resilience and recovery in security
+architecture. Chapters 5, 9
+High availability Chapter 9
+Load balancing vs. clustering Chapter 9
+Site considerations Chapter 9
+Hot Chapter 9
+Cold Chapter 9
+Warm Chapter 9
+Geographic dispersion Chapter 9
+Platform diversity Chapter 9
+Multi-cloud systems Chapter 5
+Continuity of operations Chapter 9
+Capacity planning Chapter 9
+People Chapter 9
+Technology Chapter 9
+Infrastructure Chapter 9
+Testing Chapter 9
+Tabletop exercises Chapter 9
+Fail over Chapter 9
+Simulation Chapter 9
+Parallel processing Chapter 9
+Backups Chapter 9
+Onsite/offsite Chapter 9
+Frequency Chapter 9
+Encryption Chapter 9
+Snapshots Chapter 9
+Recovery Chapter 9
+Replication Chapter 9
+Journaling Chapter 9
+Power Chapter 9
+Generators Chapter 9
+Uninterruptible power supply (UPS) Chapter 9
+4.0 Security Operations
+4.1 Given a scenario, apply common security techniques to computing
+resources. Chapters 1, 3, 4, 5, 7
+Secure baselines Chapter 5
+Establish Chapter 5
+Deploy Chapter 5
+Maintain Chapter 5
+Hardening targets Chapter 3, 5
+Mobile devices Chapter 5
+Workstations Chapter 5
+Switches Chapter 3
+Routers Chapter 3
+Cloud Infrastructure Chapter 5
+Servers Chapter 5
+ICS/SCADA Chapter 5
+Embedded systems Chapter 5
+RTOS Chapter 5
+IoT devices Chapter 5
+Wireless devices Chapter 4
+Installation considerations Chapter 4
+Site surveys Chapter 4
+Heat maps Chapter 4
+Mobile solutions Chapter 5
+Mobile device management (MDM) Chapter 5
+Deployment models Chapter 5
+Bring your own device (BYOD) Chapter 5
+Corporate-owned, personally enabled (COPE) Chapter 5
+Choose your own device (CYOD) Chapter 5
+Connection methods Chapter 5
+Cellular Chapter 5
+Wi-Fi Chapter 5
+Bluetooth Chapter 5
+Wireless security settings Chapter 4
+Wi-Fi protected Access 3 (WPA3) Chapter 4
+AAA/Remote Authentication Dial-In User Service (RADIUS) Chapter 4
+Cryptographic protocols Chapter 4
+Authentication protocols Chapter 4
+Application security Chapter 7
+Input validation Chapter 7
+Secure cookies Chapter 7
+Static code analysis Chapter 7
+Code signing Chapter 7
+Sandboxing Chapter 7
+Monitoring Chapter 1
+4.2 Explain the security implications of proper hardware, software, and
+data asset management. Chapters 9, 11
+Acquisition/procurement process Chapter 9
+Assignment/accounting Chapter 9
+Ownership Chapter 9
+Classification Chapter 9
+Monitoring/asset tracking Chapter 9
+Inventory Chapter 9
+Enumeration Chapter 9
+Disposal/decommissioning Chapter 11
+Sanitization Chapter 11
+Destruction Chapter 11
+Certification Chapter 11
+Data retention Chapter 11
+4.3 Explain various activities associated with vulnerability management.
+Chapters 6, 8, 11
+Identification methods Chapters 6, 8, 11
+Vulnerability scan Chapter 8
+Application security Chapter 11
+Static analysis Chapter 11
+Dynamic analysis Chapter 11
+Package monitoring Chapter 11
+Threat feed Chapter 6
+Open-source intelligence (OSINT) Chapter 6
+Proprietary/third-party Chapter 6
+Information-sharing organization Chapter 6
+Dark web Chapter 6
+Penetration testing Chapter 8
+Responsible disclosure program Chapter 8
+Bug bounty program Chapter 8
+System/process audit Chapter 8
+Analysis Chapter 8
+Confirmation Chapter 8
+False positive Chapter 8
+False negative Chapter 8
+Prioritize Chapter 8
+Common Vulnerability Scoring System (CVSS) Chapter 8
+Common Vulnerability Enumeration (CVE) Chapter 8
+Vulnerability classification Chapter 8
+Exposure factor Chapter 8
+Environmental variables Chapter 8
+Industry/organizational impact Chapter 8
+Risk tolerance Chapter 8
+Vulnerability response and remediation Chapter 8
+Patching Chapter 8
+Insurance Chapter 8
+Segmentation Chapter 8
+Compensating controls Chapter 8
+Exceptions and exemptions Chapter 8
+Validation of remediation Chapter 8
+Rescanning Chapter 8
+Audit Chapter 8
+Verification Chapter 8
+Reporting Chapter 8
+4.4 Explain security alerting and monitoring concepts and tools.
+Chapters 1, 3, 4, 5, 8
+Monitoring computing resources Chapter 1
+Systems Chapter 1
+Applications Chapter 1
+Infrastructure Chapter 1
+Activities Chapters 1, 4
+Log aggregation Chapter 1
+Alerting Chapter 1
+Scanning Chapter 1
+Reporting Chapter 1
+Archiving Chapter 1
+Alert response and remediation/validation Chapter 4
+Quarantine Chapter 4
+Alert tuning Chapter 1
+Tools Chapters 1, 3, 4, 5, 8
+Security Content Automation Protocol (SCAP) Chapter 8
+Benchmarks Chapter 8
+Agents/agentless Chapter 4
+Security information and event management (SIEM) Chapter 1
+Antivirus Chapter 5
+Data Loss Prevention (DLP) Chapter 5
+Simple Network Management Protocol (SNMP) traps Chapter 3
+NetFlow Chapter 8
+Vulnerability scanners Chapter 8
+4.5 Given a scenario, modify enterprise capabilities to enhance security.
+Chapters 1, 2, 3, 4, 5, 6, 7
+Firewall Chapter 3
+Rules Chapter 3
+Access lists Chapter 3
+Ports/protocols Chapter 3
+Screened subnets Chapter 3
+IDS/IPS Chapter 4
+Trends Chapter 4
+Signatures Chapter 4
+Web filter Chapter 3
+Agent-based Chapter 3
+Centralized proxy Chapter 3
+Universal Resource Locator (URL) scanning Chapter 3
+Content categorization Chapter 3
+Block rules Chapter 3
+Reputation Chapter 3
+Operating system security Chapters 2, 3
+Group policy Chapter 3
+SELinux Chapter 2
+Implementation of secure protocols Chapter 3
+Protocol selection Chapter 3
+Port selection Chapter 3
+Transport method Chapter 3
+DNS filtering Chapter 7
+Email security Chapter 3
+Domain-based Message Authentication Reporting and Conformance (DMARC) Chapter
+3
+DomainKeys Identified Mail (DKIM) Chapter 3
+Sender Policy Framework (SPF) Chapter 3
+Gateway Chapter 3
+File integrity monitoring Chapter 6
+DLP Chapter 5
+Network access control (NAC) Chapter 4
+Endpoint detection and response (EDR)/extended detection and response (XDR) Chapter 5
+User behavior analytics Chapter 1
+4.6 Given a scenario, implement and maintain identity and access
+management. Chapters 2, 3
+Provisioning/de-provisioning user accounts Chapter 2
+Permission assignments and implications Chapter 2
+Identity proofing Chapter 2
+Federation Chapter 2
+Single sign-on (SSO) Chapters 2, 3
+Lightweight Directory Access Protocol (LDAP) Chapter 3
+Open authorization (OAuth) Chapter 2
+Security Assertions Markup Language (SAML) Chapter 2
+Interoperability Chapter 2
+Attestation Chapter 2
+Access controls Chapter 2
+Mandatory Chapter 2
+Discretionary Chapter 2
+Role-based Chapter 2
+Rule-based Chapter 2
+Attribute-based Chapter 2
+Time-of-day restrictions Chapter 2
+Least privilege Chapter 2
+Multifactor authentication Chapter 2
+Implementations Chapter 2
+Biometrics Chapter 2
+Hard/soft authentication tokens Chapter 2
+Security keys Chapter 2
+Factors
+Something you know Chapter 2
+Something you have Chapter 2
+Something you are Chapter 2
+Somewhere you are Chapter 2
+Password concepts Chapter 2
+Password best practices Chapter 2
+Length Chapter 2
+Complexity Chapter 2
+Reuse Chapter 2
+Expiration Chapter 2
+Age Chapter 2
+Password managers Chapter 2
+Passwordless Chapter 2
+Privileged access management tools Chapter 2
+Just-in-time permissions Chapter 2
+Password vaulting Chapter 2
+Ephemeral credentials Chapter 2
+4.7 Explain the importance of automation and orchestration related to
+secure operations. Chapter 7
+Use cases of automation and scripting Chapter 7
+User provisioning Chapter 7
+Resource provisioning Chapter 7
+Guard rails Chapter 7
+Security groups Chapter 7
+Ticket creation Chapter 7
+Escalation Chapter 7
+Enabling/disabling services and access Chapter 7
+Continuous integration and testing Chapter 7
+Integrations and application programing interfaces (APIs) Chapter 7
+Benefits Chapter 7
+Efficiency/time saving Chapter 7
+Enforcing baselines Chapter 7
+Standard infrastructure configurations Chapter 7
+Scaling in a secure manner Chapter 7
+Employee retention Chapter 7
+Reaction time Chapter 7
+Workforce multiplier Chapter 7
+Other considerations Chapter 7
+Complexity Chapter 7
+Cost Chapter 7
+Single point of failure Chapter 7
+Technical debt Chapter 7
+Ongoing supportability Chapter 7
+4.8 Explain appropriate incident response activities. Chapter 9, 11
+Process Chapter 11
+Preparation Chapter 11
+Detection Chapter 11
+Analysis Chapter 11
+Containment Chapter 11
+Eradication Chapter 11
+Recovery Chapter 11
+Lessons learned Chapter 11
+Training Chapter 11
+Testing Chapter 11
+Tabletop exercise Chapter 11
+Simulation Chapter 11
+Root cause analysis Chapter 11
+Threat hunting Chapter 11
+Digital forensics Chapter 11
+Legal hold Chapter 11
+Chain of custody Chapter 11
+Acquisition Chapter 11
+Reporting Chapter 11
+Preservation Chapter 11
+E-discovery Chapter 11
+4.9 Given a scenario, use data sources to support an investigation.
+Chapters 1, 8
+Log data Chapter 1
+Firewall logs Chapter 1
+Application logs Chapter 1
+Endpoint logs Chapter 1
+OS-specific security logs Chapter 1
+IPS/IDS logs Chapter 1
+Network logs Chapter 1
+Metadata Chapter 1
+Data sources Chapters 1, 8
+Vulnerability scans Chapter 8
+Automated reports Chapter 1
+Dashboards Chapter 1
+Packet captures Chapter 1
+5.0 Security Program Management and Oversight
+5.1 Summarize elements of effective security governance. Chapter 11
+Guidelines Chapter 11
+Policies Chapter 11
+Acceptable use policy (AUP) Chapter 11
+Information security policies Chapter 11
+Business continuity Chapter 11
+Disaster recovery Chapter 11
+Incident response Chapter 11
+Software development lifecycle (SDLC) Chapter 11
+Change management Chapter 11
+Standards Chapter 11
+Password Chapter 11
+Access control Chapter 11
+Physical security Chapter 11
+Encryption Chapter 11
+Procedures Chapter 11
+Change management Chapter 11
+Onboarding/offboarding Chapter 11
+Playbooks Chapter 11
+External considerations Chapter 11
+Regulatory Chapter 11
+Legal Chapter 11
+Industry Chapter 11
+Local/regional v
+National Chapter 11
+Global Chapter 11
+Monitoring and revision Chapter 11
+Types of governance structures Chapter 11
+Boards Chapter 11
+Committees Chapter 11
+Government entities Chapter 11
+Centralized/decentralized Chapter 11
+Roles and responsibilities for systems and data Chapter 11
+Owners Chapter 11
+Controllers Chapter 11
+Processors Chapter 11
+Custodians/stewards Chapter 11
+5.2 Explain elements of the risk management process. Chapters 8, 9
+Risk identification Chapter 8
+Risk assessment Chapter 8
+Ad hoc Chapter 8
+Recurring Chapter 8
+One-time Chapter 8
+Continuous Chapter 8
+Risk analysis Chapter 8
+Qualitative Chapter 8
+Quantitative Chapter 8
+Single loss expectancy (SLE) Chapter 8
+Annualized loss expectancy (ALE) Chapter 8
+Annualized rate of occurrence (ARO) Chapter 8
+Probability Chapter 8
+Likelihood Chapter 8
+Exposure factor Chapter 8
+Impact Chapter 8
+Risk register Chapter 8
+Key risk indicators Chapter 8
+Risk owners Chapter 8
+Risk threshold Chapter 8
+Risk tolerance Chapter 8
+Risk appetite Chapter 8
+Expansionary Chapter 8
+Conservative Chapter 8
+Neutral Chapter 8
+Risk management strategies Chapter 8
+Transfer Chapter 8
+Accept Chapter 8
+Exemption Chapter 8
+Exception Chapter 8
+Avoid Chapter 8
+Mitigate Chapter 8
+Risk reporting Chapter 8
+Business impact analysis Chapter 9
+Recovery time objective (RTO) Chapter 9
+Recovery point objective (RPO) Chapter 9
+Mean time to repair (MTTR) Chapter 9
+Mean time between failures (MTBF) Chapter 9
+5.3 Explain the processes associated with third-party risk assessment
+and management. Chapter 11
+Vendor assessment Chapter 11
+Penetration testing Chapter 11
+Right-to-audit clause Chapter 11
+Evidence of internal audits Chapter 11
+Independent assessments Chapter 11
+Supply chain analysis Chapter 11
+Vendor selection Chapter 11
+Due diligence Chapter 11
+Conflict of interest Chapter 11
+Agreement types Chapter 11
+Service-level agreement (SLA) Chapter 11
+Memorandum of agreement (MOA) Chapter 11
+Memorandum of understanding (MOU) Chapter 11
+Master service agreement (MSA) Chapter 11
+Work order (WO)/Statement of work (SOW) Chapter 11
+Non-disclosure agreement (NDA) Chapter 11
+Business partners agreement (BPA) Chapter 11
+Vendor monitoring Chapter 11
+Questionnaires Chapter 11
+Rules of engagement Chapter 11
+5.4 Summarize elements of effective security compliance. Chapter 11
+Compliance reporting Chapter 11
+Internal Chapter 11
+External Chapter 11
+Consequences of non-compliance Chapter 11
+Fines Chapter 11
+Sanctions Chapter 11
+Reputational damage Chapter 11
+Loss of license Chapter 11
+Contractual impacts Chapter 11
+Compliance monitoring Chapter 11
+Due diligence/care Chapter 11
+Attestation and acknowledgement Chapter 11
+Internal and external Chapter 11
+Automation Chapter 11
+Privacy Chapter 11
+Legal implications Chapter 11
+Local/regional Chapter 11
+National Chapter 11
+Global Chapter 11
+Data subject Chapter 11
+Controller vs. processor Chapter 11
+Ownership Chapter 11
+Data inventory and retention Chapter 11
+Right to be forgotten Chapter 11
+5.5 Explain types and purposes of audits and assessments. Chapter 8, 11
+Attestation Chapter 8
+Internal Chapter 8
+Compliance Chapter 8
+Audit committee Chapter 8
+Self-assessments Chapter 8
+External Chapter 8
+Regulatory Chapter 8
+Examinations Chapter 8
+Assessment Chapter 8
+Independent third-party audit Chapter 8
+Penetration testing Chapter 8
+Physical Chapter 8
+Offensive Chapter 8
+Defensive Chapter 8
+Integrated Chapter 8
+Known environment Chapter 8
+Partially known environment Chapter 8
+Unknown environment Chapter 8
+Reconnaissance Chapter 8
+Passive Chapter 8
+Active Chapter 8
+5.6 Given a scenario, implement security awareness practices. Chapter
+11
+Phishing Chapter 11
+Campaigns Chapter 11
+Recognizing a phishing attempt Chapter 11
+Responding to reported suspicious messages Chapter 11
+Anomalous behavior recognition Chapter 11
+Risky Chapter 11
+Unexpected Chapter 11
+Unintentional Chapter 11
+User guidance and training Chapter 11
+Policy/handbooks Chapter 11
+Situational awareness Chapter 11
+Insider threat Chapter 11
+Password management Chapter 11
+Removable media and cables Chapter 11
+Social engineering Chapter 11
+Operational security Chapter 11
+Hybrid/remote work environments Chapter 11
+Reporting and monitoring Chapter 11f
+Initial Chapter 11
+Recurring Chapter 11
+Development Chapter 11
+Execution Chapter 11
+
+INFORMATION ON COMPTIA CONTINUING EDUCATION (CE) PROGRAM TO AVOID RETAKING THE EXAM:
+https://www.comptia.org/continuing-education
+
+p.111 key elements of access control: identification, authentification, authorization
+Confidentiality ensures that data is only viewable by authorized users. The
+best way to protect the confidentiality of data is by encrypting it. This
+includes any type of data, such as PII, data in databases, and data on mobile
+devices. Access controls help protect confidentiality by restricting access.
+
+p.113 Integrity verifies that data has not been modified. Loss of integrity can occur
+through unauthorized or unintended changes. Hashing algorithms, such as
+SHA, calculate hashes to verify integrity. A hash is simply an alphanumeric
+string created by applying a hashing algorithm to a file or message. You can
+then later run the same algorithm on the data and you should get the same
+hash value. By comparing the hashes, you can verify that there haven’t been
+any changes (authorized or unauthorized) to the data. If the hashes are the
+same, the data is unchanged. If the hash has changed, the data has changed.  
+
+p.114 Redundancy adds duplication to critical systems and provides fault
+tolerance. If a critical component has a fault, the redundancy’s duplication
+allows the service to continue without interruption. In other words, a system
+with fault tolerance can suffer a fault, but it can tolerate it and continue to
+operate
+A common goal of fault tolerance and redundancy techniques is to remove
+each single point of failure (SPOF). If a SPOF fails, the entire system can
+fail. For example, if a server has a single drive, the drive is a SPOF because
+its failure takes down the server.
+
+scalability, horizontal scaling, vertical scaling, elasticity
+
+p.117 Risk is the possibility or likelihood of a threat exploiting a vulnerability
+resulting in a loss. A threat is any circumstance or event that has the
+potential to compromise confidentiality, integrity, or availability. A
+vulnerability is a weakness. It can be a weakness in the hardware, the
+software, the configuration, or even the users operating the system.
+
+p.119 Control categories describe how a control works. CompTIA lists the
+following control categories in the objectives:
+1. Technical controls use technology such as hardware, software, and
+firmware to reduce risk.
+2. Managerial controls are primarily administrative in function. They are
+typically documented in an organization’s security policy and focus on
+managing risk.
+3. Operational controls help ensure that the day-to-day operations of an
+organization comply with the security policy. People implement them.
+4. Physical controls impact the physical world, such as locks on doors,
+fences, security guards, and other objects that you can physically touch.
+
+Control types describe the goal that the control is trying to achieve.
+CompTIA lists the following control types in the objectives:
+1. Preventive controls attempt to prevent an incident from occurring.
+2. Detective controls attempt to detect incidents after they have occurred.
+3. Corrective controls attempt to restore normal operations after an
+incident occurs.
+4. Deterrent controls attempt to discourage individuals from causing an
+incident.
+5. Compensating controls are alternative controls used when a primary
+control is not feasible.
+6. Directive controls provide instruction to individuals on how they should
+handle security- related situations that arise.
+
+p.121 For example, two common managerial controls are:
+1. Risk assessments. These help organizations quantify and qualify risks
+within an organization so that team members can focus on the serious
+risks. For example, a quantitative risk assessment uses cost and asset
+values to quantify risks based on monetary values. A qualitative risk
+assessment uses judgments to categorize risks based on probability and
+impact.
+2. Vulnerability assessments. A vulnerability assessment attempts to
+discover current vulnerabilities. When necessary, additional controls are
+implemented to reduce the risk from these vulnerabilities.
+
+p.126 Deterrent controls attempt to discourage a threat. Some deterrent controls
+attempt to discourage potential attackers from attacking, and others attempt
+to discourage employees from violating a security policy
+
+p.127 Compensating controls are alternative controls used instead of a primary
+control. For example, an organization might require employees to use smart
+cards when authenticating to a system. However, it might take time for new
+employees to receive their smart card. To allow new employees to access the
+network and still maintain a high level of security, the organization might
+choose to implement a Time-based One-Time Password (TOTP) as a
+compensating control. The compensating control still provides a strong
+authentication solution.
+
+p.132 Linux systems are commonly used in modern organizations and you should
+also be familiar with their logging abilities. Linux systems store logs in the
+/var/log/ directory. You can view logs using the system log viewer on Linux
+systems or by using the cat command from the terminal. As an example, you
+can view the authentication log (auth.log) with the following command:
+cat /var/log/auth.log
+Some common Linux logs are shown in the following list:
+/var/log/syslog and/or /var/log/messages vary somewhat between
+different versions of the Linux operating system. They contain a wide
+variety of general system messages. This includes messages logged
+during startup, messages related to mail, the kernel, and other system
+activities.
+/var/log/secure This log contains information related to the
+authentication and authorization of user sessions. Figure 1.3 shows an
+example of the text-based /var/log/secure file. The entries in the figure
+are from invalid users attempting (and failing) to connect to a server
+using an SSH connection.
+
+p.140  Aggregation refers to combining several dissimilar
+items into a single similar format. The SIEM system collects data from
+multiple systems, and these systems typically format log entries
+differently. However, the SIEM system can aggregate the data and store
+it so it is easy to analyze and search.
+
+A correlation engine is a software component used
+to collect and analyze event log data from various systems within the
+network. It typically aggregates the data looking for common attributes.
+It then uses advanced analytic tools to detect patterns of potential
+security events and raises alerts. System administrators can then
+investigate the alert.
+
+p.142 Some common elements of a SIEM
+dashboard are listed below:
+Sensors. Many SIEM systems use agents placed on systems throughout
+a network. These collect logs from devices and send these logs to the
+SIEM system. Dashboards can display data received from these agents.
+Alerts. After setting triggers in a SIEM system, it sends out alerts when
+the event occurs. These alerts may trigger specific responses (such as
+sending an email to a group), but they are also displayed in the
+dashboard.
+Correlation. As log entries arrive at the SIEM system, it correlates and
+analyzes the data. Administrators can configure the dashboard to display
+this data in multiple ways depending on their needs.
+Trends. As the SIEM system is analyzing the data, it can identify
+trends. For example, if there is suddenly a high rate of failed logins, it
+can identify the trend and raise an alert. Many SIEM systems display
+trends in graphs allowing users to digest a lot of information in a single
+picture.
+
+most
+SIEM systems use the syslog format and contain syslog servers that collect
+log entries from other devices on the network. Any systems sending syslog messages are originators. They send syslog log
+entries to a collector (a syslog server). The collector can receive messages
+from external devices or services and applications on the same system.
+
+p.144 The four security control categories are managerial, operational,
+technical, and physical. *****
+The six control types are preventive, deterrent, detective, corrective,
+compensating, and directive. *****
+
+p.156 authentification is verifying identification (claim about identity)
+
+p.157 Authentication, authorization, and accounting (AAA) work together with
+identification to provide a comprehensive access management system. If you
+understand identification (claiming an identity, such as with a username) and
+authentication (proving the identity, such as with a password), it’s easier to
+add in the other two elements of AAA—authorization and accounting.
+
+p.159 Most cybersecurity professionals recognize three types of strong
+authentication factors: something you know, something you have, and
+something you are. These are all categories that can be used on their own to
+prove someone’s claim of identity.
+Notice that the fourth factor listed above, somewhere you are, isn’t on that
+list. The reason is that location is not really a strong authentication factor by
+itself. For example, would you trust the fact that someone is located in your
+home as proof that they are you? Of course not! Location-based
+authentication is not normally used by itself and is instead treated as an
+added assurance when combined with one or more of the other three
+factors.  
+
+p.161 These days, the best practice for password security is not to have password
+expiration policies and allow users to keep their passwords as long as they
+would like. This is based upon the idea that users are more likely to use
+strong, secure passwords if they don’t need to keep changing them all the
+time. This advice is only true if the organization is using multifactor
+authentication.
+
+p.163 knowledge-based authentication (KBA):
+Static KBA is typically used to verify your identity when you’ve forgotten
+your password. After creating your account (or when you create your
+account), you’re prompted to answer questions about yourself, such as your
+first dog’s name or your mother’s maiden name. Later, when you try to
+retrieve a forgotten password, you’re first prompted to answer the same
+questions.
+Dynamic KBA identifies individuals without an account. Organizations use
+this for high-risk transactions, such as with a financial institution or a
+healthcare company. The site queries public and private data sources like
+credit reports, vehicle registrations, and property records. It then crafts
+multiple-choice questions that only the user would know and often includes
+an answer similar to “none of these apply.” Some examples are:
+At which of the following addresses have you lived?
+Which of the following amounts is closest to your mortgage payment?
+When was your home built?
+
+p.176 Biometrics uses a physical characteristic, such as a fingerprint, for
+authentication.
+
+p.193-4 The Lightweight Directory Access Protocol (LDAP) is a core component of
+many single-sign-on systems. LDAP allows users and applications to retrieve
+information about users from the organization’s directory – a centralized
+repository of information about user accounts, devices, and other objects.
+Windows domains use LDAP to handle queries for information from Active
+Directory. You’ll learn more about LDAP in Chapter 3, “Exploring Network
+Technologies and Tools.”
+
+p.194 Security Assertion Markup Language (SAML) is an Extensible Markup
+Language (XML)–based data format used for SSO on web browsers.
+Imagine two websites hosted by two different organizations. Normally, a user
+would have to provide different credentials to access either website.
+However, if the organizations trust each other, they can use SAML as a
+federated identity management system. Users authenticate with one website
+and are not required to authenticate again when accessing the second
+website.
+
+p.198
+1.Role-based access control
+2.Rule-based access control
+3.Discretionary access control (DAC)
+4.Mandatory access control (MAC)
+5.Attribute-based access control (ABAC)
+
+p.202 Role-BAC is also called hierarchy-based or job-based:
+Hierarchy-based. In the Project Server example, you can see how toplevel roles, such as the Administrators role, have significantly more
+permissions than lower-level roles, such as the Team Members role.
+Roles may mimic the hierarchy of an organization.
+Job-, task-, or function-based. The Project Server example also shows
+how the roles are centered on jobs or functions that users need to
+perform.
+
+p.234 As you prepare, you should know just the
+basics of what each layer does:
+Layer 1: Physical is all about the basic equipment of networking:
+copper wires, fiber optic cables, and radio waves.
+Layer 2: Data Link is where network switches reside. It formats data
+into data frames and routes it between systems on the local network
+using their media access control (MAC) addresses.
+Layer 3: Network introduces IP addresses. At this layer, routers use IP
+addresses to send information between systems that are not located on
+the same local network. The Internet Protocol (IP) is the primary
+protocol used at this layer.
+Layer 4: Transport provides end-to-end communication services for
+applications. The Transmission Control Protocol (TCP) and User
+Datagram Protocol (UDP) exist at this layer.
+Layer 5: Session establishes, manages, and terminates sessions between
+applications running on different devices, allowing them to
+communicate and exchange data.
+Layer 6: Presentation translates data into a standard format that can be
+understood by the application layer, and provides encryption,
+compression, and other data transformation services.
+Layer 7: Application provides network services to applications,
+allowing them to communicate with other applications over the
+network.
+You’ll often hear these layers used by security and network
+professionals to help describe where a problem exists. For
+example, if there’s a routing problem, someone might say “That’s a
+Layer 3 problem.” Or you might hear of a switching problem
+described as a Layer 2 issue.
+
+SAVOIR: TCP, UDP, IP, ICMP, ARP, FT, TFTP, SSL, TLS, IPsec, SSH, SFTP, FTPS,
+SMTP, POP3, IMAP, HTTP, SPF, DKIM, DMARC, LDAP, RTP, VoIP, SRTP, SIP, RDP, NTP,
+DHCP, DNS, STP, RSTP, SNMP
+
+p.254 MAC filtering is another example of port security. In a simple
+implementation, the switch remembers the first one or two MAC addresses
+that connect to a port. It then blocks access to systems using any other MAC
+addresses. You can also manually configure each port to accept traffic only
+from a specific MAC address. This limits each port’s connectivity to a
+specific device using this MAC address. This can be very labor-intensive, but
+it provides a higher level of security.
+
+p.260 Stateless firewalls use rules implemented in ACLs to identify allowed and
+blocked traffic. They treat each network packet that they see as a new event
+and don’t track any information (or “state”) about previous network traffic.
+This is similar to how a router uses rules within ACLs. In fact, you can think
+of a router as a stateless firewall.
+
+p.263 A next-generation firewall (NGFW) is an advanced firewall that adds
+capabilities that aren’t available in first-generation or second-generation
+firewalls. The first generation of firewalls were packet-filtering firewalls,
+using stateless firewall rules, and could only allow or block traffic after
+evaluating individual packets. The second generation of firewalls added in
+stateful firewall rules. This allows firewalls to additionally evaluate traffic
+based on its session state.
+Firewalls have steadily improved over the years, and if each improvement
+was labeled as another generation, we might be on the ninety-ninth
+generation. Thankfully, we’re just using NGFW to indicate that a firewall
+adds additional capabilities to first- and second-generation firewalls.
+An NGFW performs deep-packet inspection, adding application-level
+inspection as a core feature. The NGFW is aware of common application
+protocols used on the Internet, such as FTP and HTTP. By using deep-packet
+inspection, the NGFW can identify application commands and detect
+potentially malicious traffic. This allows it to apply content filtering and
+URL filtering.
+WAFs and NGFWs both analyze information about all layers of the OSI
+model, all the way through Layer 7, the Application layer. Therefore, they
+are often called Layer 7 firewalls.
+
+p.264 Security systems that enforce policies sometimes experience failures.
+Software running on a firewall might crash or a router configuration file
+might contain errors. The designers of these systems must choose one of two
+failure modes for their platforms:
+Fail-open system allows everything to pass through the system when it
+fails. In this approach, no security controls are enforced, but there is no
+disruption to network activity.
+Fail-closed system allows nothing to pass through the system when it
+fails. In this approach, there is a significant disruption to network
+activity but no security policies are violated.
+Generally speaking, security professionals prefer fail-closed systems because
+they limit risk.
+
+p.275 A reverse proxy accepts requests from the Internet, typically for a single web
+server. It appears to clients as a web server but is forwarding the requests to
+the web server and serving the pages returned by the web server. Figure 3.6
+shows how a reverse proxy server is configured to protect a web server. Note
+that this configuration allows the web server to be located in the private
+network behind a second firewall.
+
+p.277 Unified threat management (UTM) is a single solution that combines
+multiple security controls. The overall goal of UTMs is to provide better
+security while also simplifying management requirements. In many cases, a
+UTM device will reduce the workload of administrators without sacrificing
+security.
+
+zero trust network access
+
+p.282 The two key components of the control plane are:
+The Policy Engine (PE) decides whether to grant access to a resource
+for a given subject. The PE uses enterprise policy to grant, deny, or
+revoke access to the resource.
+The Policy Administrator (PA) is responsible for communicating the
+decisions made by the PE to the tools on the network that enforce those
+decisions, known as the Policy Enforcement Point (PEP).
+Together, the PE and the PA are known as the Policy Decision Point (PDP).
+
+p.304 A host-based intrusion detection system (HIDS) is additional software
+installed on a system such as a workstation or a server. It monitors the
+individual host, can detect potential attacks, and analyzes critical operating
+system files. The primary goal of any IDS is to monitor traffic and then alert
+administrators to suspicious activity. For a HIDS, this traffic passes through
+the network interface card (NIC).
+
+p.305 A network-based intrusion detection system (NIDS) monitors activity on the
+network. An administrator installs NIDS sensors or collectors on network
+devices such as switches, routers, or firewalls. These sensors gather
+information and report to a central monitoring network appliance hosting a
+NIDS console.
+A NIDS cannot detect anomalies on individual systems or workstations
+unless the anomaly causes a change in network traffic. Additionally, a NIDS
+is unable to decrypt encrypted traffic. In other words, it can only monitor and
+assess threats on the network from traffic sent in plaintext or non-encrypted
+traffic.
+
+p.318 A honeypot is a sweet-looking server—at least it’s intended to look sweet to
+the attacker, similar to how honey looks sweet to a bear. It’s a server that is
+left open or appears to have been locked down sloppily, allowing an attacker
+relatively easy access. The intent is for the server to look like an easy target
+so that the attacker spends his time in the honeypot instead of on a live
+network. In short, the honeypot diverts the attacker away from the live
+network.
+
+p.333 Wi-Fi Protected Access 3 (WPA3) devices are now widely available on many
+enterprise wireless networks. This is the newest generation of wireless
+technology, and it supports three modes of operation:
+Enhanced open mode replaces the insecure, unencrypted, open mode of
+WPA2 with technology that uses strong encryption to protect the
+communications of unauthenticated users. It allows you to easily run a
+secure guest network.
+Simultaneous Authentication of Equals (SAE) mode replaces the PSK
+mode of WPA2. SAE uses a passphrase but adds strong security
+defenses to the technology.
+Enterprise mode is also supported in WPA3 using a RADIUS server
+and individual user authentication.
+
+Authentication Protocols:
+EAP
+EAP-FAST
+EAP-TLS
+EP-TTLS
+RADIUS Federation
+
+p.335 Another method of port security is to use IEEE 802.1X, a
+port-based authentication protocol.
+
+p.337 WIRELESS ATTACKS
+Disassociation Attacks
+Wi-Fi Protected Setup
+Evil Twin
+Jamming Attacks
+IV Attacks
+Near Field Communication Attacks
+RFID Attacks
+Bluetooth Attacks
+
+p.360 Remote Authentication Dial-In User Service (RADIUS) is a centralized
+authentication service. Instead of each individual VPN server needing a
+separate database to identify who can authenticate, the VPN servers forward
+the authentication requests to a central RADIUS server. RADIUS can also be
+used as an 802.1X server with WPA2 or WPA3 Enterprise mode (described
+earlier in this chapter).
+
+p.362 Terminal Access Controller Access-Control System Plus (TACACS+) is an
+alternative to RADIUS, and it provides two essential security benefits over
+RADIUS. First, it encrypts the entire authentication process, whereas
+RADIUS encrypts only the password by default. Second, TACACS+ uses
+multiple challenges and responses between the client and the server.
+
+p.382 A thin client is a computer with enough resources to boot and connect to a
+server to run specific applications or desktops. When the thin client is a
+traditional computer, it typically has a keyboard, mouse, and screen and may
+support other peripherals such as speakers and USB ports. The server is a
+powerful server located on-site or in the cloud, supporting multiple thin
+clients.
+A virtual desktop infrastructure (VDI) hosts a user’s desktop operating
+system on a server. While traditional computers typically access VDIs within
+a network, it’s also possible to deploy a VDI that users can access with their
+mobile device. This allows users to access any applications installed on their
+desktop. When the organization hosts a remote access solution such as a
+virtual private network (VPN), users can access the mobile VDI from
+anywhere if they have Internet access.
+
+p.384 some attacks related to vms
+VM Escape Protection
+VM Sprawl Avoidance
+
+p.387 Let’s discuss four common categories of
+endpoint security software:
+Antivirus software is one of the most basic security controls that should
+run on every system in an organization. This software scans endpoints
+for the presence of viruses, worms, Trojan horses, and other malicious
+code. When an infection is detected, the antivirus software can often
+step in and resolve the issue automatically. You’ll learn more about
+antivirus software in Chapter 6, “Comparing Threats, Vulnerabilities,
+and Common Attacks.”
+Endpoint detection and response (EDR) is a security technology that
+focuses on detecting and responding to threats at the endpoint level,
+often using advanced behavioral analysis techniques to identify
+suspicious activity and contain threats before they can cause damage.
+Extended detection and response (XDR) is a next-generation security
+technology that goes beyond the endpoint to include other types of
+devices and systems, such as network devices, cloud infrastructure, and
+IoT devices, providing a more comprehensive view of the entire IT
+environment and enabling faster threat detection and response.
+Host intrusion prevention systems (HIPS) takes the concept of
+intrusion prevention and applies it to a single host or endpoint, using
+techniques such as behavior analysis, file integrity monitoring, and
+application control to prevent unauthorized access, tampering, or other
+types of attacks.
+
+p.389 The use of baselines works in three
+steps:
+1. Establish an initial baseline configuration. Administrators use various
+tools to deploy systems consistently in a secure state.
+2. Deploy the baseline. The baseline may be initially deployed on systems
+during the build process, or it may be pushed out to existing systems
+through Group Policy or other configuration management tools.
+3. Maintain the baseline. Organizations change and so does the security
+landscape. It’s natural for system baselines to change over time as well.
+Security professionals should revise the baseline as needed and push out
+updates following the organization’s configuration and change
+management policies.
+
+p.396 An application allow list is a list of authorized software, and it prevents
+users from installing or running software that isn’t on the list. An application
+block list is a list of unauthorized software and prevents users from
+installing or running software on the list.  
+Messages that users see when they can’t install an application due to an allow
+list or block list are sometimes cryptic. When users try to install an
+application that isn’t allowed, the system will often report a permission issue
+or sometimes just fail with a vague error. However, application logs will
+typically include details on why the installation failed.
+Some systems support quarantining applications that don’t comply with
+allow or block lists. For example, if a user tries to install an application that
+isn’t on an allow list, the system will quarantine the application, placing it in
+a protected area. A quarantined application won’t run on the system but is
+retained so that administrators can examine it.
+
+p.405 Data-in-use refers to data that is currently being processed or accessed by a
+system or application. This can include sensitive data such as passwords,
+encryption keys, and other types of confidential information. Protecting datain-use is a critical aspect of securing an organization’s IT infrastructure, as it
+is vulnerable to attack during processing and transmission.
+Secure enclave, sometimes known as trusted execution environment (TEE),
+is a type of security technology that provides a secure and isolated area
+within a system or application for processing sensitive data. Secure enclaves
+use hardware-based security mechanisms, such as Intel’s Software Guard
+Extensions (SGX), to create a trusted execution environment that is isolated
+from the rest of the system. This allows sensitive data to be processed and
+stored securely, even in a potentially insecure computing environment.
+
+p.406 One of the ways that we can classify cloud service offerings is by what type
+of resources they provide to their customers. These are the cloud delivery
+models and there are three main offerings: software as a service (SaaS),
+platform as a service (PaaS), and infrastructure as a service (IaaS).
+
+p.418 CSPs employ native controls to protect cloud-based resources. This may be
+enough for some customers, but other customers want more security features
+and seek third-party solutions, such as a cloud access security broker
+(CASB).
+A CASB is a software solution or service deployed between an
+organization’s network and the cloud provider. It provides security by
+monitoring traffic and enforcing security policies. Anything accessible via
+the Internet is an attack vector, and that includes cloud-based resources.
+However, a CASB can help organizations mitigate risks by consistently
+enforcing security policies across cloud service providers.
+
+p.418 It’s common for personnel within organizations to store data in the cloud.
+This makes it easier to access the data from any location and from almost any
+device. Cloud-based DLP solutions allow an organization to implement
+policies for data stored in the cloud.
+As an example, an organization can implement policies to detect Personally
+Identifiable Information (PII), or Protected Health Information (PHI) stored
+in the cloud. After detecting the data, a DLP policy can be configured to take
+one or more actions such as sending an alert to a security administrator,
+blocking any attempts to save the data in the cloud, and quarantining the
+data.
+
+p.421 Routing protocols such as Open Shortest Path First (OSPF) and Border
+Gateway Protocol (BGP) help routers determine the best path to route traffic
+on the control plane. Routers use these protocols to share information,
+creating a map of the known network. An SDN can still use these routing
+protocols but without the hardware routers. When SDNs work on wide-area
+networks to connect different sites together, they are known as softwaredefined wide area networks (SD-WAN).
+
+p.432 The National Institute of Standards and Technology Internal Report
+(NISTIR) 8228 “Considerations for Managing Internet of Things (IoT)
+Cybersecurity and Privacy Risks” states that the full scope of IoT is not
+precisely defined. This is because the technologies are in a wide assortment
+of sectors such as health care, transportation, and home security.
+
+p.433 An industrial control system (ICS) typically refers to systems within large
+facilities such as power plants or water treatment facilities. A supervisory
+control and data acquisition (SCADA) system typically controls an ICS by
+monitoring it and sending it commands. Ideally, these systems are protected
+within isolated networks that can’t access the Internet. 
+
+p.462 Shadow information technology (IT) refers to any unauthorized systems or
+applications within an organization, including cloud services. Most
+organizations have specific processes in place to approve new systems and
+applications. However, users sometimes install systems without approval,
+often to bypass security controls. Shadow IT increases risks because these
+systems aren’t always well-managed.
+The IT department will normally manage all systems and applications under
+its control. This includes things like keeping them up to date and maintaining
+backups. However, if these systems and applications are hidden from the IT
+department, they won’t be managed and will be susceptible to emerging
+vulnerabilities.
+  
+Remember This!
+Shadow IT refers to unauthorized systems or applications used within an
+organization without authorization or approval. 
+
+p.470 A rootkit is a program or group of programs that gains administrative access
+on a system to provide the attacker with administrative privileges and/or hide
+the fact that the system has been infected or compromised by malicious code.
+A user might suspect something is wrong, but antivirus scans and other
+checks might indicate everything is fine because the rootkit hides its running
+processes to avoid detection.
+In addition to modifying the internal operating system processes, rootkits
+often modify system files such as the Registry. In some cases, the rootkit
+modifies system access, such as removing users’ administrative access.
+Rootkits have system-level access to the operating system. This is sometimes
+called root-level access, or kernel-level access, indicating that they have the
+same level of access as the operating system. Some rootkits use hooked
+processes, or hooking techniques, to intercept calls to the operating system.
+Hooking refers to intercepting system-level function calls, events, or
+messages in this context. The rootkit installs the hooks into memory and uses
+them to control the system’s behavior.
+
+p.471 Ransomware is a type of malware that takes control of a user’s system or
+data. Criminals then attempt to extort payment from the victim.
+Ransomware often includes threats of damaging a user’s system or data if
+the victim does not pay the ransom, and attackers increasingly target
+hospitals, cities, and other larger organizations.  
+With the massive amounts of revenue these attacks are bringing to criminals,
+it’s logical to think they will continue. The Federal Bureau of Investigation
+(FBI) and other legal entities discourage the paying of any ransoms.
+However, some organizations see paying a ransom as cheaper than suffering
+an outage while trying to re-create their data.
+Unfortunately, some organizations haven’t received a usable decryption key
+even after paying the ransom. Worse, the attackers have sometimes
+demanded additional money after receiving the first ransom. The attackers
+are criminals, after all.
+
+p.472 Bloatware describes programs a user may not want, even if they consented to
+downloading them. Some of these unwanted programs are legitimate, but
+some are malicious, such as Trojans. The extras have often been called
+spyware, adware, junkware, or crapware.
+For example, if you download and install 7-Zip, a popular compression tool,
+from a site other than 7-zip.org, the installer may include bloatware.
+
+p.473 There are many indicators of malware attacks. Some generic indicators are:
+Extra traffic. Malware typically adds a lot of extra traffic to a network.
+Abnormal traffic can be identified by comparing it with a baseline of
+known regular traffic.
+Data exfiltration. Data exfiltration refers to the unauthorized transfer of
+data out of a network. Malware often attempts to download data, such as
+databases of credentials, to locations controlled by the attacker. Data
+loss prevention (DLP) techniques can often detect this data as it is being
+downloaded.
+Encrypted traffic. Some malware will encrypt the data before data
+exfiltration attempts. This can bypass typical DLP techniques because a
+DLP system can’t read the encrypted data. However, a large amount of
+encrypted data can indicate data exfiltration, even if the data can’t be
+identified.
+Traffic to specific IPs. Bot zombies will often attempt to connect to
+known command and control servers. However, firewalls can blacklist
+traffic going to the servers when the IPs are known. Attempts to access
+blacklisted IPs are a strong indicator that a system is compromised.
+Security teams should monitor firewall logs for this traffic.
+Outgoing spam. Desktop computers don’t normally send large amounts
+of email. When they do, it’s often because they have been added to a
+botnet and are sending phishing emails as zombies.
+
+p.479 A watering hole attack attempts to discover which websites a group of
+people are likely to visit and then infects those websites with malware that
+can infect the visitors. The attacker’s goal is to infect a website that users
+trust already, making them more likely to download infected files.
+
+p.488 Spear phishing is a targeted form of phishing. Instead of sending the email
+out to everyone indiscriminately, a spear phishing attack attempts to target
+specific groups of users or even a single user. Spear phishing attacks may
+target employees within a company or customers of a company.
+
+p.494 The following bullets list
+some common security controls used to protect against malware:
+Spam filter on mail gateways. Phishing attacks are delivered as
+malicious spam. Spam filters on email servers detect and filter spam
+before it ever gets to users. Some networks route email through another
+device first to filter out spam. If users never receive a malicious email,
+there isn’t any chance of them clicking on a malicious link in that email.
+Anti-malware software on mail gateways. Malicious email often
+includes malware as attachments. Anti-malware software on the mail
+server can detect and block it. The software strips potentially malicious
+attachments off the email, and typically sends a notification to the user
+explaining what was removed and why.
+All systems. All workstations and servers have anti-malware software
+installed. Servers may have additional, specialized anti-malware
+software installed depending on the applications running on the servers.
+Boundaries or firewalls. Many networks include detection tools that
+monitor network traffic through the firewall. For example, unified threat
+management (UTM) inspects network traffic to reduce the risk of
+malware entering the network. Chapter 3, “Exploring Network
+Technologies and Tools,” covers UTM systems.
+
+p.520 There are two major variants of DDoS attacks:
+Reflected DDoS attacks involve the attacker sending requests to a thirdparty server with a spoofed source IP address, which appears to be the
+target’s IP address. When the third-party server responds to the request,
+it sends the response to the target instead of the attacker, thereby
+overwhelming the target with unsolicited traffic.
+Amplified DDoS attacks use reflection techniques in combination with
+amplification, where a small request from the attacker generates a
+significantly larger response from the third-party server. This results in
+an even greater volume of traffic directed at the target, making it more
+difficult for the target to withstand the attack.
+
+p.524 Forgery attacks occur when an attacker creates a fake identity, certificate,
+file, or other object in an attempt to fool an unsuspecting user or system.
+Spoofing is an example of forgery that occurs when one person or entity
+impersonates or masquerades as someone or something else. Some common
+spoofing methods are related to an email address, an Internet Protocol (IP)
+address, and a media access control (MAC) address.
+
+p.525 An on-path attack (sometimes referred to as a man-in-the-middle attack) is a
+form of active interception and modification, or active monitoring. It uses a
+separate computer that accepts traffic from each party in a conversation and
+forwards the traffic between the two. The two computers are unaware of the
+attacking computer, but the attacker can interrupt the traffic at will, insert
+malicious code, or simply eavesdrop.
+
+p.526 An SSL stripping attack changes an encrypted Hypertext Transfer Protocol
+Secure (HTTPS) connection to an unencrypted Hypertext Transfer Protocol
+(HTTP) connection. These days, HTTPS uses Transport Layer Security
+(TLS) instead of SSL but the name SSL stripping has stuck around.
+
+p.530 A replay attack occurs when an attacker replays data that was already part of
+a communication session. The attacker first captures data sent over a network
+between two systems. The attacker modifies the data and then tries to
+impersonate one of the clients in the original session and sends the modified
+data in session replays. Replay attacks can occur on both wired and wireless
+networks.
+
+p.540 Some common methods of testing code include:
+Static code analysis. Static code analysis examines the code without
+executing it. A developer performing a manual code review goes
+through the code line by line to discover vulnerabilities. It’s also
+possible to use automated tools, which can analyze code and mark
+potential defects.
+Manual code review. Manual code review is static code analysis where
+someone goes through the code line by line. It is done by someone other
+than the programmer who wrote the code, and the goal is to identify
+potential vulnerabilities.
+Dynamic code analysis. Dynamic code analysis checks the code as it is
+running. A common method is to use fuzzing. Fuzzing uses a computer
+program to send random data to an application. In some cases, the
+random data can crash the program or create unexpected results,
+indicating a vulnerability. The goal is to discover problems during a
+dynamic analysis so that they can be fixed before releasing the
+application.
+Sandboxing. Sandboxing is used to test applications within an isolated
+area specifically created for testing. The term comes from a sandbox in
+a playground. Children can play in the sandbox where they are
+relatively safe (and parents can easily keep their eyes on them).
+Similarly, application developers can test applications in a sandbox,
+knowing that any changes they make will not affect anything outside the
+sandbox. Virtual machines (VMs) are often used for sandboxing. For
+example, Java virtual machines include a sandbox to restrict untrusted
+applications.
+Package monitoring. Every developer makes use of code written by
+others in the form of shared libraries and packages. It’s important to
+monitor the use of these shared packages throughout your organization.
+When vulnerabilities arise in code written by others, you will need the
+ability to identify all cases where the affected packages were used and
+patch them.
+
+p.552 A memory leak is a bug in a computer application that causes the application
+to consume more and more memory the longer it runs. In extreme cases, the
+application can consume so much memory that the operating system crashes.
+
+p.553 A buffer overflow occurs when an application receives more input, or
+different input, than it expects. The result is an error that exposes system
+memory that would otherwise be protected and inaccessible. Normally, an
+application will have access only to a specific area of memory, called a
+buffer. The buffer overflow allows access to memory locations beyond the
+application’s buffer, enabling an attacker to write malicious code into this
+memory area.
+
+p.554 An integer overflow occurs if an application receives a numeric value that is
+too big for the application to handle. The result is that the application gives
+inaccurate results. As an example, if an application reserves 8 bits to store a
+number, it can store any value between 0 and 255. If the application attempts
+to multiply two values, such as 95 × 59, and store the result (5,605) in an 8-
+bit memory location, it causes an integer overflow.
+It’s a good practice to double-check the size of memory buffers to ensure
+they can handle any data generated by applications. It’s also possible to use
+input validation techniques to prevent integer overflow issues. If the
+application doesn’t have adequate error- and exception-handling routines,
+this might cause an integer overflow condition.
+
+p.554 There are multiple types of injection attacks beyond SQL injection attacks
+discussed previously in this chapter. They include dynamic link library
+injection, Lightweight Directory Access Protocol injection, and Extensible
+Markup Language (XML) injection attacks.
+
+p.555 Applications commonly use a dynamic link library (DLL) or multiple DLLs.
+A DLL is a compiled set of code that an application can use without recreating the code. As an example, most programming languages include
+math-based DLLs. Instead of writing the code to discover a number’s square
+root, a developer can include the appropriate DLL and access the square root
+function within it.
+DLL injection is an attack that injects a DLL into a system’s memory and
+causes it to run. For example, imagine an attacker creates a DLL named
+malware.dll that includes several malicious functions. In a successful DLL
+injection attack, the attacker attaches this malicious DLL to a running
+process, allocates memory within the running process, connects the DLL
+within the allocated memory, and then executes functions within the DLL.
+
+p.555 Lightweight Directory Access Protocol (LDAP) specifies the formats and
+methods used to query databases of objects such as users, computers, and
+other objects within a network. As an example, Microsoft Active Directory
+uses LDAP to access objects within a domain.
+An LDAP injection attack is sometimes possible when a web application is
+used to query an LDAP-based database. As an example, imagine a help-desk
+technician needs to access Homer’s account to modify it. The technician
+enters Homer’s username into the application, and the application crafts an
+LDAP query to retrieve Homer’s account information.
+
+p.555 Extensible Markup Language (XML) is a markup language commonly used
+to transfer data. It is extensible, meaning that it supports the use of any user-
+defined tags to describe data. Many online applications use XML to transfer
+data.
+
+p.557 Cross-site scripting (XSS) is a web application vulnerability that allows
+attackers to inject scripts into webpages. This generally occurs in one of two
+ways:
+Reflected XSS or non-persistent. This starts by an attacker crafting a
+malicious email and then encouraging a user to click it. The malicious
+URL is often placed within a phishing email, but it could also be placed
+on a public website, such as a link within a comment. When the user
+clicks the malicious URL, it sends an HTTP request to a server. This
+request includes malicious code, and the server sends it back to the user
+in the HTTP response.
+Stored XSS or persistent. Instead of the user sending the malicious
+code to the server, it is stored in a database or other location trusted by
+the web application. The web application can retrieve the malicious
+code later, such as when an administrator logs on to the website.
+
+p.579 A threat is a potential danger. Within the context of risk management, a
+threat is any circumstance or event that can compromise the confidentiality,
+integrity, or availability of data or systems. Threats come in different forms,
+including the following:
+Malicious human threats. Chapter 6, “Comparing Threats,
+Vulnerabilities, and Common Attacks,” discusses various types of threat
+actors. They include relatively inexperienced and unskilled attackers,
+dedicated criminals working within an organized crime group, and
+sophisticated advanced persistent threats (APTs) sponsored by a
+government. These are all malicious human threats. Malicious human
+threats regularly launch different types of attacks, including network
+attacks, system attacks, and the release of malware.
+Accidental human threats. Users can accidentally delete or corrupt
+data, or accidentally access data that they shouldn’t be able to access.
+Even administrators can unintentionally cause system outages. The
+common cause is by a well-meaning administrator making a
+configuration change to fix one problem but inadvertently causing
+another one.
+Environmental threats. This includes long-term power failure, which
+could lead to chemical spills, pollution, or other possible threats to the
+environment. It also includes natural threats such as hurricanes, floods,
+tornadoes, earthquakes, landsides, electrical storms, and other similar
+events.
+
+p.595 A vulnerability assessment
+typically includes the following high-level steps:
+Identify assets and capabilities.
+Prioritize assets based on value.
+Identify vulnerabilities and prioritize them.
+Recommend controls to mitigate serious vulnerabilities.
+
+p.596 A vulnerability scan often includes the following actions:
+Identify vulnerabilities.
+Identify misconfigurations.
+Passively test security controls.
+Identify lack of security controls.
+Vulnerability Classification Standards
+Vulnerability scanners utilize a database or dictionary of known
+vulnerabilities and test systems against this database. For example, the
+MITRE Corporation maintains the Common Vulnerabilities and
+Exposures (CVE) list, which is a dictionary of publicly known security
+vulnerabilities and exposures. This is similar to how antivirus software
+detects malware using virus signatures. The difference is that the CVE is
+one public list funded by the U.S. government, whereas antivirus
+vendors maintain proprietary signature files.
+The Common Vulnerability Scoring System (CVSS) assesses
+vulnerabilities and assigns severity scores in a range of 0 to 10, with 10
+being the most severe. This helps security professionals prioritize their
+work in mitigating known vulnerabilities.
+Other standards used by vulnerability scanners include the Security
+Content Automation Protocol (SCAP). SCAP is designed to help
+facilitate communication between vulnerability scanners and other
+security and management tools.
+
+p.598 . They do this using many different information sources:
+Vulnerability classification. Use an industry-standard classification
+system to identify the type and severity of a vulnerability. Organizations
+commonly use the CVSS score for this purpose.
+Environmental variables. Every organization is different and operates
+in a different technical environment. Consider the nature of that
+environment when prioritizing vulnerabilities.
+Industry/organizational impact. Different industries work with
+different types of data and have different regulations and sensitivities. A
+vulnerability that is very serious in an online banking environment
+might be far less worrisome on a system used to monitor water flow.
+Risk tolerance/threshold. Organizations need to decide what level of
+risk a vulnerability must rise to before they will address it. It’s unlikely
+that you will be able to address every vulnerability that exists, so you
+must use a threshold to determine those that require attention.
+
+p.603 Penetration testing actively assesses deployed security controls within a
+system or network. It starts with reconnaissance to learn about the target but
+takes it a step further and tries to exploit vulnerabilities by simulating or
+performing an attack. There are four major categories of penetration test:
+1. Physical Penetration Testing: This type of testing focuses on
+identifying vulnerabilities in the physical security measures of an
+organization. It involves attempting to gain unauthorized access to
+physical spaces, such as buildings, data centers, or other secure areas.
+Physical penetration testing may involve tactics such as social
+engineering, lock picking, or physical bypassing of security measures.
+The goal is to identify weaknesses in physical security controls that
+could be exploited by attackers.
+2. Offensive Penetration Testing: This type of testing involves simulating
+a real-world attack on an organization’s network, systems, or
+applications. It is carried out from the perspective of an attacker and
+seeks to identify vulnerabilities that could be exploited to gain
+unauthorized access or cause damage to the organization. Offensive
+penetration testing often includes techniques such as vulnerability
+scanning, exploitation of identified vulnerabilities, and lateral
+movement within the network.
+3. Defensive Penetration Testing: This type of testing involves evaluating
+an organization’s security controls to identify areas where they may be
+vulnerable to attack. The goal is to identify weaknesses in security
+controls before they can be exploited by attackers. Defensive
+penetration testing may include tactics such as firewall rule analysis,
+configuration reviews, or penetration testing of web applications.
+4. Integrated Penetration Testing: This type of testing combines elements
+of physical, offensive, and defensive testing to provide a comprehensive
+evaluation of an organization’s security posture. It involves simulating a
+real-world attack on an organization’s physical and digital assets to
+identify vulnerabilities that could be exploited by attackers. Integrated
+penetration testing is typically conducted by a team of experts who have
+expertise in physical security, network security, and application security.
+
+p.608 Penetration testers often combine footprinting with fingerprinting techniques
+to identify targets. Network footprinting provides a big-picture view of a
+network, including the Internet Protocol (IP) addresses active on a target
+network. Fingerprinting then homes in on individual systems to provide
+details of each. This is similar to how fingerprints identify an individual.
+
+p.609 When an attacker first exploits a user’s computer, the attacker often has the
+user’s credentials. The attacker uses the credentials to access the targeted
+system and then uses the targeted system for lateral movement. Lateral
+movement refers to the way attackers maneuver throughout a network. As an
+example, Windows Management Instrumentation (WMI) and PowerShell are
+frequently used to scan a Windows network.
+After discovering other systems, the attacker looks for vulnerabilities and
+exploits them if possible. By exploiting multiple systems, the attacker has a
+better chance of maintaining persistence in a network.
+
+p.610 Pivoting is the process of using various tools to gain access to additional
+systems on a network after an initial compromise. For example, imagine a
+tester gains access to Homer’s computer within a company’s network. The
+tester can then pivot and use Homer’s computer to gather information on
+other computers. Homer might have access to network shares filled with files
+on nuclear power plant operations. The tester can use Homer’s computer to
+collect this data and then send it back out of the network from Homer’s
+computer.
+
+p.611 Cleanup is one of the last steps of a penetration test. It includes removing all
+traces of the penetration tester’s activities. Of course, this is dependent on
+what the penetration tester did during the test and the rules of engagement.
+Cleanup activities include:
+Removing any user accounts created on systems in the network
+Removing any scripts or applications added or installed on systems
+Removing any files, such as logs or temporary files, created on systems
+Reconfiguring all settings modified by testers during the penetration test
+This is an extensive list, and testers should not rely on their memory. Instead,
+it’s common for testers to create a log of what they’re doing as they’re doing
+it. This makes it easier to reverse all their actions.
+
+p.619 The following list shows
+some standards relevant to cybersecurity.
+ISO 27001. ISO 27001, “Information Security Management Systems,”
+provides information on information security management systems
+(ISMS) requirements. Organizations that implement the ISMS
+requirements can go through a three-stage certification process,
+indicating they are ISO 27001 compliant.
+ISO 27002. ISO 27002, “Information security, cybersecurity and
+privacy protection – Information security controls,” is a complement to
+ISO 27001. While ISO 27001 identifies the requirements to become
+certified, ISO 27002 provides organizations with best practices
+guidance.
+ISO 27701. ISO 27701, “Privacy Information Management System
+(PIMS),” is an extension to ISO 27001 and ISO 27002, and it outlines a
+framework for managing and protecting Personally Identifiable
+Information (PII). It provides organizations with guidance to comply
+with global privacy standards, such as the European Union General Data
+Protection Regulation (EU GDPR).
+ISO 31000. ISO 31000, “Risk management,” is a family of standards
+related to risk management. It provides guidelines that organizations can
+adopt to manage risk.
