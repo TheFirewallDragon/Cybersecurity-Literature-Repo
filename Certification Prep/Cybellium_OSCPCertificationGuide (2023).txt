@@ -428,5 +428,3 @@ p.151 Network Attacks and
 Defense
 
 p.168 Metasploit and Frameworks
-
-p.
