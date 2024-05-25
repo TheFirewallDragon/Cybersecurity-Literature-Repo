@@ -1,0 +1,432 @@
+p.9 A key aspect of the OSCP certification is its underlying philosophy
+encapsulated in the phrase "Try Harder." 
+
+p.16 The OSCP exam allows the use of various open-source tools,
+although automated exploitation frameworks like Metasploit are
+generally restricted. The focus is on manual exploitation techniques,
+requiring you to have a strong understanding of how vulnerabilities
+can be leveraged, payloads crafted, and privilege escalation
+performed. This reinforces the OSCP's emphasis on understanding
+the underlying principles, rather than just being proficient with
+specific tools.
+
+p.18-19 ***** The Buffer Overflow section of the exam has a predictable,
+methodical aspect to it, making it one of the easier machines to
+exploit if you're well-prepared. Use this to your advantage by
+dedicating sufficient time to practice buffer overflows until the
+process becomes second nature. There are countless tutorials and
+dedicated platforms for buffer overflow practices that can be
+immensely helpful.
+
+p.19 After each practice session, document your findings, methods, and
+any useful information you encountered. This will not only reinforce
+your learning but will also help you get comfortable with the
+documentation process required for the OSCP exam report. Various
+templates are available online that mimic the structure of a
+professional penetration test report. Practicing with these can be
+particularly helpful.
+
+p.25 The Ethical Hacking Lifecycle
+The ethical hacking process isn't arbitrary; it follows a well-structured
+lifecycle that includes:
+1. Planning: This involves defining the scope of the attack,
+including the systems to be tested and the testing methods to
+be used.
+2. Reconnaissance: This is the phase where the ethical hacker
+gathers as much information as possible about the target
+system to find ways to infiltrate it.
+3. Scanning: This phase involves identifying vulnerabilities in the
+target system.
+4. Gaining Access: This is the actual hacking phase where
+ethical hackers try to exploit the vulnerabilities they've found.
+5. Maintaining Access: Here, the ethical hacker tries to create a
+backdoor for themselves, mimicking what a malicious hacker
+would do to understand how malware can remain in the system
+undetected.
+6. Analysis: After the testing, ethical hackers must report their
+findings, detailing the assessment process, vulnerabilities
+found, data accessed, and recommendations for securing the
+system.
+
+p.35 Information gathering can be either passive or active. Passive
+gathering involves collecting information without directly interacting
+with the target, often using third-party sources like search engines,
+public records, and social media. Tools like Censys or Shodan can
+provide invaluable information about a target system without alerting
+the system owners of your activities. On the other hand, active
+gathering involves directly engaging with the target to collect data,
+often employing techniques like DNS enumeration, subdomain
+discovery, and port scanning.
+
+SCANNING == DISCOVERY PHASE
+
+p.40 Essentially, scanning helps you
+answer critical questions like:
+● What hosts are up and running within the target network?
+● What services are these hosts running?
+● What ports are open on these hosts?
+● Is there a firewall or Intrusion Detection System (IDS)?
+
+p.40 Internet Control Message Protocol (ICMP) scanning, often known as
+a "ping scan," is among the most straightforward scanning methods. By sending ICMP echo requests to target hosts and waiting for an
+echo reply, you can quickly determine if a host is up and running.
+While this method is quick and straightforward, many modern
+networks block ICMP packets at the firewall level, rendering this
+technique ineffective. Nonetheless, it can still provide valuable
+insights into older or less secure networks.
+
+p.41 While ICMP, TCP, and UDP scans are useful, they are often easily
+detectable. Stealth scanning techniques aim to gather the same
+information while evading or at least reducing detection.
+1. FIN Scan: This technique involves sending TCP packets with
+only the FIN flag set, hoping to receive a RST packet in return
+from closed ports. Open ports generally ignore the FIN packet,
+revealing their status indirectly.
+2. Xmas Tree Scan: Named because of the turned-on flags in the
+TCP header, it lights up like a Christmas tree. This scan sets
+the FIN, URG, and PUSH flags and works similarly to the FIN
+scan but may be more likely to evade certain detection
+mechanisms.
+3. Null Scan: This is the opposite of the Xmas Tree Scan, where
+all the flags in the TCP header are turned off. Again, the idea is
+to receive a RST packet from closed ports while receiving no
+response from open ports.
+
+p.43 Port scanning is an essential task because ports are the endpoints
+through which a network service communicates. You can think of a
+host as a building, and ports as the doors and windows of that
+building. The services (like HTTP, SSH, FTP, etc.) are the rooms
+behind those doors. By identifying open ports, an ethical hacker gets
+a better understanding of the target’s attack surface.
+
+p.47 Banner grabbing is the technique used to obtain information from
+network services on remote or local hosts. When a service starts, it
+often displays a "banner" containing details such as the name of the
+software, version number, and other pertinent information. This can
+be immensely helpful in assessing the vulnerabilities associated with
+that specific version of the service. For example, knowing the version
+of an SSH or FTP service can directly lead to a targeted exploit if
+that version is known to have security flaws.
+There are multiple ways one can engage in banner grabbing:
+1. Active Banner Grabbing: This involves directly connecting to
+the service port to pull the banner. Tools like Telnet and Netcat
+are often used for this purpose.
+2. Passive Banner Grabbing: Instead of directly interacting with
+the target, this method relies on sniffing network traffic during
+the enumeration phase. Tools like Wireshark or Tcpdump can
+be useful here.
+3. Hybrid Methods: Tools like Nmap offer scripts that can
+perform a blend of active and passive banner grabbing to
+provide more comprehensive results.
+
+p.51 Types of Vulnerability Scans
+1. Host-Based Scans: These scans focus on vulnerabilities in
+individual systems, typically servers or workstations. They
+provide in-depth information about the system, such as missing
+patches or misconfigurations.
+2. Network-Based Scans: These scans aim to identify vulnerable
+network services. This type is particularly useful for spotting
+risks in complex network architectures.
+3. Web Application Scans: These scans target web applications,
+identifying issues like SQL injection, Cross-Site Scripting
+(XSS), and other application-specific vulnerabilities.
+4. Database Scans: These focus on identifying vulnerabilities in
+database servers, such as MySQL, MongoDB, or SQL Server.
+5. Environmental Scans: These scans consider the entire IT
+infrastructure, combining multiple types of scans to provide a
+comprehensive view of the organization's security posture.
+
+WEB APP
+
+p.57 SQL Injection (SQLi) is an attack that manipulates SQL queries by
+injecting malicious SQL statements through user input fields. This
+can lead to unauthorized data retrieval, modification, and in some
+instances, complete control over the database. The impact of SQL
+injection can be devastating, including data breaches and
+unauthorized administrative access. Learning SQLi is almost like a
+rite of passage for any aspiring ethical hacker, and you will likely
+encounter this vulnerability during your OSCP exam.
+There are several types of SQL injections:
+1. Classic SQL Injection: The most straightforward form,
+typically discovered in login forms. Attackers insert malicious
+SQL queries to trick the authentication mechanism.
+2. Blind SQL Injection: When the application does not show
+errors but still is vulnerable, attackers can use boolean queries
+to guess the information.
+3. Time-based Blind SQL Injection: Here, an attacker
+determines if the hypothesis is true based on how long it takes
+for the page to respond.
+4. Error-based SQL Injection: This type occurs when an
+attacker can make the application generate a database error,
+revealing sensitive information.
+
+p.57 Cross-Site Scripting attacks involve the injection of malicious scripts
+into websites that are viewed by other users. XSS is a versatile
+attack that can be used for stealing cookies, defacing websites, or
+distributing malware. It is divided mainly into three types:
+1. Stored XSS: The malicious script is permanently stored on the
+target server and will execute when a user visits the affected
+page.
+2. Reflected XSS: The malicious script is embedded in a URL
+and will execute as part of a web request, often requiring some
+social engineering to make the user click the URL.
+3. DOM-based XSS: This involves manipulating the Document
+Object Model (DOM) of a webpage, making it potentially more
+challenging to detect by traditional security mechanisms.
+
+Cross-Site Request Forgery (CSRF)
+Command Injection
+Directory Traversal
+Session Hijacking and Cookie Manipulation
+Insecure Deserialization
+XML External Entity (XXE) Attacks
+Server-Side Request Forgery (SSRF)
+OAuth and API Attacks
+
+p.59 The first step in your web application testing methodology should be
+to gather as much information as possible about the application. In
+this phase, you're focused on identifying the architecture,
+functionality, and potential points of entry for the web application.
+Techniques include:
+1. Spidering and Crawling: Use tools like Burp Suite, OWASP
+ZAP, or manual traversal to identify all possible endpoints in the
+application.
+2. Identifying Technologies: Discover what technologies are
+being used, such as server software, programming languages,
+and frameworks.
+3. Analyzing Entry Points: Identify all possible points where user
+input is accepted. This could include form fields, URL
+parameters, and cookies.
+
+p.67 VERY USEFULL INFO BELOW
+
+SQL Injection (SQLi)
+Exploitation: After identifying a possible SQL injection point—often
+a search box, URL parameter, or form field—attackers can insert
+malicious SQL queries to manipulate the database. This can include
+actions like dumping entire tables or bypassing login mechanisms.
+Tools: SQLmap, Havij, and manual testing with crafted payloads.
+Best Practices for Exploitation: Perform careful reconnaissance to
+understand the backend database engine. Utilize error-based, unionbased, or blind SQL injection techniques based on the feedback
+received from the application.
+Cross-Site Scripting (XSS)
+Exploitation: Stored or reflected malicious scripts are executed in
+the browser of the end user. This could lead to session hijacking, site
+defacement, or even distribution of malware.
+Tools: Burp Suite, BeEF, custom JavaScript payloads.
+Best Practices for Exploitation: Identify points in the application
+where user input is displayed back on the webpage. Craft payloads
+that are tailored to the web application's filtering and sanitization
+mechanisms.
+XML External Entity (XXE)
+Exploitation: Malicious XML payloads can be used to probe the
+internal network, execute remote code, or disclose file contents.
+Tools: Burp Suite, custom XML payloads.
+Best Practices for Exploitation: Disable external entity loading on
+the server if possible. Also, always encode user-generated content
+that is used in XML.
+Broken Authentication
+Exploitation: Attackers can take advantage of weak authentication
+mechanisms to gain unauthorized access. This could involve brute
+forcing passwords, session fixation, or credential stuffing.
+Tools: Hydra, Burp Suite, custom scripts.
+Best Practices for Exploitation: For ethical hacking, ensure you
+have permission to perform these types of attacks. Use wordlists
+tailored to the organization and rate-limit your attacks to avoid
+triggering alarms.
+Security Misconfiguration
+Exploitation: Security misconfigurations like verbose error
+messages, default credentials, or unnecessary services can all be
+leveraged to gain unauthorized access or information.
+Tools: Nmap, Burp Suite, Nikto.
+Best Practices for Exploitation: Manual review of application
+behavior and configurations is often the most effective method.
+Automated scanners might not catch nuances in misconfigurations.
+Broken Access Control
+Exploitation: Insecure direct object references (IDOR), privilege
+escalation, or insecure session management can be exploited to
+access unauthorized functionalities.
+Tools: Burp Suite, custom scripts.
+Best Practices for Exploitation: Role-based testing is essential
+here. Log in as different types of users to understand what each role
+should and shouldn't be able to access, and then check if these
+controls are effectively implemented.
+Insecure Deserialization
+Exploitation: Manipulating serialized objects can result in remote
+code execution, injection attacks, or privilege escalation.
+Tools: Ysoserial, custom payloads.
+Best Practices for Exploitation: Understand the serialization and
+deserialization process of the target application before crafting
+payloads. Always validate and sanitize serialized data when writing
+code.
+Using Components with Known Vulnerabilities
+Exploitation: Leveraging publicly disclosed vulnerabilities in
+libraries, frameworks, or software used by the web application.
+Tools: OWASP Dependency-Check, Retire.js, Snyk.
+Best Practices for Exploitation: Always keep an updated database
+of the latest vulnerabilities and understand how they impact the
+components you are targeting.
+Insufficient Logging and Monitoring
+Exploitation: The absence of effective logging and monitoring
+enables the attacker to maintain persistence and explore the network
+without being detected.
+Tools: Custom scripts, Metasploit for generating payloads that
+evade detection.
+Best Practices for Exploitation: This is more about exploiting the
+absence of a security measure rather than a technical vulnerability.
+Staying under the radar will often involve a deep understanding of
+the target network and what kinds of traffic or behavior may trigger
+alarms.
+
+p.75 Payloads are the pieces of code or data that the exploit delivers to
+the target system to perform the desired action. For example, if an
+ethical hacker aims to create a backdoor into a system, the payload
+will include the code that creates this backdoor. Payloads come in
+various forms:
+1. Reverse Shells: This payload type establishes a connection
+from the target machine back to the attacker, often bypassing
+firewall rules.
+2. Bind Shells: This type opens up a new service on the target
+system, which the attacker can connect to.
+3. Data Harvesting Payloads: These are designed to collect and
+send data from the target to the attacker.
+4. Command Execution Payloads: These payloads aim to
+execute specific commands on the target machine.
+5. Download and Execute: This type of payload downloads a file
+(often a malicious one) from a remote server and executes it on
+the compromised machine.
+
+p.75 Fuzzing is an advanced exploitation technique used to discover
+coding errors and security loopholes in software. By inputting large
+amounts of random data into the system ("fuzz"), ethical hackers can
+make the application crash or behave unexpectedly, revealing
+potential vulnerabilities. Fuzzing is particularly effective for
+discovering unhandled exceptions that could be exploited for buffer
+overflows or other code execution attacks.
+
+p.79 A range of specialized tools can assist ethical hackers in exploit
+development. Some of these include:
+● Debuggers: GDB for Linux and WinDBG for Windows are
+popular choices.
+● Disassemblers and Decompilers: IDA Pro, Ghidra, and OllyDbg
+are commonly used for inspecting machine code.
+● Fuzzers: Tools like AFL (American Fuzzy Lop) and Peach Fuzzer
+are used to identify vulnerabilities by sending unexpected data to
+the target application.
+● Framework: Metasploit remains the go-to framework for crafting
+and deploying exploits and payloads.
+
+p.82 Common Privilege Escalation Techniques
+While the methods can be vast and ever-evolving, here are some
+tried-and-true techniques often used:
+1. Exploiting SUID Executables: In Linux, SUID (Set User ID) is
+a special permission that allows the user to execute the file
+with the permissions of its owner. If an executable with SUID
+permission has a vulnerability, it can often be exploited for
+privilege escalation.
+2. Password and Token Manipulation: Extracting plaintext
+passwords, hashes, or authentication tokens from the system
+or memory can provide avenues for escalation.
+3. Service Exploits: Exploiting vulnerabilities in running services,
+especially those running as root or an administrator, is a classic
+method.
+4. Kernel Exploits: Though less common and riskier, exploiting
+vulnerabilities in the operating system's kernel can yield highlevel access.
+5. Misconfigured Permissions: Poorly set file or directory
+permissions, particularly on sensitive files like password
+configuration files or private keys, can be an easy win for
+privilege escalation.
+6. Insecure PATH Variables: In Linux, if the PATH variable is
+misconfigured, an attacker can manipulate it to execute their
+malicious executable with higher-level permissions.
+Tools and Scripts for Privilege Escalation
+Various tools and scripts can automate the process of identifying
+possible privilege escalation vectors. Popular choices include:
+● Windows-Privilege-EscalationGreatSCT
+● Linux Exploit Suggester
+● BeRoot for Linux/Windows
+● Windows-Enum
+● PowerUp PowerShell Script
+These tools help in identifying potential privilege escalation
+vulnerabilities and should be a staple in your ethical hacking toolkit.
+
+p.90 A buffer overflow occurs when data that exceeds the capacity of the
+buffer is written to it, usually because of inadequate or entirely
+missing boundary checks. This excess data spills over into adjacent
+memory locations, potentially corrupting or overwriting the data
+stored in them. Buffer overflows can lead to a wide array of
+consequences, from benign system crashes to arbitrary code
+execution, depending on the architecture, operating system, and
+specific conditions in the software.
+There are primarily two types of buffer overflows—stack-based and
+heap-based.
+1. Stack-based Buffer Overflows: These are the most common
+and occur when the overflow affects the call stack of a
+program. The call stack is a LIFO (Last In, First Out) data
+structure used for storing information about the active
+subroutines or functions in a program. If an attacker can control
+the data that overflows the stack, they might overwrite crucial
+control information like return addresses, leading to arbitrary
+code execution.
+2. Heap-based Buffer Overflows: These occur in the heap
+memory segment, a region of a computer's memory space that
+is used for dynamic memory allocation. Heap-based buffer
+overflows are typically more challenging to exploit but can also
+lead to arbitrary code execution.
+
+p.103 windows exploitation
+
+p.118 linux exploitation
+
+WIRELESS AND IOT
+
+p.138 Techniques for Exploiting Wireless Networks
+1. War Driving and War Chalking: One of the oldest forms of
+wireless hacking, involving driving around to identify open or
+vulnerable Wi-Fi networks. Information about the network might
+then be shared through 'war chalking,' which is the practice of
+drawing symbols in public places to indicate network
+vulnerabilities.
+2. Packet Sniffing: Tools like Wireshark can be used to capture
+and analyze packets over the wireless network, potentially
+revealing sensitive data.
+3. Rogue Access Points: Setting up unauthorized access points
+that mimic the SSID and settings of a legitimate network,
+thereby tricking users to connect to it.
+4. WPS Pin Cracking: The Wi-Fi Protected Setup (WPS) often
+has a PIN that, if guessed correctly, allows an attacker to
+recover the WPA/WPA2 passphrase.
+5. Replay Attacks: Capturing and replaying authentication
+packets to fool the network into granting access.
+6. Evil Twin Attack: Similar to Rogue APs but more advanced.
+An Evil Twin is a Wi-Fi AP that looks and behaves like a
+legitimate one but is actually controlled by the attacker.
+7. Kr00k and Krack: These are specific attacks against the
+WPA2 protocol, exploiting its '4-way handshake' to decrypt
+traffic or even inject malicious packets into a network.
+
+p.144 IoT Device Vulnerabilities
+1. Default Credentials: Many IoT devices come with default
+usernames and passwords that are easy to guess or find
+online.
+2. Firmware Reverse Engineering: Extracting firmware can
+reveal hard-coded credentials and other sensitive information.
+3. Buffer Overflows and Injection Attacks: Poorly coded IoT
+devices are susceptible to these classic attack vectors,
+enabling remote code execution.
+4. Physical Attacks: Directly accessing device hardware can
+bypass software security measures.
+5. Insecure APIs: Many IoT devices connect to cloud services,
+and a vulnerability in the API can lead to unauthorized data
+access.
+6. Side-Channel Attacks: These attacks use information
+gathered from the physical implementation of a computer
+system to find out about the encrypted data, such as
+measuring power consumption or electromagnetic leaks.
+
+p.151 Network Attacks and
+Defense
+
+p.168 Metasploit and Frameworks
+
+p.
